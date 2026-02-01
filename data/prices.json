@@ -1,4 +1,585 @@
 {
-  "updated_at": "2026-02-01T22:57:52",
-  "all_products": []
+  "updated_at": "2026-02-01T23:05:10",
+  "all_products": [
+    {
+      "jan": "4902370552683",
+      "name": "Nintendo Switch 2 多言語対応版",
+      "brand": "Nintendo",
+      "official_price": 69980,
+      "buyback_price": 85000,
+      "rate": 121.46,
+      "profit": 15020,
+      "group": "switch2_main"
+    },
+    {
+      "jan": "4902370553024",
+      "name": "Nintendo Switch 2 国内版",
+      "brand": "Nintendo",
+      "official_price": 49980,
+      "buyback_price": 46300,
+      "rate": 92.64,
+      "profit": -3680,
+      "group": "switch2_main"
+    },
+    {
+      "jan": "4902370553031",
+      "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
+      "brand": "Nintendo",
+      "official_price": 53980,
+      "buyback_price": 51500,
+      "rate": 95.42,
+      "profit": -2480,
+      "group": "switch2_main"
+    },
+    {
+      "jan": "4902370553505",
+      "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
+      "brand": "Nintendo",
+      "official_price": 53980,
+      "buyback_price": 51000,
+      "rate": 94.48,
+      "profit": -2980,
+      "group": "switch2_main"
+    },
+    {
+      "jan": "4902370548501",
+      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
+      "brand": "Nintendo",
+      "official_price": 37980,
+      "buyback_price": 40600,
+      "rate": 106.9,
+      "profit": 2620,
+      "group": "switch_oled"
+    },
+    {
+      "jan": "4902370548495",
+      "name": "Nintendo Switch (有機ELモデル) ホワイト",
+      "brand": "Nintendo",
+      "official_price": 37980,
+      "buyback_price": 40600,
+      "rate": 106.9,
+      "profit": 2620,
+      "group": "switch_oled"
+    },
+    {
+      "jan": "4902370550733",
+      "name": "Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型",
+      "brand": "Nintendo",
+      "official_price": 32978,
+      "buyback_price": 32500,
+      "rate": 98.55,
+      "profit": -478,
+      "group": "switch_standard"
+    },
+    {
+      "jan": "4902370551198",
+      "name": "Nintendo Switch Joy-Con(L)/(R) グレー 新型",
+      "brand": "Nintendo",
+      "official_price": 32978,
+      "buyback_price": 32500,
+      "rate": 98.55,
+      "profit": -478,
+      "group": "switch_standard"
+    },
+    {
+      "jan": "0814585022308",
+      "name": "Steam Deck OLED 1TB",
+      "brand": "Valve",
+      "official_price": 99800,
+      "buyback_price": 103800,
+      "rate": 104.01,
+      "profit": 4000,
+      "group": "steam_deck"
+    },
+    {
+      "jan": "4948872417075",
+      "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
+      "brand": "Sony",
+      "official_price": 119980,
+      "buyback_price": 107200,
+      "rate": 89.35,
+      "profit": -12780,
+      "group": "ps5_pro"
+    },
+    {
+      "jan": "4948872415934",
+      "name": "PlayStation 5 slim CFI-2000A01",
+      "brand": "Sony",
+      "official_price": 79980,
+      "buyback_price": 74700,
+      "rate": 93.4,
+      "profit": -5280,
+      "group": "ps5_slim"
+    },
+    {
+      "jan": "4902370552843",
+      "name": "Nintendo Switch 2 Proコントローラー",
+      "brand": "Nintendo",
+      "official_price": 9980,
+      "buyback_price": 8400,
+      "rate": 84.17,
+      "profit": -1580,
+      "group": "switch2_procon"
+    },
+    {
+      "jan": "4902370552744",
+      "name": "Joy-Con 2 (L)/(R) ライトブルー/ライトレッド",
+      "brand": "Nintendo",
+      "official_price": 9980,
+      "buyback_price": 8600,
+      "rate": 86.17,
+      "profit": -1380,
+      "group": "joycon2_pair"
+    },
+    {
+      "jan": "4902370552911",
+      "name": "Nintendo Switch 2 ドックセット",
+      "brand": "Nintendo",
+      "official_price": 12980,
+      "buyback_price": 11200,
+      "rate": 86.29,
+      "profit": -1780,
+      "group": "switch2_dock"
+    },
+    {
+      "jan": "0815820025238",
+      "name": "Meta Quest 3S 128GB",
+      "brand": "Meta",
+      "official_price": 48400,
+      "buyback_price": 38600,
+      "rate": 79.75,
+      "profit": -9800,
+      "group": "meta_quest3s"
+    },
+    {
+      "jan": "4902370552706",
+      "name": "Joy-Con 2 (L) ライトブルー",
+      "brand": "Nintendo",
+      "official_price": 4480,
+      "buyback_price": 3500,
+      "rate": 78.13,
+      "profit": -980,
+      "group": "joycon2_left"
+    },
+    {
+      "jan": "4902370552720",
+      "name": "Joy-Con 2 (R) ライトレッド",
+      "brand": "Nintendo",
+      "official_price": 4480,
+      "buyback_price": 3500,
+      "rate": 78.13,
+      "profit": -980,
+      "group": "joycon2_right"
+    },
+    {
+      "jan": "4523052030185",
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "brand": "SanDisk",
+      "official_price": 7480,
+      "buyback_price": 5800,
+      "rate": 77.54,
+      "profit": -1680,
+      "group": "microsd_256"
+    },
+    {
+      "jan": "8806095700670",
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "brand": "Samsung",
+      "official_price": 7480,
+      "buyback_price": 5800,
+      "rate": 77.54,
+      "profit": -1680,
+      "group": "microsd_256"
+    },
+    {
+      "jan": "4902370543278",
+      "name": "Nintendo Switch リングフィット アドベンチャー",
+      "brand": "Nintendo",
+      "official_price": 8778,
+      "buyback_price": 6900,
+      "rate": 78.61,
+      "profit": -1878,
+      "group": "ringfit"
+    },
+    {
+      "jan": "4902370550504",
+      "name": "Nintendo Switch Proコントローラー ゼルダの伝説",
+      "brand": "Nintendo",
+      "official_price": 7980,
+      "buyback_price": 6800,
+      "rate": 85.21,
+      "profit": -1180,
+      "group": "switch_procon"
+    },
+    {
+      "jan": "4902370551136",
+      "name": "Joy-Con (L)/(R) パステルパープル/パステルグリーン",
+      "brand": "Nintendo",
+      "official_price": 8778,
+      "buyback_price": 7500,
+      "rate": 85.44,
+      "profit": -1278,
+      "group": "joycon_pair"
+    },
+    {
+      "jan": "4902370551112",
+      "name": "Joy-Con (L)/(R) パステルピンク/パステルイエロー",
+      "brand": "Nintendo",
+      "official_price": 8778,
+      "buyback_price": 7500,
+      "rate": 85.44,
+      "profit": -1278,
+      "group": "joycon_pair"
+    },
+    {
+      "jan": "4902370552027",
+      "name": "Joy-Con (L)/(R) パステルピンク",
+      "brand": "Nintendo",
+      "official_price": 8778,
+      "buyback_price": 7500,
+      "rate": 85.44,
+      "profit": -1278,
+      "group": "joycon_pair"
+    },
+    {
+      "jan": "4902370536010",
+      "name": "Nintendo Switch Proコントローラー",
+      "brand": "Nintendo",
+      "official_price": 7678,
+      "buyback_price": 6500,
+      "rate": 84.66,
+      "profit": -1178,
+      "group": "switch_procon_std"
+    },
+    {
+      "jan": "4902370544091",
+      "name": "Joy-Con充電グリップ",
+      "brand": "Nintendo",
+      "official_price": 2728,
+      "buyback_price": 2200,
+      "rate": 80.65,
+      "profit": -528,
+      "group": "joycon_grip"
+    },
+    {
+      "jan": "4902370535730",
+      "name": "Joy-Conストラップ ネオンレッド",
+      "brand": "Nintendo",
+      "official_price": 858,
+      "buyback_price": 600,
+      "rate": 69.93,
+      "profit": -258,
+      "group": "joycon_strap_red"
+    },
+    {
+      "jan": "4902370535747",
+      "name": "Joy-Conストラップ ネオンブルー",
+      "brand": "Nintendo",
+      "official_price": 858,
+      "buyback_price": 600,
+      "rate": 69.93,
+      "profit": -258,
+      "group": "joycon_strap_blue"
+    },
+    {
+      "jan": "4902370544114",
+      "name": "Nintendo Switchキャリングケース",
+      "brand": "Nintendo",
+      "official_price": 2178,
+      "buyback_price": 1500,
+      "rate": 68.87,
+      "profit": -678,
+      "group": "switch_case"
+    },
+    {
+      "jan": "4902370544060",
+      "name": "Nintendo Switch ACアダプター",
+      "brand": "Nintendo",
+      "official_price": 3278,
+      "buyback_price": 2500,
+      "rate": 76.27,
+      "profit": -778,
+      "group": "switch_ac"
+    },
+    {
+      "jan": "4547410377224",
+      "name": "FUJIFILM チェキフィルム 10枚入 INSTAX MINI JP 1",
+      "brand": "FUJIFILM",
+      "official_price": 1100,
+      "buyback_price": 1300,
+      "rate": 118.18,
+      "profit": 200,
+      "group": "cheki_film_10"
+    },
+    {
+      "jan": "4547410377231",
+      "name": "FUJIFILM チェキフィルム 20枚入 INSTAX MINI JP 2",
+      "brand": "FUJIFILM",
+      "official_price": 2100,
+      "buyback_price": 2680,
+      "rate": 127.62,
+      "profit": 580,
+      "group": "cheki_film_20"
+    },
+    {
+      "jan": "4547410369137",
+      "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
+      "brand": "FUJIFILM",
+      "official_price": 2178,
+      "buyback_price": 2600,
+      "rate": 119.38,
+      "profit": 422,
+      "group": "utsurundesu"
+    },
+    {
+      "jan": "4547410550955",
+      "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
+      "brand": "FUJIFILM",
+      "official_price": 2178,
+      "buyback_price": 2500,
+      "rate": 114.78,
+      "profit": 322,
+      "group": "utsurundesu_2025"
+    },
+    {
+      "jan": "4547410348613",
+      "name": "FUJIFILM チェキスクエア フィルム 10枚 WW1",
+      "brand": "FUJIFILM",
+      "official_price": 1320,
+      "buyback_price": 1200,
+      "rate": 90.91,
+      "profit": -120,
+      "group": "cheki_sq_10"
+    },
+    {
+      "jan": "4547410370003",
+      "name": "FUJIFILM チェキスクエア フィルム 20枚 WW2",
+      "brand": "FUJIFILM",
+      "official_price": 2480,
+      "buyback_price": 2400,
+      "rate": 96.77,
+      "profit": -80,
+      "group": "cheki_sq_20"
+    },
+    {
+      "jan": "4547410489132",
+      "name": "instax mini 12 ミントグリーン",
+      "brand": "FUJIFILM",
+      "official_price": 15180,
+      "buyback_price": 11200,
+      "rate": 73.78,
+      "profit": -3980,
+      "group": "instax_mini12"
+    },
+    {
+      "jan": "4547410489149",
+      "name": "instax mini 12 クレイホワイト",
+      "brand": "FUJIFILM",
+      "official_price": 15180,
+      "buyback_price": 11200,
+      "rate": 73.78,
+      "profit": -3980,
+      "group": "instax_mini12"
+    },
+    {
+      "jan": "7622100834717",
+      "name": "IQOS イルマ i ワン リーフグリーン",
+      "brand": "IQOS",
+      "official_price": 3980,
+      "buyback_price": 3000,
+      "rate": 75.38,
+      "profit": -980,
+      "group": "iqos_one_green"
+    },
+    {
+      "jan": "7622100834687",
+      "name": "IQOS イルマ i ワン ビビッドテラコッタ",
+      "brand": "IQOS",
+      "official_price": 3980,
+      "buyback_price": 2800,
+      "rate": 70.35,
+      "profit": -1180,
+      "group": "iqos_one_terracotta"
+    },
+    {
+      "jan": "7622100834724",
+      "name": "IQOS イルマ i ワン デジタルバイオレット",
+      "brand": "IQOS",
+      "official_price": 3980,
+      "buyback_price": 2800,
+      "rate": 70.35,
+      "profit": -1180,
+      "group": "iqos_one_violet"
+    },
+    {
+      "jan": "7622100834663",
+      "name": "IQOS イルマ i ワン ブリーズブルー",
+      "brand": "IQOS",
+      "official_price": 3980,
+      "buyback_price": 1600,
+      "rate": 40.2,
+      "profit": -2380,
+      "group": "iqos_one_blue"
+    },
+    {
+      "jan": "7622100834649",
+      "name": "IQOS イルマ i ワン ミッドナイトブラック",
+      "brand": "IQOS",
+      "official_price": 3980,
+      "buyback_price": 1700,
+      "rate": 42.71,
+      "profit": -2280,
+      "group": "iqos_one_black"
+    },
+    {
+      "jan": "7622100547938",
+      "name": "IQOS イルマ i ワン セレッティ モデル",
+      "brand": "IQOS",
+      "official_price": 6980,
+      "buyback_price": 6000,
+      "rate": 85.96,
+      "profit": -980,
+      "group": "iqos_one_seletti"
+    },
+    {
+      "jan": "7622100547525",
+      "name": "IQOS イルマ i ワン ミネラ モデル",
+      "brand": "IQOS",
+      "official_price": 4980,
+      "buyback_price": 4400,
+      "rate": 88.35,
+      "profit": -580,
+      "group": "iqos_one_minera"
+    },
+    {
+      "jan": "7622100547020",
+      "name": "IQOS イルマ i ワン アニバーサリーモデル",
+      "brand": "IQOS",
+      "official_price": 5980,
+      "buyback_price": 5300,
+      "rate": 88.63,
+      "profit": -680,
+      "group": "iqos_one_anniversary"
+    },
+    {
+      "jan": "7622100548096",
+      "name": "IQOS イルマ i ギャラクシーブルー",
+      "brand": "IQOS",
+      "official_price": 6980,
+      "buyback_price": 5500,
+      "rate": 78.8,
+      "profit": -1480,
+      "group": "iqos_kit_galaxy"
+    },
+    {
+      "jan": "7622100834601",
+      "name": "IQOS イルマ i リーフグリーン",
+      "brand": "IQOS",
+      "official_price": 6980,
+      "buyback_price": 4500,
+      "rate": 64.47,
+      "profit": -2480,
+      "group": "iqos_kit_green"
+    },
+    {
+      "jan": "7622100547488",
+      "name": "IQOS イルマ i ミネラ モデル",
+      "brand": "IQOS",
+      "official_price": 9980,
+      "buyback_price": 6000,
+      "rate": 60.12,
+      "profit": -3980,
+      "group": "iqos_kit_minera"
+    },
+    {
+      "jan": "7622100547044",
+      "name": "IQOS イルマ i アニバーサリーモデル 錫セット",
+      "brand": "IQOS",
+      "official_price": 9980,
+      "buyback_price": 7000,
+      "rate": 70.14,
+      "profit": -2980,
+      "group": "iqos_kit_anniversary"
+    },
+    {
+      "jan": "7622100547976",
+      "name": "IQOS イルマ i セレッティ モデル",
+      "brand": "IQOS",
+      "official_price": 14980,
+      "buyback_price": 10500,
+      "rate": 70.09,
+      "profit": -4480,
+      "group": "iqos_kit_seletti"
+    },
+    {
+      "jan": "7622100834465",
+      "name": "IQOS イルマ i プライム ブリーズブルー",
+      "brand": "IQOS",
+      "official_price": 12980,
+      "buyback_price": 7600,
+      "rate": 58.55,
+      "profit": -5380,
+      "group": "iqos_prime_blue"
+    },
+    {
+      "jan": "7622100834380",
+      "name": "IQOS イルマ i プライム ミッドナイトブラック",
+      "brand": "IQOS",
+      "official_price": 12980,
+      "buyback_price": 7600,
+      "rate": 58.55,
+      "profit": -5380,
+      "group": "iqos_prime_black"
+    },
+    {
+      "jan": "7622100834502",
+      "name": "IQOS イルマ i プライム アスペングリーン",
+      "brand": "IQOS",
+      "official_price": 12980,
+      "buyback_price": 7900,
+      "rate": 60.86,
+      "profit": -5080,
+      "group": "iqos_prime_aspen"
+    },
+    {
+      "jan": "7622100834540",
+      "name": "IQOS イルマ i プライム ガーネットレッド限定モデル",
+      "brand": "IQOS",
+      "official_price": 12980,
+      "buyback_price": 9000,
+      "rate": 69.34,
+      "profit": -3980,
+      "group": "iqos_prime_garnet"
+    },
+    {
+      "jan": "7622100547464",
+      "name": "IQOS イルマ i プライム ミネラ モデル",
+      "brand": "IQOS",
+      "official_price": 14980,
+      "buyback_price": 9800,
+      "rate": 65.42,
+      "profit": -5180,
+      "group": "iqos_prime_minera"
+    },
+    {
+      "jan": "7622100546993",
+      "name": "IQOS イルマ i プライム アニバーサリーモデル 錫セット",
+      "brand": "IQOS",
+      "official_price": 17980,
+      "buyback_price": 12000,
+      "rate": 66.74,
+      "profit": -5980,
+      "group": "iqos_prime_anniversary"
+    },
+    {
+      "jan": "7622100547952",
+      "name": "IQOS イルマ i プライム セレッティ モデル",
+      "brand": "IQOS",
+      "official_price": 24980,
+      "buyback_price": 18000,
+      "rate": 72.06,
+      "profit": -6980,
+      "group": "iqos_prime_seletti"
+    }
+  ]
 }
