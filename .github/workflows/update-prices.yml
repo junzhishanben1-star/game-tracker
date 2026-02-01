@@ -1,9 +1,10 @@
-name: Update Prices
+name: 買取価格自動更新
 
 on:
   schedule:
+    # 3時間ごとに実行（UTC: 0,3,6,9,12,15,18,21時）
     - cron: '0 */3 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # 手動実行も可能
 
 permissions:
   contents: write
@@ -11,16 +12,23 @@ permissions:
 jobs:
   update-prices:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests beautifulsoup4
-      - run: python scripts/update_prices.py
-      - run: |
+
+      - name: 価格データを同期
+        run: python scripts/update_prices.py
+
+      - name: 変更をコミット＆プッシュ
+        run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
-          git diff --staged --quiet || git commit -m "Update prices"
+          git diff --staged --quiet || git commit -m "🔄 価格更新 $(TZ='Asia/Tokyo' date '+%Y-%m-%d %H:%M JST')"
           git push
