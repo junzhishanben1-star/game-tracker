@@ -1068,7 +1068,7 @@
                     // 1. ポイント以下のみ（手出しなし）
                     // 2. ポイント消化率98%以上
                     const utilizationRate = (totalPrice / points) * 100;
-                    if (totalPrice <= points && utilizationRate >= 98) {
+                    if (totalPrice <= points && utilizationRate >= 99) {
                         
                         const pointsUsed = totalPrice;
                         const pointsRemaining = points - totalPrice;
@@ -1143,7 +1143,7 @@
             section.style.display = 'block';
             
             title.textContent = `✅ ${results.length}件の組み合わせが見つかりました`;
-            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率98%以上 / 買取率が高い順に表示`;
+            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率99%以上 / 買取率が高い順に表示`;
             
             if (results.length === 0) {
                 list.innerHTML = `
