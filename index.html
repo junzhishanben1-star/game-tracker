@@ -1073,7 +1073,9 @@
                     // 条件チェック
                     // 1. ポイント以下のみ（手出しなし）
                     // 2. 平均買取率が目標以上
-                    if (totalPrice <= points && avgRate >= targetRate) {
+                    // 3. ポイント消化率98%以上
+                    const utilizationRate = (totalPrice / points) * 100;
+                    if (totalPrice <= points && avgRate >= targetRate && utilizationRate >= 98) {
                         
                         const pointsUsed = totalPrice;
                         const pointsRemaining = points - totalPrice;
