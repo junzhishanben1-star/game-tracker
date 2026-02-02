@@ -267,7 +267,7 @@
                 <div id="bestProfitSection" style="display: none;">
                     <div class="results-header">
                         <h3 class="results-title">🏆 最も利益が出る組み合わせ</h3>
-                        <p class="results-subtitle">5個以内 × 消化率98%↑ × 買取率95%↑ × 利益最大</p>
+                        <p class="results-subtitle" id="bestProfitSubtitle">条件に応じて最適化</p>
                     </div>
                     <div id="bestProfitResult"></div>
                 </div>
@@ -368,590 +368,29 @@
         // group: 同一商品グループ（同じグループからは1つしか選べない）
         // ============================================
         const EMBEDDED_DATA = {
-                    "updated_at": "2026-02-02T20:28:02",
-                    "all_products": [
-                        {
-                            "jan": "4902370552683",
-                            "name": "Nintendo Switch 2 多言語対応版",
-                            "brand": "Nintendo",
-                            "official_price": 69980,
-                            "buyback_price": 85000,
-                            "rate": 121.46,
-                            "profit": 15020,
-                            "group": "switch2_main"
-                        },
-                        {
-                            "jan": "4902370553024",
-                            "name": "Nintendo Switch 2 国内版",
-                            "brand": "Nintendo",
-                            "official_price": 49980,
-                            "buyback_price": 46300,
-                            "rate": 92.64,
-                            "profit": -3680,
-                            "group": "switch2_main"
-                        },
-                        {
-                            "jan": "4902370553031",
-                            "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
-                            "brand": "Nintendo",
-                            "official_price": 53980,
-                            "buyback_price": 51500,
-                            "rate": 95.42,
-                            "profit": -2480,
-                            "group": "switch2_main"
-                        },
-                        {
-                            "jan": "4902370553505",
-                            "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
-                            "brand": "Nintendo",
-                            "official_price": 53980,
-                            "buyback_price": 51000,
-                            "rate": 94.48,
-                            "profit": -2980,
-                            "group": "switch2_main"
-                        },
-                        {
-                            "jan": "4902370552843",
-                            "name": "Nintendo Switch 2 Proコントローラー",
-                            "brand": "Nintendo",
-                            "official_price": 9980,
-                            "buyback_price": 8400,
-                            "rate": 84.17,
-                            "profit": -1580,
-                            "group": "switch2_procon"
-                        },
-                        {
-                            "jan": "4902370552744",
-                            "name": "Joy-Con 2 (L)/(R) ライトブルー/ライトレッド",
-                            "brand": "Nintendo",
-                            "official_price": 9980,
-                            "buyback_price": 8600,
-                            "rate": 86.17,
-                            "profit": -1380,
-                            "group": "joycon2_pair"
-                        },
-                        {
-                            "jan": "4902370552911",
-                            "name": "Nintendo Switch 2 ドックセット",
-                            "brand": "Nintendo",
-                            "official_price": 12980,
-                            "buyback_price": 11200,
-                            "rate": 86.29,
-                            "profit": -1780,
-                            "group": "switch2_dock"
-                        },
-                        {
-                            "jan": "4902370552706",
-                            "name": "Joy-Con 2 (L) ライトブルー",
-                            "brand": "Nintendo",
-                            "official_price": 4480,
-                            "buyback_price": 3500,
-                            "rate": 78.13,
-                            "profit": -980,
-                            "group": "joycon2_left"
-                        },
-                        {
-                            "jan": "4902370552720",
-                            "name": "Joy-Con 2 (R) ライトレッド",
-                            "brand": "Nintendo",
-                            "official_price": 4480,
-                            "buyback_price": 3500,
-                            "rate": 78.13,
-                            "profit": -980,
-                            "group": "joycon2_right"
-                        },
-                        {
-                            "jan": "4523052030185",
-                            "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-                            "brand": "SanDisk",
-                            "official_price": 7480,
-                            "buyback_price": 5800,
-                            "rate": 77.54,
-                            "profit": -1680,
-                            "group": "microsd_256"
-                        },
-                        {
-                            "jan": "8806095700670",
-                            "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-                            "brand": "Samsung",
-                            "official_price": 7480,
-                            "buyback_price": 5800,
-                            "rate": 77.54,
-                            "profit": -1680,
-                            "group": "microsd_256"
-                        },
-                        {
-                            "jan": "4902370548501",
-                            "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
-                            "brand": "Nintendo",
-                            "official_price": 37980,
-                            "buyback_price": 40600,
-                            "rate": 106.9,
-                            "profit": 2620,
-                            "group": "switch_oled"
-                        },
-                        {
-                            "jan": "4902370548495",
-                            "name": "Nintendo Switch (有機ELモデル) ホワイト",
-                            "brand": "Nintendo",
-                            "official_price": 37980,
-                            "buyback_price": 40600,
-                            "rate": 106.9,
-                            "profit": 2620,
-                            "group": "switch_oled"
-                        },
-                        {
-                            "jan": "4902370550733",
-                            "name": "Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型",
-                            "brand": "Nintendo",
-                            "official_price": 32978,
-                            "buyback_price": 32500,
-                            "rate": 98.55,
-                            "profit": -478,
-                            "group": "switch_standard"
-                        },
-                        {
-                            "jan": "4902370551198",
-                            "name": "Nintendo Switch Joy-Con(L)/(R) グレー 新型",
-                            "brand": "Nintendo",
-                            "official_price": 32978,
-                            "buyback_price": 32500,
-                            "rate": 98.55,
-                            "profit": -478,
-                            "group": "switch_standard"
-                        },
-                        {
-                            "jan": "4902370543278",
-                            "name": "Nintendo Switch リングフィットアドベンチャー",
-                            "brand": "Nintendo",
-                            "official_price": 8778,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -8778,
-                            "group": "ringfit"
-                        },
-                        {
-                            "jan": "4902370550504",
-                            "name": "Nintendo Switch Proコントローラー ゼルダの伝説",
-                            "brand": "Nintendo",
-                            "official_price": 7980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -7980,
-                            "group": "switch_procon"
-                        },
-                        {
-                            "jan": "4902370551136",
-                            "name": "Nintendo Switch Joy-Con (L)/(R) パステルパープル/パステルグリーン",
-                            "brand": "Nintendo",
-                            "official_price": 8778,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -8778,
-                            "group": "joycon_pair"
-                        },
-                        {
-                            "jan": "4902370551112",
-                            "name": "Nintendo Switch Joy-Con (L)/(R) パステルピンク/パステルイエロー",
-                            "brand": "Nintendo",
-                            "official_price": 8778,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -8778,
-                            "group": "joycon_pair"
-                        },
-                        {
-                            "jan": "4902370552027",
-                            "name": "Nintendo Switch Joy-Con(L)/(R) パステルピンク",
-                            "brand": "Nintendo",
-                            "official_price": 8778,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -8778,
-                            "group": "joycon_pair"
-                        },
-                        {
-                            "jan": "4902370536010",
-                            "name": "Nintendo Switch Proコントローラー",
-                            "brand": "Nintendo",
-                            "official_price": 7678,
-                            "buyback_price": 5800,
-                            "rate": 75.54,
-                            "profit": -1878,
-                            "group": "switch_procon_std"
-                        },
-                        {
-                            "jan": "4902370544091",
-                            "name": "Joy-Con充電グリップ",
-                            "brand": "Nintendo",
-                            "official_price": 2728,
-                            "buyback_price": 1800,
-                            "rate": 65.98,
-                            "profit": -928,
-                            "group": "joycon_grip"
-                        },
-                        {
-                            "jan": "4902370535730",
-                            "name": "Joy-Conストラップ ネオンレッド",
-                            "brand": "Nintendo",
-                            "official_price": 858,
-                            "buyback_price": 500,
-                            "rate": 58.28,
-                            "profit": -358,
-                            "group": "joycon_strap_red"
-                        },
-                        {
-                            "jan": "4902370535747",
-                            "name": "Joy-Conストラップ ネオンブルー",
-                            "brand": "Nintendo",
-                            "official_price": 858,
-                            "buyback_price": 500,
-                            "rate": 58.28,
-                            "profit": -358,
-                            "group": "joycon_strap_blue"
-                        },
-                        {
-                            "jan": "4902370544114",
-                            "name": "Nintendo Switchキャリングケース",
-                            "brand": "Nintendo",
-                            "official_price": 2178,
-                            "buyback_price": 1500,
-                            "rate": 68.87,
-                            "profit": -678,
-                            "group": "switch_case"
-                        },
-                        {
-                            "jan": "4902370544060",
-                            "name": "Nintendo Switch ACアダプター",
-                            "brand": "Nintendo",
-                            "official_price": 3278,
-                            "buyback_price": 2200,
-                            "rate": 67.11,
-                            "profit": -1078,
-                            "group": "switch_ac"
-                        },
-                        {
-                            "jan": "4948872417075",
-                            "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
-                            "brand": "Sony",
-                            "official_price": 119980,
-                            "buyback_price": 107200,
-                            "rate": 89.35,
-                            "profit": -12780,
-                            "group": "ps5_pro"
-                        },
-                        {
-                            "jan": "4948872415934",
-                            "name": "PlayStation 5 slim CFI-2000A01",
-                            "brand": "Sony",
-                            "official_price": 79980,
-                            "buyback_price": 74700,
-                            "rate": 93.4,
-                            "profit": -5280,
-                            "group": "ps5_slim"
-                        },
-                        {
-                            "jan": "0814585022308",
-                            "name": "Steam Deck OLED 1TB",
-                            "brand": "Valve",
-                            "official_price": 99800,
-                            "buyback_price": 103800,
-                            "rate": 104.01,
-                            "profit": 4000,
-                            "group": "steam_deck"
-                        },
-                        {
-                            "jan": "0815820025238",
-                            "name": "Meta Quest 3S 128GB",
-                            "brand": "Meta",
-                            "official_price": 48400,
-                            "buyback_price": 38600,
-                            "rate": 79.75,
-                            "profit": -9800,
-                            "group": "meta_quest3s"
-                        },
-                        {
-                            "jan": "4547410377224",
-                            "name": "FUJIFILM チェキフィルム 10枚入 INSTAX MINI JP 1",
-                            "brand": "FUJIFILM",
-                            "official_price": 1100,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -1100,
-                            "group": "cheki_film_10"
-                        },
-                        {
-                            "jan": "4547410377231",
-                            "name": "FUJIFILM チェキフィルム 20枚入 INSTAX MINI JP 2",
-                            "brand": "FUJIFILM",
-                            "official_price": 2100,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -2100,
-                            "group": "cheki_film_20"
-                        },
-                        {
-                            "jan": "4547410369137",
-                            "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
-                            "brand": "FUJIFILM",
-                            "official_price": 2178,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -2178,
-                            "group": "utsurundesu"
-                        },
-                        {
-                            "jan": "4547410550955",
-                            "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
-                            "brand": "FUJIFILM",
-                            "official_price": 2178,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -2178,
-                            "group": "utsurundesu_2025"
-                        },
-                        {
-                            "jan": "4547410348613",
-                            "name": "FUJIFILM チェキスクエア フィルム 10枚 WW1",
-                            "brand": "FUJIFILM",
-                            "official_price": 1320,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -1320,
-                            "group": "cheki_sq_10"
-                        },
-                        {
-                            "jan": "4547410370003",
-                            "name": "FUJIFILM チェキスクエア フィルム 20枚 WW2",
-                            "brand": "FUJIFILM",
-                            "official_price": 2480,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -2480,
-                            "group": "cheki_sq_20"
-                        },
-                        {
-                            "jan": "4547410489132",
-                            "name": "instax mini 12 ミントグリーン",
-                            "brand": "FUJIFILM",
-                            "official_price": 15180,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -15180,
-                            "group": "instax_mini12"
-                        },
-                        {
-                            "jan": "4547410489149",
-                            "name": "instax mini 12 クレイホワイト",
-                            "brand": "FUJIFILM",
-                            "official_price": 15180,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -15180,
-                            "group": "instax_mini12"
-                        },
-                        {
-                            "jan": "7622100834717",
-                            "name": "IQOS イルマ i ワン リーフグリーン",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -3980,
-                            "group": "iqos_one_green"
-                        },
-                        {
-                            "jan": "7622100834687",
-                            "name": "IQOS イルマ i ワン ビビッドテラコッタ",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -3980,
-                            "group": "iqos_one_terracotta"
-                        },
-                        {
-                            "jan": "7622100834724",
-                            "name": "IQOS イルマ i ワン デジタルバイオレット",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -3980,
-                            "group": "iqos_one_violet"
-                        },
-                        {
-                            "jan": "7622100834663",
-                            "name": "IQOS イルマ i ワン ブリーズブルー",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -3980,
-                            "group": "iqos_one_blue"
-                        },
-                        {
-                            "jan": "7622100834649",
-                            "name": "IQOS イルマ i ワン ミッドナイトブラック",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -3980,
-                            "group": "iqos_one_black"
-                        },
-                        {
-                            "jan": "7622100547938",
-                            "name": "IQOS イルマ i ワン セレッティ モデル",
-                            "brand": "IQOS",
-                            "official_price": 6980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -6980,
-                            "group": "iqos_one_seletti"
-                        },
-                        {
-                            "jan": "7622100547525",
-                            "name": "IQOS イルマ i ワン ミネラ モデル",
-                            "brand": "IQOS",
-                            "official_price": 4980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -4980,
-                            "group": "iqos_one_minera"
-                        },
-                        {
-                            "jan": "7622100547020",
-                            "name": "IQOS イルマ i ワン アニバーサリーモデル",
-                            "brand": "IQOS",
-                            "official_price": 5980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -5980,
-                            "group": "iqos_one_anniversary"
-                        },
-                        {
-                            "jan": "7622100548096",
-                            "name": "IQOS イルマ i ギャラクシーブルー",
-                            "brand": "IQOS",
-                            "official_price": 6980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -6980,
-                            "group": "iqos_kit_galaxy"
-                        },
-                        {
-                            "jan": "7622100834601",
-                            "name": "IQOS イルマ i リーフグリーン",
-                            "brand": "IQOS",
-                            "official_price": 6980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -6980,
-                            "group": "iqos_kit_green"
-                        },
-                        {
-                            "jan": "7622100547488",
-                            "name": "IQOS イルマ i ミネラ モデル",
-                            "brand": "IQOS",
-                            "official_price": 9980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -9980,
-                            "group": "iqos_kit_minera"
-                        },
-                        {
-                            "jan": "7622100547044",
-                            "name": "IQOS イルマ i アニバーサリーモデル 錫セット",
-                            "brand": "IQOS",
-                            "official_price": 9980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -9980,
-                            "group": "iqos_kit_anniversary"
-                        },
-                        {
-                            "jan": "7622100547976",
-                            "name": "IQOS イルマ i セレッティ モデル",
-                            "brand": "IQOS",
-                            "official_price": 14980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -14980,
-                            "group": "iqos_kit_seletti"
-                        },
-                        {
-                            "jan": "7622100834465",
-                            "name": "IQOS イルマ i プライム ブリーズブルー",
-                            "brand": "IQOS",
-                            "official_price": 12980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -12980,
-                            "group": "iqos_prime_blue"
-                        },
-                        {
-                            "jan": "7622100834380",
-                            "name": "IQOS イルマ i プライム ミッドナイトブラック",
-                            "brand": "IQOS",
-                            "official_price": 12980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -12980,
-                            "group": "iqos_prime_black"
-                        },
-                        {
-                            "jan": "7622100834502",
-                            "name": "IQOS イルマ i プライム アスペングリーン",
-                            "brand": "IQOS",
-                            "official_price": 12980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -12980,
-                            "group": "iqos_prime_aspen"
-                        },
-                        {
-                            "jan": "7622100834540",
-                            "name": "IQOS イルマ i プライム ガーネットレッド限定モデル",
-                            "brand": "IQOS",
-                            "official_price": 12980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -12980,
-                            "group": "iqos_prime_garnet"
-                        },
-                        {
-                            "jan": "7622100547464",
-                            "name": "IQOS イルマ i プライム ミネラ モデル",
-                            "brand": "IQOS",
-                            "official_price": 14980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -14980,
-                            "group": "iqos_prime_minera"
-                        },
-                        {
-                            "jan": "7622100546993",
-                            "name": "IQOS イルマ i プライム アニバーサリーモデル 錫セット",
-                            "brand": "IQOS",
-                            "official_price": 17980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -17980,
-                            "group": "iqos_prime_anniversary"
-                        },
-                        {
-                            "jan": "7622100547952",
-                            "name": "IQOS イルマ i プライム セレッティ モデル",
-                            "brand": "IQOS",
-                            "official_price": 24980,
-                            "buyback_price": 0,
-                            "rate": 0,
-                            "profit": -24980,
-                            "group": "iqos_prime_seletti"
-                        }
-                    ]
-                };
+            "updated_at": "2026-02-01T12:00:00",
+            "all_products": [
+                {"jan": "4902370552683", "name": "Nintendo Switch 2 多言語対応版", "brand": "Nintendo", "official_price": 69980, "buyback_price": 85000, "rate": 121.46, "profit": 15020, "group": "switch2_main"},
+                {"jan": "4902370553024", "name": "Nintendo Switch 2 国内版", "brand": "Nintendo", "official_price": 49980, "buyback_price": 46300, "rate": 92.64, "profit": -3680, "group": "switch2_main"},
+                {"jan": "4902370553031", "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版", "brand": "Nintendo", "official_price": 53980, "buyback_price": 51500, "rate": 95.42, "profit": -2480, "group": "switch2_main"},
+                {"jan": "4902370553505", "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版", "brand": "Nintendo", "official_price": 53980, "buyback_price": 51000, "rate": 94.48, "profit": -2980, "group": "switch2_main"},
+                {"jan": "4902370548501", "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド", "brand": "Nintendo", "official_price": 37980, "buyback_price": 40600, "rate": 106.90, "profit": 2620, "group": "switch_oled"},
+                {"jan": "4902370548495", "name": "Nintendo Switch (有機ELモデル) ホワイト", "brand": "Nintendo", "official_price": 37980, "buyback_price": 40600, "rate": 106.90, "profit": 2620, "group": "switch_oled"},
+                {"jan": "4902370550733", "name": "Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型", "brand": "Nintendo", "official_price": 32978, "buyback_price": 32500, "rate": 98.55, "profit": -478, "group": "switch_standard"},
+                {"jan": "4902370551198", "name": "Nintendo Switch Joy-Con(L)/(R) グレー 新型", "brand": "Nintendo", "official_price": 32978, "buyback_price": 32500, "rate": 98.55, "profit": -478, "group": "switch_standard"},
+                {"jan": "0814585022308", "name": "Steam Deck OLED 1TB", "brand": "Valve", "official_price": 99800, "buyback_price": 103800, "rate": 104.01, "profit": 4000, "group": "steam_deck"},
+                {"jan": "4948872417075", "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版", "brand": "Sony", "official_price": 119980, "buyback_price": 107200, "rate": 89.35, "profit": -12780, "group": "ps5_pro"},
+                {"jan": "4948872415934", "name": "PlayStation 5 slim CFI-2000A01", "brand": "Sony", "official_price": 79980, "buyback_price": 74700, "rate": 93.40, "profit": -5280, "group": "ps5_slim"},
+                {"jan": "4902370552843", "name": "Nintendo Switch 2 Proコントローラー", "brand": "Nintendo", "official_price": 9980, "buyback_price": 8400, "rate": 84.17, "profit": -1580, "group": "switch2_procon"},
+                {"jan": "4902370552744", "name": "Joy-Con 2 (L)/(R) ライトブルー/ライトレッド", "brand": "Nintendo", "official_price": 9980, "buyback_price": 8600, "rate": 86.17, "profit": -1380, "group": "joycon2_pair"},
+                {"jan": "4902370552911", "name": "Nintendo Switch 2 ドックセット", "brand": "Nintendo", "official_price": 12980, "buyback_price": 11200, "rate": 86.29, "profit": -1780, "group": "switch2_dock"},
+                {"jan": "0815820025238", "name": "Meta Quest 3S 128GB", "brand": "Meta", "official_price": 48400, "buyback_price": 38600, "rate": 79.75, "profit": -9800, "group": "meta_quest3s"},
+                {"jan": "4902370552706", "name": "Joy-Con 2 (L) ライトブルー", "brand": "Nintendo", "official_price": 4480, "buyback_price": 3500, "rate": 78.13, "profit": -980, "group": "joycon2_left"},
+                {"jan": "4902370552720", "name": "Joy-Con 2 (R) ライトレッド", "brand": "Nintendo", "official_price": 4480, "buyback_price": 3500, "rate": 78.13, "profit": -980, "group": "joycon2_right"},
+                {"jan": "4523052030185", "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2", "brand": "SanDisk", "official_price": 7480, "buyback_price": 5800, "rate": 77.54, "profit": -1680, "group": "microsd_256"},
+                {"jan": "8806095700670", "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2", "brand": "Samsung", "official_price": 7480, "buyback_price": 5800, "rate": 77.54, "profit": -1680, "group": "microsd_256"}
+            ]
+        };
 
         // ============================================
         // データ読み込み
@@ -987,15 +426,20 @@
         }
 
         // ============================================
-        // 組み合わせ検索アルゴリズム（少数精鋭・利益最大化）
-        // ¥30,000以上: 最大1個 / それ以外: 最大3個 / 総個数: 最大5個
+        // 組み合わせ検索アルゴリズム（greedy + 探索のハイブリッド）
         // ============================================
         function findCombinations(points, maxItems) {
-            const results = [];
-            const minPrice = points * 0.98; // 消化率98%以上
-            const MAX_TOTAL = 5; // 総個数上限
-            
-            // 買取率90%以上 & 高い順、同一グループ代表のみ
+            const allResults = [];
+            const minPrice = points * 0.98;
+
+            // ポイント額に応じた個数上限
+            let MAX_TOTAL;
+            if (points <= 50000) MAX_TOTAL = 5;
+            else if (points <= 100000) MAX_TOTAL = 7;
+            else if (points <= 200000) MAX_TOTAL = 10;
+            else MAX_TOTAL = 15;
+
+            // 候補: 買取率90%以上 & グループ代表
             const sorted = [...allProducts].filter(p => p.rate >= 90).sort((a, b) => b.rate - a.rate);
             const grouped = [];
             const seenGroups = new Set();
@@ -1006,9 +450,64 @@
                 }
                 grouped.push(p);
             }
-            
+
+            function maxQtyFor(p, remainSlots) {
+                return Math.min(p.official_price >= 30000 ? 1 : 3, remainSlots);
+            }
+
+            // ① 貪欲法: ソート順に詰め込んで確実に結果を出す
+            function greedyFill(list) {
+                const cart = {};
+                let remaining = points, count = 0;
+                for (const p of list) {
+                    if (count >= MAX_TOTAL) break;
+                    const maxQ = Math.min(maxQtyFor(p, MAX_TOTAL - count), Math.floor(remaining / p.official_price));
+                    if (maxQ <= 0) continue;
+                    cart[p.jan] = { product: p, qty: maxQ };
+                    remaining -= p.official_price * maxQ;
+                    count += maxQ;
+                }
+                let tp = 0, tb = 0, tc = 0;
+                const items = [];
+                for (const [jan, info] of Object.entries(cart)) {
+                    tp += info.product.official_price * info.qty;
+                    tb += info.product.buyback_price * info.qty;
+                    tc += info.qty;
+                    items.push({ ...info.product, qty: info.qty });
+                }
+                if (tc === 0 || tp === 0) return null;
+                const avgRate = (tb / tp) * 100;
+                if (avgRate < 95) return null;
+                return {
+                    items, itemCount: tc, totalPrice: tp, totalBuyback: tb,
+                    avgRate: Math.round(avgRate * 100) / 100, cashOut: 0,
+                    profit: tb - tp, pointsUsed: tp,
+                    pointsRemaining: points - tp,
+                    utilizationRate: Math.round((tp / points) * 10000) / 100
+                };
+            }
+
+            // 複数のソート戦略でgreedy
+            const byProfit = [...grouped].sort((a, b) => (b.buyback_price - b.official_price) - (a.buyback_price - a.official_price));
+            const byPrice = [...grouped].sort((a, b) => b.official_price - a.official_price);
+            const byProfitRate = [...grouped].sort((a, b) => {
+                const ra = (b.buyback_price - b.official_price) / b.official_price;
+                const rb = (a.buyback_price - a.official_price) / a.official_price;
+                return ra - rb;
+            });
+
+            [grouped, byProfit, byPrice, byProfitRate].forEach(list => {
+                const r = greedyFill(list);
+                if (r) allResults.push(r);
+            });
+
+            // ② 探索法（2秒タイムアウト付き）
+            const SEARCH_LIMIT = 500;
+            const startTime = Date.now();
+
             function search(idx, cart, totalPrice, totalBuyback, totalCount) {
-                // 条件を満たす組み合わせを記録
+                if (Date.now() - startTime > 2000) return;
+
                 if (totalCount > 0 && totalPrice >= minPrice && totalPrice <= points) {
                     const avgRate = (totalBuyback / totalPrice) * 100;
                     if (avgRate >= 95) {
@@ -1016,60 +515,51 @@
                         for (const [jan, info] of Object.entries(cart)) {
                             items.push({ ...info.product, qty: info.qty });
                         }
-                        results.push({
-                            items,
-                            itemCount: totalCount,
-                            totalPrice,
-                            totalBuyback,
-                            avgRate: Math.round(avgRate * 100) / 100,
-                            cashOut: 0,
-                            profit: totalBuyback - totalPrice,
-                            pointsUsed: totalPrice,
+                        allResults.push({
+                            items, itemCount: totalCount, totalPrice, totalBuyback,
+                            avgRate: Math.round(avgRate * 100) / 100, cashOut: 0,
+                            profit: totalBuyback - totalPrice, pointsUsed: totalPrice,
                             pointsRemaining: points - totalPrice,
                             utilizationRate: Math.round((totalPrice / points) * 10000) / 100
                         });
                     }
                 }
-                
-                if (results.length >= 500) return;
-                if (totalCount >= MAX_TOTAL) return; // 総個数上限
-                
+
+                if (allResults.length >= SEARCH_LIMIT) return;
+                if (totalCount >= MAX_TOTAL) return;
+
                 for (let i = idx; i < grouped.length; i++) {
                     const p = grouped[i];
-                    const maxQty = Math.min(
-                        p.official_price >= 30000 ? 1 : 3,
-                        MAX_TOTAL - totalCount // 残り枠
-                    );
-                    
-                    for (let q = 1; q <= maxQty; q++) {
-                        const addPrice = p.official_price * q;
-                        const newPrice = totalPrice + addPrice;
-                        
+                    const mq = maxQtyFor(p, MAX_TOTAL - totalCount);
+
+                    for (let q = 1; q <= mq; q++) {
+                        const newPrice = totalPrice + p.official_price * q;
                         if (newPrice > points) break;
-                        
+
                         cart[p.jan] = { product: p, qty: q };
-                        
                         search(i + 1, cart, newPrice, totalBuyback + p.buyback_price * q, totalCount + q);
-                        
-                        if (results.length >= 500) { delete cart[p.jan]; return; }
+
+                        if (allResults.length >= SEARCH_LIMIT || Date.now() - startTime > 2000) {
+                            delete cart[p.jan]; return;
+                        }
                     }
                     delete cart[p.jan];
                 }
             }
-            
+
             search(0, {}, 0, 0, 0);
-            
+
             // 重複除去
             const uniqueMap = new Map();
-            for (const r of results) {
+            for (const r of allResults) {
                 const key = r.items.map(i => `${i.jan}x${i.qty}`).sort().join(',');
                 if (!uniqueMap.has(key) || r.profit > uniqueMap.get(key).profit) {
                     uniqueMap.set(key, r);
                 }
             }
             const unique = [...uniqueMap.values()];
-            
-            // ソート: 1商品あたり利益効率 → 個数が少ない → 利益が高い
+
+            // ソート: 利益効率 → 個数少ない → 利益高い
             unique.sort((a, b) => {
                 const effA = a.profit / a.itemCount;
                 const effB = b.profit / b.itemCount;
@@ -1077,9 +567,10 @@
                 if (a.itemCount !== b.itemCount) return a.itemCount - b.itemCount;
                 return b.profit - a.profit;
             });
-            
+
             return unique.slice(0, 15);
         }
+
 
         // ============================================
         // 検索実行
@@ -1101,6 +592,11 @@
             const byRate = results.slice(0, 15);
             
             renderResults(byRate, bestProfit, points);
+            
+            // 個数上限をサブタイトルに反映
+            let maxT = points <= 50000 ? 5 : points <= 100000 ? 7 : points <= 200000 ? 10 : 15;
+            const bpSub = document.getElementById('bestProfitSubtitle');
+            if (bpSub) bpSub.textContent = `${maxT}個以内 × 消化率98%↑ × 買取率95%↑ × 利益最大`;
         }
 
         // ============================================
