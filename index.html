@@ -455,6 +455,85 @@
             font-size: 1rem;
         }
 
+        /* 提案エリア */
+        .suggest-area {
+            margin-top: 12px;
+        }
+
+        .suggest-header {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #b45309;
+            background: #fffbeb;
+            padding: 8px 16px;
+            border-radius: 8px 8px 0 0;
+            border: 1px solid #fcd34d;
+            border-bottom: none;
+        }
+
+        .suggest-empty {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            padding: 8px 16px;
+            text-align: center;
+        }
+
+        .suggest-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: #fffef5;
+            border-left: 1px solid #fcd34d;
+            border-right: 1px solid #fcd34d;
+            font-size: 0.85rem;
+        }
+
+        .suggest-item:last-child {
+            border-bottom: 1px solid #fcd34d;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .suggest-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .suggest-item-name {
+            display: block;
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+
+        .suggest-item-price {
+            display: block;
+            font-size: 0.7rem;
+            color: var(--gray-500);
+        }
+
+        .suggest-add-btn {
+            padding: 4px 12px;
+            background: #f59e0b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.15s;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .suggest-add-btn:hover {
+            background: #d97706;
+        }
+
+        .combo-item-adj.added-item {
+            background: #fefce8;
+            border: 1px dashed #fcd34d;
+        }
+
         /* 商品一覧 */
         .products-section {
             background: rgba(255, 255, 255, 0.95);
@@ -1290,6 +1369,7 @@
                                 `;
                             }).join('')}
                         </div>
+                        <div class="suggest-area" id="suggest-${bpId}"></div>
                     </div>
                 `;
             } else {
@@ -1378,6 +1458,7 @@
                                 `;
                             }).join('')}
                         </div>
+                        <div class="suggest-area" id="suggest-${cardId}"></div>
                     </div>
                 `;
             }).join('');
@@ -1488,8 +1569,114 @@
                     `;
                 }
             }
+
+            // 提案: 余ったポイントで追加できる商品を表示
+            showSuggestions(cardId, remaining, qty, items);
         }
 
+        function showSuggestions(cardId, remaining, currentQty, currentItems) {
+            const suggestEl = document.getElementById(`suggest-${cardId}`);
+            if (!suggestEl) return;
+
+            if (remaining < 500) {
+                suggestEl.innerHTML = '';
+                return;
+            }
+
+            const usedGroups = new Set();
+            for (const item of currentItems) {
+                if ((currentQty[item.jan] || 0) > 0 && item.group) {
+                    usedGroups.add(item.group);
+                }
+            }
+
+            const candidates = allProducts
+                .filter(p => {
+                    if (p.official_price > remaining) return false;
+                    if (p.group && usedGroups.has(p.group)) return false;
+                    return true;
+                })
+                .sort((a, b) => b.rate - a.rate)
+                .slice(0, 5);
+
+            if (candidates.length === 0) {
+                suggestEl.innerHTML = `
+                    <div class="suggest-empty">
+                        残り ¥${remaining.toLocaleString()} で追加できる商品はありません
+                    </div>
+                `;
+                return;
+            }
+
+            suggestEl.innerHTML = `
+                <div class="suggest-header">
+                    💡 残り ¥${remaining.toLocaleString()} で追加できる商品
+                </div>
+                ${candidates.map(p => {
+                    const rateClass = p.rate >= 100 ? 'high' : p.rate >= 95 ? 'medium' : 'low';
+                    return `
+                        <div class="suggest-item">
+                            <div class="suggest-item-info">
+                                <span class="suggest-item-name">${escapeHtml(p.name)}</span>
+                                <span class="suggest-item-price">¥${p.official_price.toLocaleString()} → 買取 ¥${p.buyback_price.toLocaleString()}</span>
+                            </div>
+                            <span class="combo-item-rate ${rateClass}">${p.rate}%</span>
+                            <button class="suggest-add-btn" onclick="addSuggestion('${cardId}','${p.jan}')">＋追加</button>
+                        </div>
+                    `;
+                }).join('')}
+            `;
+        }
+
+        function addSuggestion(cardId, jan) {
+            const items = window._cardItems[cardId] || [];
+            const product = allProducts.find(p => p.jan === jan);
+            if (!product) return;
+
+            if (!items.find(i => i.jan === jan)) {
+                items.push(product);
+                window._cardItems[cardId] = items;
+
+                const container = document.getElementById(`card-${cardId}`);
+                if (container) {
+                    const itemsDiv = container.querySelector('.combination-items');
+                    if (itemsDiv) {
+                        const rateClass = product.rate >= 100 ? 'high' : product.rate >= 95 ? 'medium' : 'low';
+                        const row = document.createElement('div');
+                        row.className = 'combo-item-adj added-item';
+                        row.id = `row-${cardId}-${jan}`;
+                        row.innerHTML = `
+                            <div class="combo-item-left">
+                                <span class="combo-item-name">${escapeHtml(product.name)}</span>
+                                <span class="combo-item-price">定価 ¥${product.official_price.toLocaleString()} / 買取 ¥${product.buyback_price.toLocaleString()}</span>
+                            </div>
+                            <div class="combo-item-right">
+                                <span class="combo-item-rate ${rateClass}">${product.rate}%</span>
+                                <div class="qty-adj">
+                                    <button class="qty-btn minus" onclick="adjustCardQty('${cardId}','${jan}',-1)">−</button>
+                                    <span class="qty-value has-items" id="qty-${cardId}-${jan}">1</span>
+                                    <button class="qty-btn plus" onclick="adjustCardQty('${cardId}','${jan}',1)">＋</button>
+                                </div>
+                            </div>
+                        `;
+                        itemsDiv.appendChild(row);
+                    }
+                }
+            }
+
+            const qty = window._cardQty[cardId] || {};
+            qty[jan] = (qty[jan] || 0) + 1;
+            window._cardQty[cardId] = qty;
+
+            const qtyEl = document.getElementById(`qty-${cardId}-${jan}`);
+            if (qtyEl) {
+                qtyEl.textContent = qty[jan];
+                qtyEl.className = 'qty-value has-items';
+            }
+
+            recalcCard(cardId);
+        }
+        // ============================================
         // ============================================
         // 商品一覧表示
         // ============================================
