@@ -1,40 +1,49 @@
-name: 買取価格更新（モバイル一番スクレイピング）
+name: Update Prices
 
 on:
   schedule:
+    # 3時間ごとに実行（JST 0:00, 3:00, 6:00, 9:00, 12:00, 15:00, 18:00, 21:00）
     - cron: '0 */3 * * *'
-  workflow_dispatch:
+  workflow_dispatch:  # 手動実行も可能
 
 permissions:
   contents: write
 
 jobs:
-  update-prices:
+  scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
+    
     steps:
-      - name: チェックアウト
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Python セットアップ
+      
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-
-      - name: Playwright インストール
+          python-version: '3.12'
+      
+      - name: Install dependencies
         run: |
           pip install playwright
           playwright install chromium
           playwright install-deps chromium
-
-      - name: モバイル一番から価格取得
+      
+      - name: Run scraper v6
         run: python scripts/scrape_prices.py
-
-      - name: 変更をコミット＆プッシュ
+        timeout-minutes: 10
+      
+      - name: Commit and push
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add -A
-          git diff --staged --quiet || git commit -m "🔄 価格更新 $(TZ='Asia/Tokyo' date '+%Y-%m-%d %H:%M JST')"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/prices.json index.html
+          
+          # 変更がある場合のみコミット
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            TIMESTAMP=$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')
+            PRODUCT_COUNT=$(python3 -c "import json; d=json.load(open('data/prices.json')); print(d['count'])")
+            git commit -m "🔄 Update prices: ${PRODUCT_COUNT} products (${TIMESTAMP})"
+            git push
+          fi
