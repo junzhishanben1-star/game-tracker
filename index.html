@@ -1047,76 +1047,63 @@
         // ============================================
         function findCombinations(points, maxItems) {
             const results = [];
+            const minPrice = points * 0.99; // 消化率99%
             
-            // 1点から指定数まで探索
-            for (let itemCount = 1; itemCount <= maxItems; itemCount++) {
-                const combos = getCombinations(allProducts, itemCount);
-                
-                for (const combo of combos) {
-                    // 同一グループの商品が含まれていないかチェック
-                    const groups = combo.map(p => p.group).filter(g => g);
-                    const uniqueGroups = new Set(groups);
-                    if (groups.length !== uniqueGroups.size) {
-                        continue;
-                    }
-                    
-                    const totalPrice = combo.reduce((sum, p) => sum + p.official_price, 0);
-                    const totalBuyback = combo.reduce((sum, p) => sum + p.buyback_price, 0);
+            // 買取率が高い順にソートしておく
+            const sorted = [...allProducts].sort((a, b) => b.rate - a.rate);
+            
+            // 枝刈り付き再帰探索
+            function search(startIdx, combo, totalPrice, totalBuyback, usedGroups) {
+                // 現在の組み合わせが条件を満たすか
+                if (combo.length > 0 && totalPrice >= minPrice && totalPrice <= points) {
                     const avgRate = (totalBuyback / totalPrice) * 100;
+                    results.push({
+                        items: [...combo],
+                        itemCount: combo.length,
+                        totalPrice,
+                        totalBuyback,
+                        avgRate: Math.round(avgRate * 100) / 100,
+                        cashOut: 0,
+                        profit: totalBuyback - totalPrice,
+                        pointsUsed: totalPrice,
+                        pointsRemaining: points - totalPrice,
+                        utilizationRate: Math.round((totalPrice / points) * 10000) / 100
+                    });
+                }
+                
+                // 上限に達した or 十分な結果が集まった
+                if (combo.length >= maxItems || results.length >= 200) return;
+                
+                for (let i = startIdx; i < sorted.length; i++) {
+                    const p = sorted[i];
+                    const newTotal = totalPrice + p.official_price;
                     
-                    // 条件チェック
-                    // 1. ポイント以下のみ（手出しなし）
-                    // 2. ポイント消化率98%以上
-                    const utilizationRate = (totalPrice / points) * 100;
-                    if (totalPrice <= points && utilizationRate >= 99) {
-                        
-                        const pointsUsed = totalPrice;
-                        const pointsRemaining = points - totalPrice;
-                        
-                        results.push({
-                            items: combo,
-                            itemCount: combo.length,
-                            totalPrice,
-                            totalBuyback,
-                            avgRate: Math.round(avgRate * 100) / 100,
-                            cashOut: 0,
-                            profit: totalBuyback - totalPrice,
-                            pointsUsed,
-                            pointsRemaining,
-                            utilizationRate: Math.round(utilizationRate * 100) / 100
-                        });
-                    }
+                    // 枝刈り: 予算オーバー
+                    if (newTotal > points) continue;
+                    
+                    // 枝刈り: 同一グループ
+                    if (p.group && usedGroups.has(p.group)) continue;
+                    
+                    if (p.group) usedGroups.add(p.group);
+                    combo.push(p);
+                    
+                    search(i + 1, combo, newTotal, totalBuyback + p.buyback_price, usedGroups);
+                    
+                    combo.pop();
+                    if (p.group) usedGroups.delete(p.group);
                 }
             }
+            
+            search(0, [], 0, 0, new Set());
             
             // ソート：平均買取率が高い順
             results.sort((a, b) => {
-                // 1. 平均買取率が高い順
                 if (b.avgRate !== a.avgRate) return b.avgRate - a.avgRate;
-                // 2. 同じならポイント消化率が高い順
                 if (b.utilizationRate !== a.utilizationRate) return b.utilizationRate - a.utilizationRate;
-                // 3. 同じなら商品数が少ない順
                 return a.itemCount - b.itemCount;
             });
             
-            // 上位15件を返す
             return results.slice(0, 15);
-        }
-
-        // 組み合わせ生成（各商品1点まで・重複なし）
-        function getCombinations(arr, k) {
-            if (k === 1) return arr.map(item => [item]);
-            if (k > arr.length) return [];
-            
-            const result = [];
-            for (let i = 0; i <= arr.length - k; i++) {
-                const head = arr[i];
-                const tailCombos = getCombinations(arr.slice(i + 1), k - 1);
-                for (const tail of tailCombos) {
-                    result.push([head, ...tail]);
-                }
-            }
-            return result;
         }
 
         // ============================================
