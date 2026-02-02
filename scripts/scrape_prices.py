@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """
-ゲーム機買取率トラッカー - Playwright スクレイピングスクリプト
-モバイル一番 (mobile-ichiban.com) から最新買取価格を取得し、
-prices.json と index.html の EMBEDDED_DATA を更新する。
+ゲーム機買取率トラッカー - Playwright スクレイピングスクリプト v4
+モバイル一番 (mobile-ichiban.com) から最新買取価格を取得
 
-v3: JAN抽出を根本的に修正 - innerTextベースのパースに変更
+v4の方針:
+- 全ページを巡回するのではなく、サイドバーメニューをクリックして
+  正しいカテゴリページに遷移する
+- ページ2の「おすすめ商品」フッターを除外する
+- Switch 2, FUJIFILM instax, IQOS はメニューから遷移
 """
 
 import json
@@ -79,17 +82,45 @@ PRODUCT_MASTER = {
     "7622100547952": {"brand": "IQOS", "official_price": 24980, "group": "iqos_prime_seletti"},
 }
 
-# スクレイピング対象ページ
-SCRAPE_URLS = [
-    "https://www.mobile-ichiban.com/Prod/2/01/01",  # Nintendo Switch
-    "https://www.mobile-ichiban.com/Prod/2/01/02",  # PlayStation
-    "https://www.mobile-ichiban.com/Prod/2/01/03",  # Nintendo Switch 2
-    "https://www.mobile-ichiban.com/Prod/2/01/06",  # Meta Quest
-    "https://www.mobile-ichiban.com/Prod/2/01/07",  # Steam Deck
-    "https://www.mobile-ichiban.com/Prod/2/02/14",  # FUJIFILM instax
-    "https://www.mobile-ichiban.com/Prod/2/10/01",  # IQOS ILUMA ONE
-    "https://www.mobile-ichiban.com/Prod/2/10/02",  # IQOS ILUMA PRIME
-    "https://www.mobile-ichiban.com/Prod/2/10/03",  # IQOS ILUMA KIT
+# メニュークリック方式でのカテゴリ遷移
+# (メニューテキスト階層, 説明)
+MENU_CATEGORIES = [
+    {
+        "name": "Nintendo Switch 2",
+        "menu_clicks": ["家電買取", "ゲーム", "Nintendo Switch 2"],
+    },
+    {
+        "name": "Nintendo Switch",
+        "menu_clicks": ["家電買取", "ゲーム", "Nintendo Switch"],
+    },
+    {
+        "name": "PlayStation",
+        "menu_clicks": ["家電買取", "ゲーム", "PlayStation"],
+    },
+    {
+        "name": "Meta Quest",
+        "menu_clicks": ["家電買取", "ゲーム", "Meta Quest"],
+    },
+    {
+        "name": "Steam Deck",
+        "menu_clicks": ["家電買取", "ゲーム", "Steam Deck"],
+    },
+    {
+        "name": "FUJIFILM instax",
+        "menu_clicks": ["家電買取", "カメラ", "FUJIFILM instax"],
+    },
+    {
+        "name": "IQOS ILUMA ONE",
+        "menu_clicks": ["家電買取", "IQOS", "IQOS ILUMA ONE"],
+    },
+    {
+        "name": "IQOS ILUMA PRIME",
+        "menu_clicks": ["家電買取", "IQOS", "IQOS ILUMA PRIME"],
+    },
+    {
+        "name": "IQOS ILUMA KIT",
+        "menu_clicks": ["家電買取", "IQOS", "IQOS ILUMA KIT"],
+    },
 ]
 
 
@@ -97,68 +128,42 @@ def get_script_dir():
     return os.path.dirname(os.path.abspath(__file__))
 
 
-async def scrape_page_products(page, debug=False):
-    """
-    現在のページからJAN+商品名+買取価格を抽出
-    v3: page.content()のHTMLソースから直接正規表現で抽出
-    """
-    html = await page.content()
-    
-    # デバッグ: HTMLに含まれるJANを全て出力
-    all_jans_in_html = re.findall(r'JAN[：:]\s*(\d{7,14})', html)
-    if debug and all_jans_in_html:
-        print(f"    [DEBUG] HTML内JAN一覧: {all_jans_in_html[:10]}")
-    
-    # === 方式: HTML全体からJAN番号ごとに価格を抽出 ===
+def extract_products_from_html(html):
+    """HTMLソースからJAN+商品名+買取価格を抽出"""
     results = []
-    
-    # JANの出現位置を全て取得
+
     jan_pattern = re.compile(r'JAN[：:]\s*(\d{7,14})')
     jan_matches = list(jan_pattern.finditer(html))
-    
+
     for i, m in enumerate(jan_matches):
         jan = m.group(1)
         jan_pos = m.start()
-        
-        # JANの後〜次のJANまで（または2000文字以内）で価格を探す
+
+        # JANの後〜次のJANまで（または3000文字以内）で価格を探す
         if i + 1 < len(jan_matches):
             end_pos = jan_matches[i + 1].start()
         else:
             end_pos = min(jan_pos + 3000, len(html))
-        
+
         after_jan = html[jan_pos:end_pos]
-        
-        # 価格パターン: XX,XXX円 (カンマ区切り) 
-        price_matches = re.findall(r'(\d{1,3}(?:,\d{3})+)円', after_jan)
-        
-        # 「新品」の後の最初の価格を使う（最も信頼性が高い）
-        # 新品マーク後の価格、または最後の価格を使う
+
+        # 価格パターン: XX,XXX円
         buyback_price = 0
-        if price_matches:
-            # 新品の直後の価格を探す
-            shinpin_match = re.search(r'新品.*?(\d{1,3}(?:,\d{3})+)円', after_jan, re.DOTALL)
-            if shinpin_match:
-                buyback_price = int(shinpin_match.group(1).replace(',', ''))
-            else:
-                # 最後の価格を使う
+        shinpin_match = re.search(r'新品.*?(\d{1,3}(?:,\d{3})+)円', after_jan, re.DOTALL)
+        if shinpin_match:
+            buyback_price = int(shinpin_match.group(1).replace(',', ''))
+        else:
+            price_matches = re.findall(r'(\d{1,3}(?:,\d{3})+)円', after_jan)
+            if price_matches:
                 buyback_price = int(price_matches[-1].replace(',', ''))
-        
+
         # JANの前のHTMLから商品名を取得
-        # 商品名は通常、JANの直前のテキストブロックに含まれる
         before_jan = html[max(0, jan_pos - 800):jan_pos]
-        
         name = ""
-        
-        # 方式A: HTMLタグ内のテキストから商品名を抽出
-        # <div>や<p>のテキストコンテンツから取得
         text_blocks = re.findall(r'>([^<]{5,120})<', before_jan)
-        # 商品名候補をフィルタ
         for block in reversed(text_blocks):
             block = block.strip()
-            if not block:
-                continue
-            # スキップ対象
-            if re.match(r'^[\s\d,円]+$', block):
+            if not block or re.match(r'^[\s\d,円]+$', block):
                 continue
             if block in ('強', '化', '新品', '中古', '来店', '確定', '&nbsp;'):
                 continue
@@ -170,19 +175,113 @@ async def scrape_page_products(page, debug=False):
                 continue
             name = block
             break
-        
+
         if buyback_price > 0:
             results.append({
                 "jan": jan,
                 "name": name or f"JAN:{jan}",
                 "buyback_price": buyback_price
             })
-    
+
     return results
 
 
+async def navigate_to_category(page, category):
+    """サイドバーメニューをクリックしてカテゴリページに遷移"""
+    menu_clicks = category["menu_clicks"]
+    cat_name = category["name"]
+
+    # まずトップページに移動
+    await page.goto("https://www.mobile-ichiban.com/", wait_until="networkidle", timeout=30000)
+    await page.wait_for_timeout(2000)
+
+    # メニューの各階層をクリック
+    for i, menu_text in enumerate(menu_clicks):
+        try:
+            # テキスト完全一致のリンク/ボタンを探す
+            selector = f'text="{menu_text}"'
+            element = await page.wait_for_selector(selector, timeout=5000)
+            if element:
+                await element.click()
+                await page.wait_for_timeout(1500)
+            else:
+                print(f"  ⚠️ メニュー '{menu_text}' が見つかりません")
+                return False
+        except Exception as e:
+            print(f"  ⚠️ メニュー '{menu_text}' クリック失敗: {e}")
+            return False
+
+    # ページ遷移完了待ち
+    await page.wait_for_timeout(3000)
+    return True
+
+
+async def scrape_category(page, category, scraped):
+    """1カテゴリの全ページをスクレイピング"""
+    cat_name = category["name"]
+    print(f"🔍 {cat_name}")
+
+    # メニュークリックでカテゴリページに遷移
+    navigated = await navigate_to_category(page, category)
+    if not navigated:
+        return
+
+    page_num = 1
+    total_found = 0
+
+    while True:
+        html = await page.content()
+        current_url = page.url
+        
+        if page_num == 1:
+            print(f"  URL: {current_url}")
+
+        products = extract_products_from_html(html)
+
+        # ページ2以降の「おすすめ商品」フッター重複を除外
+        # （前ページと同じ4商品が出るパターンを除去）
+        if not products:
+            jan_count = len(re.findall(r'JAN[：:]\s*\d{7,14}', html))
+            print(f"  ⚠️ ページ{page_num}: 商品なし (HTML内JAN:{jan_count}個)")
+            if page_num == 1 and jan_count == 0:
+                text = await page.evaluate("() => document.body.innerText.substring(0, 300)")
+                print(f"  [DEBUG] innerText冒頭:\n{text[:200]}")
+            break
+
+        found = 0
+        for item in products:
+            jan = item.get("jan", "")
+            if jan in PRODUCT_MASTER and jan not in scraped:
+                scraped[jan] = {
+                    "name": item.get("name", ""),
+                    "buyback_price": item.get("buyback_price", 0)
+                }
+                found += 1
+                print(f"    ✅ {jan}: {item['name']} → ¥{item['buyback_price']:,}")
+
+        total_found += found
+        print(f"  ページ{page_num}: {len(products)}商品検出, {found}件新規マッチ")
+
+        # 次ページ確認
+        next_link = await page.query_selector('a:has-text("次へ")')
+        if not next_link:
+            break
+
+        try:
+            await next_link.click()
+            await page.wait_for_timeout(3000)
+        except:
+            break
+
+        page_num += 1
+        if page_num > 10:
+            break
+
+    print(f"  → {cat_name}: 合計 {total_found}件取得")
+
+
 async def scrape_all_prices():
-    """Playwrightで全ページからJAN+買取価格を取得"""
+    """Playwrightで全カテゴリからJAN+買取価格を取得"""
     from playwright.async_api import async_playwright
 
     scraped = {}
@@ -194,79 +293,11 @@ async def scrape_all_prices():
         )
         page = await context.new_page()
 
-        for url in SCRAPE_URLS:
-            print(f"🔍 {url}")
-            page_num = 1
-
-            while True:
-                if page_num == 1:
-                    current_url = url
-                else:
-                    parts = url.replace("https://www.mobile-ichiban.com/Prod/", "").split("/")
-                    params = []
-                    keys = ["kid", "bid", "mid"]
-                    for i, part in enumerate(parts):
-                        if i < len(keys):
-                            params.append(f"{keys[i]}={part}")
-                    current_url = f"https://www.mobile-ichiban.com/G01_ProdutShow/Index/{page_num}?{'&'.join(params)}"
-
-                try:
-                    await page.goto(current_url, wait_until="networkidle", timeout=30000)
-                    await page.wait_for_timeout(3000)
-                except Exception as e:
-                    print(f"  ⚠️ ページ読み込み失敗: {e}")
-                    break
-
-                # 商品データ抽出（最初のページはデバッグモード）
-                is_debug = (page_num <= 1)
-                products_data = await scrape_page_products(page, debug=is_debug)
-
-                if not products_data:
-                    if page_num > 1:
-                        break
-                    # デバッグ: ページにJANがあるか確認
-                    html = await page.content()
-                    jan_count = len(re.findall(r'JAN[：:]\s*\d{7,14}', html))
-                    price_count = len(re.findall(r'\d{1,3}(?:,\d{3})+円', html))
-                    print(f"  ⚠️ 商品データなし (HTML内 JAN:{jan_count}個, 価格:{price_count}個)")
-                    if jan_count == 0:
-                        # innerTextの最初の部分をデバッグ出力
-                        text = await page.evaluate("() => document.body.innerText.substring(0, 500)")
-                        print(f"  [DEBUG] innerText冒頭:\n{text[:300]}")
-                    break
-
-                found = 0
-                for item in products_data:
-                    jan = item.get("jan", "")
-                    if jan in PRODUCT_MASTER:
-                        scraped[jan] = {
-                            "name": item.get("name", ""),
-                            "buyback_price": item.get("buyback_price", 0)
-                        }
-                        found += 1
-
-                total = len(products_data)
-                print(f"  ページ{page_num}: {total}商品検出, {found}件マッチ")
-                
-                for item in products_data:
-                    jan = item.get("jan", "")
-                    if jan in PRODUCT_MASTER:
-                        print(f"    ✅ {jan}: {item['name']} → ¥{item['buyback_price']:,}")
-                
-                # マッチしなかったMASTER内JANをデバッグ表示
-                if is_debug:
-                    page_jans = {item["jan"] for item in products_data}
-                    for item in products_data:
-                        if item["jan"] not in PRODUCT_MASTER:
-                            print(f"    ❌ 対象外JAN: {item['jan']} ({item['name']}) → ¥{item['buyback_price']:,}")
-
-                # 次ページ確認
-                next_link = await page.query_selector('a:has-text("次へ")')
-                if not next_link:
-                    break
-                page_num += 1
-                if page_num > 10:
-                    break
+        for category in MENU_CATEGORIES:
+            try:
+                await scrape_category(page, category, scraped)
+            except Exception as e:
+                print(f"  ❌ {category['name']} エラー: {e}")
 
         await browser.close()
 
@@ -311,7 +342,7 @@ def build_products(scraped):
             "group": group,
         })
 
-    print(f"📦 更新: {updated}件, 取得失敗: {failed}件")
+    print(f"\n📦 更新: {updated}件, 取得失敗: {failed}件")
     return products
 
 
@@ -334,6 +365,7 @@ def merge_with_existing(new_products):
     except:
         return new_products
 
+    fallback_count = 0
     for p in new_products:
         if p["buyback_price"] == 0 and p["jan"] in existing_map:
             old = existing_map[p["jan"]]
@@ -341,13 +373,15 @@ def merge_with_existing(new_products):
             p["buyback_price"] = old["buyback_price"]
             p["rate"] = old["rate"]
             p["profit"] = old["profit"]
-            print(f"  ♻️ 既存データ使用: {p['name']}")
+            fallback_count += 1
+
+    if fallback_count > 0:
+        print(f"  ♻️ 既存データで {fallback_count}件補完")
 
     return new_products
 
 
 def save_prices_json(products, updated_at):
-    """prices.jsonを保存"""
     data = {"updated_at": updated_at, "all_products": products}
     json_path = os.path.join(get_script_dir(), '..', 'data', 'prices.json')
     os.makedirs(os.path.dirname(json_path), exist_ok=True)
@@ -357,7 +391,6 @@ def save_prices_json(products, updated_at):
 
 
 def update_embedded_data(products, updated_at):
-    """index.htmlのEMBEDDED_DATAを更新"""
     index_path = os.path.join(get_script_dir(), '..', 'index.html')
     if not os.path.exists(index_path):
         print("⚠️ index.htmlが見つかりません")
@@ -387,11 +420,12 @@ def update_embedded_data(products, updated_at):
 
 async def main():
     print("=" * 50)
-    print("🎮 ゲーム機買取率トラッカー - 価格更新")
+    print("🎮 ゲーム機買取率トラッカー - 価格更新 v4")
     print(f"   {datetime.now(JST).strftime('%Y-%m-%d %H:%M:%S JST')}")
     print("=" * 50)
 
     print("\n📡 モバイル一番からデータ取得中...")
+    print("   （メニュークリック方式でカテゴリ遷移）\n")
     scraped = await scrape_all_prices()
     print(f"\n✅ {len(scraped)}/{len(PRODUCT_MASTER)} 商品のデータ取得")
 
