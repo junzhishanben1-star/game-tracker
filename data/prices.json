@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-02T10:45:50",
+  "updated_at": "2026-02-02T10:53:25",
   "all_products": [
     {
       "jan": "4902370552683",
@@ -46,9 +46,9 @@
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "brand": "Nintendo",
       "official_price": 37980,
-      "buyback_price": 40600,
-      "rate": 106.9,
-      "profit": 2620,
+      "buyback_price": 40700,
+      "rate": 107.16,
+      "profit": 2720,
       "group": "switch_oled"
     },
     {
@@ -56,14 +56,14 @@
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "brand": "Nintendo",
       "official_price": 37980,
-      "buyback_price": 40600,
-      "rate": 106.9,
-      "profit": 2620,
+      "buyback_price": 40700,
+      "rate": 107.16,
+      "profit": 2720,
       "group": "switch_oled"
     },
     {
       "jan": "4902370550733",
-      "name": "HAD-S-KABAH",
+      "name": "HAD-S-KABAH &nbsp;",
       "brand": "Nintendo",
       "official_price": 32978,
       "buyback_price": 32500,
@@ -73,7 +73,7 @@
     },
     {
       "jan": "4902370551198",
-      "name": "HAD-S-KAAAH",
+      "name": "HAD-S-KAAAH &nbsp;",
       "brand": "Nintendo",
       "official_price": 32978,
       "buyback_price": 32500,
@@ -203,7 +203,7 @@
     },
     {
       "jan": "4902370550504",
-      "name": "ティアーズ オブ ザ キングダムエディション",
+      "name": "ティアーズ オブ ザ キングダムエディション &nbsp;",
       "brand": "Nintendo",
       "official_price": 7980,
       "buyback_price": 6800,
