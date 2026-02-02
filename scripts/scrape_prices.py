@@ -47,10 +47,10 @@ PRODUCT_MASTER = {
     # Switch小物（サイト非掲載 → 固定データ）
     "4902370536010": {"brand": "Nintendo", "official_price": 7678, "group": "switch_procon_std", "name_override": "Nintendo Switch Proコントローラー", "not_on_site": True, "fixed_buyback": 5800},
     "4902370544091": {"brand": "Nintendo", "official_price": 2728, "group": "joycon_grip", "name_override": "Joy-Con充電グリップ", "not_on_site": True, "fixed_buyback": 1800},
-    "4902370535730": {"brand": "Nintendo", "official_price": 858, "group": "joycon_strap_red", "name_override": "Joy-Conストラップ ネオンレッド", "not_on_site": True, "fixed_buyback": 500},
+    "4902370535730": {"brand": "Nintendo", "official_price": 858, "group": "joycon_strap_red", "name_override": "Joy-Conストラップ ネオンレッド", "not_on_site": True, "fixed_buyback": 500, "exclude_from_scrape": True},
     "4902370535747": {"brand": "Nintendo", "official_price": 858, "group": "joycon_strap_blue", "name_override": "Joy-Conストラップ ネオンブルー", "not_on_site": True, "fixed_buyback": 500},
     "4902370544114": {"brand": "Nintendo", "official_price": 2178, "group": "switch_case", "name_override": "Nintendo Switchキャリングケース", "not_on_site": True, "fixed_buyback": 1500},
-    "4902370544060": {"brand": "Nintendo", "official_price": 3278, "group": "switch_ac", "name_override": "Nintendo Switch ACアダプター", "not_on_site": True, "fixed_buyback": 2200},
+    "4902370544060": {"brand": "Nintendo", "official_price": 3278, "group": "switch_ac", "name_override": "Nintendo Switch ACアダプター", "not_on_site": True, "fixed_buyback": 2200, "exclude_from_scrape": True},
     # === PlayStation ===
     "4948872417075": {"brand": "Sony", "official_price": 119980, "group": "ps5_pro", "name_override": "PlayStation 5 Pro CFI-7100B01 2TB 2025版"},
     "4948872415934": {"brand": "Sony", "official_price": 79980, "group": "ps5_slim", "name_override": "PlayStation 5 slim CFI-2000A01"},
@@ -232,8 +232,10 @@ async def scrape_category(page, category, scraped):
         for item in products:
             jan = item.get("jan", "")
             
-            # 直接JANマッチ
+            # 直接JANマッチ（exclude_from_scrapeの商品はスキップ）
             if jan in PRODUCT_MASTER and jan not in scraped:
+                if PRODUCT_MASTER[jan].get("exclude_from_scrape"):
+                    continue
                 scraped[jan] = {
                     "name": PRODUCT_MASTER[jan].get("name_override", item["name"]),
                     "buyback_price": item["buyback_price"]
