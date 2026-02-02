@@ -1059,7 +1059,7 @@
                 <div id="bestProfitSection" style="display: none;">
                     <div class="results-header">
                         <h3 class="results-title">🏆 最も利益が出る組み合わせ</h3>
-                        <p class="results-subtitle">ポイント内 × 消化率95%以上 × 平均買取率95%以上で利益最大</p>
+                        <p class="results-subtitle">ポイント内 × 消化率98%以上 × 平均買取率95%以上で利益最大</p>
                     </div>
                     <div id="bestProfitResult"></div>
                 </div>
@@ -1212,17 +1212,15 @@
         }
 
         // ============================================
-        // 組み合わせ検索アルゴリズム（複数個購入対応）
+        // 組み合わせ検索アルゴリズム（同一商品最大3個）
         // ============================================
         function findCombinations(points, maxItems) {
             const results = [];
-            const minPrice = points * 0.95; // 消化率95%以上
+            const minPrice = points * 0.98; // 消化率98%以上
+            const MAX_PER_ITEM = 3; // 同一商品は最大3個
             
-            // 買取率90%以上 & 買取率高い順
+            // 買取率90%以上 & 高い順、同一グループ代表のみ
             const sorted = [...allProducts].filter(p => p.rate >= 90).sort((a, b) => b.rate - a.rate);
-            
-            // グループごとに代表商品をまとめる（同一グループから1種のみ）
-            // グループなしの商品はそのまま
             const grouped = [];
             const seenGroups = new Set();
             for (const p of sorted) {
@@ -1233,13 +1231,11 @@
                 grouped.push(p);
             }
             
-            // 枝刈り付き再帰探索（同一商品の複数個OK）
             function search(idx, cart, totalPrice, totalBuyback, totalCount) {
-                // 条件チェック
+                // 条件を満たす組み合わせを記録
                 if (totalCount > 0 && totalPrice >= minPrice && totalPrice <= points) {
                     const avgRate = (totalBuyback / totalPrice) * 100;
                     if (avgRate >= 95) {
-                        // cart を items 配列に変換（{...product, qty} 形式）
                         const items = [];
                         for (const [jan, info] of Object.entries(cart)) {
                             items.push({ ...info.product, qty: info.qty });
@@ -1263,47 +1259,19 @@
                 
                 for (let i = idx; i < grouped.length; i++) {
                     const p = grouped[i];
-                    const maxQty = Math.floor((points - totalPrice) / p.official_price);
-                    if (maxQty <= 0) continue;
                     
-                    // この商品を1個〜maxQty個追加して探索
-                    const limit = Math.min(maxQty, Math.max(1, Math.floor((points - totalPrice) * 0.5 / p.official_price) + 1), 30);
-                    for (let q = 1; q <= limit; q++) {
-                        const newPrice = totalPrice + p.official_price * q;
-                        const newBuyback = totalBuyback + p.buyback_price * q;
-                        const newCount = totalCount + q;
+                    // 1〜3個試す
+                    for (let q = 1; q <= MAX_PER_ITEM; q++) {
+                        const addPrice = p.official_price * q;
+                        const newPrice = totalPrice + addPrice;
                         
                         if (newPrice > points) break;
                         
                         cart[p.jan] = { product: p, qty: q };
                         
-                        // この商品だけで条件を満たすかチェック
-                        if (newPrice >= minPrice) {
-                            const avgRate = (newBuyback / newPrice) * 100;
-                            if (avgRate >= 95) {
-                                const items = [];
-                                for (const [jan, info] of Object.entries(cart)) {
-                                    items.push({ ...info.product, qty: info.qty });
-                                }
-                                results.push({
-                                    items,
-                                    itemCount: newCount,
-                                    totalPrice: newPrice,
-                                    totalBuyback: newBuyback,
-                                    avgRate: Math.round(avgRate * 100) / 100,
-                                    cashOut: 0,
-                                    profit: newBuyback - newPrice,
-                                    pointsUsed: newPrice,
-                                    pointsRemaining: points - newPrice,
-                                    utilizationRate: Math.round((newPrice / points) * 10000) / 100
-                                });
-                            }
-                        }
+                        search(i + 1, cart, newPrice, totalBuyback + p.buyback_price * q, totalCount + q);
                         
-                        // 次の商品の探索（種類数制限）
-                        if (Object.keys(cart).length < maxItems && results.length < 300) {
-                            search(i + 1, cart, newPrice, newBuyback, newCount);
-                        }
+                        if (results.length >= 300) { delete cart[p.jan]; return; }
                     }
                     delete cart[p.jan];
                 }
@@ -1311,17 +1279,16 @@
             
             search(0, {}, 0, 0, 0);
             
-            // 重複除去（同じ商品構成は1つだけ）
+            // 重複除去
             const uniqueMap = new Map();
             for (const r of results) {
                 const key = r.items.map(i => `${i.jan}x${i.qty}`).sort().join(',');
-                if (!uniqueMap.has(key) || r.avgRate > uniqueMap.get(key).avgRate) {
+                if (!uniqueMap.has(key) || r.profit > uniqueMap.get(key).profit) {
                     uniqueMap.set(key, r);
                 }
             }
             const unique = [...uniqueMap.values()];
             
-            // ソート：平均買取率が高い順
             unique.sort((a, b) => {
                 if (b.avgRate !== a.avgRate) return b.avgRate - a.avgRate;
                 if (b.utilizationRate !== a.utilizationRate) return b.utilizationRate - a.utilizationRate;
@@ -1435,7 +1402,7 @@
             
             // 買取率順セクション
             title.textContent = `📊 買取率が高い順 （${results.length}件）`;
-            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率95%以上 / 平均買取率95%以上`;
+            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率98%以上 / 平均買取率95%以上`;
             
             if (results.length === 0) {
                 list.innerHTML = `
