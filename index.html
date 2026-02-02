@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- v7 - greedy+探索ハイブリッド 2026-02-02 21:05 -->
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -494,11 +495,11 @@
                 }
                 
                 // パス2: 残額を全商品から埋める（高額→安い順で最大限詰める）
+                // 残額埋めはrate条件なし（消化率向上が目的）
                 const allByPrice = [...allProducts].sort((a, b) => b.official_price - a.official_price);
                 for (const p of allByPrice) {
                     if (count >= maxTotal || remaining <= 0) break;
                     if (p.official_price > remaining) continue;
-                    if (p.rate < 80) continue;
                     
                     if (cart[p.jan]) {
                         // 既にカートにある → 個数追加可能か
@@ -525,8 +526,10 @@
                 return buildResult(cart);
             }
 
-            // 4つのソート戦略
+            // 5つのソート戦略（groupedはrate90以上、allSortedは全商品）
+            const allSorted = [...allProducts].sort((a, b) => b.official_price - a.official_price);
             const strategies = [
+                allSorted, // 全商品高額順（消化率最大化）
                 [...grouped].sort((a, b) => b.official_price - a.official_price),
                 [...grouped].sort((a, b) => (b.buyback_price - b.official_price) - (a.buyback_price - a.official_price)),
                 grouped,
