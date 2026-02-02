@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-02T11:15:38",
+  "updated_at": "2026-02-02T11:25:57",
   "all_products": [
     {
       "jan": "4902370552683",
@@ -226,9 +226,9 @@
       "name": "Joy-Conストラップ ネオンレッド",
       "brand": "Nintendo",
       "official_price": 858,
-      "buyback_price": 6500,
-      "rate": 757.58,
-      "profit": 5642,
+      "buyback_price": 500,
+      "rate": 58.28,
+      "profit": -358,
       "group": "joycon_strap_red"
     },
     {
@@ -256,9 +256,9 @@
       "name": "Nintendo Switch ACアダプター",
       "brand": "Nintendo",
       "official_price": 3278,
-      "buyback_price": 7500,
-      "rate": 228.8,
-      "profit": 4222,
+      "buyback_price": 2200,
+      "rate": 67.11,
+      "profit": -1078,
       "group": "switch_ac"
     },
     {
