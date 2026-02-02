@@ -1226,18 +1226,21 @@
                 // 現在の組み合わせが条件を満たすか
                 if (combo.length > 0 && totalPrice >= minPrice && totalPrice <= points) {
                     const avgRate = (totalBuyback / totalPrice) * 100;
-                    results.push({
-                        items: [...combo],
-                        itemCount: combo.length,
-                        totalPrice,
-                        totalBuyback,
-                        avgRate: Math.round(avgRate * 100) / 100,
-                        cashOut: 0,
-                        profit: totalBuyback - totalPrice,
-                        pointsUsed: totalPrice,
-                        pointsRemaining: points - totalPrice,
-                        utilizationRate: Math.round((totalPrice / points) * 10000) / 100
-                    });
+                    // 組み合わせ全体の平均買取率が95%以上のみ
+                    if (avgRate >= 95) {
+                        results.push({
+                            items: [...combo],
+                            itemCount: combo.length,
+                            totalPrice,
+                            totalBuyback,
+                            avgRate: Math.round(avgRate * 100) / 100,
+                            cashOut: 0,
+                            profit: totalBuyback - totalPrice,
+                            pointsUsed: totalPrice,
+                            pointsRemaining: points - totalPrice,
+                            utilizationRate: Math.round((totalPrice / points) * 10000) / 100
+                        });
+                    }
                 }
                 
                 // 上限に達した or 十分な結果が集まった
@@ -1571,10 +1574,10 @@
             }
 
             // 提案: 余ったポイントで追加できる商品を表示
-            showSuggestions(cardId, remaining, qty, items);
+            showSuggestions(cardId, remaining, qty, items, totalPrice, totalBuyback);
         }
 
-        function showSuggestions(cardId, remaining, currentQty, currentItems) {
+        function showSuggestions(cardId, remaining, currentQty, currentItems, currentTotalPrice, currentTotalBuyback) {
             const suggestEl = document.getElementById(`suggest-${cardId}`);
             if (!suggestEl) return;
 
@@ -1590,11 +1593,17 @@
                 }
             }
 
+            // 追加後に全体平均95%以上を維持できる商品のみ
             const candidates = allProducts
                 .filter(p => {
                     if (p.rate < 90) return false;
                     if (p.official_price > remaining) return false;
                     if (p.group && usedGroups.has(p.group)) return false;
+                    // 追加後の全体平均買取率チェック
+                    const newTotalPrice = currentTotalPrice + p.official_price;
+                    const newTotalBuyback = currentTotalBuyback + p.buyback_price;
+                    const newAvgRate = (newTotalBuyback / newTotalPrice) * 100;
+                    if (newAvgRate < 95) return false;
                     return true;
                 })
                 .sort((a, b) => b.rate - a.rate)
@@ -1611,15 +1620,18 @@
 
             suggestEl.innerHTML = `
                 <div class="suggest-header">
-                    💡 残り ¥${remaining.toLocaleString()} で追加できる商品
+                    💡 残り ¥${remaining.toLocaleString()} で追加できる商品（追加後も全体95%以上）
                 </div>
                 ${candidates.map(p => {
                     const rateClass = p.rate >= 100 ? 'high' : p.rate >= 95 ? 'medium' : 'low';
+                    const simPrice = currentTotalPrice + p.official_price;
+                    const simBuyback = currentTotalBuyback + p.buyback_price;
+                    const simRate = Math.round((simBuyback / simPrice) * 10000) / 100;
                     return `
                         <div class="suggest-item">
                             <div class="suggest-item-info">
                                 <span class="suggest-item-name">${escapeHtml(p.name)}</span>
-                                <span class="suggest-item-price">¥${p.official_price.toLocaleString()} → 買取 ¥${p.buyback_price.toLocaleString()}</span>
+                                <span class="suggest-item-price">¥${p.official_price.toLocaleString()} → 買取 ¥${p.buyback_price.toLocaleString()}　追加後平均: ${simRate}%</span>
                             </div>
                             <span class="combo-item-rate ${rateClass}">${p.rate}%</span>
                             <button class="suggest-add-btn" onclick="addSuggestion('${cardId}','${p.jan}')">＋追加</button>
