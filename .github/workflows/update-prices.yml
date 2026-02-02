@@ -3,7 +3,7 @@ name: 買取価格自動更新
 on:
   schedule:
     # 3時間ごとに実行（UTC: 0,3,6,9,12,15,18,21時）
-    - cron: '0 */3 * * *'
+    - ＃cron: '0 */3 * * *'
   workflow_dispatch: # 手動実行も可能
 
 permissions:
