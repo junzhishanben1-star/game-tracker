@@ -1362,6 +1362,10 @@
                                     <div class="stat-label">利益</div>
                                 </div>
                                 <div class="stat-item">
+                                    <div class="stat-value">¥${bestProfit.totalBuyback.toLocaleString()}</div>
+                                    <div class="stat-label">合計買取</div>
+                                </div>
+                                <div class="stat-item">
                                     <div class="stat-value">${bestProfit.avgRate}%</div>
                                     <div class="stat-label">平均買取率</div>
                                 </div>
@@ -1375,11 +1379,16 @@
                             ${bestProfit.items.map(item => {
                                 const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
                                 const qty = item.qty || 1;
+                                const subtotalPrice = item.official_price * qty;
+                                const subtotalBuyback = item.buyback_price * qty;
+                                const priceText = qty > 1
+                                    ? `¥${item.official_price.toLocaleString()} ×${qty} = ¥${subtotalPrice.toLocaleString()} → 買取 ¥${subtotalBuyback.toLocaleString()}`
+                                    : `定価 ¥${item.official_price.toLocaleString()} → 買取 ¥${item.buyback_price.toLocaleString()}`;
                                 return `
                                     <div class="combo-item-adj">
                                         <div class="combo-item-left">
-                                            <span class="combo-item-name">${escapeHtml(item.name)}${qty > 1 ? '' : ''}</span>
-                                            <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()} / 買取 ¥${item.buyback_price.toLocaleString()}</span>
+                                            <span class="combo-item-name">${escapeHtml(item.name)}</span>
+                                            <span class="combo-item-price">${priceText}</span>
                                         </div>
                                         <div class="combo-item-right">
                                             <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
@@ -1448,12 +1457,12 @@
                                     <div class="stat-label">平均買取率</div>
                                 </div>
                                 <div class="stat-item">
-                                    <div class="stat-value">${combo.utilizationRate}%</div>
-                                    <div class="stat-label">ポイント消化率</div>
+                                    <div class="stat-value">¥${combo.totalBuyback.toLocaleString()}</div>
+                                    <div class="stat-label">合計買取</div>
                                 </div>
                                 <div class="stat-item">
-                                    <div class="stat-value">¥${combo.cashOut.toLocaleString()}</div>
-                                    <div class="stat-label">手出し</div>
+                                    <div class="stat-value">${combo.utilizationRate}%</div>
+                                    <div class="stat-label">消化率</div>
                                 </div>
                                 <div class="stat-item">
                                     <div class="stat-value ${profitClass}">${profitSign}¥${combo.profit.toLocaleString()}</div>
@@ -1465,11 +1474,16 @@
                             ${combo.items.map(item => {
                                 const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
                                 const qty = item.qty || 1;
+                                const subtotalPrice = item.official_price * qty;
+                                const subtotalBuyback = item.buyback_price * qty;
+                                const priceText = qty > 1
+                                    ? `¥${item.official_price.toLocaleString()} ×${qty} = ¥${subtotalPrice.toLocaleString()} → 買取 ¥${subtotalBuyback.toLocaleString()}`
+                                    : `定価 ¥${item.official_price.toLocaleString()} → 買取 ¥${item.buyback_price.toLocaleString()}`;
                                 return `
                                     <div class="combo-item-adj">
                                         <div class="combo-item-left">
                                             <span class="combo-item-name">${escapeHtml(item.name)}</span>
-                                            <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()} / 買取 ¥${item.buyback_price.toLocaleString()}</span>
+                                            <span class="combo-item-price">${priceText}</span>
                                         </div>
                                         <div class="combo-item-right">
                                             <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
@@ -1565,6 +1579,10 @@
                             <div class="stat-label">利益</div>
                         </div>
                         <div class="stat-item">
+                            <div class="stat-value">¥${totalBuyback.toLocaleString()}</div>
+                            <div class="stat-label">合計買取</div>
+                        </div>
+                        <div class="stat-item">
                             <div class="stat-value">${avgRate}%</div>
                             <div class="stat-label">平均買取率</div>
                         </div>
@@ -1580,12 +1598,12 @@
                             <div class="stat-label">平均買取率</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-value">${utilization}%</div>
-                            <div class="stat-label">ポイント消化率</div>
+                            <div class="stat-value">¥${totalBuyback.toLocaleString()}</div>
+                            <div class="stat-label">合計買取</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-value">¥${cashOut.toLocaleString()}</div>
-                            <div class="stat-label">手出し</div>
+                            <div class="stat-value">${utilization}%</div>
+                            <div class="stat-label">消化率</div>
                         </div>
                         <div class="stat-item">
                             <div class="stat-value ${profitClass}">${profitSign}¥${profit.toLocaleString()}</div>
