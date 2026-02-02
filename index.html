@@ -26,7 +26,11 @@
             --gray-900: #111827;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Noto Sans JP', sans-serif;
@@ -35,262 +39,610 @@
             color: var(--gray-800);
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
         /* ヘッダー */
         .header {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 24px 32px;
             margin-bottom: 24px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-        .header h1 { font-size: 1.75rem; font-weight: 700; color: var(--gray-900); margin-bottom: 8px; }
-        .header-meta { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; color: var(--gray-600); font-size: 0.875rem; }
-        .update-time::before { content: "🕐 "; }
+
+        .header h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 8px;
+        }
+
+        .header-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+
+        .update-time::before {
+            content: "🕐 ";
+        }
 
         /* タブ */
-        .tabs { display: flex; gap: 8px; margin-bottom: 24px; }
-        .tab-btn {
-            flex: 1; padding: 16px 24px;
-            background: rgba(255,255,255,0.7);
-            border: none; border-radius: 12px;
-            font-size: 0.95rem; font-weight: 600; cursor: pointer;
-            transition: all 0.2s;
-            display: flex; align-items: center; justify-content: center; gap: 8px;
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
         }
-        .tab-btn:hover { background: rgba(255,255,255,0.9); }
-        .tab-btn.active { background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
 
-        /* カードベース */
-        .card {
-            background: rgba(255,255,255,0.95);
+        .tab-btn {
+            flex: 1;
+            padding: 16px 24px;
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .tab-btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .tab-btn.active {
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* ポイント検索セクション */
+        .search-section {
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 24px 32px;
             margin-bottom: 24px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        /* ========== ダッシュボード ========== */
-        .dashboard-grid {
+        .search-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-form {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            margin-bottom: 24px;
+            gap: 20px;
+            margin-bottom: 20px;
         }
-        .dash-card {
-            background: rgba(255,255,255,0.95);
-            border-radius: 14px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: transform 0.2s;
-        }
-        .dash-card:hover { transform: translateY(-2px); }
-        .dash-card .dash-icon { font-size: 2rem; margin-bottom: 8px; }
-        .dash-card .dash-value { font-size: 1.5rem; font-weight: 700; }
-        .dash-card .dash-label { font-size: 0.8rem; color: var(--gray-500); margin-top: 4px; }
-        .dash-card.profit { border-left: 4px solid var(--success); }
-        .dash-card.loss { border-left: 4px solid var(--danger); }
-        .dash-card.info { border-left: 4px solid var(--primary); }
 
-        /* 利益商品カード */
-        .profit-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
-        .profit-card {
-            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-            border: 1px solid #86efac;
-            border-radius: 14px;
-            padding: 20px;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
-        .profit-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(16,185,129,0.15); }
-        .profit-card .profit-badge {
-            position: absolute; top: 12px; right: 12px;
-            background: linear-gradient(135deg, #10b981, #059669);
-            color: white; padding: 4px 12px; border-radius: 20px;
-            font-size: 0.85rem; font-weight: 700;
-        }
-        .profit-card .profit-name { font-weight: 700; font-size: 0.95rem; color: var(--gray-900); margin-bottom: 6px; padding-right: 80px; }
-        .profit-card .profit-brand { font-size: 0.75rem; color: var(--gray-500); margin-bottom: 12px; }
-        .profit-card .profit-row { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 4px; }
-        .profit-card .profit-amount { font-size: 1.2rem; font-weight: 700; color: #059669; margin-top: 8px; }
 
-        /* ブランド別サマリー */
-        .brand-summary { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 16px; }
-        .brand-card {
-            background: white;
-            border-radius: 12px;
-            padding: 16px;
-            border: 1px solid var(--gray-200);
-            transition: transform 0.2s;
+        .form-label {
+            font-weight: 500;
+            color: var(--gray-700);
+            font-size: 0.875rem;
         }
-        .brand-card:hover { transform: translateY(-2px); }
-        .brand-card .brand-name { font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
-        .brand-card .brand-stat { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--gray-600); margin-bottom: 4px; }
-        .brand-card .brand-stat-value { font-weight: 600; color: var(--gray-800); }
-        .brand-card .brand-bar { height: 4px; background: var(--gray-200); border-radius: 2px; margin-top: 8px; overflow: hidden; }
-        .brand-card .brand-bar-fill { height: 100%; border-radius: 2px; transition: width 0.5s; }
 
-        /* ========== ポイント検索 ========== */
-        .search-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
-        .search-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 20px; }
-        .form-group { display: flex; flex-direction: column; gap: 8px; }
-        .form-label { font-weight: 500; color: var(--gray-700); font-size: 0.875rem; }
         .form-input {
-            padding: 12px 16px; border: 2px solid var(--gray-200);
-            border-radius: 10px; font-size: 1.125rem; font-weight: 600;
+            padding: 12px 16px;
+            border: 2px solid var(--gray-200);
+            border-radius: 10px;
+            font-size: 1.125rem;
+            font-weight: 600;
             transition: border-color 0.2s;
         }
-        .form-input:focus { outline: none; border-color: var(--primary); }
-        .form-hint { font-size: 0.75rem; color: var(--gray-500); }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-hint {
+            font-size: 0.75rem;
+            color: var(--gray-500);
+        }
+
         .search-btn {
             padding: 14px 32px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white; border: none; border-radius: 10px;
-            font-size: 1rem; font-weight: 600; cursor: pointer;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        .search-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(99,102,241,0.4); }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
 
         /* 検索結果 */
         .results-section {
-            background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
-            border-radius: 16px; overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 24px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
         }
-        .results-header { padding: 20px 24px; border-bottom: 1px solid var(--gray-200); background: var(--gray-50); }
-        .results-title { font-size: 1.125rem; font-weight: 700; color: var(--gray-900); }
-        .results-subtitle { font-size: 0.875rem; color: var(--gray-600); margin-top: 4px; }
 
-        .combination-card { padding: 24px; border-bottom: 1px solid var(--gray-100); }
-        .combination-card:last-child { border-bottom: none; }
-        .combination-card.recommended { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-left: 4px solid var(--success); }
-        .combination-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; flex-wrap: wrap; gap: 12px; }
-        .combination-rank { display: flex; align-items: center; gap: 12px; }
-        .rank-badge { width: 36px; height: 36px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; }
-        .rank-badge.gold { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
-        .rank-badge.silver { background: linear-gradient(135deg, #9ca3af, #6b7280); }
-        .rank-badge.bronze { background: linear-gradient(135deg, #d97706, #b45309); }
-        .combination-info h3 { font-size: 1rem; font-weight: 600; }
-        .combination-info p { font-size: 0.875rem; color: var(--gray-600); }
-        .combination-stats { display: flex; gap: 16px; flex-wrap: wrap; }
-        .stat-item { text-align: center; padding: 8px 16px; background: white; border-radius: 8px; min-width: 100px; }
-        .stat-value { font-size: 1.25rem; font-weight: 700; }
-        .stat-label { font-size: 0.75rem; color: var(--gray-500); }
+        .results-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--gray-200);
+            background: var(--gray-50);
+        }
 
-        .combination-items { display: flex; flex-direction: column; gap: 8px; }
-        .combo-item { display: grid; grid-template-columns: 1fr auto auto auto; gap: 16px; align-items: center; padding: 12px 16px; background: white; border-radius: 8px; font-size: 0.875rem; }
-        .combo-item-name { font-weight: 500; }
-        .combo-item-price { text-align: right; color: var(--gray-600); }
-        .combo-item-buyback { text-align: right; font-weight: 600; }
-        .combo-item-rate { padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 0.8rem; min-width: 65px; text-align: center; }
-        .combo-item-rate.high { background: var(--success-light); color: #065f46; }
-        .combo-item-rate.medium { background: #fef3c7; color: #92400e; }
-        .combo-item-rate.low { background: #fee2e2; color: #991b1b; }
+        .results-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--gray-900);
+        }
 
-        /* ========== 商品一覧 ========== */
+        .results-subtitle {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            margin-top: 4px;
+        }
+
+        .combination-card {
+            padding: 24px;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .combination-card:last-child {
+            border-bottom: none;
+        }
+
+        .combination-card.recommended {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-left: 4px solid var(--success);
+        }
+
+        .combination-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .combination-rank {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .rank-badge {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .rank-badge.gold {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+        }
+
+        .rank-badge.silver {
+            background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+        }
+
+        .rank-badge.bronze {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+        }
+
+        .combination-info h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+
+        .combination-info p {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        .combination-stats {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 8px 16px;
+            background: white;
+            border-radius: 8px;
+            min-width: 100px;
+        }
+
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-value.positive {
+            color: var(--success);
+        }
+
+        .stat-value.negative {
+            color: var(--danger);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--gray-500);
+        }
+
+        .combination-items {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .combo-item {
+            display: grid;
+            grid-template-columns: 1fr auto auto auto;
+            gap: 16px;
+            align-items: center;
+            padding: 12px 16px;
+            background: white;
+            border-radius: 8px;
+            font-size: 0.875rem;
+        }
+
+        .combo-item-name {
+            font-weight: 500;
+        }
+
+        .combo-item-price {
+            text-align: right;
+            color: var(--gray-600);
+        }
+
+        .combo-item-buyback {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .combo-item-rate {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            min-width: 65px;
+            text-align: center;
+        }
+
+        .combo-item-rate.high {
+            background: var(--success-light);
+            color: #065f46;
+        }
+
+        .combo-item-rate.medium {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .combo-item-rate.low {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        /* 商品一覧 */
         .products-section {
-            background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
-            border-radius: 16px; overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-        .section-header { padding: 20px 24px; border-bottom: 1px solid var(--gray-200); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-        .section-title { font-size: 1.25rem; font-weight: 700; }
 
-        /* 検索＆フィルター */
-        .filter-bar { padding: 16px 24px; background: var(--gray-50); border-bottom: 1px solid var(--gray-200); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-        .search-input-wrap { position: relative; flex: 1; min-width: 200px; }
-        .search-input-wrap input {
-            width: 100%; padding: 10px 16px 10px 40px;
-            border: 2px solid var(--gray-200); border-radius: 10px;
-            font-size: 0.9rem; transition: border-color 0.2s;
+        .section-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--gray-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
         }
-        .search-input-wrap input:focus { outline: none; border-color: var(--primary); }
-        .search-input-wrap::before { content: "🔍"; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 1rem; }
-        .filters { display: flex; gap: 8px; flex-wrap: wrap; }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-900);
+        }
+
+        .filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
         .filter-btn {
-            padding: 6px 14px; border: 2px solid var(--gray-200);
-            border-radius: 8px; background: white; cursor: pointer;
-            font-size: 0.8rem; font-weight: 500; transition: all 0.2s;
+            padding: 6px 14px;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s;
         }
-        .filter-btn:hover { border-color: var(--primary); color: var(--primary); }
-        .filter-btn.active { background: var(--primary); border-color: var(--primary); color: white; }
 
-        .products-list { padding: 0; }
+        .filter-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        .products-list {
+            padding: 0;
+        }
+
         .product-item {
-            display: grid; grid-template-columns: 1fr auto;
-            gap: 16px; padding: 16px 24px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 16px;
+            padding: 16px 24px;
             border-bottom: 1px solid var(--gray-100);
             transition: background 0.2s;
         }
-        .product-item:last-child { border-bottom: none; }
-        .product-item:hover { background: var(--gray-50); }
-        .product-info { display: flex; flex-direction: column; gap: 4px; }
-        .product-name { font-weight: 600; color: var(--gray-900); font-size: 0.95rem; }
-        .product-meta { font-size: 0.75rem; color: var(--gray-500); }
-        .product-brand { display: inline-block; background: var(--gray-100); padding: 2px 8px; border-radius: 4px; margin-right: 8px; }
-        .product-prices { display: flex; align-items: center; gap: 12px; }
-        .price-block { text-align: right; }
-        .price-label { font-size: 0.7rem; color: var(--gray-500); }
-        .price-value { font-size: 1rem; font-weight: 600; }
-        .rate-badge { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 72px; padding: 8px 10px; border-radius: 10px; font-weight: 700; }
-        .rate-badge.excellent { background: linear-gradient(135deg, #10b981, #059669); color: white; }
-        .rate-badge.good { background: linear-gradient(135deg, #6366f1, #4f46e5); color: white; }
-        .rate-badge.normal { background: var(--gray-200); color: var(--gray-700); }
-        .rate-value { font-size: 1.1rem; }
-        .rate-label { font-size: 0.6rem; opacity: 0.8; }
-        .product-profit-tag { display: inline-block; background: #d1fae5; color: #065f46; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; margin-left: 8px; }
 
-        /* 空・ロード */
-        .empty-state { text-align: center; padding: 60px 20px; color: var(--gray-500); }
-        .empty-state-icon { font-size: 3rem; margin-bottom: 16px; }
-        .loading { text-align: center; padding: 40px; }
-        .loading-spinner { width: 40px; height: 40px; border: 4px solid var(--gray-200); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px; }
-        @keyframes spin { to { transform: rotate(360deg); } }
+        .product-item:last-child {
+            border-bottom: none;
+        }
 
-        /* オプション設定 */
-        .options-section { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 12px; padding: 16px; margin-top: 16px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
-        .option-item { display: flex; flex-direction: column; gap: 4px; }
-        .checkbox-label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 500; }
-        .checkbox-label input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--primary); }
-        .checkbox-text { font-size: 0.95rem; }
-        .option-hint { font-size: 0.75rem; color: var(--gray-500); margin-left: 26px; }
-        .form-label-small { font-size: 0.8rem; color: var(--gray-600); font-weight: 500; }
-        .form-select-small { padding: 6px 12px; border: 1px solid var(--gray-300); border-radius: 6px; font-size: 0.875rem; background: white; cursor: pointer; }
-        .brand-diversity-badge { display: inline-flex; align-items: center; gap: 4px; background: #dbeafe; color: #1d4ed8; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .product-item:hover {
+            background: var(--gray-50);
+        }
 
-        /* ノーリザルト */
-        .no-results { padding: 40px; text-align: center; color: var(--gray-500); }
-        .no-results-icon { font-size: 2.5rem; margin-bottom: 12px; }
-        .tips-box { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 16px; margin-top: 16px; text-align: left; font-size: 0.875rem; }
-        .tips-box h4 { color: #92400e; margin-bottom: 8px; }
-        .tips-box ul { margin-left: 20px; color: #78350f; }
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .product-name {
+            font-weight: 600;
+            color: var(--gray-900);
+            font-size: 0.95rem;
+        }
+
+        .product-meta {
+            font-size: 0.75rem;
+            color: var(--gray-500);
+        }
+
+        .product-brand {
+            display: inline-block;
+            background: var(--gray-100);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+
+        .product-prices {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .price-block {
+            text-align: right;
+        }
+
+        .price-label {
+            font-size: 0.7rem;
+            color: var(--gray-500);
+        }
+
+        .price-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gray-800);
+        }
+
+        .rate-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 72px;
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .rate-badge.excellent {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+
+        .rate-badge.good {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            color: white;
+        }
+
+        .rate-badge.normal {
+            background: var(--gray-200);
+            color: var(--gray-700);
+        }
+
+        .rate-value {
+            font-size: 1.1rem;
+        }
+
+        .rate-label {
+            font-size: 0.6rem;
+            opacity: 0.8;
+        }
+
+        /* 空状態 */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--gray-500);
+        }
+
+        .empty-state-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        /* ローディング */
+        .loading {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--gray-200);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
 
         /* フッター */
-        .footer { text-align: center; padding: 24px; color: rgba(255,255,255,0.8); font-size: 0.875rem; }
-        .footer a { color: white; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+        }
+
+        .footer a {
+            color: white;
+        }
 
         /* レスポンシブ */
         @media (max-width: 768px) {
-            .container { padding: 12px; }
-            .header, .card { padding: 16px 20px; }
-            .header h1 { font-size: 1.25rem; }
-            .tabs { flex-direction: column; }
-            .combo-item { grid-template-columns: 1fr; gap: 8px; }
-            .combo-item > * { text-align: left !important; }
-            .product-item { grid-template-columns: 1fr; gap: 12px; }
-            .product-prices { justify-content: flex-start; }
-            .combination-stats { width: 100%; }
-            .stat-item { flex: 1; }
-            .dashboard-grid { grid-template-columns: repeat(2, 1fr); }
-            .profit-cards { grid-template-columns: 1fr; }
-            .filter-bar { flex-direction: column; }
+            .container {
+                padding: 12px;
+            }
+
+            .header, .search-section {
+                padding: 16px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .combo-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .combo-item > * {
+                text-align: left !important;
+            }
+
+            .product-item {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .product-prices {
+                justify-content: flex-start;
+            }
+
+            .combination-stats {
+                width: 100%;
+            }
+
+            .stat-item {
+                flex: 1;
+            }
+        }
+
+        /* ノーリザルト */
+        .no-results {
+            padding: 40px;
+            text-align: center;
+            color: var(--gray-500);
+        }
+
+        .no-results-icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .tips-box {
+            background: #fffbeb;
+            border: 1px solid #fcd34d;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 16px;
+            text-align: left;
+            font-size: 0.875rem;
+        }
+
+        .tips-box h4 {
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+
+        .tips-box ul {
+            margin-left: 20px;
+            color: #78350f;
         }
     </style>
 </head>
@@ -307,29 +659,17 @@
 
         <!-- タブ -->
         <div class="tabs">
-            <button class="tab-btn active" data-tab="dashboard">📊 ダッシュボード</button>
-            <button class="tab-btn" data-tab="search">🔍 ポイント消化</button>
-            <button class="tab-btn" data-tab="list">📋 全商品一覧</button>
-        </div>
-
-        <!-- タブ0: ダッシュボード -->
-        <div class="tab-content active" id="tab-dashboard">
-            <div class="dashboard-grid" id="dashboardGrid"></div>
-            <div class="card">
-                <h2 class="search-title">🔥 利益が出る商品（買取率100%超）</h2>
-                <div class="profit-cards" id="profitCards">
-                    <div class="loading"><div class="loading-spinner"></div><p>読み込み中...</p></div>
-                </div>
-            </div>
-            <div class="card">
-                <h2 class="search-title">🏭 ブランド別サマリー</h2>
-                <div class="brand-summary" id="brandSummary"></div>
-            </div>
+            <button class="tab-btn active" data-tab="search">
+                🔍 ポイント消化シミュレーター
+            </button>
+            <button class="tab-btn" data-tab="list">
+                📋 全商品一覧
+            </button>
         </div>
 
         <!-- タブ1: ポイント検索 -->
-        <div class="tab-content" id="tab-search">
-            <div class="card">
+        <div class="tab-content active" id="tab-search">
+            <div class="search-section">
                 <h2 class="search-title">🎯 ポイント消化で手出し最小の組み合わせを探す</h2>
                 <div class="search-form">
                     <div class="form-group">
@@ -343,27 +683,11 @@
                         <span class="form-hint">組み合わせの平均がこの値以上</span>
                     </div>
                 </div>
-                <div class="options-section">
-                    <div class="option-item">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="diversifyBrands" checked>
-                            <span class="checkbox-text">🏭 メーカー分散を優先</span>
-                        </label>
-                        <span class="option-hint">同一メーカー集中による買取リスクを軽減</span>
-                    </div>
-                    <div class="option-item" id="maxBrandOption">
-                        <label class="form-label-small">同一メーカー最大数</label>
-                        <select class="form-select-small" id="maxSameBrand">
-                            <option value="1">1個まで</option>
-                            <option value="2" selected>2個まで</option>
-                            <option value="3">3個まで</option>
-                            <option value="99">制限なし</option>
-                        </select>
-                    </div>
-                </div>
-                <button class="search-btn" id="searchBtn" style="margin-top:16px;">🔎 最適な組み合わせを検索</button>
+                <button class="search-btn" id="searchBtn">🔎 最適な組み合わせを検索</button>
             </div>
-            <div class="results-section" id="resultsSection" style="display:none;">
+
+            <!-- 検索結果 -->
+            <div class="results-section" id="resultsSection" style="display: none;">
                 <div class="results-header">
                     <h3 class="results-title" id="resultsTitle">検索結果</h3>
                     <p class="results-subtitle" id="resultsSubtitle"></p>
@@ -377,23 +701,27 @@
             <div class="products-section">
                 <div class="section-header">
                     <h2 class="section-title">📊 全商品一覧</h2>
-                </div>
-                <div class="filter-bar">
-                    <div class="search-input-wrap">
-                        <input type="text" id="productSearch" placeholder="商品名で検索...">
+                    <div class="filters">
+                        <button class="filter-btn active" data-brand="all">すべて</button>
+                        <button class="filter-btn" data-brand="Nintendo">Nintendo</button>
+                        <button class="filter-btn" data-brand="Sony">Sony</button>
+                        <button class="filter-btn" data-brand="Meta">Meta</button>
+                        <button class="filter-btn" data-brand="Valve">Valve</button>
                     </div>
-                    <div class="filters" id="filterButtons"></div>
                 </div>
                 <div class="products-list" id="productsList">
-                    <div class="loading"><div class="loading-spinner"></div><p>データを読み込んでいます...</p></div>
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                        <p>データを読み込んでいます...</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- フッター -->
         <footer class="footer">
-            <p>データ元: <a href="https://www.mobile-ichiban.com/Prod/2/01" target="_blank">モバイル一番</a> | 手動更新 | 最終更新時刻はヘッダーに表示</p>
-            <p>&copy; 2026 C-Creation</p>
+            <p>データ元: <a href="https://www.mobile-ichiban.com/Prod/2/01" target="_blank">モバイル一番</a> | 3時間ごと自動更新</p>
+            <p>© 2026 C-Creation</p>
         </footer>
     </div>
 
@@ -403,837 +731,242 @@
         // ============================================
         let allProducts = [];
         let currentBrand = 'all';
-        let searchQuery = '';
 
         // ============================================
         // 埋め込みデータ（GitHub Actions で自動更新される部分）
+        // 定価は全て税込
+        // group: 同一商品グループ（同じグループからは1つしか選べない）
         // ============================================
         const EMBEDDED_DATA = {
-                    "updated_at": "2026-02-02T11:25:57",
-                    "all_products": [
-                        {
-                            "jan": "4902370552683",
-                            "name": "Nintendo Switch 2 多言語対応版",
-                            "brand": "Nintendo",
-                            "official_price": 69980,
-                            "buyback_price": 85000,
-                            "rate": 121.46,
-                            "profit": 15020,
-                            "group": "switch2_main"
-                        },
-                        {
-                            "jan": "4902370553024",
-                            "name": "Nintendo Switch 2 国内版",
-                            "brand": "Nintendo",
-                            "official_price": 49980,
-                            "buyback_price": 46300,
-                            "rate": 92.64,
-                            "profit": -3680,
-                            "group": "switch2_main"
-                        },
-                        {
-                            "jan": "4902370553031",
-                            "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
-                            "brand": "Nintendo",
-                            "official_price": 53980,
-                            "buyback_price": 51500,
-                            "rate": 95.41,
-                            "profit": -2480,
-                            "group": "switch2_main"
-                        },
-                        {
-                            "jan": "4902370553505",
-                            "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
-                            "brand": "Nintendo",
-                            "official_price": 53980,
-                            "buyback_price": 51000,
-                            "rate": 94.48,
-                            "profit": -2980,
-                            "group": "switch2_main"
-                        },
-                        {
-                            "jan": "4902370552843",
-                            "name": "Nintendo Switch 2 Proコントローラー",
-                            "brand": "Nintendo",
-                            "official_price": 9980,
-                            "buyback_price": 8300,
-                            "rate": 83.17,
-                            "profit": -1680,
-                            "group": "switch2_procon"
-                        },
-                        {
-                            "jan": "4902370552744",
-                            "name": "Joy-Con 2 (L)/(R) ライトブルー/ライトレッド",
-                            "brand": "Nintendo",
-                            "official_price": 9980,
-                            "buyback_price": 8600,
-                            "rate": 86.17,
-                            "profit": -1380,
-                            "group": "joycon2_pair"
-                        },
-                        {
-                            "jan": "4902370552911",
-                            "name": "Nintendo Switch 2 ドックセット",
-                            "brand": "Nintendo",
-                            "official_price": 12980,
-                            "buyback_price": 11200,
-                            "rate": 86.29,
-                            "profit": -1780,
-                            "group": "switch2_dock"
-                        },
-                        {
-                            "jan": "4902370552706",
-                            "name": "Joy-Con 2 (L) ライトブルー",
-                            "brand": "Nintendo",
-                            "official_price": 4480,
-                            "buyback_price": 3500,
-                            "rate": 78.12,
-                            "profit": -980,
-                            "group": "joycon2_left"
-                        },
-                        {
-                            "jan": "4902370552720",
-                            "name": "Joy-Con 2 (R) ライトレッド",
-                            "brand": "Nintendo",
-                            "official_price": 4480,
-                            "buyback_price": 3500,
-                            "rate": 78.12,
-                            "profit": -980,
-                            "group": "joycon2_right"
-                        },
-                        {
-                            "jan": "4523052030185",
-                            "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-                            "brand": "SanDisk",
-                            "official_price": 7480,
-                            "buyback_price": 5800,
-                            "rate": 77.54,
-                            "profit": -1680,
-                            "group": "microsd_256"
-                        },
-                        {
-                            "jan": "8806095700670",
-                            "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-                            "brand": "Samsung",
-                            "official_price": 7480,
-                            "buyback_price": 5800,
-                            "rate": 77.54,
-                            "profit": -1680,
-                            "group": "microsd_256"
-                        },
-                        {
-                            "jan": "4902370548501",
-                            "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
-                            "brand": "Nintendo",
-                            "official_price": 37980,
-                            "buyback_price": 40700,
-                            "rate": 107.16,
-                            "profit": 2720,
-                            "group": "switch_oled"
-                        },
-                        {
-                            "jan": "4902370548495",
-                            "name": "Nintendo Switch (有機ELモデル) ホワイト",
-                            "brand": "Nintendo",
-                            "official_price": 37980,
-                            "buyback_price": 40700,
-                            "rate": 107.16,
-                            "profit": 2720,
-                            "group": "switch_oled"
-                        },
-                        {
-                            "jan": "4902370550733",
-                            "name": "Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型",
-                            "brand": "Nintendo",
-                            "official_price": 32978,
-                            "buyback_price": 32500,
-                            "rate": 98.55,
-                            "profit": -478,
-                            "group": "switch_standard"
-                        },
-                        {
-                            "jan": "4902370551198",
-                            "name": "Nintendo Switch Joy-Con(L)/(R) グレー 新型",
-                            "brand": "Nintendo",
-                            "official_price": 32978,
-                            "buyback_price": 32500,
-                            "rate": 98.55,
-                            "profit": -478,
-                            "group": "switch_standard"
-                        },
-                        {
-                            "jan": "4902370543278",
-                            "name": "Nintendo Switch リングフィットアドベンチャー",
-                            "brand": "Nintendo",
-                            "official_price": 8778,
-                            "buyback_price": 6800,
-                            "rate": 77.47,
-                            "profit": -1978,
-                            "group": "ringfit"
-                        },
-                        {
-                            "jan": "4902370550504",
-                            "name": "Nintendo Switch Proコントローラー ゼルダの伝説",
-                            "brand": "Nintendo",
-                            "official_price": 7980,
-                            "buyback_price": 6800,
-                            "rate": 85.21,
-                            "profit": -1180,
-                            "group": "switch_procon"
-                        },
-                        {
-                            "jan": "4902370551136",
-                            "name": "Nintendo Switch Joy-Con (L)/(R) パステルパープル/パステルグリーン",
-                            "brand": "Nintendo",
-                            "official_price": 8778,
-                            "buyback_price": 7500,
-                            "rate": 85.44,
-                            "profit": -1278,
-                            "group": "joycon_pair"
-                        },
-                        {
-                            "jan": "4902370551112",
-                            "name": "Nintendo Switch Joy-Con (L)/(R) パステルピンク/パステルイエロー",
-                            "brand": "Nintendo",
-                            "official_price": 8778,
-                            "buyback_price": 7500,
-                            "rate": 85.44,
-                            "profit": -1278,
-                            "group": "joycon_pair"
-                        },
-                        {
-                            "jan": "4902370552027",
-                            "name": "Nintendo Switch Joy-Con(L)/(R) パステルピンク",
-                            "brand": "Nintendo",
-                            "official_price": 8778,
-                            "buyback_price": 7500,
-                            "rate": 85.44,
-                            "profit": -1278,
-                            "group": "joycon_pair"
-                        },
-                        {
-                            "jan": "4902370536010",
-                            "name": "Nintendo Switch Proコントローラー",
-                            "brand": "Nintendo",
-                            "official_price": 7678,
-                            "buyback_price": 5800,
-                            "rate": 75.54,
-                            "profit": -1878,
-                            "group": "switch_procon_std"
-                        },
-                        {
-                            "jan": "4902370544091",
-                            "name": "Joy-Con充電グリップ",
-                            "brand": "Nintendo",
-                            "official_price": 2728,
-                            "buyback_price": 1800,
-                            "rate": 65.98,
-                            "profit": -928,
-                            "group": "joycon_grip"
-                        },
-                        {
-                            "jan": "4902370535730",
-                            "name": "Joy-Conストラップ ネオンレッド",
-                            "brand": "Nintendo",
-                            "official_price": 858,
-                            "buyback_price": 500,
-                            "rate": 58.28,
-                            "profit": -358,
-                            "group": "joycon_strap_red"
-                        },
-                        {
-                            "jan": "4902370535747",
-                            "name": "Joy-Conストラップ ネオンブルー",
-                            "brand": "Nintendo",
-                            "official_price": 858,
-                            "buyback_price": 500,
-                            "rate": 58.28,
-                            "profit": -358,
-                            "group": "joycon_strap_blue"
-                        },
-                        {
-                            "jan": "4902370544114",
-                            "name": "Nintendo Switchキャリングケース",
-                            "brand": "Nintendo",
-                            "official_price": 2178,
-                            "buyback_price": 1500,
-                            "rate": 68.87,
-                            "profit": -678,
-                            "group": "switch_case"
-                        },
-                        {
-                            "jan": "4902370544060",
-                            "name": "Nintendo Switch ACアダプター",
-                            "brand": "Nintendo",
-                            "official_price": 3278,
-                            "buyback_price": 2200,
-                            "rate": 67.11,
-                            "profit": -1078,
-                            "group": "switch_ac"
-                        },
-                        {
-                            "jan": "4948872417075",
-                            "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
-                            "brand": "Sony",
-                            "official_price": 119980,
-                            "buyback_price": 107200,
-                            "rate": 89.35,
-                            "profit": -12780,
-                            "group": "ps5_pro"
-                        },
-                        {
-                            "jan": "4948872415934",
-                            "name": "PlayStation 5 slim CFI-2000A01",
-                            "brand": "Sony",
-                            "official_price": 79980,
-                            "buyback_price": 74700,
-                            "rate": 93.4,
-                            "profit": -5280,
-                            "group": "ps5_slim"
-                        },
-                        {
-                            "jan": "0814585022308",
-                            "name": "Steam Deck OLED 1TB",
-                            "brand": "Valve",
-                            "official_price": 99800,
-                            "buyback_price": 103800,
-                            "rate": 104.01,
-                            "profit": 4000,
-                            "group": "steam_deck"
-                        },
-                        {
-                            "jan": "0815820025238",
-                            "name": "Meta Quest 3S 128GB",
-                            "brand": "Meta",
-                            "official_price": 48400,
-                            "buyback_price": 38600,
-                            "rate": 79.75,
-                            "profit": -9800,
-                            "group": "meta_quest3s"
-                        },
-                        {
-                            "jan": "4547410377224",
-                            "name": "FUJIFILM チェキフィルム 10枚入 INSTAX MINI JP 1",
-                            "brand": "FUJIFILM",
-                            "official_price": 1100,
-                            "buyback_price": 1300,
-                            "rate": 118.18,
-                            "profit": 200,
-                            "group": "cheki_film_10"
-                        },
-                        {
-                            "jan": "4547410377231",
-                            "name": "FUJIFILM チェキフィルム 20枚入 INSTAX MINI JP 2",
-                            "brand": "FUJIFILM",
-                            "official_price": 2100,
-                            "buyback_price": 2680,
-                            "rate": 127.62,
-                            "profit": 580,
-                            "group": "cheki_film_20"
-                        },
-                        {
-                            "jan": "4547410369137",
-                            "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
-                            "brand": "FUJIFILM",
-                            "official_price": 2178,
-                            "buyback_price": 2670,
-                            "rate": 122.59,
-                            "profit": 492,
-                            "group": "utsurundesu"
-                        },
-                        {
-                            "jan": "4547410550955",
-                            "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
-                            "brand": "FUJIFILM",
-                            "official_price": 2178,
-                            "buyback_price": 2500,
-                            "rate": 114.78,
-                            "profit": 322,
-                            "group": "utsurundesu_2025"
-                        },
-                        {
-                            "jan": "4547410348613",
-                            "name": "FUJIFILM チェキスクエア フィルム 10枚 WW1",
-                            "brand": "FUJIFILM",
-                            "official_price": 1320,
-                            "buyback_price": 1200,
-                            "rate": 90.91,
-                            "profit": -120,
-                            "group": "cheki_sq_10"
-                        },
-                        {
-                            "jan": "4547410370003",
-                            "name": "FUJIFILM チェキスクエア フィルム 20枚 WW2",
-                            "brand": "FUJIFILM",
-                            "official_price": 2480,
-                            "buyback_price": 2400,
-                            "rate": 96.77,
-                            "profit": -80,
-                            "group": "cheki_sq_20"
-                        },
-                        {
-                            "jan": "4547410489132",
-                            "name": "instax mini 12 ミントグリーン",
-                            "brand": "FUJIFILM",
-                            "official_price": 15180,
-                            "buyback_price": 11200,
-                            "rate": 73.78,
-                            "profit": -3980,
-                            "group": "instax_mini12"
-                        },
-                        {
-                            "jan": "4547410489149",
-                            "name": "instax mini 12 クレイホワイト",
-                            "brand": "FUJIFILM",
-                            "official_price": 15180,
-                            "buyback_price": 11200,
-                            "rate": 73.78,
-                            "profit": -3980,
-                            "group": "instax_mini12"
-                        },
-                        {
-                            "jan": "7622100834717",
-                            "name": "IQOS イルマ i ワン リーフグリーン",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 3000,
-                            "rate": 75.38,
-                            "profit": -980,
-                            "group": "iqos_one_green"
-                        },
-                        {
-                            "jan": "7622100834687",
-                            "name": "IQOS イルマ i ワン ビビッドテラコッタ",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 2800,
-                            "rate": 70.35,
-                            "profit": -1180,
-                            "group": "iqos_one_terracotta"
-                        },
-                        {
-                            "jan": "7622100834724",
-                            "name": "IQOS イルマ i ワン デジタルバイオレット",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 2800,
-                            "rate": 70.35,
-                            "profit": -1180,
-                            "group": "iqos_one_violet"
-                        },
-                        {
-                            "jan": "7622100834663",
-                            "name": "IQOS イルマ i ワン ブリーズブルー",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 1600,
-                            "rate": 40.2,
-                            "profit": -2380,
-                            "group": "iqos_one_blue"
-                        },
-                        {
-                            "jan": "7622100834649",
-                            "name": "IQOS イルマ i ワン ミッドナイトブラック",
-                            "brand": "IQOS",
-                            "official_price": 3980,
-                            "buyback_price": 1700,
-                            "rate": 42.71,
-                            "profit": -2280,
-                            "group": "iqos_one_black"
-                        },
-                        {
-                            "jan": "7622100547938",
-                            "name": "IQOS イルマ i ワン セレッティ モデル",
-                            "brand": "IQOS",
-                            "official_price": 6980,
-                            "buyback_price": 6000,
-                            "rate": 85.96,
-                            "profit": -980,
-                            "group": "iqos_one_seletti"
-                        },
-                        {
-                            "jan": "7622100547525",
-                            "name": "IQOS イルマ i ワン ミネラ モデル",
-                            "brand": "IQOS",
-                            "official_price": 4980,
-                            "buyback_price": 4400,
-                            "rate": 88.35,
-                            "profit": -580,
-                            "group": "iqos_one_minera"
-                        },
-                        {
-                            "jan": "7622100547020",
-                            "name": "IQOS イルマ i ワン アニバーサリーモデル",
-                            "brand": "IQOS",
-                            "official_price": 5980,
-                            "buyback_price": 5300,
-                            "rate": 88.63,
-                            "profit": -680,
-                            "group": "iqos_one_anniversary"
-                        },
-                        {
-                            "jan": "7622100548096",
-                            "name": "IQOS イルマ i ギャラクシーブルー",
-                            "brand": "IQOS",
-                            "official_price": 6980,
-                            "buyback_price": 5500,
-                            "rate": 78.8,
-                            "profit": -1480,
-                            "group": "iqos_kit_galaxy"
-                        },
-                        {
-                            "jan": "7622100834601",
-                            "name": "IQOS イルマ i リーフグリーン",
-                            "brand": "IQOS",
-                            "official_price": 6980,
-                            "buyback_price": 4500,
-                            "rate": 64.47,
-                            "profit": -2480,
-                            "group": "iqos_kit_green"
-                        },
-                        {
-                            "jan": "7622100547488",
-                            "name": "IQOS イルマ i ミネラ モデル",
-                            "brand": "IQOS",
-                            "official_price": 9980,
-                            "buyback_price": 6000,
-                            "rate": 60.12,
-                            "profit": -3980,
-                            "group": "iqos_kit_minera"
-                        },
-                        {
-                            "jan": "7622100547044",
-                            "name": "IQOS イルマ i アニバーサリーモデル 錫セット",
-                            "brand": "IQOS",
-                            "official_price": 9980,
-                            "buyback_price": 7000,
-                            "rate": 70.14,
-                            "profit": -2980,
-                            "group": "iqos_kit_anniversary"
-                        },
-                        {
-                            "jan": "7622100547976",
-                            "name": "IQOS イルマ i セレッティ モデル",
-                            "brand": "IQOS",
-                            "official_price": 14980,
-                            "buyback_price": 10500,
-                            "rate": 70.09,
-                            "profit": -4480,
-                            "group": "iqos_kit_seletti"
-                        },
-                        {
-                            "jan": "7622100834465",
-                            "name": "IQOS イルマ i プライム ブリーズブルー",
-                            "brand": "IQOS",
-                            "official_price": 12980,
-                            "buyback_price": 7600,
-                            "rate": 58.55,
-                            "profit": -5380,
-                            "group": "iqos_prime_blue"
-                        },
-                        {
-                            "jan": "7622100834380",
-                            "name": "IQOS イルマ i プライム ミッドナイトブラック",
-                            "brand": "IQOS",
-                            "official_price": 12980,
-                            "buyback_price": 7600,
-                            "rate": 58.55,
-                            "profit": -5380,
-                            "group": "iqos_prime_black"
-                        },
-                        {
-                            "jan": "7622100834502",
-                            "name": "IQOS イルマ i プライム アスペングリーン",
-                            "brand": "IQOS",
-                            "official_price": 12980,
-                            "buyback_price": 7900,
-                            "rate": 60.86,
-                            "profit": -5080,
-                            "group": "iqos_prime_aspen"
-                        },
-                        {
-                            "jan": "7622100834540",
-                            "name": "IQOS イルマ i プライム ガーネットレッド限定モデル",
-                            "brand": "IQOS",
-                            "official_price": 12980,
-                            "buyback_price": 9000,
-                            "rate": 69.34,
-                            "profit": -3980,
-                            "group": "iqos_prime_garnet"
-                        },
-                        {
-                            "jan": "7622100547464",
-                            "name": "IQOS イルマ i プライム ミネラ モデル",
-                            "brand": "IQOS",
-                            "official_price": 14980,
-                            "buyback_price": 9800,
-                            "rate": 65.42,
-                            "profit": -5180,
-                            "group": "iqos_prime_minera"
-                        },
-                        {
-                            "jan": "7622100546993",
-                            "name": "IQOS イルマ i プライム アニバーサリーモデル 錫セット",
-                            "brand": "IQOS",
-                            "official_price": 17980,
-                            "buyback_price": 12000,
-                            "rate": 66.74,
-                            "profit": -5980,
-                            "group": "iqos_prime_anniversary"
-                        },
-                        {
-                            "jan": "7622100547952",
-                            "name": "IQOS イルマ i プライム セレッティ モデル",
-                            "brand": "IQOS",
-                            "official_price": 24980,
-                            "buyback_price": 18000,
-                            "rate": 72.06,
-                            "profit": -6980,
-                            "group": "iqos_prime_seletti"
-                        }
-                    ]
-                };
+            "updated_at": "2026-02-01T12:00:00",
+            "all_products": [
+                {"jan": "4902370552683", "name": "Nintendo Switch 2 多言語対応版", "brand": "Nintendo", "official_price": 69980, "buyback_price": 85000, "rate": 121.46, "profit": 15020, "group": "switch2_main"},
+                {"jan": "4902370553024", "name": "Nintendo Switch 2 国内版", "brand": "Nintendo", "official_price": 49980, "buyback_price": 46300, "rate": 92.64, "profit": -3680, "group": "switch2_main"},
+                {"jan": "4902370553031", "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版", "brand": "Nintendo", "official_price": 53980, "buyback_price": 51500, "rate": 95.42, "profit": -2480, "group": "switch2_main"},
+                {"jan": "4902370553505", "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版", "brand": "Nintendo", "official_price": 53980, "buyback_price": 51000, "rate": 94.48, "profit": -2980, "group": "switch2_main"},
+                {"jan": "4902370548501", "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド", "brand": "Nintendo", "official_price": 37980, "buyback_price": 40600, "rate": 106.90, "profit": 2620, "group": "switch_oled"},
+                {"jan": "4902370548495", "name": "Nintendo Switch (有機ELモデル) ホワイト", "brand": "Nintendo", "official_price": 37980, "buyback_price": 40600, "rate": 106.90, "profit": 2620, "group": "switch_oled"},
+                {"jan": "4902370550733", "name": "Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型", "brand": "Nintendo", "official_price": 32978, "buyback_price": 32500, "rate": 98.55, "profit": -478, "group": "switch_standard"},
+                {"jan": "4902370551198", "name": "Nintendo Switch Joy-Con(L)/(R) グレー 新型", "brand": "Nintendo", "official_price": 32978, "buyback_price": 32500, "rate": 98.55, "profit": -478, "group": "switch_standard"},
+                {"jan": "0814585022308", "name": "Steam Deck OLED 1TB", "brand": "Valve", "official_price": 99800, "buyback_price": 103800, "rate": 104.01, "profit": 4000, "group": "steam_deck"},
+                {"jan": "4948872417075", "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版", "brand": "Sony", "official_price": 119980, "buyback_price": 107200, "rate": 89.35, "profit": -12780, "group": "ps5_pro"},
+                {"jan": "4948872415934", "name": "PlayStation 5 slim CFI-2000A01", "brand": "Sony", "official_price": 79980, "buyback_price": 74700, "rate": 93.40, "profit": -5280, "group": "ps5_slim"},
+                {"jan": "4902370552843", "name": "Nintendo Switch 2 Proコントローラー", "brand": "Nintendo", "official_price": 9980, "buyback_price": 8400, "rate": 84.17, "profit": -1580, "group": "switch2_procon"},
+                {"jan": "4902370552744", "name": "Joy-Con 2 (L)/(R) ライトブルー/ライトレッド", "brand": "Nintendo", "official_price": 9980, "buyback_price": 8600, "rate": 86.17, "profit": -1380, "group": "joycon2_pair"},
+                {"jan": "4902370552911", "name": "Nintendo Switch 2 ドックセット", "brand": "Nintendo", "official_price": 12980, "buyback_price": 11200, "rate": 86.29, "profit": -1780, "group": "switch2_dock"},
+                {"jan": "0815820025238", "name": "Meta Quest 3S 128GB", "brand": "Meta", "official_price": 48400, "buyback_price": 38600, "rate": 79.75, "profit": -9800, "group": "meta_quest3s"},
+                {"jan": "4902370552706", "name": "Joy-Con 2 (L) ライトブルー", "brand": "Nintendo", "official_price": 4480, "buyback_price": 3500, "rate": 78.13, "profit": -980, "group": "joycon2_left"},
+                {"jan": "4902370552720", "name": "Joy-Con 2 (R) ライトレッド", "brand": "Nintendo", "official_price": 4480, "buyback_price": 3500, "rate": 78.13, "profit": -980, "group": "joycon2_right"},
+                {"jan": "4523052030185", "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2", "brand": "SanDisk", "official_price": 7480, "buyback_price": 5800, "rate": 77.54, "profit": -1680, "group": "microsd_256"},
+                {"jan": "8806095700670", "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2", "brand": "Samsung", "official_price": 7480, "buyback_price": 5800, "rate": 77.54, "profit": -1680, "group": "microsd_256"}
+            ]
+        };
 
         // ============================================
         // データ読み込み
         // ============================================
         async function loadData() {
             try {
+                // まず外部JSONを試す（GitHub Pages用）
                 const response = await fetch('data/prices.json');
                 if (response.ok) {
-                    const ct = response.headers.get('content-type');
-                    if (ct && ct.includes('application/json')) {
+                    const contentType = response.headers.get('content-type');
+                    if (contentType && contentType.includes('application/json')) {
                         const data = await response.json();
-                        if (data.all_products && data.all_products.length > 0) {
-                            allProducts = data.all_products;
-                            setUpdateTime(data.updated_at);
-                            onDataLoaded();
-                            return;
-                        }
+                        allProducts = data.all_products || [];
+                        const updateTime = new Date(data.updated_at);
+                        document.getElementById('updateTime').textContent = 
+                            `最終更新: ${updateTime.toLocaleString('ja-JP')}`;
+                        renderProducts();
+                        return;
                     }
                 }
-            } catch (e) { console.log('外部JSON失敗、埋め込みデータ使用'); }
+            } catch (error) {
+                console.log('外部JSON読み込み失敗、埋め込みデータを使用');
+            }
+            
+            // フォールバック：埋め込みデータを使用
             allProducts = EMBEDDED_DATA.all_products || [];
-            setUpdateTime(EMBEDDED_DATA.updated_at);
-            onDataLoaded();
-        }
-
-        function setUpdateTime(ts) {
-            const d = new Date(ts);
-            document.getElementById('updateTime').textContent = `最終更新: ${d.toLocaleString('ja-JP')}`;
-        }
-
-        function onDataLoaded() {
-            buildFilterButtons();
+            const updateTime = new Date(EMBEDDED_DATA.updated_at);
+            document.getElementById('updateTime').textContent = 
+                `最終更新: ${updateTime.toLocaleString('ja-JP')}`;
             renderProducts();
-            renderDashboard();
-            renderProfitCards();
-            renderBrandSummary();
         }
 
         // ============================================
-        // ダッシュボード
+        // 組み合わせ検索アルゴリズム（自動で最適な商品数を探す）
         // ============================================
-        function renderDashboard() {
-            const grid = document.getElementById('dashboardGrid');
-            const profitItems = allProducts.filter(p => p.rate >= 100);
-            const avgRate = allProducts.length > 0 ? (allProducts.reduce((s,p) => s+p.rate, 0) / allProducts.length) : 0;
-            const bestProduct = allProducts.reduce((best, p) => p.rate > (best?.rate || 0) ? p : best, null);
-            const totalProfit = profitItems.reduce((s,p) => s + p.profit, 0);
-
-            grid.innerHTML = `
-                <div class="dash-card profit">
-                    <div class="dash-icon">🔥</div>
-                    <div class="dash-value" style="color:#059669;">${profitItems.length}件</div>
-                    <div class="dash-label">利益商品（100%超）</div>
-                </div>
-                <div class="dash-card info">
-                    <div class="dash-icon">📊</div>
-                    <div class="dash-value">${avgRate.toFixed(1)}%</div>
-                    <div class="dash-label">全体平均買取率</div>
-                </div>
-                <div class="dash-card profit">
-                    <div class="dash-icon">💰</div>
-                    <div class="dash-value" style="color:#059669;">¥${totalProfit.toLocaleString()}</div>
-                    <div class="dash-label">利益商品の合計利益</div>
-                </div>
-                <div class="dash-card info">
-                    <div class="dash-icon">🏆</div>
-                    <div class="dash-value">${bestProduct ? bestProduct.rate + '%' : '-'}</div>
-                    <div class="dash-label">最高買取率</div>
-                </div>
-            `;
-        }
-
-        function renderProfitCards() {
-            const container = document.getElementById('profitCards');
-            const profitItems = allProducts.filter(p => p.rate >= 100).sort((a,b) => b.rate - a.rate);
-
-            if (profitItems.length === 0) {
-                container.innerHTML = '<div class="empty-state"><div class="empty-state-icon">😢</div><p>利益商品がありません</p></div>';
-                return;
-            }
-
-            container.innerHTML = profitItems.map(p => `
-                <div class="profit-card">
-                    <div class="profit-badge">${p.rate}%</div>
-                    <div class="profit-name">${escapeHtml(p.name)}</div>
-                    <div class="profit-brand">${p.brand} | JAN: ${p.jan}</div>
-                    <div class="profit-row"><span>定価（税込）</span><span>¥${p.official_price.toLocaleString()}</span></div>
-                    <div class="profit-row"><span>買取価格</span><span style="font-weight:700;">¥${p.buyback_price.toLocaleString()}</span></div>
-                    <div class="profit-amount">+¥${p.profit.toLocaleString()} 利益</div>
-                </div>
-            `).join('');
-        }
-
-        function renderBrandSummary() {
-            const container = document.getElementById('brandSummary');
-            const brands = {};
-            allProducts.forEach(p => {
-                if (!brands[p.brand]) brands[p.brand] = { count: 0, totalRate: 0, profitCount: 0, maxRate: 0 };
-                brands[p.brand].count++;
-                brands[p.brand].totalRate += p.rate;
-                if (p.rate >= 100) brands[p.brand].profitCount++;
-                if (p.rate > brands[p.brand].maxRate) brands[p.brand].maxRate = p.rate;
-            });
-
-            const sorted = Object.entries(brands).sort((a,b) => (b[1].totalRate/b[1].count) - (a[1].totalRate/a[1].count));
-            const maxAvg = sorted.length > 0 ? sorted[0][1].totalRate / sorted[0][1].count : 100;
-
-            container.innerHTML = sorted.map(([name, data]) => {
-                const avg = (data.totalRate / data.count).toFixed(1);
-                const barWidth = (avg / maxAvg * 100).toFixed(0);
-                const barColor = avg >= 100 ? '#10b981' : avg >= 80 ? '#6366f1' : '#ef4444';
-                return `
-                    <div class="brand-card">
-                        <div class="brand-name">${escapeHtml(name)}</div>
-                        <div class="brand-stat"><span>商品数</span><span class="brand-stat-value">${data.count}件</span></div>
-                        <div class="brand-stat"><span>平均買取率</span><span class="brand-stat-value">${avg}%</span></div>
-                        <div class="brand-stat"><span>利益商品</span><span class="brand-stat-value" style="color:#059669;">${data.profitCount}件</span></div>
-                        <div class="brand-stat"><span>最高買取率</span><span class="brand-stat-value">${data.maxRate}%</span></div>
-                        <div class="brand-bar"><div class="brand-bar-fill" style="width:${barWidth}%;background:${barColor};"></div></div>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // ============================================
-        // フィルターボタン動的生成
-        // ============================================
-        function buildFilterButtons() {
-            const container = document.getElementById('filterButtons');
-            const brands = [...new Set(allProducts.map(p => p.brand))].sort();
-            container.innerHTML = `<button class="filter-btn active" data-brand="all">すべて</button>` +
-                brands.map(b => `<button class="filter-btn" data-brand="${escapeHtml(b)}">${escapeHtml(b)}</button>`).join('');
-
-            container.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    currentBrand = btn.dataset.brand;
-                    renderProducts();
-                });
-            });
-        }
-
-        // ============================================
-        // 組み合わせ検索
-        // ============================================
-        function findCombinations(points, targetRate, diversifyBrands = true, maxSameBrand = 2) {
+        function findCombinations(points, targetRate) {
             const results = [];
-            for (let itemCount = 1; itemCount <= 5; itemCount++) {
+            
+            // ポイント額に応じて探索する最大商品数を決定
+            const maxItems = Math.min(5, Math.ceil(points / 10000));
+            
+            // 1点から順に探索
+            for (let itemCount = 1; itemCount <= maxItems; itemCount++) {
                 const combos = getCombinations(allProducts, itemCount);
+                
                 for (const combo of combos) {
+                    // 同一グループの商品が含まれていないかチェック
                     const groups = combo.map(p => p.group).filter(g => g);
-                    if (groups.length !== new Set(groups).size) continue;
-                    if (diversifyBrands) {
-                        const bc = {};
-                        for (const p of combo) bc[p.brand] = (bc[p.brand]||0)+1;
-                        if (Math.max(...Object.values(bc)) > maxSameBrand) continue;
+                    const uniqueGroups = new Set(groups);
+                    if (groups.length !== uniqueGroups.size) {
+                        // 同一グループの商品が複数含まれている → スキップ
+                        continue;
                     }
-                    const totalPrice = combo.reduce((s,p) => s+p.official_price, 0);
-                    const totalBuyback = combo.reduce((s,p) => s+p.buyback_price, 0);
-                    const avgRate = (totalBuyback/totalPrice)*100;
-                    if (totalPrice > points || avgRate < targetRate) continue;
-                    const pointsRemaining = points - totalPrice;
-                    const uniqueBrands = new Set(combo.map(p => p.brand));
-                    results.push({
-                        items: combo, additionalItems: [], itemCount: combo.length,
-                        totalPrice, totalBuyback, avgRate: Math.round(avgRate*100)/100,
-                        pointsUsed: totalPrice, pointsRemaining,
-                        finalCash: totalBuyback, effectiveReturn: totalBuyback - pointsRemaining,
-                        profit: totalBuyback - points, brandCount: uniqueBrands.size, brands: [...uniqueBrands]
-                    });
+                    
+                    const totalPrice = combo.reduce((sum, p) => sum + p.official_price, 0);
+                    const totalBuyback = combo.reduce((sum, p) => sum + p.buyback_price, 0);
+                    const avgRate = (totalBuyback / totalPrice) * 100;
+                    
+                    // 条件チェック
+                    // 1. ポイント以下のみ（手出しなし）
+                    // 2. 平均買取率が目標以上
+                    if (totalPrice <= points && avgRate >= targetRate) {
+                        
+                        const pointsUsed = totalPrice;
+                        const pointsRemaining = points - totalPrice;
+                        const utilizationRate = (pointsUsed / points) * 100;
+                        
+                        results.push({
+                            items: combo,
+                            itemCount: combo.length,
+                            totalPrice,
+                            totalBuyback,
+                            avgRate: Math.round(avgRate * 100) / 100,
+                            cashOut: 0,
+                            profit: totalBuyback - totalPrice,
+                            pointsUsed,
+                            pointsRemaining,
+                            utilizationRate: Math.round(utilizationRate * 100) / 100
+                        });
+                    }
                 }
             }
-            const seen = new Set();
-            const unique = results.filter(r => { const k = r.items.map(i=>i.jan).sort().join(','); if(seen.has(k)) return false; seen.add(k); return true; });
-            unique.sort((a,b) => {
-                if (a.effectiveReturn !== b.effectiveReturn) return b.effectiveReturn - a.effectiveReturn;
-                if (diversifyBrands && a.brandCount !== b.brandCount) return b.brandCount - a.brandCount;
+            
+            // ソート：ポイント残りが少ない順（商品数に関係なく）
+            results.sort((a, b) => {
+                // 1. ポイント残りが少ない順
                 if (a.pointsRemaining !== b.pointsRemaining) return a.pointsRemaining - b.pointsRemaining;
-                return a.itemCount - b.itemCount;
+                // 2. 同じ残りなら商品数が少ない順
+                if (a.itemCount !== b.itemCount) return a.itemCount - b.itemCount;
+                // 3. 同じなら平均買取率が高い順
+                return b.avgRate - a.avgRate;
             });
-            return unique.slice(0, 15);
+            
+            // 上位15件を返す
+            return results.slice(0, 15);
         }
 
+        // 組み合わせ生成（各商品1点まで・重複なし）
         function getCombinations(arr, k) {
             if (k === 1) return arr.map(item => [item]);
             if (k > arr.length) return [];
+            
             const result = [];
             for (let i = 0; i <= arr.length - k; i++) {
-                const tailCombos = getCombinations(arr.slice(i+1), k-1);
-                for (const tail of tailCombos) result.push([arr[i], ...tail]);
+                const head = arr[i];
+                const tailCombos = getCombinations(arr.slice(i + 1), k - 1);
+                for (const tail of tailCombos) {
+                    result.push([head, ...tail]);
+                }
             }
             return result;
         }
 
+        // ============================================
+        // 検索実行
+        // ============================================
         function executeSearch() {
             const points = parseInt(document.getElementById('pointsInput').value) || 50000;
             const targetRate = parseFloat(document.getElementById('targetRateInput').value) || 95;
-            const diversifyBrands = document.getElementById('diversifyBrands').checked;
-            const maxSameBrand = parseInt(document.getElementById('maxSameBrand').value) || 2;
-            renderResults(findCombinations(points, targetRate, diversifyBrands, maxSameBrand), points, targetRate, diversifyBrands, maxSameBrand);
+            
+            const results = findCombinations(points, targetRate);
+            
+            renderResults(results, points, targetRate);
         }
 
         // ============================================
         // 検索結果表示
         // ============================================
-        function renderResults(results, points, targetRate, diversifyBrands, maxSameBrand) {
+        function renderResults(results, points, targetRate) {
             const section = document.getElementById('resultsSection');
             const list = document.getElementById('resultsList');
+            const title = document.getElementById('resultsTitle');
+            const subtitle = document.getElementById('resultsSubtitle');
+            
             section.style.display = 'block';
-            document.getElementById('resultsTitle').textContent = `✅ ${results.length}件の組み合わせ`;
-            document.getElementById('resultsSubtitle').textContent = `${points.toLocaleString()}円 / ${targetRate}%以上${diversifyBrands ? ` / 分散ON（最大${maxSameBrand}個）` : ''}`;
+            
+            title.textContent = `✅ ${results.length}件の組み合わせが見つかりました`;
+            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 目標買取率 ${targetRate}%以上 / 商品数は自動最適化`;
+            
             if (results.length === 0) {
-                list.innerHTML = `<div class="no-results"><div class="no-results-icon">😢</div><p>条件に合う組み合わせが見つかりません</p>
-                    <div class="tips-box"><h4>💡 ヒント</h4><ul><li>目標買取率を下げてみてください</li><li>ポイント額を調整してください</li>
-                    ${diversifyBrands?'<li>メーカー分散をOFFにしてください</li>':''}</ul></div></div>`;
-                return;
-            }
-            list.innerHTML = results.map((combo, i) => {
-                const rc = i===0?'gold':i===1?'silver':i===2?'bronze':'';
-                const bb = combo.brandCount>1?`<span class="brand-diversity-badge">🏭 ${combo.brandCount}メーカー</span>`:'';
-                return `<div class="combination-card ${i===0?'recommended':''}">
-                    <div class="combination-header">
-                        <div class="combination-rank">
-                            <div class="rank-badge ${rc}">${i+1}</div>
-                            <div class="combination-info"><h3>${combo.itemCount}点 ${i===0?'⭐ 最もお得':''}</h3><p>¥${combo.pointsUsed.toLocaleString()} → ¥${combo.totalBuyback.toLocaleString()} ${bb}</p></div>
-                        </div>
-                        <div class="combination-stats">
-                            <div class="stat-item"><div class="stat-value" style="color:#059669;font-size:1.3rem;">¥${combo.effectiveReturn.toLocaleString()}</div><div class="stat-label">実質リターン</div></div>
-                            <div class="stat-item"><div class="stat-value">¥${combo.finalCash.toLocaleString()}</div><div class="stat-label">買取金額</div></div>
-                            <div class="stat-item"><div class="stat-value" style="color:#ef4444;">-¥${combo.pointsRemaining.toLocaleString()}</div><div class="stat-label">未使用損失</div></div>
-                            <div class="stat-item"><div class="stat-value">${combo.avgRate}%</div><div class="stat-label">総合買取率</div></div>
+                list.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">😢</div>
+                        <p>条件に合う組み合わせが見つかりませんでした</p>
+                        <div class="tips-box">
+                            <h4>💡 ヒント</h4>
+                            <ul>
+                                <li>目標買取率を下げてみてください（90%など）</li>
+                                <li>ポイント額を調整してみてください</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="combination-items">${[...combo.items,...combo.additionalItems].map(item => {
-                        const cls = item.rate>=100?'high':item.rate>=95?'medium':'low';
-                        return `<div class="combo-item"><span class="combo-item-name"><span style="color:#6b7280;font-size:0.75rem;">[${item.brand}]</span> ${escapeHtml(item.name)}</span>
-                            <span class="combo-item-price">¥${item.official_price.toLocaleString()}</span>
-                            <span class="combo-item-buyback">¥${item.buyback_price.toLocaleString()}</span>
-                            <span class="combo-item-rate ${cls}">${item.rate}%</span></div>`;
-                    }).join('')}</div></div>`;
+                `;
+                return;
+            }
+            
+            list.innerHTML = results.map((combo, index) => {
+                const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
+                const isRecommended = index === 0;
+                const profitClass = combo.profit >= 0 ? 'positive' : 'negative';
+                const profitSign = combo.profit >= 0 ? '+' : '';
+                
+                return `
+                    <div class="combination-card ${isRecommended ? 'recommended' : ''}">
+                        <div class="combination-header">
+                            <div class="combination-rank">
+                                <div class="rank-badge ${rankClass}">${index + 1}</div>
+                                <div class="combination-info">
+                                    <h3>${combo.itemCount}点の組み合わせ ${isRecommended ? '⭐ おすすめ' : ''}</h3>
+                                    <p>ポイント ${combo.pointsUsed.toLocaleString()}円使用（消化率 ${combo.utilizationRate}%）→ 残り ${combo.pointsRemaining.toLocaleString()}円</p>
+                                </div>
+                            </div>
+                            <div class="combination-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">${combo.avgRate}%</div>
+                                    <div class="stat-label">平均買取率</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">${combo.utilizationRate}%</div>
+                                    <div class="stat-label">ポイント消化率</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">¥${combo.cashOut.toLocaleString()}</div>
+                                    <div class="stat-label">手出し</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value ${profitClass}">${profitSign}¥${combo.profit.toLocaleString()}</div>
+                                    <div class="stat-label">損益</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="combination-items">
+                            ${combo.items.map(item => {
+                                const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
+                                return `
+                                    <div class="combo-item">
+                                        <span class="combo-item-name">${escapeHtml(item.name)}</span>
+                                        <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()}</span>
+                                        <span class="combo-item-buyback">買取 ¥${item.buyback_price.toLocaleString()}</span>
+                                        <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
             }).join('');
         }
 
@@ -1242,65 +975,103 @@
         // ============================================
         function renderProducts() {
             const listEl = document.getElementById('productsList');
-            let filtered = currentBrand === 'all' ? [...allProducts] : allProducts.filter(p => p.brand === currentBrand);
-            if (searchQuery) {
-                const q = searchQuery.toLowerCase();
-                filtered = filtered.filter(p => p.name.toLowerCase().includes(q) || p.jan.includes(q) || p.brand.toLowerCase().includes(q));
-            }
-            filtered.sort((a,b) => b.rate - a.rate);
+            
+            let filtered = currentBrand === 'all' 
+                ? allProducts 
+                : allProducts.filter(p => p.brand === currentBrand);
+            
+            // 買取率でソート
+            filtered.sort((a, b) => b.rate - a.rate);
+            
             if (filtered.length === 0) {
-                listEl.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📭</div><p>商品がありません</p></div>`;
+                listEl.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">📭</div>
+                        <p>商品がありません</p>
+                    </div>
+                `;
                 return;
             }
-            listEl.innerHTML = filtered.map(p => {
-                const rc = p.rate>=100?'excellent':p.rate>=95?'good':'normal';
-                const profitTag = p.profit > 0 ? `<span class="product-profit-tag">+¥${p.profit.toLocaleString()}</span>` : '';
-                return `<div class="product-item">
-                    <div class="product-info">
-                        <div class="product-name">${escapeHtml(p.name)}${profitTag}</div>
-                        <div class="product-meta"><span class="product-brand">${escapeHtml(p.brand)}</span>JAN: ${p.jan}</div>
+            
+            listEl.innerHTML = filtered.map(product => {
+                const rateClass = product.rate >= 100 ? 'excellent' : 
+                                  product.rate >= 95 ? 'good' : 'normal';
+                
+                return `
+                    <div class="product-item">
+                        <div class="product-info">
+                            <div class="product-name">${escapeHtml(product.name)}</div>
+                            <div class="product-meta">
+                                <span class="product-brand">${escapeHtml(product.brand)}</span>
+                                JAN: ${product.jan}
+                            </div>
+                        </div>
+                        <div class="product-prices">
+                            <div class="price-block">
+                                <div class="price-label">定価</div>
+                                <div class="price-value">¥${product.official_price.toLocaleString()}</div>
+                            </div>
+                            <div class="price-block">
+                                <div class="price-label">買取</div>
+                                <div class="price-value">¥${product.buyback_price.toLocaleString()}</div>
+                            </div>
+                            <div class="rate-badge ${rateClass}">
+                                <span class="rate-value">${product.rate}%</span>
+                                <span class="rate-label">買取率</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-prices">
-                        <div class="price-block"><div class="price-label">定価</div><div class="price-value">¥${p.official_price.toLocaleString()}</div></div>
-                        <div class="price-block"><div class="price-label">買取</div><div class="price-value">¥${p.buyback_price.toLocaleString()}</div></div>
-                        <div class="rate-badge ${rc}"><span class="rate-value">${p.rate}%</span><span class="rate-label">買取率</span></div>
-                    </div>
-                </div>`;
+                `;
             }).join('');
         }
 
         // ============================================
         // ユーティリティ
         // ============================================
-        function escapeHtml(text) { const d = document.createElement('div'); d.textContent = text; return d.innerHTML; }
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
 
         // ============================================
         // イベントリスナー
         // ============================================
+        
+        // タブ切り替え
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                 document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
                 btn.classList.add('active');
                 document.getElementById(`tab-${btn.dataset.tab}`).classList.add('active');
             });
         });
 
-        document.getElementById('searchBtn').addEventListener('click', executeSearch);
-        document.getElementById('diversifyBrands').addEventListener('change', e => {
-            const opt = document.getElementById('maxBrandOption');
-            opt.style.opacity = e.target.checked ? '1' : '0.5';
-            opt.querySelector('select').disabled = !e.target.checked;
-        });
-        document.querySelectorAll('.form-input').forEach(input => {
-            input.addEventListener('keypress', e => { if (e.key === 'Enter') executeSearch(); });
-        });
-        document.getElementById('productSearch').addEventListener('input', e => {
-            searchQuery = e.target.value;
-            renderProducts();
+        // フィルターボタン
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentBrand = btn.dataset.brand;
+                renderProducts();
+            });
         });
 
+        // 検索ボタン
+        document.getElementById('searchBtn').addEventListener('click', executeSearch);
+
+        // Enterキーで検索
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') executeSearch();
+            });
+        });
+
+        // ============================================
         // 初期化
+        // ============================================
         loadData();
     </script>
 </body>
