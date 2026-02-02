@@ -885,11 +885,6 @@
                         <span class="form-hint">ビックカメラ・ヤマダ電機等のポイント</span>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">目標平均買取率</label>
-                        <input type="number" class="form-input" id="targetRateInput" placeholder="95" value="95" min="0" max="200">
-                        <span class="form-hint">組み合わせの平均がこの値以上</span>
-                    </div>
-                    <div class="form-group">
                         <label class="form-label">最大商品種類数</label>
                         <input type="number" class="form-input" id="maxItemsInput" placeholder="5" value="5" min="1" max="10">
                         <span class="form-hint">組み合わせに含める最大種類数</span>
@@ -1050,7 +1045,7 @@
         // ============================================
         // 組み合わせ検索アルゴリズム（商品数指定対応）
         // ============================================
-        function findCombinations(points, targetRate, maxItems) {
+        function findCombinations(points, maxItems) {
             const results = [];
             
             // 1点から指定数まで探索
@@ -1062,7 +1057,6 @@
                     const groups = combo.map(p => p.group).filter(g => g);
                     const uniqueGroups = new Set(groups);
                     if (groups.length !== uniqueGroups.size) {
-                        // 同一グループの商品が複数含まれている → スキップ
                         continue;
                     }
                     
@@ -1072,14 +1066,12 @@
                     
                     // 条件チェック
                     // 1. ポイント以下のみ（手出しなし）
-                    // 2. 平均買取率が目標以上
-                    // 3. ポイント消化率98%以上
+                    // 2. ポイント消化率98%以上
                     const utilizationRate = (totalPrice / points) * 100;
-                    if (totalPrice <= points && avgRate >= targetRate && utilizationRate >= 98) {
+                    if (totalPrice <= points && utilizationRate >= 98) {
                         
                         const pointsUsed = totalPrice;
                         const pointsRemaining = points - totalPrice;
-                        const utilizationRate = (pointsUsed / points) * 100;
                         
                         results.push({
                             items: combo,
@@ -1097,14 +1089,14 @@
                 }
             }
             
-            // ソート：ポイント残りが少ない順（商品数に関係なく）
+            // ソート：平均買取率が高い順
             results.sort((a, b) => {
-                // 1. ポイント残りが少ない順
-                if (a.pointsRemaining !== b.pointsRemaining) return a.pointsRemaining - b.pointsRemaining;
-                // 2. 同じ残りなら商品数が少ない順
-                if (a.itemCount !== b.itemCount) return a.itemCount - b.itemCount;
-                // 3. 同じなら平均買取率が高い順
-                return b.avgRate - a.avgRate;
+                // 1. 平均買取率が高い順
+                if (b.avgRate !== a.avgRate) return b.avgRate - a.avgRate;
+                // 2. 同じならポイント消化率が高い順
+                if (b.utilizationRate !== a.utilizationRate) return b.utilizationRate - a.utilizationRate;
+                // 3. 同じなら商品数が少ない順
+                return a.itemCount - b.itemCount;
             });
             
             // 上位15件を返す
@@ -1132,18 +1124,17 @@
         // ============================================
         function executeSearch() {
             const points = parseInt(document.getElementById('pointsInput').value) || 50000;
-            const targetRate = parseFloat(document.getElementById('targetRateInput').value) || 95;
             const maxItems = parseInt(document.getElementById('maxItemsInput').value) || 5;
             
-            const results = findCombinations(points, targetRate, Math.min(maxItems, 10));
+            const results = findCombinations(points, Math.min(maxItems, 10));
             
-            renderResults(results, points, targetRate);
+            renderResults(results, points);
         }
 
         // ============================================
         // 検索結果表示
         // ============================================
-        function renderResults(results, points, targetRate) {
+        function renderResults(results, points) {
             const section = document.getElementById('resultsSection');
             const list = document.getElementById('resultsList');
             const title = document.getElementById('resultsTitle');
@@ -1152,7 +1143,7 @@
             section.style.display = 'block';
             
             title.textContent = `✅ ${results.length}件の組み合わせが見つかりました`;
-            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 目標買取率 ${targetRate}%以上 / 商品数は自動最適化`;
+            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率98%以上 / 買取率が高い順に表示`;
             
             if (results.length === 0) {
                 list.innerHTML = `
