@@ -1,10 +1,7 @@
-name: 買取価格自動更新
+name: 買取価格更新（モバイル一番スクレイピング）
 
 on:
-  schedule:
-    # 3時間ごとに実行（UTC: 0,3,6,9,12,15,18,21時）
-    - ＃cron: '0 */3 * * *'
-  workflow_dispatch: # 手動実行も可能
+  workflow_dispatch: # 手動実行
 
 permissions:
   contents: write
@@ -12,7 +9,8 @@ permissions:
 jobs:
   update-prices:
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 10
+
     steps:
       - name: チェックアウト
         uses: actions/checkout@v4
@@ -22,8 +20,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 価格データを同期
-        run: python scripts/update_prices.py
+      - name: Playwright インストール
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: モバイル一番から価格取得
+        run: python scripts/scrape_prices.py
 
       - name: 変更をコミット＆プッシュ
         run: |
