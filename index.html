@@ -307,16 +307,25 @@ async function loadData() {
       var json = await res.json();
       var fetched = json.products || json;
       if (Array.isArray(fetched) && fetched.length > 0) {
-        var embeddedMap = {};
-        EMBEDDED_DATA.forEach(function(e) { if (e.jan) embeddedMap[e.jan] = e; });
+        // ホワイトリスト: EMBEDDED_DATAにあるJANコードのみ許可
+        var allowedJans = {};
+        EMBEDDED_DATA.forEach(function(e) { if (e.jan) allowedJans[e.jan] = e; });
+        // prices.jsonからホワイトリスト商品のみ取得し、価格を更新
+        var filtered = [];
         fetched.forEach(function(p) {
-          if (p.buyback === 0 && p.jan && embeddedMap[p.jan]) {
-            p.buyback = embeddedMap[p.jan].buyback;
-            p.retail = embeddedMap[p.jan].retail || p.retail;
-            p.rate = embeddedMap[p.jan].rate || p.rate;
+          if (!p.jan || !allowedJans[p.jan]) return; // 除外商品はスキップ
+          var eb = allowedJans[p.jan];
+          // buybackが0ならEMBEDDED_DATAの値で補完
+          if (p.buyback === 0) {
+            p.buyback = eb.buyback;
+            p.retail = eb.retail || p.retail;
+            p.rate = eb.rate || p.rate;
           }
+          // カテゴリをEMBEDDED_DATAから引き継ぐ
+          if (eb.category) p.category = eb.category;
+          filtered.push(p);
         });
-        products = fetched;
+        if (filtered.length > 0) products = filtered;
         if (json.updated) {
           var d = new Date(json.updated);
           if (!isNaN(d.getTime())) {
