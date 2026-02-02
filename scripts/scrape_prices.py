@@ -3,6 +3,8 @@
 ゲーム機買取率トラッカー - Playwright スクレイピングスクリプト
 モバイル一番 (mobile-ichiban.com) から最新買取価格を取得し、
 prices.json と index.html の EMBEDDED_DATA を更新する。
+
+v3: JAN抽出を根本的に修正 - innerTextベースのパースに変更
 """
 
 import json
@@ -77,7 +79,7 @@ PRODUCT_MASTER = {
     "7622100547952": {"brand": "IQOS", "official_price": 24980, "group": "iqos_prime_seletti"},
 }
 
-# スクレイピング対象ページ（全ページ巡回する）
+# スクレイピング対象ページ
 SCRAPE_URLS = [
     "https://www.mobile-ichiban.com/Prod/2/01/01",  # Nintendo Switch
     "https://www.mobile-ichiban.com/Prod/2/01/02",  # PlayStation
@@ -95,85 +97,88 @@ def get_script_dir():
     return os.path.dirname(os.path.abspath(__file__))
 
 
-async def scrape_page_products(page):
-    """現在のページからJAN+商品名+買取価格を抽出（改善版）"""
-    # Playwrightで全商品情報を抽出
-    products_data = await page.evaluate("""
-        () => {
-            const results = [];
-            const html = document.body.innerHTML;
-            
-            // 方式1: JAN:XXXX と 価格円 のパターンでHTMLから直接抽出
-            // モバイル一番のHTML構造: 商品名 → JAN:XXXX → 価格円 が順に並ぶ
-            const janRegex = /JAN[：:]\\s*(\\d{7,13})/g;
-            let match;
-            const janPositions = [];
-            
-            while ((match = janRegex.exec(html)) !== null) {
-                janPositions.push({
-                    jan: match[1],
-                    index: match.index
-                });
-            }
-            
-            // 各JANの後に出てくる最初の価格（XX,XXX円 パターン）を探す
-            for (const jp of janPositions) {
-                // JANの後の文字列から価格を探す
-                const afterJan = html.substring(jp.index, jp.index + 2000);
-                
-                // 「確定」ボタンの後の価格、または単独の価格を探す
-                // パターン: >XX,XXX円< または >XXX,XXX円<
-                const priceMatches = afterJan.match(/(\\d{1,3}(?:,\\d{3})+)円/g);
-                if (priceMatches && priceMatches.length > 0) {
-                    // 最後の価格を買取価格とする（選択肢がある場合、確定後の価格が最後に来る）
-                    const lastPrice = priceMatches[priceMatches.length - 1];
-                    const price = parseInt(lastPrice.replace(/[,円]/g, ''));
-                    
-                    // JANの前のテキストから商品名を探す
-                    const beforeJan = html.substring(Math.max(0, jp.index - 500), jp.index);
-                    // img alt or テキストノードから商品名を取得
-                    const nameMatch = beforeJan.match(/alt="[^"]*"[^>]*>[\\s\\S]*?([^<>\\n]{5,100})\\s*(?:<[^>]*>\\s*)*(?:&nbsp;|\\s)*$/);
-                    
-                    let name = '';
-                    // innerTextベースで商品名を取得
-                    const textContent = document.body.innerText;
-                    const janInText = textContent.indexOf('JAN:' + jp.jan);
-                    const janInText2 = textContent.indexOf('JAN：' + jp.jan);
-                    const janIdx = janInText >= 0 ? janInText : janInText2;
-                    
-                    if (janIdx >= 0) {
-                        // JANの前の数行から商品名を探す
-                        const before = textContent.substring(Math.max(0, janIdx - 300), janIdx);
-                        const lines = before.split('\\n').map(l => l.trim()).filter(l => l.length > 3);
-                        // 商品名は通常、JANの数行前にある
-                        for (let i = lines.length - 1; i >= 0; i--) {
-                            const line = lines[i];
-                            if (line.includes('強') || line.includes('化') || 
-                                line.includes('新品') || line.includes('中古') ||
-                                line.match(/^\\d/) || line.includes('来店') ||
-                                line.includes('確定') || line.includes('商品買取') ||
-                                line.length < 5 || line.match(/^\\d{1,3}(,\\d{3})*円$/)) {
-                                continue;
-                            }
-                            name = line;
-                            break;
-                        }
-                    }
-                    
-                    if (price > 0) {
-                        results.push({
-                            jan: jp.jan,
-                            name: name || 'Unknown',
-                            buyback_price: price
-                        });
-                    }
-                }
-            }
-            
-            return results;
-        }
-    """)
-    return products_data
+async def scrape_page_products(page, debug=False):
+    """
+    現在のページからJAN+商品名+買取価格を抽出
+    v3: page.content()のHTMLソースから直接正規表現で抽出
+    """
+    html = await page.content()
+    
+    # デバッグ: HTMLに含まれるJANを全て出力
+    all_jans_in_html = re.findall(r'JAN[：:]\s*(\d{7,14})', html)
+    if debug and all_jans_in_html:
+        print(f"    [DEBUG] HTML内JAN一覧: {all_jans_in_html[:10]}")
+    
+    # === 方式: HTML全体からJAN番号ごとに価格を抽出 ===
+    results = []
+    
+    # JANの出現位置を全て取得
+    jan_pattern = re.compile(r'JAN[：:]\s*(\d{7,14})')
+    jan_matches = list(jan_pattern.finditer(html))
+    
+    for i, m in enumerate(jan_matches):
+        jan = m.group(1)
+        jan_pos = m.start()
+        
+        # JANの後〜次のJANまで（または2000文字以内）で価格を探す
+        if i + 1 < len(jan_matches):
+            end_pos = jan_matches[i + 1].start()
+        else:
+            end_pos = min(jan_pos + 3000, len(html))
+        
+        after_jan = html[jan_pos:end_pos]
+        
+        # 価格パターン: XX,XXX円 (カンマ区切り) 
+        price_matches = re.findall(r'(\d{1,3}(?:,\d{3})+)円', after_jan)
+        
+        # 「新品」の後の最初の価格を使う（最も信頼性が高い）
+        # 新品マーク後の価格、または最後の価格を使う
+        buyback_price = 0
+        if price_matches:
+            # 新品の直後の価格を探す
+            shinpin_match = re.search(r'新品.*?(\d{1,3}(?:,\d{3})+)円', after_jan, re.DOTALL)
+            if shinpin_match:
+                buyback_price = int(shinpin_match.group(1).replace(',', ''))
+            else:
+                # 最後の価格を使う
+                buyback_price = int(price_matches[-1].replace(',', ''))
+        
+        # JANの前のHTMLから商品名を取得
+        # 商品名は通常、JANの直前のテキストブロックに含まれる
+        before_jan = html[max(0, jan_pos - 800):jan_pos]
+        
+        name = ""
+        
+        # 方式A: HTMLタグ内のテキストから商品名を抽出
+        # <div>や<p>のテキストコンテンツから取得
+        text_blocks = re.findall(r'>([^<]{5,120})<', before_jan)
+        # 商品名候補をフィルタ
+        for block in reversed(text_blocks):
+            block = block.strip()
+            if not block:
+                continue
+            # スキップ対象
+            if re.match(r'^[\s\d,円]+$', block):
+                continue
+            if block in ('強', '化', '新品', '中古', '来店', '確定', '&nbsp;'):
+                continue
+            if '来店' in block and len(block) < 15:
+                continue
+            if block.startswith('JAN'):
+                continue
+            if len(block) < 3:
+                continue
+            name = block
+            break
+        
+        if buyback_price > 0:
+            results.append({
+                "jan": jan,
+                "name": name or f"JAN:{jan}",
+                "buyback_price": buyback_price
+            })
+    
+    return results
 
 
 async def scrape_all_prices():
@@ -194,7 +199,6 @@ async def scrape_all_prices():
             page_num = 1
 
             while True:
-                # ページURL構築
                 if page_num == 1:
                     current_url = url
                 else:
@@ -208,18 +212,27 @@ async def scrape_all_prices():
 
                 try:
                     await page.goto(current_url, wait_until="networkidle", timeout=30000)
-                    await page.wait_for_timeout(3000)  # JS描画待ち（少し長めに）
+                    await page.wait_for_timeout(3000)
                 except Exception as e:
                     print(f"  ⚠️ ページ読み込み失敗: {e}")
                     break
 
-                # 商品データ抽出
-                products_data = await scrape_page_products(page)
+                # 商品データ抽出（最初のページはデバッグモード）
+                is_debug = (page_num <= 1)
+                products_data = await scrape_page_products(page, debug=is_debug)
 
                 if not products_data:
                     if page_num > 1:
                         break
-                    print(f"  ⚠️ 商品データなし")
+                    # デバッグ: ページにJANがあるか確認
+                    html = await page.content()
+                    jan_count = len(re.findall(r'JAN[：:]\s*\d{7,14}', html))
+                    price_count = len(re.findall(r'\d{1,3}(?:,\d{3})+円', html))
+                    print(f"  ⚠️ 商品データなし (HTML内 JAN:{jan_count}個, 価格:{price_count}個)")
+                    if jan_count == 0:
+                        # innerTextの最初の部分をデバッグ出力
+                        text = await page.evaluate("() => document.body.innerText.substring(0, 500)")
+                        print(f"  [DEBUG] innerText冒頭:\n{text[:300]}")
                     break
 
                 found = 0
@@ -231,18 +244,21 @@ async def scrape_all_prices():
                             "buyback_price": item.get("buyback_price", 0)
                         }
                         found += 1
-                    # デバッグ: マッチしなかったJANも表示
-                    elif jan:
-                        pass  # 対象外商品はスキップ
 
                 total = len(products_data)
                 print(f"  ページ{page_num}: {total}商品検出, {found}件マッチ")
                 
-                # デバッグ: マッチしたJANを表示
                 for item in products_data:
                     jan = item.get("jan", "")
                     if jan in PRODUCT_MASTER:
                         print(f"    ✅ {jan}: {item['name']} → ¥{item['buyback_price']:,}")
+                
+                # マッチしなかったMASTER内JANをデバッグ表示
+                if is_debug:
+                    page_jans = {item["jan"] for item in products_data}
+                    for item in products_data:
+                        if item["jan"] not in PRODUCT_MASTER:
+                            print(f"    ❌ 対象外JAN: {item['jan']} ({item['name']}) → ¥{item['buyback_price']:,}")
 
                 # 次ページ確認
                 next_link = await page.query_selector('a:has-text("次へ")')
