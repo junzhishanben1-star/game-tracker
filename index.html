@@ -26,18 +26,18 @@
   --font-ja: 'Zen Kaku Gothic New', sans-serif;
   --font-en: 'DM Sans', sans-serif;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: var(--font-ja); background: var(--bg); color: var(--text); min-height: 100vh; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ja); background: var(--bg); color: var(--text); min-height: 100vh; -webkit-text-size-adjust: 100%; }
 
 /* Header */
 .header { background: var(--header-bg); color: var(--header-text); padding: 24px 20px; }
 .header h1 { font-size: 1.5rem; font-weight: 900; margin-bottom: 4px; }
-.header .meta { font-size: 0.8rem; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 8px; }
-.header .meta .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); display: inline-block; }
+.header .meta { font-size: 0.8rem; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.header .meta .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); display: inline-block; flex-shrink: 0; }
 
 /* Tabs */
-.tabs { display: flex; background: var(--card); border-bottom: 2px solid var(--border); position: sticky; top: 0; z-index: 10; }
-.tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); border-bottom: 3px solid transparent; transition: all 0.2s; }
+.tabs { display: flex; background: var(--card); border-bottom: 2px solid var(--border); position: sticky; top: 0; z-index: 100; }
+.tab { flex: 1; padding: 14px 8px; text-align: center; cursor: pointer; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); border-bottom: 3px solid transparent; transition: all 0.2s; user-select: none; -webkit-tap-highlight-color: transparent; }
 .tab:hover { color: var(--text); background: #f9f9fb; }
 .tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 700; }
 
@@ -50,32 +50,54 @@ body { font-family: var(--font-ja); background: var(--bg); color: var(--text); m
 .card { background: var(--card); border-radius: var(--radius); padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
 .card h2 { font-size: 1.1rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
 
-/* Simulator */
-.input-group { margin-bottom: 16px; }
-.input-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
-.input-group .hint { font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px; }
-.input-row { display: flex; gap: 12px; align-items: flex-end; }
-.input-row .input-group { flex: 1; }
+/* Simulator input row – CSS Grid で確実に横並び＋高さ揃え */
+.sim-row {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 16px;
+}
+.sim-row .field label {
+  display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; line-height: 1.4;
+}
+.sim-row .field .hint {
+  font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px;
+}
 input[type="number"], select {
-  width: 100%; padding: 10px 14px; border: 2px solid var(--border); border-radius: 8px;
+  display: block; width: 100%; padding: 10px 14px; border: 2px solid var(--border); border-radius: 8px;
   font-size: 1rem; font-family: var(--font-en); transition: border-color 0.2s;
+  height: 44px; background: #fff;
+  -webkit-appearance: none; appearance: none;
 }
+select { cursor: pointer; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7280' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 12px center; padding-right: 36px; }
 input:focus, select:focus { outline: none; border-color: var(--primary); }
-.btn-primary {
-  width: 100%; padding: 14px; background: var(--primary); color: white; border: none;
-  border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: opacity 0.2s;
-}
-.btn-primary:hover { opacity: 0.9; }
-.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
 
-/* Filters */
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+/* Filter buttons */
+.filter-section { margin-bottom: 16px; }
+.filter-section > label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; }
+.filters {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  position: relative; z-index: 1;
+}
 .filter-btn {
-  padding: 6px 16px; border: 2px solid var(--border); border-radius: 20px;
-  background: white; cursor: pointer; font-size: 0.85rem; font-weight: 500; transition: all 0.2s;
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 7px 16px; border: 2px solid var(--border); border-radius: 20px;
+  background: white; cursor: pointer; font-size: 0.85rem; font-weight: 500;
+  font-family: var(--font-ja); color: var(--text); transition: all 0.15s;
+  white-space: nowrap; user-select: none;
+  -webkit-tap-highlight-color: transparent; line-height: 1.2;
 }
 .filter-btn:hover { border-color: var(--primary); color: var(--primary); }
 .filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+/* Primary button */
+.btn-primary {
+  display: block; width: 100%; padding: 14px; background: var(--primary); color: white; border: none;
+  border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: opacity 0.2s;
+  -webkit-tap-highlight-color: transparent; font-family: var(--font-ja);
+}
+.btn-primary:hover { opacity: 0.9; }
 
 /* Product list */
 .product-item {
@@ -86,13 +108,10 @@ input:focus, select:focus { outline: none; border-color: var(--primary); }
 .product-item:hover { background: #f9f9fb; }
 .product-info { flex: 1; min-width: 0; }
 .product-name { font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.product-prices { display: flex; gap: 8px; align-items: center; font-size: 0.8rem; color: var(--text-secondary); }
+.product-prices { display: flex; gap: 8px; align-items: center; font-size: 0.8rem; color: var(--text-secondary); flex-wrap: wrap; }
 .product-prices .arrow { color: #ccc; }
 .product-prices .buyback { color: var(--success); font-weight: 700; font-family: var(--font-en); }
-.product-rate {
-  font-family: var(--font-en); font-weight: 700; font-size: 0.95rem;
-  min-width: 70px; text-align: right;
-}
+.product-rate { font-family: var(--font-en); font-weight: 700; font-size: 0.95rem; min-width: 70px; text-align: right; flex-shrink: 0; }
 .rate-high { color: var(--success); }
 .rate-mid { color: var(--warning); }
 .rate-low { color: var(--danger); }
@@ -102,57 +121,61 @@ input:focus, select:focus { outline: none; border-color: var(--primary); }
   background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
   border: 2px solid #f59e0b; border-radius: var(--radius); padding: 20px; margin-top: 16px;
 }
-.result-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
-.result-badge { background: var(--success); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; }
+.result-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.result-badge { background: var(--success); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; white-space: nowrap; }
 .result-stats {
-  display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: 8px; margin-bottom: 16px;
   font-family: var(--font-en); text-align: center;
 }
-.result-stat { flex: 1; min-width: 80px; }
-.result-stat .value { font-size: 1.3rem; font-weight: 700; }
+.result-stat .value { font-size: 1.2rem; font-weight: 700; }
 .result-stat .value.profit { color: var(--success); }
-.result-stat .label { font-size: 0.7rem; color: var(--text-secondary); font-family: var(--font-ja); }
+.result-stat .label { font-size: 0.7rem; color: var(--text-secondary); font-family: var(--font-ja); margin-top: 2px; }
 .result-item {
   background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; gap: 8px;
 }
-.result-item .qty-controls { display: flex; align-items: center; gap: 8px; }
-.result-item .qty-btn {
+.result-item .ri-info { flex: 1; min-width: 0; }
+.result-item .ri-rate { font-family: var(--font-en); font-weight: 700; font-size: 0.95rem; min-width: 60px; text-align: right; flex-shrink: 0; }
+.result-item .qty-controls { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.qty-btn {
   width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--border);
-  background: white; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center;
+  background: white; cursor: pointer; font-size: 1rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  -webkit-tap-highlight-color: transparent; padding: 0; line-height: 1;
 }
-.result-item .qty-btn:hover { border-color: var(--primary); color: var(--primary); }
+.qty-btn:hover { border-color: var(--primary); color: var(--primary); }
 .result-item-highlight { background: #fffde7; }
 .result-remaining { text-align: center; color: var(--text-secondary); font-size: 0.85rem; margin-top: 12px; }
 
 /* Custom tab */
 .custom-summary {
   background: var(--primary-light); border-radius: 8px; padding: 16px; margin-bottom: 16px;
-  display: flex; flex-wrap: wrap; gap: 16px; font-family: var(--font-en); text-align: center;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 8px; font-family: var(--font-en); text-align: center;
 }
-.custom-stat { flex: 1; min-width: 80px; }
-.custom-stat .value { font-size: 1.2rem; font-weight: 700; }
-.custom-stat .label { font-size: 0.7rem; color: var(--text-secondary); font-family: var(--font-ja); }
+.custom-stat .value { font-size: 1.1rem; font-weight: 700; }
+.custom-stat .label { font-size: 0.7rem; color: var(--text-secondary); font-family: var(--font-ja); margin-top: 2px; }
 .custom-product {
   display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border);
 }
 .custom-product:last-child { border-bottom: none; }
-.custom-product input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--primary); }
+.custom-product input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--primary); flex-shrink: 0; }
 
 /* Footer */
 .footer { text-align: center; padding: 24px; color: var(--text-secondary); font-size: 0.75rem; }
 .footer a { color: var(--primary); }
-
-/* Loading */
 .loading { text-align: center; padding: 40px; color: var(--text-secondary); }
 
 /* Responsive */
 @media (max-width: 600px) {
-  .input-row { flex-direction: column; }
-  .result-stats { gap: 8px; }
-  .result-stat .value { font-size: 1.1rem; }
+  .sim-row { grid-template-columns: 1fr; }
+  .result-stats { grid-template-columns: repeat(3, 1fr); }
+  .result-stat .value { font-size: 1rem; }
+  .custom-summary { grid-template-columns: repeat(2, 1fr); }
   .product-item { flex-direction: column; align-items: flex-start; gap: 6px; }
   .product-rate { text-align: left; }
+  .result-item { flex-wrap: wrap; }
 }
 </style>
 </head>
@@ -175,17 +198,17 @@ input:focus, select:focus { outline: none; border-color: var(--primary); }
 
 <div class="container">
 
-  <!-- Tab 1: Simulator -->
+  <!-- Simulator -->
   <div id="tab-simulator" class="tab-content active">
     <div class="card">
       <h2>🎯 ポイント消化シミュレーター</h2>
-      <div class="input-row">
-        <div class="input-group">
+      <div class="sim-row">
+        <div class="field">
           <label>持っているポイント（円相当）</label>
           <input type="number" id="pointsInput" value="145000" min="1000" step="1000">
-          <div class="hint">ビックカメラ・ヤマダ電機等のポイント</div>
+          <div class="hint" style="font-size:0.75rem;color:var(--text-secondary);margin-top:4px">ビックカメラ・ヤマダ電機等のポイント</div>
         </div>
-        <div class="input-group">
+        <div class="field">
           <label>個数上限</label>
           <select id="maxItemsSelect">
             <option value="5">5個</option>
@@ -196,20 +219,20 @@ input:focus, select:focus { outline: none; border-color: var(--primary); }
           </select>
         </div>
       </div>
-      <div class="input-group" style="margin-top:8px">
+      <div class="filter-section">
         <label>カテゴリフィルター</label>
         <div class="filters" id="simFilters"></div>
       </div>
-      <button class="btn-primary" id="searchBtn" onclick="executeSearch()">🔎 最適な組み合わせを検索</button>
+      <button type="button" class="btn-primary" onclick="executeSearch()">🔎 最適な組み合わせを検索</button>
     </div>
     <div id="searchResult"></div>
   </div>
 
-  <!-- Tab 2: Custom -->
+  <!-- Custom -->
   <div id="tab-custom" class="tab-content">
     <div class="card">
       <h2>🛠 手動カスタマイズ</h2>
-      <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:16px;">商品を自分で選んで組み合わせを確認できます</p>
+      <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:16px">商品を自分で選んで組み合わせを確認できます</p>
       <div class="custom-summary" id="customSummary">
         <div class="custom-stat"><div class="value" id="customTotal">¥0</div><div class="label">合計定価</div></div>
         <div class="custom-stat"><div class="value" id="customBuyback">¥0</div><div class="label">合計買取</div></div>
@@ -220,7 +243,7 @@ input:focus, select:focus { outline: none; border-color: var(--primary); }
     </div>
   </div>
 
-  <!-- Tab 3: All Products -->
+  <!-- Products -->
   <div id="tab-products" class="tab-content">
     <div class="card">
       <h2>📊 全商品一覧</h2>
@@ -238,16 +261,14 @@ input:focus, select:focus { outline: none; border-color: var(--primary); }
 
 <script>
 // =============================================================================
-// EMBEDDED_DATA - スクレイパーv6が自動更新（買取0円の場合はここの値を使用）
+// EMBEDDED_DATA
 // =============================================================================
-const EMBEDDED_DATA = [
+var EMBEDDED_DATA = [
   {"name":"Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド","jan":"4902370548501","buyback":40700,"retail":37980,"rate":107.16,"category":"Switch"},
   {"name":"Nintendo Switch (有機ELモデル) ホワイト","jan":"4902370548495","buyback":40700,"retail":37980,"rate":107.16,"category":"Switch"},
   {"name":"PlayStation 5 Pro CFI-7000B01 2TB","jan":"4948872416320","buyback":107300,"retail":119980,"rate":89.43,"category":"PS5"},
   {"name":"PlayStation 5 slim CFI-2000A01","jan":"4948872415934","buyback":74700,"retail":79980,"rate":93.4,"category":"PS5"},
   {"name":"Meta Quest 3S 128GB","jan":"0815820025238","buyback":38600,"retail":48400,"rate":79.75,"category":"Meta Quest"},
-  {"name":"Steam Deck OLED 1TB","jan":"0814585022308","buyback":103800,"retail":99800,"rate":104.01,"category":"Steam Deck"},
-  {"name":"ROG Xbox Ally X 1TB","jan":"0199291152984","buyback":133200,"retail":139800,"rate":95.28,"category":"その他"},
   {"name":"Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版","jan":"4902370553505","buyback":51000,"retail":49980,"rate":102.04,"category":"Switch 2"},
   {"name":"Nintendo Switch 2 多言語対応版","jan":"4902370552683","buyback":85000,"retail":69980,"rate":121.46,"category":"Switch 2"},
   {"name":"Nintendo Switch 2 国内版","jan":"4902370553024","buyback":46300,"retail":49980,"rate":92.64,"category":"Switch 2"},
@@ -260,55 +281,34 @@ const EMBEDDED_DATA = [
   {"name":"SanDisk microSD Express Card 256GB for Nintendo Switch 2","jan":"4523052030185","buyback":5800,"retail":6578,"rate":88.17,"category":"Switch 2"},
   {"name":"Samsung microSD Express Card 256GB for Nintendo Switch 2","jan":"8806095700670","buyback":5800,"retail":6578,"rate":88.17,"category":"Switch 2"},
   {"name":"Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型","jan":"4902370550733","buyback":32500,"retail":32978,"rate":98.55,"category":"Switch"},
-  {"name":"instax mini Evo Cinema","jan":"4547410562293","buyback":49000,"retail":47300,"rate":103.59,"category":"その他"},
-  {"name":"instax WIDE 400 チェキ","jan":"4547410529975","buyback":21500,"retail":26730,"rate":80.43,"category":"その他"},
-  {"name":"instax mini 99 ブラック","jan":"4547410529845","buyback":24700,"retail":30580,"rate":80.77,"category":"その他"},
   {"name":"FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2","jan":"4547410377231","buyback":2680,"retail":2100,"rate":127.62,"category":"その他"},
   {"name":"FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1","jan":"4547410377224","buyback":1300,"retail":1100,"rate":118.18,"category":"その他"},
   {"name":"FUJIFILM 写ルンです シンプルエース 27枚撮り","jan":"4547410369137","buyback":2600,"retail":2178,"rate":119.38,"category":"その他"},
   {"name":"FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版","jan":"4547410550955","buyback":2500,"retail":2178,"rate":114.78,"category":"その他"},
   {"name":"FUJIFILM チェキスクエア用 フィルム 20枚 WW2","jan":"4547410370003","buyback":2400,"retail":2100,"rate":114.29,"category":"その他"},
-  {"name":"FUJIFILM チェキスクエア用 フィルム 10枚 WW1","jan":"4547410348613","buyback":1200,"retail":1100,"rate":109.09,"category":"その他"},
-  {"name":"instax mini 90 チェキ ネオクラシック ブラック","jan":"4547410260649","buyback":43500,"retail":28600,"rate":152.1,"category":"その他"},
-  {"name":"instax mini 90 チェキ ネオクラシック ブラウン","jan":"4547410269307","buyback":43500,"retail":28600,"rate":152.1,"category":"その他"},
-  {"name":"instax mini 12 クレイホワイト","jan":"4547410489149","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
-  {"name":"instax mini 12 パステルブルー","jan":"4547410489118","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
-  {"name":"instax mini 12 ライラックパープル","jan":"4547410489156","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
-  {"name":"instax mini 12 ミントグリーン","jan":"4547410489132","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
-  {"name":"instax mini 12 ブロッサムピンク","jan":"4547410489125","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
-  {"name":"instax mini 12 チェキ くまモン","jan":"4547410557954","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
-  {"name":"instax mini 12 チェキ EXPO 2025","jan":"4547410534122","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
-  {"name":"instax mini Evo チェキ Limited Edition PINK","jan":"4547410555844","buyback":52000,"retail":41580,"rate":125.06,"category":"その他"},
-  {"name":"instax mini Evo チェキ USB ブラック","jan":"4547410520088","buyback":25500,"retail":34650,"rate":73.59,"category":"その他"}
+  {"name":"FUJIFILM チェキスクエア用 フィルム 10枚 WW1","jan":"4547410348613","buyback":1200,"retail":1100,"rate":109.09,"category":"その他"}
 ];
 
-// =============================================================================
-// グローバル状態
-// =============================================================================
-let allProducts = [];
-let activeFilter = 'すべて';
-let activeSimFilter = 'すべて';
-let customSelections = {};  // jan -> quantity
-let lastResult = null;
+var allProducts = [];
+var activeFilter = 'すべて';
+var activeSimFilter = 'すべて';
+var customSelections = {};
+var lastResult = null;
 
 // =============================================================================
 // データ読み込み
 // =============================================================================
 async function loadData() {
-  let products = EMBEDDED_DATA;
-  
+  var products = EMBEDDED_DATA;
   try {
-    const res = await fetch('data/prices.json?' + Date.now());
+    var res = await fetch('data/prices.json?' + Date.now());
     if (res.ok) {
-      const json = await res.json();
-      // 新形式: { updated, source, count, products: [...] }
-      const fetched = json.products || json;
+      var json = await res.json();
+      var fetched = json.products || json;
       if (Array.isArray(fetched) && fetched.length > 0) {
-        // 外部JSONで買取0円の場合、EMBEDDED_DATAの値を補完
-        const embeddedMap = {};
-        EMBEDDED_DATA.forEach(e => { if (e.jan) embeddedMap[e.jan] = e; });
-        
-        fetched.forEach(p => {
+        var embeddedMap = {};
+        EMBEDDED_DATA.forEach(function(e) { if (e.jan) embeddedMap[e.jan] = e; });
+        fetched.forEach(function(p) {
           if (p.buyback === 0 && p.jan && embeddedMap[p.jan]) {
             p.buyback = embeddedMap[p.jan].buyback;
             p.retail = embeddedMap[p.jan].retail || p.retail;
@@ -316,366 +316,298 @@ async function loadData() {
           }
         });
         products = fetched;
-        
-        // 更新日時
         if (json.updated) {
-          const d = new Date(json.updated);
+          var d = new Date(json.updated);
           if (!isNaN(d.getTime())) {
-            document.getElementById('lastUpdate').textContent = 
-              `最終更新: ${d.toLocaleDateString('ja-JP')} ${d.toLocaleTimeString('ja-JP', {hour:'2-digit',minute:'2-digit'})}`;
+            document.getElementById('lastUpdate').textContent =
+              '最終更新: ' + d.toLocaleDateString('ja-JP') + ' ' + d.toLocaleTimeString('ja-JP', {hour:'2-digit',minute:'2-digit'});
           }
         }
       }
     }
-  } catch(e) {
-    console.log('Using EMBEDDED_DATA:', e);
-  }
-  
-  // retail/rateが無い場合はEMBEDDED_DATAから補完
-  const embMap = {};
-  EMBEDDED_DATA.forEach(e => { if (e.jan) embMap[e.jan] = e; });
-  products.forEach(p => {
-    if ((!p.retail || p.retail === 0) && p.jan && embMap[p.jan]) {
-      p.retail = embMap[p.jan].retail;
-    }
-    if (p.retail > 0 && (!p.rate || p.rate === 0)) {
-      p.rate = Math.round(p.buyback / p.retail * 10000) / 100;
-    }
+  } catch(e) { console.log('Using EMBEDDED_DATA:', e); }
+
+  var embMap = {};
+  EMBEDDED_DATA.forEach(function(e) { if (e.jan) embMap[e.jan] = e; });
+  products.forEach(function(p) {
+    if ((!p.retail || p.retail === 0) && p.jan && embMap[p.jan]) p.retail = embMap[p.jan].retail;
+    if (p.retail > 0 && (!p.rate || p.rate === 0)) p.rate = Math.round(p.buyback / p.retail * 10000) / 100;
     if (!p.category) p.category = 'その他';
   });
-  
-  // buyback > 0 のみ
-  allProducts = products.filter(p => p.buyback > 0);
-  allProducts.sort((a, b) => (b.rate || 0) - (a.rate || 0));
-  
+
+  allProducts = products.filter(function(p) { return p.buyback > 0; });
+  allProducts.sort(function(a, b) { return (b.rate || 0) - (a.rate || 0); });
+
   if (!document.getElementById('lastUpdate').textContent.includes('最終更新')) {
-    const now = new Date();
-    document.getElementById('lastUpdate').textContent = 
-      `最終更新: ${now.toLocaleDateString('ja-JP')} ${now.toLocaleTimeString('ja-JP', {hour:'2-digit',minute:'2-digit'})}`;
+    var now = new Date();
+    document.getElementById('lastUpdate').textContent =
+      '最終更新: ' + now.toLocaleDateString('ja-JP') + ' ' + now.toLocaleTimeString('ja-JP', {hour:'2-digit',minute:'2-digit'});
   }
-  
+
   buildFilters();
   renderProducts();
   renderCustomList();
 }
 
 // =============================================================================
-// フィルター
+// フィルター構築
 // =============================================================================
 function buildFilters() {
-  const cats = ['すべて', ...new Set(allProducts.map(p => p.category))];
-  
-  const buildBtns = (containerId, setter) => {
-    const el = document.getElementById(containerId);
+  var cats = ['すべて'];
+  var seen = {};
+  allProducts.forEach(function(p) { if (!seen[p.category]) { seen[p.category] = true; cats.push(p.category); } });
+
+  function build(containerId, currentVal, setter) {
+    var el = document.getElementById(containerId);
+    if (!el) return;
     el.innerHTML = '';
-    cats.forEach(c => {
-      const btn = document.createElement('button');
-      btn.className = 'filter-btn' + (c === 'すべて' ? ' active' : '');
+    cats.forEach(function(c) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'filter-btn' + (c === currentVal ? ' active' : '');
       btn.textContent = c;
-      btn.onclick = () => {
-        el.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var all = el.querySelectorAll('.filter-btn');
+        for (var i = 0; i < all.length; i++) all[i].classList.remove('active');
         btn.classList.add('active');
         setter(c);
-      };
+      });
       el.appendChild(btn);
     });
-  };
-  
-  buildBtns('productFilters', c => { activeFilter = c; renderProducts(); });
-  buildBtns('simFilters', c => { activeSimFilter = c; });
+  }
+
+  build('productFilters', activeFilter, function(c) { activeFilter = c; renderProducts(); });
+  build('simFilters', activeSimFilter, function(c) { activeSimFilter = c; });
 }
 
 // =============================================================================
 // 全商品一覧
 // =============================================================================
 function renderProducts() {
-  const list = document.getElementById('productList');
-  const filtered = activeFilter === 'すべて' ? allProducts : allProducts.filter(p => p.category === activeFilter);
-  
-  if (filtered.length === 0) {
-    list.innerHTML = '<div class="loading">商品がありません</div>';
-    return;
+  var list = document.getElementById('productList');
+  var filtered = activeFilter === 'すべて' ? allProducts : allProducts.filter(function(p) { return p.category === activeFilter; });
+  if (filtered.length === 0) { list.innerHTML = '<div class="loading">商品がありません</div>'; return; }
+  var h = '';
+  for (var i = 0; i < filtered.length; i++) {
+    var p = filtered[i];
+    var rc = p.rate >= 100 ? 'rate-high' : p.rate >= 85 ? 'rate-mid' : 'rate-low';
+    var pr = p.buyback - (p.retail || 0);
+    h += '<div class="product-item"><div class="product-info">';
+    h += '<div class="product-name">' + p.name + '</div>';
+    h += '<div class="product-prices"><span>定価 ¥' + (p.retail||0).toLocaleString() + '</span>';
+    h += '<span class="arrow">→</span><span class="buyback">買取 ¥' + p.buyback.toLocaleString() + '</span>';
+    if (pr > 0) h += '<span style="color:var(--success);font-weight:600">+¥' + pr.toLocaleString() + '</span>';
+    h += '</div></div><div class="product-rate ' + rc + '">' + p.rate + '%</div></div>';
   }
-  
-  list.innerHTML = filtered.map(p => {
-    const rateClass = p.rate >= 100 ? 'rate-high' : p.rate >= 85 ? 'rate-mid' : 'rate-low';
-    const profit = p.buyback - (p.retail || 0);
-    return `
-      <div class="product-item">
-        <div class="product-info">
-          <div class="product-name">${p.name}</div>
-          <div class="product-prices">
-            <span>定価 ¥${(p.retail||0).toLocaleString()}</span>
-            <span class="arrow">→</span>
-            <span class="buyback">買取 ¥${p.buyback.toLocaleString()}</span>
-            ${profit > 0 ? `<span style="color:var(--success);font-weight:600">+¥${profit.toLocaleString()}</span>` : ''}
-          </div>
-        </div>
-        <div class="product-rate ${rateClass}">${p.rate}%</div>
-      </div>`;
-  }).join('');
+  list.innerHTML = h;
 }
 
 // =============================================================================
 // 手動カスタマイズ
 // =============================================================================
 function renderCustomList() {
-  const list = document.getElementById('customList');
-  list.innerHTML = allProducts.map(p => {
-    const qty = customSelections[p.jan] || 0;
-    return `
-      <div class="custom-product">
-        <input type="checkbox" ${qty > 0 ? 'checked' : ''} onchange="toggleCustom('${p.jan}', this.checked)">
-        <div style="flex:1;min-width:0">
-          <div style="font-weight:600;font-size:0.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.name}</div>
-          <div style="font-size:0.75rem;color:var(--text-secondary)">¥${(p.retail||0).toLocaleString()} → ¥${p.buyback.toLocaleString()} (${p.rate}%)</div>
-        </div>
-        <div class="qty-controls" style="display:flex;align-items:center;gap:6px">
-          <button class="qty-btn" onclick="changeCustomQty('${p.jan}',-1)">−</button>
-          <span style="font-family:var(--font-en);font-weight:600;min-width:20px;text-align:center">${qty}</span>
-          <button class="qty-btn" onclick="changeCustomQty('${p.jan}',1)">＋</button>
-        </div>
-      </div>`;
-  }).join('');
+  var list = document.getElementById('customList');
+  var h = '';
+  for (var i = 0; i < allProducts.length; i++) {
+    var p = allProducts[i];
+    var qty = customSelections[p.jan] || 0;
+    h += '<div class="custom-product">';
+    h += '<input type="checkbox" ' + (qty > 0 ? 'checked' : '') + ' onchange="toggleCustom(\'' + p.jan + '\',this.checked)">';
+    h += '<div style="flex:1;min-width:0"><div style="font-weight:600;font-size:0.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + p.name + '</div>';
+    h += '<div style="font-size:0.75rem;color:var(--text-secondary)">¥' + (p.retail||0).toLocaleString() + ' → ¥' + p.buyback.toLocaleString() + ' (' + p.rate + '%)</div></div>';
+    h += '<div style="display:flex;align-items:center;gap:6px;flex-shrink:0">';
+    h += '<button type="button" class="qty-btn" onclick="changeCustomQty(\'' + p.jan + '\',-1)">−</button>';
+    h += '<span style="font-family:var(--font-en);font-weight:600;min-width:20px;text-align:center">' + qty + '</span>';
+    h += '<button type="button" class="qty-btn" onclick="changeCustomQty(\'' + p.jan + '\',1)">＋</button>';
+    h += '</div></div>';
+  }
+  list.innerHTML = h;
   updateCustomSummary();
 }
-
 function toggleCustom(jan, checked) {
   if (checked && !customSelections[jan]) customSelections[jan] = 1;
   if (!checked) delete customSelections[jan];
   renderCustomList();
 }
-
 function changeCustomQty(jan, delta) {
-  const current = customSelections[jan] || 0;
-  const newQty = Math.max(0, current + delta);
-  if (newQty === 0) delete customSelections[jan];
-  else customSelections[jan] = newQty;
+  var cur = customSelections[jan] || 0;
+  var nq = Math.max(0, cur + delta);
+  if (nq === 0) delete customSelections[jan]; else customSelections[jan] = nq;
   renderCustomList();
 }
-
 function updateCustomSummary() {
-  let totalRetail = 0, totalBuyback = 0;
-  for (const [jan, qty] of Object.entries(customSelections)) {
-    const p = allProducts.find(x => x.jan === jan);
-    if (p) {
-      totalRetail += (p.retail || 0) * qty;
-      totalBuyback += p.buyback * qty;
-    }
+  var tR = 0, tB = 0;
+  for (var jan in customSelections) {
+    var qty = customSelections[jan];
+    var p = allProducts.find(function(x) { return x.jan === jan; });
+    if (p) { tR += (p.retail || 0) * qty; tB += p.buyback * qty; }
   }
-  const profit = totalBuyback - totalRetail;
-  const avgRate = totalRetail > 0 ? Math.round(totalBuyback / totalRetail * 10000) / 100 : 0;
-  document.getElementById('customTotal').textContent = `¥${totalRetail.toLocaleString()}`;
-  document.getElementById('customBuyback').textContent = `¥${totalBuyback.toLocaleString()}`;
-  document.getElementById('customProfit').textContent = `${profit >= 0 ? '+' : ''}¥${profit.toLocaleString()}`;
-  document.getElementById('customProfit').style.color = profit >= 0 ? 'var(--success)' : 'var(--danger)';
-  document.getElementById('customRate').textContent = `${avgRate}%`;
+  var pr = tB - tR;
+  var ar = tR > 0 ? Math.round(tB / tR * 10000) / 100 : 0;
+  document.getElementById('customTotal').textContent = '¥' + tR.toLocaleString();
+  document.getElementById('customBuyback').textContent = '¥' + tB.toLocaleString();
+  document.getElementById('customProfit').textContent = (pr >= 0 ? '+' : '') + '¥' + pr.toLocaleString();
+  document.getElementById('customProfit').style.color = pr >= 0 ? 'var(--success)' : 'var(--danger)';
+  document.getElementById('customRate').textContent = ar + '%';
 }
 
 // =============================================================================
-// シミュレーター（ハイブリッド: Greedy + 探索）
+// シミュレーター
 // =============================================================================
+// =============================================================================
+// 購入制限ロジック
+// =============================================================================
+// Switch系本体のJANコード（1人1台制限グループ）
+var SWITCH1_CONSOLES = ['4902370548501','4902370548495']; // 有機EL ネオン/ホワイト
+var SWITCH2_CONSOLES = ['4902370553505','4902370552683','4902370553024','4902370553031']; // Switch 2本体4種
+
+function getMaxQty(p) { return p.retail >= 25000 ? 1 : 3; }
+
+// グループ内で既に購入済みの台数をチェック
+function getGroupRemaining(p, used) {
+  var jan = p.jan;
+  // Switch 1本体グループ: 合計1台まで
+  if (SWITCH1_CONSOLES.indexOf(jan) !== -1) {
+    var total = 0;
+    for (var i = 0; i < SWITCH1_CONSOLES.length; i++) total += (used[SWITCH1_CONSOLES[i]] || 0);
+    return Math.max(0, 1 - total);
+  }
+  // Switch 2本体グループ: 合計1台まで
+  if (SWITCH2_CONSOLES.indexOf(jan) !== -1) {
+    var total = 0;
+    for (var i = 0; i < SWITCH2_CONSOLES.length; i++) total += (used[SWITCH2_CONSOLES[i]] || 0);
+    return Math.max(0, 1 - total);
+  }
+  // それ以外は通常制限
+  var cq = used[jan] || 0;
+  return Math.max(0, getMaxQty(p) - cq);
+}
+
 function executeSearch() {
-  const points = parseInt(document.getElementById('pointsInput').value) || 0;
-  const maxItems = parseInt(document.getElementById('maxItemsSelect').value) || 8;
-  
-  if (points < 1000) {
-    document.getElementById('searchResult').innerHTML = '<div class="card" style="color:var(--danger)">1,000円以上のポイントを入力してください</div>';
-    return;
-  }
-  
-  // フィルター適用
-  let candidates = allProducts.filter(p => p.buyback > 0 && p.retail > 0);
-  if (activeSimFilter !== 'すべて') {
-    candidates = candidates.filter(p => p.category === activeSimFilter);
-  }
-  
-  // 個数制限: 高額(¥30,000以上)は1個、それ以外は最大3個
-  const getMaxQty = (p) => p.retail >= 30000 ? 1 : 3;
-  
-  // --- Greedy法（7戦略） ---
-  const strategies = [
-    // 利益優先
-    (a, b) => (b.buyback - b.retail) - (a.buyback - a.retail),
-    // 買取率優先
-    (a, b) => b.rate - a.rate,
-    // 高額優先
-    (a, b) => b.retail - a.retail,
-    // 安い順（残額埋め）
-    (a, b) => a.retail - b.retail,
-    // 利益率×価格
-    (a, b) => (b.rate * b.retail) - (a.rate * a.retail),
-    // 利益額優先（プラスのみ先）
-    (a, b) => {
-      const aProfit = a.buyback > a.retail ? 1 : 0;
-      const bProfit = b.buyback > b.retail ? 1 : 0;
-      if (aProfit !== bProfit) return bProfit - aProfit;
-      return b.rate - a.rate;
-    },
-    // ランダム寄りの混合
-    (a, b) => (b.buyback - b.retail) * 0.5 + (b.rate - a.rate) * 100,
+  var points = parseInt(document.getElementById('pointsInput').value) || 0;
+  var maxItems = parseInt(document.getElementById('maxItemsSelect').value) || 8;
+  if (points < 1000) { document.getElementById('searchResult').innerHTML = '<div class="card" style="color:var(--danger)">1,000円以上のポイントを入力してください</div>'; return; }
+
+  var candidates = allProducts.filter(function(p) { return p.buyback > 0 && p.retail > 0; });
+  if (activeSimFilter !== 'すべて') candidates = candidates.filter(function(p) { return p.category === activeSimFilter; });
+
+  var strategies = [
+    function(a,b){return(b.buyback-b.retail)-(a.buyback-a.retail)},
+    function(a,b){return b.rate-a.rate},
+    function(a,b){return b.retail-a.retail},
+    function(a,b){return a.retail-b.retail},
+    function(a,b){return(b.rate*b.retail)-(a.rate*a.retail)},
+    function(a,b){var aP=a.buyback>a.retail?1:0,bP=b.buyback>b.retail?1:0;if(aP!==bP)return bP-aP;return b.rate-a.rate},
+    function(a,b){return(b.buyback-b.retail)*0.5+(b.rate-a.rate)*100}
   ];
-  
-  let allResults = [];
-  
-  for (const maxTotal of [points, points + 5000, points + 10000]) {
-    for (const sortFn of strategies) {
-      const sorted = [...candidates].sort(sortFn);
-      const result = greedyFill(sorted, candidates, points, maxTotal, maxItems, getMaxQty);
-      if (result && result.items.length > 0) {
-        allResults.push(result);
-      }
-    }
+
+  var allResults = [];
+  for (var s = 0; s < strategies.length; s++) {
+    var sorted = candidates.slice().sort(strategies[s]);
+    var r = greedyFill(sorted, candidates, points, maxItems);
+    if (r && r.items.length > 0) allResults.push(r);
   }
-  
-  // --- 探索法 ---
-  const highRate = candidates.filter(p => p.rate >= 90).sort((a, b) => b.rate - a.rate).slice(0, 20);
+
+  var highRate = candidates.filter(function(p){return p.rate>=90}).sort(function(a,b){return b.rate-a.rate}).slice(0,20);
   if (highRate.length > 0) {
-    const explored = exploreSearch(highRate, candidates, points, maxItems, getMaxQty);
-    allResults.push(...explored);
+    var explored = exploreSearch(highRate, candidates, points, maxItems);
+    for (var i = 0; i < explored.length; i++) allResults.push(explored[i]);
   }
-  
-  // --- 最適解選択 ---
-  // 消化率97%以上で最高利益
-  let best = null;
-  for (const r of allResults) {
-    const usage = r.totalRetail / points;
-    if (usage >= 0.97) {
-      if (!best || r.profit > best.profit) best = r;
-    }
+
+  allResults = allResults.filter(function(r){return r.totalRetail<=points});
+
+  var best = null;
+  var ths = [0.98, 0.97, 0.95, 0.90, 0];
+  for (var t = 0; t < ths.length; t++) {
+    var valid = allResults.filter(function(r){return r.totalRetail/points>=ths[t]});
+    if (valid.length > 0) { valid.sort(function(a,b){return b.profit-a.profit}); best = valid[0]; break; }
   }
-  // 97%以上がなければ消化率順
-  if (!best) {
-    allResults.sort((a, b) => {
-      const aUsage = a.totalRetail / points;
-      const bUsage = b.totalRetail / points;
-      if (Math.abs(aUsage - bUsage) > 0.02) return bUsage - aUsage;
-      return b.profit - a.profit;
-    });
-    best = allResults[0];
-  }
-  
-  if (!best || best.items.length === 0) {
-    document.getElementById('searchResult').innerHTML = '<div class="card">条件に合う組み合わせが見つかりませんでした。ポイント額やカテゴリを変更してみてください。</div>';
-    return;
-  }
-  
+
+  if (!best || best.items.length === 0) { document.getElementById('searchResult').innerHTML = '<div class="card">条件に合う組み合わせが見つかりませんでした。</div>'; return; }
   lastResult = best;
   renderResult(best, points);
 }
 
-function greedyFill(sortedCandidates, allProducts, points, maxTotal, maxItems, getMaxQty) {
-  const items = [];  // {product, qty}
-  let totalRetail = 0;
-  let totalBuyback = 0;
-  let count = 0;
-  const used = {};  // jan -> qty
-  
-  // パス1: ソート順に詰める
-  for (const p of sortedCandidates) {
-    if (count >= maxItems) break;
-    if (totalRetail >= maxTotal) break;
-    
-    const maxQ = Math.min(getMaxQty(p), maxItems - count);
-    for (let q = 0; q < maxQ; q++) {
-      if (totalRetail + p.retail > maxTotal) break;
-      if (count >= maxItems) break;
-      
-      const curQty = used[p.jan] || 0;
-      if (curQty >= getMaxQty(p)) break;
-      
-      totalRetail += p.retail;
-      totalBuyback += p.buyback;
-      used[p.jan] = curQty + 1;
-      count++;
-      
-      const existing = items.find(i => i.product.jan === p.jan);
-      if (existing) existing.qty++;
-      else items.push({ product: p, qty: 1 });
+function greedyFill(sorted, allCand, points, maxItems) {
+  var items=[],tR=0,tB=0,cnt=0,used={};
+  for(var i=0;i<sorted.length;i++){
+    var p=sorted[i]; if(cnt>=maxItems||tR>=points)break;
+    var avail=getGroupRemaining(p,used);
+    if(avail<=0)continue;
+    var mq=Math.min(avail,maxItems-cnt);
+    for(var q=0;q<mq;q++){
+      if(tR+p.retail>points||cnt>=maxItems)break;
+      if(getGroupRemaining(p,used)<=0)break;
+      tR+=p.retail;tB+=p.buyback;used[p.jan]=(used[p.jan]||0)+1;cnt++;
+      var ex=items.find(function(x){return x.product.jan===p.jan});
+      if(ex)ex.qty++;else items.push({product:p,qty:1});
     }
   }
-  
-  // パス2: 残額をallProducts全体から埋める（buyback>0 & rate>=50）
-  const fillers = allProducts
-    .filter(p => p.buyback > 0 && p.rate >= 50)
-    .sort((a, b) => a.retail - b.retail);  // 安い順
-  
-  for (const p of fillers) {
-    if (count >= maxItems) break;
-    
-    const maxQ = Math.min(getMaxQty(p), maxItems - count);
-    for (let q = 0; q < maxQ; q++) {
-      if (totalRetail + p.retail > maxTotal) break;
-      if (count >= maxItems) break;
-      
-      const curQty = used[p.jan] || 0;
-      if (curQty >= getMaxQty(p)) break;
-      
-      totalRetail += p.retail;
-      totalBuyback += p.buyback;
-      used[p.jan] = curQty + 1;
-      count++;
-      
-      const existing = items.find(i => i.product.jan === p.jan);
-      if (existing) existing.qty++;
-      else items.push({ product: p, qty: 1 });
+  // Pass 2
+  var rem=points-tR;
+  if(rem>0&&cnt<maxItems){
+    var fill=allCand.slice().filter(function(p){return p.buyback>0&&p.retail<=rem}).sort(function(a,b){return b.rate-a.rate});
+    for(var i=0;i<fill.length;i++){
+      var p=fill[i]; if(cnt>=maxItems)break;
+      var avail=getGroupRemaining(p,used);
+      if(avail<=0)continue;
+      var mq=Math.min(avail,maxItems-cnt);
+      for(var q=0;q<mq;q++){
+        if(tR+p.retail>points||cnt>=maxItems)break;
+        if(getGroupRemaining(p,used)<=0)break;
+        tR+=p.retail;tB+=p.buyback;used[p.jan]=(used[p.jan]||0)+1;cnt++;
+        var ex=items.find(function(x){return x.product.jan===p.jan});
+        if(ex)ex.qty++;else items.push({product:p,qty:1});
+      }
     }
   }
-  
-  const profit = totalBuyback - totalRetail;
-  const avgRate = totalRetail > 0 ? Math.round(totalBuyback / totalRetail * 10000) / 100 : 0;
-  
-  return { items, totalRetail, totalBuyback, profit, avgRate, count };
+  return{items:items,totalRetail:tR,totalBuyback:tB,profit:tB-tR,avgRate:tR>0?Math.round(tB/tR*10000)/100:0,count:cnt};
 }
 
-function exploreSearch(highRate, allProducts, points, maxItems, getMaxQty) {
-  const results = [];
-  const SEARCH_LIMIT = 500;
-  let searched = 0;
-  
-  const minPrice = points * 0.97;
-  
-  function dfs(idx, items, totalRetail, totalBuyback, count, used) {
-    if (searched >= SEARCH_LIMIT) return;
-    if (totalRetail > points) return;
-    if (count > maxItems) return;
-    
-    if (totalRetail >= minPrice && count <= maxItems) {
+function exploreSearch(highRate, allCand, points, maxItems) {
+  var results=[],LIMIT=500,searched=0,minP=points*0.90;
+  function dfs(idx,items,tR,tB,cnt,used){
+    if(searched>=LIMIT||tR>points||cnt>maxItems)return;
+    if(tR>=minP&&cnt<=maxItems){
       searched++;
-      const profit = totalBuyback - totalRetail;
-      const avgRate = totalRetail > 0 ? Math.round(totalBuyback / totalRetail * 10000) / 100 : 0;
-      if (avgRate >= 90) {
-        results.push({
-          items: items.map(i => ({...i})),
-          totalRetail, totalBuyback, profit, avgRate, count
-        });
+      var rem=points-tR,rc=maxItems-cnt;
+      if(rem>0&&rc>0){
+        var fill=allCand.filter(function(p){return p.buyback>0&&p.retail<=rem}).sort(function(a,b){return b.rate-a.rate});
+        var eR=0,eB=0,eC=0,eU={};for(var k in used)eU[k]=used[k];
+        var eI=items.map(function(x){return{product:x.product,qty:x.qty}});
+        for(var fi=0;fi<fill.length;fi++){
+          var fp=fill[fi]; if(eC>=rc)break;
+          var avail=getGroupRemaining(fp,eU);
+          if(avail<=0)continue;
+          var mq=Math.min(avail,rc-eC);
+          for(var fq=0;fq<mq;fq++){
+            if(tR+eR+fp.retail>points)break;
+            if(getGroupRemaining(fp,eU)<=0)break;
+            eR+=fp.retail;eB+=fp.buyback;eU[fp.jan]=(eU[fp.jan]||0)+1;eC++;
+            var ex=eI.find(function(x){return x.product.jan===fp.jan});
+            if(ex)ex.qty++;else eI.push({product:fp,qty:1});
+          }
+        }
+        var ttR=tR+eR,ttB=tB+eB;
+        results.push({items:eI,totalRetail:ttR,totalBuyback:ttB,profit:ttB-ttR,avgRate:ttR>0?Math.round(ttB/ttR*10000)/100:0,count:cnt+eC});
       }
+      var ar=tR>0?Math.round(tB/tR*10000)/100:0;
+      if(ar>=90) results.push({items:items.map(function(x){return{product:x.product,qty:x.qty}}),totalRetail:tR,totalBuyback:tB,profit:tB-tR,avgRate:ar,count:cnt});
     }
-    
-    for (let i = idx; i < highRate.length && searched < SEARCH_LIMIT; i++) {
-      const p = highRate[i];
-      const curQty = used[p.jan] || 0;
-      if (curQty >= getMaxQty(p)) continue;
-      if (totalRetail + p.retail > points) continue;
-      
-      const existing = items.find(x => x.product.jan === p.jan);
-      if (existing) existing.qty++;
-      else items.push({ product: p, qty: 1 });
-      
-      used[p.jan] = curQty + 1;
-      
-      dfs(i, items, totalRetail + p.retail, totalBuyback + p.buyback, count + 1, used);
-      
-      if (existing) existing.qty--;
-      else items.pop();
-      used[p.jan] = curQty;
-      if (existing && existing.qty === 0) {
-        items.splice(items.indexOf(existing), 1);
-      }
+    for(var i=idx;i<highRate.length&&searched<LIMIT;i++){
+      var p=highRate[i];
+      if(getGroupRemaining(p,used)<=0||tR+p.retail>points)continue;
+      var ex=items.find(function(x){return x.product.jan===p.jan});
+      if(ex)ex.qty++;else items.push({product:p,qty:1});
+      used[p.jan]=(used[p.jan]||0)+1;
+      dfs(i,items,tR+p.retail,tB+p.buyback,cnt+1,used);
+      if(ex){ex.qty--;if(ex.qty===0)items.splice(items.indexOf(ex),1);}else items.pop();
+      used[p.jan]=used[p.jan]-1;
     }
   }
-  
-  dfs(0, [], 0, 0, 0, {});
+  dfs(0,[],0,0,0,{});
   return results;
 }
 
@@ -683,106 +615,63 @@ function exploreSearch(highRate, allProducts, points, maxItems, getMaxQty) {
 // 結果表示
 // =============================================================================
 function renderResult(result, points) {
-  const usage = Math.round(result.totalRetail / points * 10000) / 100;
-  const remaining = points - result.totalRetail;
-  
-  const el = document.getElementById('searchResult');
-  el.innerHTML = `
-    <div class="result-card">
-      <div class="result-header">
-        <span class="result-badge">🏆 最高利益</span>
-        <span style="font-size:0.85rem;color:var(--text-secondary)">${result.count}点の組み合わせ</span>
-      </div>
-      <div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:12px">
-        ポイント ${result.totalRetail.toLocaleString()}円使用（消化率 ${usage}%）→ 残り ${remaining.toLocaleString()}円
-      </div>
-      <div class="result-stats">
-        <div class="result-stat">
-          <div class="value profit">${result.profit >= 0 ? '+' : ''}¥${result.profit.toLocaleString()}</div>
-          <div class="label">利益</div>
-        </div>
-        <div class="result-stat">
-          <div class="value">${result.count}個</div>
-          <div class="label">個数</div>
-        </div>
-        <div class="result-stat">
-          <div class="value">¥${result.totalBuyback.toLocaleString()}</div>
-          <div class="label">合計買取</div>
-        </div>
-        <div class="result-stat">
-          <div class="value">${result.avgRate}%</div>
-          <div class="label">平均買取率</div>
-        </div>
-        <div class="result-stat">
-          <div class="value">${usage}%</div>
-          <div class="label">消化率</div>
-        </div>
-      </div>
-      ${result.items.map(i => {
-        const p = i.product;
-        const rateClass = p.rate >= 100 ? 'rate-high' : p.rate >= 85 ? 'rate-mid' : 'rate-low';
-        return `
-          <div class="result-item ${p.rate >= 100 ? 'result-item-highlight' : ''}">
-            <div style="flex:1;min-width:0">
-              <div style="font-weight:600;font-size:0.85rem">${p.name}</div>
-              <div style="font-size:0.75rem;color:var(--text-secondary)">
-                定価 ¥${(p.retail||0).toLocaleString()} → <span style="color:var(--success);font-weight:600">買取 ¥${p.buyback.toLocaleString()}</span>
-              </div>
-            </div>
-            <div class="product-rate ${rateClass}">${p.rate}%</div>
-            <div class="qty-controls">
-              <button class="qty-btn" onclick="adjustResult('${p.jan}',-1)">−</button>
-              <span style="font-family:var(--font-en);font-weight:600">${i.qty}</span>
-              <button class="qty-btn" onclick="adjustResult('${p.jan}',1)">＋</button>
-            </div>
-          </div>`;
-      }).join('')}
-      ${remaining > 0 ? `<div class="result-remaining">残り ¥${remaining.toLocaleString()} で追加できる商品はありません</div>` : ''}
-    </div>`;
+  var usage = Math.round(result.totalRetail / points * 10000) / 100;
+  var rem = points - result.totalRetail;
+  var maxI = parseInt(document.getElementById('maxItemsSelect').value) || 8;
+  var canAdd = allProducts.some(function(p){return p.buyback>0&&p.retail>0&&p.retail<=rem}) && result.count < maxI;
+
+  var h = '<div class="result-card">';
+  h += '<div class="result-header"><span class="result-badge">🏆 最高利益</span><span style="font-size:0.85rem;color:var(--text-secondary)">' + result.count + '点の組み合わせ</span></div>';
+  h += '<div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:12px">ポイント ' + result.totalRetail.toLocaleString() + '円使用（消化率 ' + usage + '%）→ 残り ' + rem.toLocaleString() + '円</div>';
+  h += '<div class="result-stats">';
+  h += '<div class="result-stat"><div class="value profit">' + (result.profit>=0?'+':'') + '¥' + result.profit.toLocaleString() + '</div><div class="label">利益</div></div>';
+  h += '<div class="result-stat"><div class="value">' + result.count + '個</div><div class="label">個数</div></div>';
+  h += '<div class="result-stat"><div class="value">¥' + result.totalBuyback.toLocaleString() + '</div><div class="label">合計買取</div></div>';
+  h += '<div class="result-stat"><div class="value">' + result.avgRate + '%</div><div class="label">平均買取率</div></div>';
+  h += '<div class="result-stat"><div class="value">' + usage + '%</div><div class="label">消化率</div></div>';
+  h += '</div>';
+
+  for (var i = 0; i < result.items.length; i++) {
+    var it = result.items[i], p = it.product;
+    var rc = p.rate>=100?'rate-high':p.rate>=85?'rate-mid':'rate-low';
+    h += '<div class="result-item ' + (p.rate>=100?'result-item-highlight':'') + '">';
+    h += '<div class="ri-info"><div style="font-weight:600;font-size:0.85rem">' + p.name + '</div>';
+    h += '<div style="font-size:0.75rem;color:var(--text-secondary)">定価 ¥' + (p.retail||0).toLocaleString() + ' → <span style="color:var(--success);font-weight:600">買取 ¥' + p.buyback.toLocaleString() + '</span></div></div>';
+    h += '<div class="ri-rate ' + rc + '">' + p.rate + '%</div>';
+    h += '<div class="qty-controls"><button type="button" class="qty-btn" onclick="adjustResult(\'' + p.jan + '\',-1)">−</button>';
+    h += '<span style="font-family:var(--font-en);font-weight:600">' + it.qty + '</span>';
+    h += '<button type="button" class="qty-btn" onclick="adjustResult(\'' + p.jan + '\',1)">＋</button></div></div>';
+  }
+  if (rem > 0 && !canAdd) h += '<div class="result-remaining">残り ¥' + rem.toLocaleString() + ' で追加できる商品はありません</div>';
+  h += '</div>';
+  document.getElementById('searchResult').innerHTML = h;
 }
 
 function adjustResult(jan, delta) {
   if (!lastResult) return;
-  const item = lastResult.items.find(i => i.product.jan === jan);
+  var item = lastResult.items.find(function(i){return i.product.jan===jan});
   if (!item) return;
-  
-  const newQty = item.qty + delta;
-  if (newQty <= 0) {
-    lastResult.items = lastResult.items.filter(i => i.product.jan !== jan);
-  } else {
-    item.qty = newQty;
-  }
-  
-  // 再計算
-  let tr = 0, tb = 0, cnt = 0;
-  lastResult.items.forEach(i => {
-    tr += (i.product.retail || 0) * i.qty;
-    tb += i.product.buyback * i.qty;
-    cnt += i.qty;
-  });
-  lastResult.totalRetail = tr;
-  lastResult.totalBuyback = tb;
-  lastResult.profit = tb - tr;
-  lastResult.avgRate = tr > 0 ? Math.round(tb / tr * 10000) / 100 : 0;
-  lastResult.count = cnt;
-  
-  const points = parseInt(document.getElementById('pointsInput').value) || 0;
-  renderResult(lastResult, points);
+  if (item.qty + delta <= 0) lastResult.items = lastResult.items.filter(function(i){return i.product.jan!==jan});
+  else item.qty += delta;
+  var tR=0,tB=0,cnt=0;
+  lastResult.items.forEach(function(i){tR+=(i.product.retail||0)*i.qty;tB+=i.product.buyback*i.qty;cnt+=i.qty});
+  lastResult.totalRetail=tR;lastResult.totalBuyback=tB;lastResult.profit=tB-tR;
+  lastResult.avgRate=tR>0?Math.round(tB/tR*10000)/100:0;lastResult.count=cnt;
+  renderResult(lastResult, parseInt(document.getElementById('pointsInput').value)||0);
 }
 
 // =============================================================================
 // タブ切り替え
 // =============================================================================
-document.querySelectorAll('.tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+document.querySelectorAll('.tab').forEach(function(tab) {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+    document.querySelectorAll('.tab-content').forEach(function(c){c.classList.remove('active')});
     tab.classList.add('active');
     document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
   });
 });
 
-// 起動
 loadData();
 </script>
 </body>
