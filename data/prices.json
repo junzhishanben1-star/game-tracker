@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-02T15:20:42",
+  "updated_at": "2026-02-02T20:28:02",
   "all_products": [
     {
       "jan": "4902370552683",
@@ -27,7 +27,7 @@
       "brand": "Nintendo",
       "official_price": 53980,
       "buyback_price": 51500,
-      "rate": 95.41,
+      "rate": 95.42,
       "profit": -2480,
       "group": "switch2_main"
     },
@@ -46,9 +46,9 @@
       "name": "Nintendo Switch 2 Proコントローラー",
       "brand": "Nintendo",
       "official_price": 9980,
-      "buyback_price": 8300,
-      "rate": 83.17,
-      "profit": -1680,
+      "buyback_price": 8400,
+      "rate": 84.17,
+      "profit": -1580,
       "group": "switch2_procon"
     },
     {
@@ -77,7 +77,7 @@
       "brand": "Nintendo",
       "official_price": 4480,
       "buyback_price": 3500,
-      "rate": 78.12,
+      "rate": 78.13,
       "profit": -980,
       "group": "joycon2_left"
     },
@@ -87,7 +87,7 @@
       "brand": "Nintendo",
       "official_price": 4480,
       "buyback_price": 3500,
-      "rate": 78.12,
+      "rate": 78.13,
       "profit": -980,
       "group": "joycon2_right"
     },
@@ -116,9 +116,9 @@
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "brand": "Nintendo",
       "official_price": 37980,
-      "buyback_price": 40700,
-      "rate": 107.16,
-      "profit": 2720,
+      "buyback_price": 40600,
+      "rate": 106.9,
+      "profit": 2620,
       "group": "switch_oled"
     },
     {
@@ -126,9 +126,9 @@
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "brand": "Nintendo",
       "official_price": 37980,
-      "buyback_price": 40700,
-      "rate": 107.16,
-      "profit": 2720,
+      "buyback_price": 40600,
+      "rate": 106.9,
+      "profit": 2620,
       "group": "switch_oled"
     },
     {
@@ -156,9 +156,9 @@
       "name": "Nintendo Switch リングフィットアドベンチャー",
       "brand": "Nintendo",
       "official_price": 8778,
-      "buyback_price": 6800,
-      "rate": 77.47,
-      "profit": -1978,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -8778,
       "group": "ringfit"
     },
     {
@@ -166,9 +166,9 @@
       "name": "Nintendo Switch Proコントローラー ゼルダの伝説",
       "brand": "Nintendo",
       "official_price": 7980,
-      "buyback_price": 6800,
-      "rate": 85.21,
-      "profit": -1180,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -7980,
       "group": "switch_procon"
     },
     {
@@ -176,9 +176,9 @@
       "name": "Nintendo Switch Joy-Con (L)/(R) パステルパープル/パステルグリーン",
       "brand": "Nintendo",
       "official_price": 8778,
-      "buyback_price": 7500,
-      "rate": 85.44,
-      "profit": -1278,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -8778,
       "group": "joycon_pair"
     },
     {
@@ -186,9 +186,9 @@
       "name": "Nintendo Switch Joy-Con (L)/(R) パステルピンク/パステルイエロー",
       "brand": "Nintendo",
       "official_price": 8778,
-      "buyback_price": 7500,
-      "rate": 85.44,
-      "profit": -1278,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -8778,
       "group": "joycon_pair"
     },
     {
@@ -196,9 +196,9 @@
       "name": "Nintendo Switch Joy-Con(L)/(R) パステルピンク",
       "brand": "Nintendo",
       "official_price": 8778,
-      "buyback_price": 7500,
-      "rate": 85.44,
-      "profit": -1278,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -8778,
       "group": "joycon_pair"
     },
     {
@@ -266,9 +266,9 @@
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "brand": "Sony",
       "official_price": 119980,
-      "buyback_price": 107300,
-      "rate": 89.43,
-      "profit": -12680,
+      "buyback_price": 107200,
+      "rate": 89.35,
+      "profit": -12780,
       "group": "ps5_pro"
     },
     {
@@ -306,9 +306,9 @@
       "name": "FUJIFILM チェキフィルム 10枚入 INSTAX MINI JP 1",
       "brand": "FUJIFILM",
       "official_price": 1100,
-      "buyback_price": 1300,
-      "rate": 118.18,
-      "profit": 200,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -1100,
       "group": "cheki_film_10"
     },
     {
@@ -316,9 +316,9 @@
       "name": "FUJIFILM チェキフィルム 20枚入 INSTAX MINI JP 2",
       "brand": "FUJIFILM",
       "official_price": 2100,
-      "buyback_price": 2680,
-      "rate": 127.62,
-      "profit": 580,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -2100,
       "group": "cheki_film_20"
     },
     {
@@ -326,9 +326,9 @@
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
       "brand": "FUJIFILM",
       "official_price": 2178,
-      "buyback_price": 2670,
-      "rate": 122.59,
-      "profit": 492,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -2178,
       "group": "utsurundesu"
     },
     {
@@ -336,9 +336,9 @@
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "brand": "FUJIFILM",
       "official_price": 2178,
-      "buyback_price": 2500,
-      "rate": 114.78,
-      "profit": 322,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -2178,
       "group": "utsurundesu_2025"
     },
     {
@@ -346,9 +346,9 @@
       "name": "FUJIFILM チェキスクエア フィルム 10枚 WW1",
       "brand": "FUJIFILM",
       "official_price": 1320,
-      "buyback_price": 1200,
-      "rate": 90.91,
-      "profit": -120,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -1320,
       "group": "cheki_sq_10"
     },
     {
@@ -356,9 +356,9 @@
       "name": "FUJIFILM チェキスクエア フィルム 20枚 WW2",
       "brand": "FUJIFILM",
       "official_price": 2480,
-      "buyback_price": 2400,
-      "rate": 96.77,
-      "profit": -80,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -2480,
       "group": "cheki_sq_20"
     },
     {
@@ -366,9 +366,9 @@
       "name": "instax mini 12 ミントグリーン",
       "brand": "FUJIFILM",
       "official_price": 15180,
-      "buyback_price": 11200,
-      "rate": 73.78,
-      "profit": -3980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -15180,
       "group": "instax_mini12"
     },
     {
@@ -376,9 +376,9 @@
       "name": "instax mini 12 クレイホワイト",
       "brand": "FUJIFILM",
       "official_price": 15180,
-      "buyback_price": 11200,
-      "rate": 73.78,
-      "profit": -3980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -15180,
       "group": "instax_mini12"
     },
     {
@@ -386,9 +386,9 @@
       "name": "IQOS イルマ i ワン リーフグリーン",
       "brand": "IQOS",
       "official_price": 3980,
-      "buyback_price": 3000,
-      "rate": 75.38,
-      "profit": -980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -3980,
       "group": "iqos_one_green"
     },
     {
@@ -396,9 +396,9 @@
       "name": "IQOS イルマ i ワン ビビッドテラコッタ",
       "brand": "IQOS",
       "official_price": 3980,
-      "buyback_price": 2800,
-      "rate": 70.35,
-      "profit": -1180,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -3980,
       "group": "iqos_one_terracotta"
     },
     {
@@ -406,9 +406,9 @@
       "name": "IQOS イルマ i ワン デジタルバイオレット",
       "brand": "IQOS",
       "official_price": 3980,
-      "buyback_price": 2800,
-      "rate": 70.35,
-      "profit": -1180,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -3980,
       "group": "iqos_one_violet"
     },
     {
@@ -416,9 +416,9 @@
       "name": "IQOS イルマ i ワン ブリーズブルー",
       "brand": "IQOS",
       "official_price": 3980,
-      "buyback_price": 1600,
-      "rate": 40.2,
-      "profit": -2380,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -3980,
       "group": "iqos_one_blue"
     },
     {
@@ -426,9 +426,9 @@
       "name": "IQOS イルマ i ワン ミッドナイトブラック",
       "brand": "IQOS",
       "official_price": 3980,
-      "buyback_price": 1700,
-      "rate": 42.71,
-      "profit": -2280,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -3980,
       "group": "iqos_one_black"
     },
     {
@@ -436,9 +436,9 @@
       "name": "IQOS イルマ i ワン セレッティ モデル",
       "brand": "IQOS",
       "official_price": 6980,
-      "buyback_price": 6000,
-      "rate": 85.96,
-      "profit": -980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -6980,
       "group": "iqos_one_seletti"
     },
     {
@@ -446,9 +446,9 @@
       "name": "IQOS イルマ i ワン ミネラ モデル",
       "brand": "IQOS",
       "official_price": 4980,
-      "buyback_price": 4400,
-      "rate": 88.35,
-      "profit": -580,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -4980,
       "group": "iqos_one_minera"
     },
     {
@@ -456,9 +456,9 @@
       "name": "IQOS イルマ i ワン アニバーサリーモデル",
       "brand": "IQOS",
       "official_price": 5980,
-      "buyback_price": 5300,
-      "rate": 88.63,
-      "profit": -680,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -5980,
       "group": "iqos_one_anniversary"
     },
     {
@@ -466,9 +466,9 @@
       "name": "IQOS イルマ i ギャラクシーブルー",
       "brand": "IQOS",
       "official_price": 6980,
-      "buyback_price": 5500,
-      "rate": 78.8,
-      "profit": -1480,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -6980,
       "group": "iqos_kit_galaxy"
     },
     {
@@ -476,9 +476,9 @@
       "name": "IQOS イルマ i リーフグリーン",
       "brand": "IQOS",
       "official_price": 6980,
-      "buyback_price": 4500,
-      "rate": 64.47,
-      "profit": -2480,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -6980,
       "group": "iqos_kit_green"
     },
     {
@@ -486,9 +486,9 @@
       "name": "IQOS イルマ i ミネラ モデル",
       "brand": "IQOS",
       "official_price": 9980,
-      "buyback_price": 6000,
-      "rate": 60.12,
-      "profit": -3980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -9980,
       "group": "iqos_kit_minera"
     },
     {
@@ -496,9 +496,9 @@
       "name": "IQOS イルマ i アニバーサリーモデル 錫セット",
       "brand": "IQOS",
       "official_price": 9980,
-      "buyback_price": 7000,
-      "rate": 70.14,
-      "profit": -2980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -9980,
       "group": "iqos_kit_anniversary"
     },
     {
@@ -506,9 +506,9 @@
       "name": "IQOS イルマ i セレッティ モデル",
       "brand": "IQOS",
       "official_price": 14980,
-      "buyback_price": 10500,
-      "rate": 70.09,
-      "profit": -4480,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -14980,
       "group": "iqos_kit_seletti"
     },
     {
@@ -516,9 +516,9 @@
       "name": "IQOS イルマ i プライム ブリーズブルー",
       "brand": "IQOS",
       "official_price": 12980,
-      "buyback_price": 7600,
-      "rate": 58.55,
-      "profit": -5380,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -12980,
       "group": "iqos_prime_blue"
     },
     {
@@ -526,9 +526,9 @@
       "name": "IQOS イルマ i プライム ミッドナイトブラック",
       "brand": "IQOS",
       "official_price": 12980,
-      "buyback_price": 7600,
-      "rate": 58.55,
-      "profit": -5380,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -12980,
       "group": "iqos_prime_black"
     },
     {
@@ -536,9 +536,9 @@
       "name": "IQOS イルマ i プライム アスペングリーン",
       "brand": "IQOS",
       "official_price": 12980,
-      "buyback_price": 7900,
-      "rate": 60.86,
-      "profit": -5080,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -12980,
       "group": "iqos_prime_aspen"
     },
     {
@@ -546,9 +546,9 @@
       "name": "IQOS イルマ i プライム ガーネットレッド限定モデル",
       "brand": "IQOS",
       "official_price": 12980,
-      "buyback_price": 9000,
-      "rate": 69.34,
-      "profit": -3980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -12980,
       "group": "iqos_prime_garnet"
     },
     {
@@ -556,9 +556,9 @@
       "name": "IQOS イルマ i プライム ミネラ モデル",
       "brand": "IQOS",
       "official_price": 14980,
-      "buyback_price": 9800,
-      "rate": 65.42,
-      "profit": -5180,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -14980,
       "group": "iqos_prime_minera"
     },
     {
@@ -566,9 +566,9 @@
       "name": "IQOS イルマ i プライム アニバーサリーモデル 錫セット",
       "brand": "IQOS",
       "official_price": 17980,
-      "buyback_price": 12000,
-      "rate": 66.74,
-      "profit": -5980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -17980,
       "group": "iqos_prime_anniversary"
     },
     {
@@ -576,9 +576,9 @@
       "name": "IQOS イルマ i プライム セレッティ モデル",
       "brand": "IQOS",
       "official_price": 24980,
-      "buyback_price": 18000,
-      "rate": 72.06,
-      "profit": -6980,
+      "buyback_price": 0,
+      "rate": 0,
+      "profit": -24980,
       "group": "iqos_prime_seletti"
     }
   ]
