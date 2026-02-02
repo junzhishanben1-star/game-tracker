@@ -1,6 +1,8 @@
 name: 買取価格更新（モバイル一番スクレイピング）
 
 on:
+  schedule:
+    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 permissions:
