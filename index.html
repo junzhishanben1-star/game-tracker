@@ -386,9 +386,9 @@
             color: #991b1b;
         }
 
-        /* 商品一覧 */
+        /* 組み合わせカード内 個数調整 */
         .combo-item-adj {
-            display: flex;
+            display: flex !important;
             justify-content: space-between;
             align-items: center;
             padding: 10px 16px;
@@ -406,9 +406,6 @@
         .combo-item-left .combo-item-name {
             display: block;
             font-weight: 500;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .combo-item-left .combo-item-price {
@@ -429,6 +426,33 @@
             display: flex;
             align-items: center;
             gap: 4px;
+        }
+
+        .qty-adj .qty-btn {
+            width: 30px;
+            height: 30px;
+            border: 2px solid var(--gray-300);
+            background: white;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.15s;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .qty-adj .qty-btn:hover { background: var(--gray-100); }
+        .qty-adj .qty-btn.minus:hover { background: #fee2e2; color: #dc2626; border-color: #fca5a5; }
+        .qty-adj .qty-btn.plus:hover { background: #dbeafe; color: #2563eb; border-color: #93c5fd; }
+
+        .qty-adj .qty-value {
+            width: 28px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1rem;
         }
 
         /* 商品一覧 */
