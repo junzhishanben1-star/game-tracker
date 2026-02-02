@@ -474,47 +474,51 @@
             }
 
             // ============ Greedy法 ============
-            function greedyFill(list, maxTotal) {
+            function greedyFill(mainList, maxTotal) {
                 const cart = {};
                 let remaining = points, count = 0;
                 
-                // パス1: メイン戦略
-                for (const p of list) {
-                    if (count >= maxTotal) break;
-                    const maxQ = Math.min(maxQtyFor(p, maxTotal - count), Math.floor(remaining / p.official_price));
+                // パス1: メイン戦略で詰める
+                for (const p of mainList) {
+                    if (count >= maxTotal || remaining <= 0) break;
+                    if (p.official_price > remaining) continue;
+                    const maxQ = Math.min(
+                        p.official_price >= 30000 ? 1 : 3,
+                        maxTotal - count,
+                        Math.floor(remaining / p.official_price)
+                    );
                     if (maxQ <= 0) continue;
                     cart[p.jan] = { product: p, qty: maxQ };
                     remaining -= p.official_price * maxQ;
                     count += maxQ;
                 }
                 
-                // パス2: 残額埋め（allProductsから残額以下の商品を高額順で）
-                if (remaining > 0 && count < maxTotal) {
-                    const fillers = [...allProducts]
-                        .filter(p => p.official_price <= remaining && p.rate >= 85 && !cart[p.jan])
-                        .sort((a, b) => b.official_price - a.official_price);
-                    for (const p of fillers) {
-                        if (count >= maxTotal || remaining <= 0) break;
-                        const maxQ = Math.min(p.official_price >= 30000 ? 1 : 3, maxTotal - count, Math.floor(remaining / p.official_price));
-                        if (maxQ <= 0) continue;
-                        cart[p.jan] = { product: p, qty: maxQ };
-                        remaining -= p.official_price * maxQ;
-                        count += maxQ;
-                    }
-                }
-                
-                // パス3: カート内安価商品の個数追加
-                if (remaining > 0 && count < maxTotal) {
-                    const entries = Object.entries(cart).sort((a, b) => a[1].product.official_price - b[1].product.official_price);
-                    for (const [jan, info] of entries) {
-                        if (count >= maxTotal || remaining <= 0) break;
-                        const p = info.product;
-                        if (p.official_price >= 30000) continue;
+                // パス2: 残額を全商品から埋める（高額→安い順で最大限詰める）
+                const allByPrice = [...allProducts].sort((a, b) => b.official_price - a.official_price);
+                for (const p of allByPrice) {
+                    if (count >= maxTotal || remaining <= 0) break;
+                    if (p.official_price > remaining) continue;
+                    if (p.rate < 80) continue;
+                    
+                    if (cart[p.jan]) {
+                        // 既にカートにある → 個数追加可能か
+                        const info = cart[p.jan];
+                        if (info.product.official_price >= 30000) continue;
                         const canAdd = Math.min(3 - info.qty, maxTotal - count, Math.floor(remaining / p.official_price));
                         if (canAdd <= 0) continue;
                         info.qty += canAdd;
                         remaining -= p.official_price * canAdd;
                         count += canAdd;
+                    } else {
+                        const maxQ = Math.min(
+                            p.official_price >= 30000 ? 1 : 3,
+                            maxTotal - count,
+                            Math.floor(remaining / p.official_price)
+                        );
+                        if (maxQ <= 0) continue;
+                        cart[p.jan] = { product: p, qty: maxQ };
+                        remaining -= p.official_price * maxQ;
+                        count += maxQ;
                     }
                 }
                 
@@ -535,7 +539,7 @@
             for (const mt of [MAX_TOTAL, MAX_TOTAL + 3, MAX_TOTAL + 6]) {
                 for (const list of strategies) {
                     const r = greedyFill(list, mt);
-                    if (r && r.avgRate >= 95) allResults.push(r);
+                    if (r) allResults.push(r);
                 }
             }
 
