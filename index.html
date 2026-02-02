@@ -159,19 +159,19 @@
         .filter-btn:hover { border-color: var(--primary); color: var(--primary); }
         .filter-btn.active { background: var(--primary); border-color: var(--primary); color: white; }
         .products-list { padding: 0; }
-        .product-item { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 14px 24px; border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
+        .product-item { display: flex; flex-direction: column; gap: 6px; padding: 14px 24px; border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
         .product-item:last-child { border-bottom: none; }
         .product-item:hover { background: var(--surface-dim); }
         .product-name { font-weight: 600; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; }
-        .product-meta { font-size: 0.78rem; color: var(--text-sub); margin-top: 3px; }
-        .product-prices { text-align: right; }
-        .product-official-price { font-size: 0.78rem; color: var(--text-muted); }
-        .product-buyback-price { font-size: 1rem; font-weight: 700; font-family: var(--fn); }
-        .product-rate { display: inline-block; padding: 3px 10px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; margin-top: 2px; font-family: var(--fn); }
+        .product-meta { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; display: flex; align-items: center; gap: 6px; }
+        .product-price-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+        .product-profit { font-size: 0.78rem; font-weight: 700; font-family: var(--fn); margin-left: 2px; }
+        .profit-plus { color: var(--success); }
+        .profit-minus { color: var(--danger); }
+        .product-rate { padding: 3px 10px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; font-family: var(--fn); margin-left: auto; }
         .product-rate.excellent { background: #dcfce7; color: #15803d; }
         .product-rate.good { background: #dbeafe; color: #1e40af; }
-        .product-rate.warning { background: #fef9c3; color: #854d0e; }
-        .product-rate.danger { background: #fee2e2; color: #b91c1c; }
+        .product-rate.normal { background: #fef9c3; color: #854d0e; }
         .cat-label { font-size: 0.65rem; padding: 2px 7px; border-radius: 4px; font-weight: 600; }
         .cat-switch2 { background: #dbeafe; color: #1e40af; }
         .cat-switch { background: #fce7f3; color: #9d174d; }
@@ -198,6 +198,7 @@
         .manual-product-row.in-cart { background: #eff6ff; }
         .mp-info { flex: 1; min-width: 0; }
         .mp-name { font-weight: 600; font-size: 0.85rem; }
+        .mp-prices-row { display: flex; gap: 5px; align-items: center; flex-wrap: wrap; margin-top: 4px; }
         .mp-meta { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
         .mp-prices { display: flex; gap: 8px; font-size: 0.78rem; flex-shrink: 0; align-items: center; }
         .mp-rate { font-weight: 700; min-width: 55px; text-align: right; font-family: var(--fn); }
@@ -972,29 +973,25 @@
                 const categoryLabels = { switch2: 'Switch 2', switch: 'Switch', ps5: 'PS5', steam: 'Steam Deck', meta: 'Meta Quest', other: 'その他' };
                 const cat = getCategory(product);
                 const catLabel = categoryLabels[cat] || product.brand;
+                const profit = product.buyback_price - product.official_price;
+                const profitSign = profit >= 0 ? '+' : '';
+                const profitClass = profit >= 0 ? 'profit-plus' : 'profit-minus';
                 
                 return `
                     <div class="product-item">
                         <div class="product-info">
                             <div class="product-name">${escapeHtml(product.name)}</div>
                             <div class="product-meta">
-                                <span class="product-brand cat-${cat}">${escapeHtml(catLabel)}</span>
+                                <span class="cat-label cat-${cat}">${escapeHtml(catLabel)}</span>
                                 JAN: ${product.jan}
                             </div>
                         </div>
-                        <div class="product-prices">
-                            <div class="price-block">
-                                <div class="price-label">定価</div>
-                                <div class="price-value">¥${product.official_price.toLocaleString()}</div>
-                            </div>
-                            <div class="price-block">
-                                <div class="price-label">買取</div>
-                                <div class="price-value">¥${product.buyback_price.toLocaleString()}</div>
-                            </div>
-                            <div class="rate-badge ${rateClass}">
-                                <span class="rate-value">${product.rate}%</span>
-                                <span class="rate-label">買取率</span>
-                            </div>
+                        <div class="product-price-row">
+                            <span class="price-tag retail"><span class="price-tag-label">定価</span>¥${product.official_price.toLocaleString()}</span>
+                            <span class="price-arrow">→</span>
+                            <span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${product.buyback_price.toLocaleString()}</span>
+                            <span class="product-profit ${profitClass}">${profitSign}¥${profit.toLocaleString()}</span>
+                            <span class="product-rate ${rateClass}">${product.rate}%</span>
                         </div>
                     </div>
                 `;
@@ -1032,7 +1029,11 @@
                     <div class="manual-product-row ${inCart}">
                         <div class="mp-info">
                             <div class="mp-name">${escapeHtml(p.name)}</div>
-                            <div class="mp-meta">¥${p.official_price.toLocaleString()} → 買取 ¥${p.buyback_price.toLocaleString()}</div>
+                            <div class="mp-prices-row">
+                                <span class="price-tag retail"><span class="price-tag-label">定価</span>¥${p.official_price.toLocaleString()}</span>
+                                <span class="price-arrow">→</span>
+                                <span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${p.buyback_price.toLocaleString()}</span>
+                            </div>
                         </div>
                         <div class="mp-rate ${rateClass}">${p.rate}%</div>
                         <div class="mp-qty">
