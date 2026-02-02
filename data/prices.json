@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-02T06:43:55",
+  "updated_at": "2026-02-02T10:29:03",
   "all_products": [
     {
       "jan": "4902370552683",
@@ -63,7 +63,7 @@
     },
     {
       "jan": "4902370550733",
-      "name": "Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型",
+      "name": "HAD-S-KABAH",
       "brand": "Nintendo",
       "official_price": 32978,
       "buyback_price": 32500,
@@ -73,7 +73,7 @@
     },
     {
       "jan": "4902370551198",
-      "name": "Nintendo Switch Joy-Con(L)/(R) グレー 新型",
+      "name": "HAD-S-KAAAH",
       "brand": "Nintendo",
       "official_price": 32978,
       "buyback_price": 32500,
@@ -193,17 +193,17 @@
     },
     {
       "jan": "4902370543278",
-      "name": "Nintendo Switch リングフィット アドベンチャー",
+      "name": "Nintendo Switch リングフィットアドベンチャー",
       "brand": "Nintendo",
       "official_price": 8778,
-      "buyback_price": 6900,
-      "rate": 78.61,
-      "profit": -1878,
+      "buyback_price": 6800,
+      "rate": 77.47,
+      "profit": -1978,
       "group": "ringfit"
     },
     {
       "jan": "4902370550504",
-      "name": "Nintendo Switch Proコントローラー ゼルダの伝説",
+      "name": "ティアーズ オブ ザ キングダムエディション",
       "brand": "Nintendo",
       "official_price": 7980,
       "buyback_price": 6800,
@@ -213,7 +213,7 @@
     },
     {
       "jan": "4902370551136",
-      "name": "Joy-Con (L)/(R) パステルパープル/パステルグリーン",
+      "name": "Nintendo Switch Joy-Con (L)/(R) パステルパープル/パステルグリーン",
       "brand": "Nintendo",
       "official_price": 8778,
       "buyback_price": 7500,
@@ -223,7 +223,7 @@
     },
     {
       "jan": "4902370551112",
-      "name": "Joy-Con (L)/(R) パステルピンク/パステルイエロー",
+      "name": "Nintendo Switch Joy-Con (L)/(R) パステルピンク/パステルイエロー",
       "brand": "Nintendo",
       "official_price": 8778,
       "buyback_price": 7500,
@@ -233,7 +233,7 @@
     },
     {
       "jan": "4902370552027",
-      "name": "Joy-Con (L)/(R) パステルピンク",
+      "name": "Nintendo Switch Joy-Con(L)/(R) パステルピンク",
       "brand": "Nintendo",
       "official_price": 8778,
       "buyback_price": 7500,
