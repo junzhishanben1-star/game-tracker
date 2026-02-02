@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-02T11:25:57",
+  "updated_at": "2026-02-02T15:20:42",
   "all_products": [
     {
       "jan": "4902370552683",
@@ -266,9 +266,9 @@
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "brand": "Sony",
       "official_price": 119980,
-      "buyback_price": 107200,
-      "rate": 89.35,
-      "profit": -12780,
+      "buyback_price": 107300,
+      "rate": 89.43,
+      "profit": -12680,
       "group": "ps5_pro"
     },
     {
