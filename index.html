@@ -84,18 +84,18 @@
 
         .tab-btn {
             flex: 1;
-            padding: 16px 24px;
+            padding: 14px 12px;
             background: rgba(255, 255, 255, 0.7);
             border: none;
             border-radius: 12px;
-            font-size: 1rem;
+            font-size: 0.85rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .tab-btn:hover {
@@ -1032,7 +1032,10 @@
         <!-- タブ -->
         <div class="tabs">
             <button class="tab-btn active" data-tab="search">
-                🔍 ポイント消化シミュレーター
+                🔍 シミュレーター
+            </button>
+            <button class="tab-btn" data-tab="manual">
+                🛒 手動カスタマイズ
             </button>
             <button class="tab-btn" data-tab="list">
                 📋 全商品一覧
@@ -1072,9 +1075,23 @@
             </div>
 
             <!-- 手動カスタマイズ -->
+        </div>
+
+        <!-- タブ2: 手動カスタマイズ -->
+        <div class="tab-content" id="tab-manual">
             <div class="manual-section">
                 <h2 class="search-title">🛒 手動で組み合わせを作成</h2>
                 <p class="manual-desc">商品と個数を選んで、自分だけの組み合わせを作れます</p>
+                <div class="search-form" style="margin-bottom:16px;">
+                    <div class="form-group">
+                        <label class="form-label">持っているポイント（円相当）</label>
+                        <input type="number" class="form-input" id="manualPointsInput" placeholder="50000" value="50000">
+                    </div>
+                </div>
+                <div class="manual-summary" id="manualSummary" style="display: none;">
+                    <h3>📊 カート合計</h3>
+                    <div class="summary-grid" id="summaryGrid"></div>
+                </div>
                 <div class="manual-category-filters">
                     <button class="manual-filter-btn active" data-mcat="all">すべて</button>
                     <button class="manual-filter-btn" data-mcat="switch2">Switch 2</button>
@@ -1085,14 +1102,10 @@
                     <button class="manual-filter-btn" data-mcat="other">その他</button>
                 </div>
                 <div class="manual-products" id="manualProducts"></div>
-                <div class="manual-summary" id="manualSummary" style="display: none;">
-                    <h3>📊 カート合計</h3>
-                    <div class="summary-grid" id="summaryGrid"></div>
-                </div>
             </div>
         </div>
 
-        <!-- タブ2: 全商品一覧 -->
+        <!-- タブ3: 全商品一覧 -->
         <div class="tab-content" id="tab-list">
             <div class="products-section">
                 <div class="section-header">
@@ -1856,7 +1869,7 @@
             }
             summaryEl.style.display = 'block';
 
-            const points = parseInt(document.getElementById('pointsInput').value) || 50000;
+            const points = parseInt(document.getElementById('manualPointsInput').value) || 50000;
             let totalPrice = 0;
             let totalBuyback = 0;
 
@@ -1949,6 +1962,9 @@
 
         // 検索ボタン
         document.getElementById('searchBtn').addEventListener('click', executeSearch);
+
+        // 手動カスタマイズのポイント入力変更
+        document.getElementById('manualPointsInput').addEventListener('input', updateSummary);
 
         // Enterキーで検索
         document.querySelectorAll('.form-input').forEach(input => {
