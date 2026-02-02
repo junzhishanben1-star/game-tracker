@@ -455,10 +455,11 @@
                 return Math.min(p.official_price >= 30000 ? 1 : 3, remainSlots);
             }
 
-            // ① 貪欲法: ソート順に詰め込んで確実に結果を出す
+            // ① 貪欲法: ソート順に詰め込み + 残額埋め
             function greedyFill(list) {
                 const cart = {};
                 let remaining = points, count = 0;
+                // パス1: メイン戦略で詰める
                 for (const p of list) {
                     if (count >= MAX_TOTAL) break;
                     const maxQ = Math.min(maxQtyFor(p, MAX_TOTAL - count), Math.floor(remaining / p.official_price));
@@ -466,6 +467,29 @@
                     cart[p.jan] = { product: p, qty: maxQ };
                     remaining -= p.official_price * maxQ;
                     count += maxQ;
+                }
+                // パス2: 残額を高額順で埋める（消化率を上げる）
+                if (remaining > 0 && count < MAX_TOTAL) {
+                    const byPriceDesc = [...grouped].sort((a, b) => b.official_price - a.official_price);
+                    for (const p of byPriceDesc) {
+                        if (count >= MAX_TOTAL || remaining <= 0) break;
+                        if (p.rate < 90) continue;
+                        const existing = cart[p.jan] ? cart[p.jan].qty : 0;
+                        const limit = maxQtyFor(p, MAX_TOTAL - count);
+                        const canAdd = Math.min(limit, Math.floor(remaining / p.official_price));
+                        if (canAdd <= 0) continue;
+                        if (cart[p.jan]) {
+                            const addable = Math.min(canAdd, maxQtyFor(p, MAX_TOTAL - count + existing) - existing);
+                            if (addable <= 0) continue;
+                            cart[p.jan].qty += addable;
+                            remaining -= p.official_price * addable;
+                            count += addable;
+                        } else {
+                            cart[p.jan] = { product: p, qty: canAdd };
+                            remaining -= p.official_price * canAdd;
+                            count += canAdd;
+                        }
+                    }
                 }
                 let tp = 0, tb = 0, tc = 0;
                 const items = [];
@@ -477,7 +501,8 @@
                 }
                 if (tc === 0 || tp === 0) return null;
                 const avgRate = (tb / tp) * 100;
-                if (avgRate < 95) return null;
+                const util = (tp / points) * 100;
+                if (avgRate < 95 || util < 93) return null;
                 return {
                     items, itemCount: tc, totalPrice: tp, totalBuyback: tb,
                     avgRate: Math.round(avgRate * 100) / 100, cashOut: 0,
@@ -580,11 +605,20 @@
             
             const results = findCombinations(points, 10);
             
-            // 最高利益の組み合わせを探す
+            // 最高利益の組み合わせを探す（消化率98%以上のみ）
             let bestProfit = null;
             for (const r of results) {
+                if (r.utilizationRate < 98) continue;
                 if (!bestProfit || r.profit > bestProfit.profit) {
                     bestProfit = r;
+                }
+            }
+            // 98%以上がなければ、消化率90%以上で最も高い利益のものを採用
+            if (!bestProfit && results.length > 0) {
+                const viable = results.filter(r => r.utilizationRate >= 90);
+                if (viable.length > 0) {
+                    bestProfit = viable.reduce((best, r) => 
+                        !best || r.profit > best.profit ? r : best, null);
                 }
             }
             
