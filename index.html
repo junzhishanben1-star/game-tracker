@@ -1,1413 +1,789 @@
 <!DOCTYPE html>
-<!-- v7 - greedy+探索ハイブリッド 2026-02-02 21:05 -->
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ゲーム機 買取率トラッカー | C-Creation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #3b82f6;
-            --primary-dark: #2563eb;
-            --accent: #f97316;
-            --success: #22c55e;
-            --warning: #eab308;
-            --danger: #ef4444;
-            --surface: #ffffff;
-            --surface-dim: #f8fafc;
-            --border: #e2e8f0;
-            --text: #0f172a;
-            --text-sub: #475569;
-            --text-muted: #94a3b8;
-            --radius: 14px;
-            --shadow: 0 4px 20px rgba(0,0,0,0.08);
-            --fn: 'DM Sans', sans-serif;
-            --fj: 'Zen Kaku Gothic New', sans-serif;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family: var(--fj); background: #0f172a; min-height: 100vh; color: var(--text); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎮 ゲーム機 買取率トラッカー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --header-bg: #1a1a2e;
+  --header-text: #ffffff;
+  --primary: #4361ee;
+  --primary-light: #eef0ff;
+  --success: #10b981;
+  --success-light: #ecfdf5;
+  --warning: #f59e0b;
+  --warning-light: #fffbeb;
+  --danger: #ef4444;
+  --text: #1a1a2e;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --radius: 12px;
+  --font-ja: 'Zen Kaku Gothic New', sans-serif;
+  --font-en: 'DM Sans', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ja); background: var(--bg); color: var(--text); min-height: 100vh; }
 
-        /* ===== ヘッダー ===== */
-        .header {
-            background: linear-gradient(135deg, #1e3a5f, #0c1e36);
-            border-radius: var(--radius); padding: 24px 28px; margin-bottom: 12px;
-            border: 1px solid rgba(255,255,255,0.06);
-        }
-        .header h1 { font-size: 1.5rem; font-weight: 700; color: #f1f5f9; letter-spacing: -0.02em; }
-        .header-meta { display: flex; flex-wrap: wrap; gap: 16px; color: #64748b; font-size: 0.78rem; margin-top: 4px; }
-        .update-time::before { content: "🕐 "; }
+/* Header */
+.header { background: var(--header-bg); color: var(--header-text); padding: 24px 20px; }
+.header h1 { font-size: 1.5rem; font-weight: 900; margin-bottom: 4px; }
+.header .meta { font-size: 0.8rem; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 8px; }
+.header .meta .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); display: inline-block; }
 
-        /* ===== タブ ===== */
-        .tabs { display: flex; gap: 4px; margin-bottom: 12px; background: #1e293b; border-radius: 12px; padding: 4px; }
-        .tab-btn {
-            flex: 1; padding: 11px 8px; background: transparent; border: none; border-radius: 9px;
-            font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.2s;
-            display: flex; align-items: center; justify-content: center; gap: 5px;
-            color: #64748b; font-family: var(--fj);
-        }
-        .tab-btn:hover { color: #cbd5e1; background: rgba(255,255,255,0.04); }
-        .tab-btn.active { background: var(--surface); color: var(--text); box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
+/* Tabs */
+.tabs { display: flex; background: var(--card); border-bottom: 2px solid var(--border); position: sticky; top: 0; z-index: 10; }
+.tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); border-bottom: 3px solid transparent; transition: all 0.2s; }
+.tab:hover { color: var(--text); background: #f9f9fb; }
+.tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 700; }
 
-        /* ===== 検索セクション ===== */
-        .search-section { background: var(--surface); border-radius: var(--radius); padding: 24px 28px; margin-bottom: 16px; box-shadow: var(--shadow); }
-        .search-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
-        .search-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 18px; }
-        .form-group { display: flex; flex-direction: column; gap: 6px; }
-        .form-label { font-weight: 600; color: var(--text-sub); font-size: 0.82rem; }
-        .form-input { padding: 12px 16px; border: 2px solid var(--border); border-radius: 10px; font-size: 1.2rem; font-weight: 700; transition: border-color 0.2s; font-family: var(--fn); }
-        .form-input:focus { outline: none; border-color: var(--primary); }
-        .form-hint { font-size: 0.72rem; color: var(--text-muted); }
-        .search-btn { padding: 14px 32px; background: var(--primary); color: white; border: none; border-radius: 10px; font-size: 0.95rem; font-weight: 700; cursor: pointer; transition: all 0.2s; font-family: var(--fj); }
-        .search-btn:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(59,130,246,0.35); }
+/* Container */
+.container { max-width: 900px; margin: 0 auto; padding: 16px; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
 
-        /* ===== 結果 ===== */
-        .results-section { background: var(--surface); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 16px; }
-        .results-header { padding: 16px 24px; border-bottom: 1px solid var(--border); background: var(--surface-dim); }
-        .results-title { font-size: 1.05rem; font-weight: 700; }
-        .results-subtitle { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+/* Cards */
+.card { background: var(--card); border-radius: var(--radius); padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.card h2 { font-size: 1.1rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
 
-        /* ===== 組み合わせカード ===== */
-        .combination-card { padding: 20px 24px; border-bottom: 1px solid #f1f5f9; }
-        .combination-card:last-child { border-bottom: none; }
-        .combination-card.recommended { background: linear-gradient(135deg, #f0fdf4, #ecfdf5); border-left: 4px solid var(--success); }
-        .combination-card.best-profit { background: linear-gradient(135deg, #fffbeb, #fef3c7); border: 2px solid #f59e0b; border-radius: var(--radius); margin: 16px; }
-        .best-profit-label { display: inline-block; background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 4px 12px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; margin-bottom: 8px; }
-        .combination-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; flex-wrap: wrap; gap: 12px; }
-        .combination-rank { display: flex; align-items: center; gap: 12px; }
-        .rank-badge { width: 34px; height: 34px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
-        .rank-badge.gold { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
-        .rank-badge.silver { background: linear-gradient(135deg, #94a3b8, #64748b); }
-        .rank-badge.bronze { background: linear-gradient(135deg, #d97706, #b45309); }
-        .combination-info h3 { font-size: 0.95rem; font-weight: 700; }
-        .combination-info p { font-size: 0.8rem; color: var(--text-sub); }
+/* Simulator */
+.input-group { margin-bottom: 16px; }
+.input-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
+.input-group .hint { font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px; }
+.input-row { display: flex; gap: 12px; align-items: flex-end; }
+.input-row .input-group { flex: 1; }
+input[type="number"], select {
+  width: 100%; padding: 10px 14px; border: 2px solid var(--border); border-radius: 8px;
+  font-size: 1rem; font-family: var(--font-en); transition: border-color 0.2s;
+}
+input:focus, select:focus { outline: none; border-color: var(--primary); }
+.btn-primary {
+  width: 100%; padding: 14px; background: var(--primary); color: white; border: none;
+  border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: opacity 0.2s;
+}
+.btn-primary:hover { opacity: 0.9; }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
 
-        /* ===== stats ===== */
-        .combination-stats { display: flex; gap: 8px; flex-wrap: wrap; }
-        .stat-item { text-align: center; padding: 8px 14px; background: var(--surface-dim); border-radius: 10px; min-width: 90px; border: 1px solid var(--border); }
-        .stat-value { font-size: 1.15rem; font-weight: 700; font-family: var(--fn); }
-        .stat-value.positive { color: var(--success); }
-        .stat-value.negative { color: var(--danger); }
-        .stat-label { font-size: 0.68rem; color: var(--text-muted); margin-top: 1px; }
+/* Filters */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.filter-btn {
+  padding: 6px 16px; border: 2px solid var(--border); border-radius: 20px;
+  background: white; cursor: pointer; font-size: 0.85rem; font-weight: 500; transition: all 0.2s;
+}
+.filter-btn:hover { border-color: var(--primary); color: var(--primary); }
+.filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
 
-        /* ===== 商品行（組み合わせ内アイテム）===== */
-        .combination-items { display: flex; flex-direction: column; gap: 6px; }
-        .combo-item-adj {
-            display: flex !important; justify-content: space-between; align-items: center;
-            padding: 14px 16px; background: var(--surface-dim); border-radius: 10px;
-            border: 1px solid var(--border); gap: 12px; transition: border-color 0.15s;
-        }
-        .combo-item-adj:hover { border-color: #cbd5e1; }
-        .combo-item-left { flex: 1; min-width: 0; }
-        .combo-item-left .combo-item-name { display: block; font-weight: 600; font-size: 0.9rem; color: var(--text); margin-bottom: 6px; }
+/* Product list */
+.product-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; border-bottom: 1px solid var(--border); transition: background 0.15s;
+}
+.product-item:last-child { border-bottom: none; }
+.product-item:hover { background: #f9f9fb; }
+.product-info { flex: 1; min-width: 0; }
+.product-name { font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.product-prices { display: flex; gap: 8px; align-items: center; font-size: 0.8rem; color: var(--text-secondary); }
+.product-prices .arrow { color: #ccc; }
+.product-prices .buyback { color: var(--success); font-weight: 700; font-family: var(--font-en); }
+.product-rate {
+  font-family: var(--font-en); font-weight: 700; font-size: 0.95rem;
+  min-width: 70px; text-align: right;
+}
+.rate-high { color: var(--success); }
+.rate-mid { color: var(--warning); }
+.rate-low { color: var(--danger); }
 
-        /* ★ 定価・買取の新デザイン - price-tag ★ */
-        .combo-item-left .combo-item-price { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
-        .price-tag {
-            display: inline-flex; align-items: center; gap: 4px;
-            padding: 4px 10px; border-radius: 6px;
-            font-size: 0.85rem; font-weight: 700; font-family: var(--fn);
-            line-height: 1;
-        }
-        .price-tag.retail { background: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
-        .price-tag.buyback { background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; font-size: 0.9rem; }
-        .price-tag.subtotal { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
-        .price-tag-label {
-            font-size: 0.6rem; font-weight: 600; font-family: var(--fj);
-            opacity: 0.7; letter-spacing: 0.02em;
-        }
-        .price-arrow { color: var(--text-muted); font-size: 0.75rem; font-weight: 500; }
+/* Result card */
+.result-card {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border: 2px solid #f59e0b; border-radius: var(--radius); padding: 20px; margin-top: 16px;
+}
+.result-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.result-badge { background: var(--success); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; }
+.result-stats {
+  display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;
+  font-family: var(--font-en); text-align: center;
+}
+.result-stat { flex: 1; min-width: 80px; }
+.result-stat .value { font-size: 1.3rem; font-weight: 700; }
+.result-stat .value.profit { color: var(--success); }
+.result-stat .label { font-size: 0.7rem; color: var(--text-secondary); font-family: var(--font-ja); }
+.result-item {
+  background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.result-item .qty-controls { display: flex; align-items: center; gap: 8px; }
+.result-item .qty-btn {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--border);
+  background: white; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center;
+}
+.result-item .qty-btn:hover { border-color: var(--primary); color: var(--primary); }
+.result-item-highlight { background: #fffde7; }
+.result-remaining { text-align: center; color: var(--text-secondary); font-size: 0.85rem; margin-top: 12px; }
 
-        .combo-item-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-        .combo-item-rate { padding: 5px 10px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; min-width: 65px; text-align: center; font-family: var(--fn); }
-        .combo-item-rate.high { background: #dcfce7; color: #15803d; }
-        .combo-item-rate.medium { background: #fef9c3; color: #854d0e; }
-        .combo-item-rate.low { background: #fee2e2; color: #b91c1c; }
+/* Custom tab */
+.custom-summary {
+  background: var(--primary-light); border-radius: 8px; padding: 16px; margin-bottom: 16px;
+  display: flex; flex-wrap: wrap; gap: 16px; font-family: var(--font-en); text-align: center;
+}
+.custom-stat { flex: 1; min-width: 80px; }
+.custom-stat .value { font-size: 1.2rem; font-weight: 700; }
+.custom-stat .label { font-size: 0.7rem; color: var(--text-secondary); font-family: var(--font-ja); }
+.custom-product {
+  display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border);
+}
+.custom-product:last-child { border-bottom: none; }
+.custom-product input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--primary); }
 
-        /* ===== 個数調整 ===== */
-        .qty-adj { display: flex; align-items: center; gap: 3px; }
-        .qty-adj .qty-btn { width: 30px; height: 30px; border: 2px solid var(--border); background: white; border-radius: 8px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s; font-family: var(--fj); }
-        .qty-adj .qty-btn:hover { border-color: #94a3b8; }
-        .qty-adj .qty-btn.minus:hover { background: #fee2e2; color: #dc2626; border-color: #fca5a5; }
-        .qty-adj .qty-btn.plus:hover { background: #dbeafe; color: #2563eb; border-color: #93c5fd; }
-        .qty-adj .qty-value { width: 26px; text-align: center; font-weight: 700; font-size: 1rem; font-family: var(--fn); }
-        .qty-value.has-items { color: var(--primary); }
+/* Footer */
+.footer { text-align: center; padding: 24px; color: var(--text-secondary); font-size: 0.75rem; }
+.footer a { color: var(--primary); }
 
-        /* ===== 提案エリア ===== */
-        .suggest-area { margin-top: 10px; }
-        .suggest-header { font-size: 0.82rem; font-weight: 600; color: #92400e; background: #fffbeb; padding: 8px 16px; border-radius: 10px 10px 0 0; border: 1px solid #fcd34d; border-bottom: none; }
-        .suggest-empty { font-size: 0.78rem; color: var(--text-muted); padding: 8px 16px; text-align: center; }
-        .suggest-item { display: flex; align-items: center; gap: 10px; padding: 8px 16px; background: #fffef7; border-left: 1px solid #fcd34d; border-right: 1px solid #fcd34d; font-size: 0.82rem; }
-        .suggest-item:last-child { border-bottom: 1px solid #fcd34d; border-radius: 0 0 10px 10px; }
-        .suggest-item-info { flex: 1; min-width: 0; }
-        .suggest-item-name { display: block; font-weight: 500; font-size: 0.78rem; }
-        .suggest-item-price { display: block; font-size: 0.68rem; color: var(--text-muted); }
-        .suggest-add-btn { padding: 5px 14px; background: #f59e0b; color: white; border: none; border-radius: 7px; font-size: 0.72rem; font-weight: 700; cursor: pointer; white-space: nowrap; transition: background 0.15s; font-family: var(--fj); }
-        .suggest-add-btn:hover { background: #d97706; }
-        .combo-item-adj.added-item { background: #fefce8; border: 1px dashed #fcd34d; }
+/* Loading */
+.loading { text-align: center; padding: 40px; color: var(--text-secondary); }
 
-        /* ===== 全商品一覧 ===== */
-        .products-section { background: var(--surface); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-        .section-header { padding: 16px 24px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .section-title { font-size: 1.1rem; font-weight: 700; }
-        .filters { display: flex; gap: 6px; flex-wrap: wrap; }
-        .filter-btn { padding: 5px 12px; border: 2px solid var(--border); border-radius: 8px; background: white; cursor: pointer; font-size: 0.75rem; font-weight: 600; transition: all 0.2s; font-family: var(--fj); }
-        .filter-btn:hover { border-color: var(--primary); color: var(--primary); }
-        .filter-btn.active { background: var(--primary); border-color: var(--primary); color: white; }
-        .products-list { padding: 0; }
-        .product-item { display: flex; flex-direction: column; gap: 6px; padding: 14px 24px; border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
-        .product-item:last-child { border-bottom: none; }
-        .product-item:hover { background: var(--surface-dim); }
-        .product-name { font-weight: 600; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; }
-        .product-meta { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; display: flex; align-items: center; gap: 6px; }
-        .product-price-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-        .product-profit { font-size: 0.78rem; font-weight: 700; font-family: var(--fn); margin-left: 2px; }
-        .profit-plus { color: var(--success); }
-        .profit-minus { color: var(--danger); }
-        .product-rate { padding: 3px 10px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; font-family: var(--fn); margin-left: auto; }
-        .product-rate.excellent { background: #dcfce7; color: #15803d; }
-        .product-rate.good { background: #dbeafe; color: #1e40af; }
-        .product-rate.normal { background: #fef9c3; color: #854d0e; }
-        .cat-label { font-size: 0.65rem; padding: 2px 7px; border-radius: 4px; font-weight: 600; }
-        .cat-switch2 { background: #dbeafe; color: #1e40af; }
-        .cat-switch { background: #fce7f3; color: #9d174d; }
-        .cat-ps5 { background: #ede9fe; color: #6d28d9; }
-        .cat-steam { background: #d1fae5; color: #065f46; }
-        .cat-meta { background: #f3e8ff; color: #7c3aed; }
-        .cat-other { background: #f1f5f9; color: #475569; }
-
-        /* ===== 結果なし ===== */
-        .no-results { text-align: center; padding: 48px 20px; }
-        .no-results-icon { font-size: 3rem; margin-bottom: 12px; }
-        .tips-box { background: var(--surface-dim); border-radius: 10px; padding: 16px; margin-top: 16px; text-align: left; display: inline-block; }
-        .tips-box h4 { margin-bottom: 6px; }
-        .tips-box ul { padding-left: 18px; font-size: 0.85rem; color: var(--text-sub); }
-
-        /* ===== 手動カスタマイズ ===== */
-        .manual-section { background: var(--surface); border-radius: var(--radius); padding: 24px 28px; box-shadow: var(--shadow); }
-        .manual-desc { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 14px; }
-        .manual-category-filters { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
-        .manual-filter-btn { padding: 5px 11px; border: 1px solid var(--border); background: white; border-radius: 7px; font-size: 0.75rem; cursor: pointer; transition: all 0.2s; font-weight: 600; font-family: var(--fj); }
-        .manual-filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
-        .manual-product-row { display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
-        .manual-product-row:hover { background: var(--surface-dim); }
-        .manual-product-row.in-cart { background: #eff6ff; }
-        .mp-info { flex: 1; min-width: 0; }
-        .mp-name { font-weight: 600; font-size: 0.85rem; }
-        .mp-prices-row { display: flex; gap: 5px; align-items: center; flex-wrap: wrap; margin-top: 4px; }
-        .mp-meta { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
-        .mp-prices { display: flex; gap: 8px; font-size: 0.78rem; flex-shrink: 0; align-items: center; }
-        .mp-rate { font-weight: 700; min-width: 55px; text-align: right; font-family: var(--fn); }
-        .mp-rate.excellent { color: #15803d; }
-        .mp-rate.good { color: #2563eb; }
-        .mp-rate.normal { color: var(--text-sub); }
-        .mp-qty { display: flex; align-items: center; gap: 3px; flex-shrink: 0; }
-        .qty-btn { width: 28px; height: 28px; border: 1.5px solid var(--border); background: white; border-radius: 7px; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s; font-family: var(--fj); }
-        .qty-btn:hover { border-color: #94a3b8; }
-        .qty-btn.minus:hover { background: #fee2e2; color: #dc2626; }
-        .qty-btn.plus:hover { background: #dbeafe; color: #2563eb; }
-        .qty-value { width: 30px; text-align: center; font-weight: 700; font-size: 0.95rem; font-family: var(--fn); }
-
-        /* ===== カート合計 ===== */
-        .manual-summary { position: sticky; bottom: 0; background: white; border-radius: 12px; padding: 18px; margin-bottom: 18px; box-shadow: 0 -4px 16px rgba(0,0,0,0.08); border: 2px solid var(--primary); }
-        .manual-summary h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 12px; }
-        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px; }
-        .summary-item { text-align: center; padding: 8px; background: var(--surface-dim); border-radius: 8px; }
-        .summary-value { font-size: 1.1rem; font-weight: 700; font-family: var(--fn); }
-        .summary-label { font-size: 0.68rem; color: var(--text-muted); }
-        .summary-bar { grid-column: 1 / -1; }
-        .progress-track { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
-        .progress-fill { height: 100%; background: var(--primary); border-radius: 4px; transition: width 0.3s; }
-        .progress-fill.over { background: var(--danger); }
-        .progress-label { font-size: 0.72rem; color: var(--text-sub); margin-top: 4px; }
-        .over-budget { color: var(--danger) !important; }
-
-        /* ===== ユーティリティ ===== */
-        .loading { text-align: center; padding: 48px; color: var(--text-muted); }
-        .loading-spinner { width: 36px; height: 36px; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 12px; }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        .footer { text-align: center; padding: 24px; color: #475569; font-size: 0.75rem; }
-        .footer a { color: #94a3b8; }
-    </style>
+/* Responsive */
+@media (max-width: 600px) {
+  .input-row { flex-direction: column; }
+  .result-stats { gap: 8px; }
+  .result-stat .value { font-size: 1.1rem; }
+  .product-item { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .product-rate { text-align: left; }
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>🎮 ゲーム機 買取率トラッカー</h1>
-            <div class="header-meta">
-                <span class="update-time" id="updateTime">読み込み中...</span>
-                <span>データ元: モバイル一番</span>
-            </div>
-        </header>
 
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="search">🔍 シミュレーター</button>
-            <button class="tab-btn" data-tab="manual">🛒 手動カスタマイズ</button>
-            <button class="tab-btn" data-tab="list">📋 全商品一覧</button>
+<div class="header">
+  <h1>🎮 ゲーム機 買取率トラッカー</h1>
+  <div class="meta">
+    <span class="dot"></span>
+    <span id="lastUpdate">読み込み中...</span>
+    <span>データ元: モバイル一番</span>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="simulator">🔍 シミュレーター</div>
+  <div class="tab" data-tab="custom">🛠 手動カスタマイズ</div>
+  <div class="tab" data-tab="products">📦 全商品一覧</div>
+</div>
+
+<div class="container">
+
+  <!-- Tab 1: Simulator -->
+  <div id="tab-simulator" class="tab-content active">
+    <div class="card">
+      <h2>🎯 ポイント消化シミュレーター</h2>
+      <div class="input-row">
+        <div class="input-group">
+          <label>持っているポイント（円相当）</label>
+          <input type="number" id="pointsInput" value="145000" min="1000" step="1000">
+          <div class="hint">ビックカメラ・ヤマダ電機等のポイント</div>
         </div>
-
-        <!-- タブ1: シミュレーター -->
-        <div class="tab-content active" id="tab-search">
-            <div class="search-section">
-                <h2 class="search-title">🎯 ポイント消化シミュレーター</h2>
-                <div class="search-form">
-                    <div class="form-group">
-                        <label class="form-label">持っているポイント（円相当）</label>
-                        <input type="number" class="form-input" id="pointsInput" placeholder="50000" value="50000">
-                        <span class="form-hint">ビックカメラ・ヤマダ電機等のポイント</span>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">購入個数の上限</label>
-                        <select class="form-input" id="maxItemsSelect" style="padding: 10px 14px; font-size: 0.95rem;">
-                            <option value="5">5個まで（少なめ）</option>
-                            <option value="8" selected>8個まで（おすすめ）</option>
-                            <option value="12">12個まで</option>
-                            <option value="20">20個まで（最大利益重視）</option>
-                            <option value="0">制限なし</option>
-                        </select>
-                        <span class="form-hint">少ないほどレジがラク、多いほど利益UP</span>
-                    </div>
-                </div>
-                <button class="search-btn" id="searchBtn">🔎 最適な組み合わせを検索</button>
-            </div>
-            <div class="results-section" id="resultsSection" style="display: none;">
-                <div id="bestProfitSection" style="display: none;">
-                    <div class="results-header">
-                        <h3 class="results-title">🏆 最も利益が出る組み合わせ</h3>
-                        <p class="results-subtitle" id="bestProfitSubtitle">条件に応じて最適化</p>
-                    </div>
-                    <div id="bestProfitResult"></div>
-                </div>
-                <div class="results-header" style="margin-top: 24px;">
-                    <h3 class="results-title" id="resultsTitle">検索結果</h3>
-                    <p class="results-subtitle" id="resultsSubtitle"></p>
-                </div>
-                <div id="resultsList"></div>
-            </div>
+        <div class="input-group">
+          <label>個数上限</label>
+          <select id="maxItemsSelect">
+            <option value="5">5個</option>
+            <option value="8" selected>8個（デフォルト）</option>
+            <option value="12">12個</option>
+            <option value="20">20個</option>
+            <option value="999">制限なし</option>
+          </select>
         </div>
-
-        <!-- タブ2: 手動カスタマイズ -->
-        <div class="tab-content" id="tab-manual">
-            <div class="manual-section">
-                <h2 class="search-title">🛒 手動で組み合わせを作成</h2>
-                <p class="manual-desc">商品と個数を選んで、自分だけの組み合わせを作れます</p>
-                <div class="search-form" style="margin-bottom:16px;">
-                    <div class="form-group">
-                        <label class="form-label">持っているポイント（円相当）</label>
-                        <input type="number" class="form-input" id="manualPointsInput" placeholder="50000" value="50000">
-                    </div>
-                </div>
-                <div class="manual-summary" id="manualSummary" style="display: none;">
-                    <h3>📊 カート合計</h3>
-                    <div class="summary-grid" id="summaryGrid"></div>
-                </div>
-                <div class="manual-category-filters">
-                    <button class="manual-filter-btn active" data-mcat="all">すべて</button>
-                    <button class="manual-filter-btn" data-mcat="switch2">Switch 2</button>
-                    <button class="manual-filter-btn" data-mcat="switch">Switch</button>
-                    <button class="manual-filter-btn" data-mcat="ps5">PS5</button>
-                    <button class="manual-filter-btn" data-mcat="steam">Steam Deck</button>
-                    <button class="manual-filter-btn" data-mcat="meta">Meta Quest</button>
-                    <button class="manual-filter-btn" data-mcat="other">その他</button>
-                </div>
-                <div class="manual-products" id="manualProducts"></div>
-            </div>
-        </div>
-
-        <!-- タブ3: 全商品一覧 -->
-        <div class="tab-content" id="tab-list">
-            <div class="products-section">
-                <div class="section-header">
-                    <h2 class="section-title">📊 全商品一覧</h2>
-                    <div class="filters">
-                        <button class="filter-btn active" data-category="all">すべて</button>
-                        <button class="filter-btn" data-category="switch2">Switch 2</button>
-                        <button class="filter-btn" data-category="switch">Switch</button>
-                        <button class="filter-btn" data-category="ps5">PS5</button>
-                        <button class="filter-btn" data-category="steam">Steam Deck</button>
-                        <button class="filter-btn" data-category="meta">Meta Quest</button>
-                        <button class="filter-btn" data-category="other">その他</button>
-                    </div>
-                </div>
-                <div class="products-list" id="productsList">
-                    <div class="loading">
-                        <div class="loading-spinner"></div>
-                        <p>データを読み込んでいます...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <p>データ元: <a href="https://www.mobile-ichiban.com/Prod/2/01" target="_blank">モバイル一番</a> | 3時間ごと自動更新</p>
-            <p>© 2026 C-Creation</p>
-        </footer>
+      </div>
+      <div class="input-group" style="margin-top:8px">
+        <label>カテゴリフィルター</label>
+        <div class="filters" id="simFilters"></div>
+      </div>
+      <button class="btn-primary" id="searchBtn" onclick="executeSearch()">🔎 最適な組み合わせを検索</button>
     </div>
+    <div id="searchResult"></div>
+  </div>
 
-    <script>
-        // ============================================
-        // グローバル変数
-        // ============================================
-        let allProducts = [];
-        let currentCategory = 'all';
+  <!-- Tab 2: Custom -->
+  <div id="tab-custom" class="tab-content">
+    <div class="card">
+      <h2>🛠 手動カスタマイズ</h2>
+      <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:16px;">商品を自分で選んで組み合わせを確認できます</p>
+      <div class="custom-summary" id="customSummary">
+        <div class="custom-stat"><div class="value" id="customTotal">¥0</div><div class="label">合計定価</div></div>
+        <div class="custom-stat"><div class="value" id="customBuyback">¥0</div><div class="label">合計買取</div></div>
+        <div class="custom-stat"><div class="value" id="customProfit">¥0</div><div class="label">利益</div></div>
+        <div class="custom-stat"><div class="value" id="customRate">0%</div><div class="label">平均買取率</div></div>
+      </div>
+      <div id="customList"></div>
+    </div>
+  </div>
 
-        // カテゴリ判定（groupプレフィックスで自動分類）
-        function getCategory(product) {
-            const g = product.group || '';
-            if (g.startsWith('switch2_') || g.startsWith('joycon2_') || g.startsWith('microsd_')) return 'switch2';
-            if (g.startsWith('switch_') || g.startsWith('procon_') || g.startsWith('joycon_') || g.startsWith('switch_acc')) return 'switch';
-            if (g.startsWith('ps5_') || g.startsWith('ps_')) return 'ps5';
-            if (g.startsWith('steam_')) return 'steam';
-            if (g.startsWith('meta_')) return 'meta';
-            // nameベースのフォールバック
-            const n = product.name || '';
-            if (n.includes('Switch 2') || n.includes('Joy-Con 2') || n.includes('for Nintendo Switch 2')) return 'switch2';
-            if (n.includes('Switch')) return 'switch';
-            if (n.includes('PlayStation') || n.includes('PS5') || n.includes('DualSense')) return 'ps5';
-            if (n.includes('Steam Deck')) return 'steam';
-            if (n.includes('Meta Quest') || n.includes('Quest')) return 'meta';
-            return 'other';
-        }
+  <!-- Tab 3: All Products -->
+  <div id="tab-products" class="tab-content">
+    <div class="card">
+      <h2>📊 全商品一覧</h2>
+      <div class="filters" id="productFilters"></div>
+      <div id="productList"><div class="loading">読み込み中...</div></div>
+    </div>
+  </div>
 
-        // ============================================
-        // 埋め込みデータ（GitHub Actions で自動更新される部分）
-        // 定価は全て税込
-        // group: 同一商品グループ（同じグループからは1つしか選べない）
-        // ============================================
-        const EMBEDDED_DATA = {
-            "updated_at": "2026-02-01T23:05:10",
-            "all_products": [
-                {"jan": "4902370552683", "name": "Nintendo Switch 2 多言語対応版", "brand": "Nintendo", "official_price": 69980, "buyback_price": 85000, "rate": 121.46, "profit": 15020, "group": "switch2_main"},
-                {"jan": "4902370553024", "name": "Nintendo Switch 2 国内版", "brand": "Nintendo", "official_price": 49980, "buyback_price": 46300, "rate": 92.64, "profit": -3680, "group": "switch2_main"},
-                {"jan": "4902370553031", "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版", "brand": "Nintendo", "official_price": 53980, "buyback_price": 51500, "rate": 95.42, "profit": -2480, "group": "switch2_main"},
-                {"jan": "4902370553505", "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版", "brand": "Nintendo", "official_price": 53980, "buyback_price": 51000, "rate": 94.48, "profit": -2980, "group": "switch2_main"},
-                {"jan": "4902370548501", "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド", "brand": "Nintendo", "official_price": 37980, "buyback_price": 40600, "rate": 106.9, "profit": 2620, "group": "switch_oled"},
-                {"jan": "4902370548495", "name": "Nintendo Switch (有機ELモデル) ホワイト", "brand": "Nintendo", "official_price": 37980, "buyback_price": 40600, "rate": 106.9, "profit": 2620, "group": "switch_oled"},
-                {"jan": "4902370550733", "name": "Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型", "brand": "Nintendo", "official_price": 32978, "buyback_price": 32500, "rate": 98.55, "profit": -478, "group": "switch_standard"},
-                {"jan": "4902370551198", "name": "Nintendo Switch Joy-Con(L)/(R) グレー 新型", "brand": "Nintendo", "official_price": 32978, "buyback_price": 32500, "rate": 98.55, "profit": -478, "group": "switch_standard"},
-                {"jan": "0814585022308", "name": "Steam Deck OLED 1TB", "brand": "Valve", "official_price": 99800, "buyback_price": 103800, "rate": 104.01, "profit": 4000, "group": "steam_deck"},
-                {"jan": "4948872417075", "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版", "brand": "Sony", "official_price": 119980, "buyback_price": 107200, "rate": 89.35, "profit": -12780, "group": "ps5_pro"},
-                {"jan": "4948872415934", "name": "PlayStation 5 slim CFI-2000A01", "brand": "Sony", "official_price": 79980, "buyback_price": 74700, "rate": 93.4, "profit": -5280, "group": "ps5_slim"},
-                {"jan": "4902370552843", "name": "Nintendo Switch 2 Proコントローラー", "brand": "Nintendo", "official_price": 9980, "buyback_price": 8400, "rate": 84.17, "profit": -1580, "group": "switch2_procon"},
-                {"jan": "4902370552744", "name": "Joy-Con 2 (L)/(R) ライトブルー/ライトレッド", "brand": "Nintendo", "official_price": 9980, "buyback_price": 8600, "rate": 86.17, "profit": -1380, "group": "joycon2_pair"},
-                {"jan": "4902370552911", "name": "Nintendo Switch 2 ドックセット", "brand": "Nintendo", "official_price": 12980, "buyback_price": 11200, "rate": 86.29, "profit": -1780, "group": "switch2_dock"},
-                {"jan": "0815820025238", "name": "Meta Quest 3S 128GB", "brand": "Meta", "official_price": 48400, "buyback_price": 38600, "rate": 79.75, "profit": -9800, "group": "meta_quest3s"},
-                {"jan": "4902370552706", "name": "Joy-Con 2 (L) ライトブルー", "brand": "Nintendo", "official_price": 4480, "buyback_price": 3500, "rate": 78.13, "profit": -980, "group": "joycon2_left"},
-                {"jan": "4902370552720", "name": "Joy-Con 2 (R) ライトレッド", "brand": "Nintendo", "official_price": 4480, "buyback_price": 3500, "rate": 78.13, "profit": -980, "group": "joycon2_right"},
-                {"jan": "4523052030185", "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2", "brand": "SanDisk", "official_price": 7480, "buyback_price": 5800, "rate": 77.54, "profit": -1680, "group": "microsd_256"},
-                {"jan": "8806095700670", "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2", "brand": "Samsung", "official_price": 7480, "buyback_price": 5800, "rate": 77.54, "profit": -1680, "group": "microsd_256"},
-                {"jan": "4902370543278", "name": "Nintendo Switch リングフィット アドベンチャー", "brand": "Nintendo", "official_price": 8778, "buyback_price": 6900, "rate": 78.61, "profit": -1878, "group": "ringfit"},
-                {"jan": "4902370550504", "name": "Nintendo Switch Proコントローラー ゼルダの伝説", "brand": "Nintendo", "official_price": 7980, "buyback_price": 6800, "rate": 85.21, "profit": -1180, "group": "switch_procon"},
-                {"jan": "4902370551136", "name": "Joy-Con (L)/(R) パステルパープル/パステルグリーン", "brand": "Nintendo", "official_price": 8778, "buyback_price": 7500, "rate": 85.44, "profit": -1278, "group": "joycon_pair"},
-                {"jan": "4902370551112", "name": "Joy-Con (L)/(R) パステルピンク/パステルイエロー", "brand": "Nintendo", "official_price": 8778, "buyback_price": 7500, "rate": 85.44, "profit": -1278, "group": "joycon_pair"},
-                {"jan": "4902370552027", "name": "Joy-Con (L)/(R) パステルピンク", "brand": "Nintendo", "official_price": 8778, "buyback_price": 7500, "rate": 85.44, "profit": -1278, "group": "joycon_pair"},
-                {"jan": "4902370536010", "name": "Nintendo Switch Proコントローラー", "brand": "Nintendo", "official_price": 7678, "buyback_price": 6500, "rate": 84.66, "profit": -1178, "group": "switch_procon_std"},
-                {"jan": "4902370544091", "name": "Joy-Con充電グリップ", "brand": "Nintendo", "official_price": 2728, "buyback_price": 2200, "rate": 80.65, "profit": -528, "group": "joycon_grip"},
-                {"jan": "4902370535730", "name": "Joy-Conストラップ ネオンレッド", "brand": "Nintendo", "official_price": 858, "buyback_price": 600, "rate": 69.93, "profit": -258, "group": "joycon_strap_red"},
-                {"jan": "4902370535747", "name": "Joy-Conストラップ ネオンブルー", "brand": "Nintendo", "official_price": 858, "buyback_price": 600, "rate": 69.93, "profit": -258, "group": "joycon_strap_blue"},
-                {"jan": "4902370544114", "name": "Nintendo Switchキャリングケース", "brand": "Nintendo", "official_price": 2178, "buyback_price": 1500, "rate": 68.87, "profit": -678, "group": "switch_case"},
-                {"jan": "4902370544060", "name": "Nintendo Switch ACアダプター", "brand": "Nintendo", "official_price": 3278, "buyback_price": 2500, "rate": 76.27, "profit": -778, "group": "switch_ac"},
-                {"jan": "4547410377224", "name": "FUJIFILM チェキフィルム 10枚入 INSTAX MINI JP 1", "brand": "FUJIFILM", "official_price": 1100, "buyback_price": 1300, "rate": 118.18, "profit": 200, "group": "cheki_film_10"},
-                {"jan": "4547410377231", "name": "FUJIFILM チェキフィルム 20枚入 INSTAX MINI JP 2", "brand": "FUJIFILM", "official_price": 2100, "buyback_price": 2680, "rate": 127.62, "profit": 580, "group": "cheki_film_20"},
-                {"jan": "4547410369137", "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り", "brand": "FUJIFILM", "official_price": 2178, "buyback_price": 2600, "rate": 119.38, "profit": 422, "group": "utsurundesu"},
-                {"jan": "4547410550955", "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版", "brand": "FUJIFILM", "official_price": 2178, "buyback_price": 2500, "rate": 114.78, "profit": 322, "group": "utsurundesu_2025"},
-                {"jan": "4547410348613", "name": "FUJIFILM チェキスクエア フィルム 10枚 WW1", "brand": "FUJIFILM", "official_price": 1320, "buyback_price": 1200, "rate": 90.91, "profit": -120, "group": "cheki_sq_10"},
-                {"jan": "4547410370003", "name": "FUJIFILM チェキスクエア フィルム 20枚 WW2", "brand": "FUJIFILM", "official_price": 2480, "buyback_price": 2400, "rate": 96.77, "profit": -80, "group": "cheki_sq_20"},
-                {"jan": "4547410489132", "name": "instax mini 12 ミントグリーン", "brand": "FUJIFILM", "official_price": 15180, "buyback_price": 11200, "rate": 73.78, "profit": -3980, "group": "instax_mini12"},
-                {"jan": "4547410489149", "name": "instax mini 12 クレイホワイト", "brand": "FUJIFILM", "official_price": 15180, "buyback_price": 11200, "rate": 73.78, "profit": -3980, "group": "instax_mini12"},
-                {"jan": "7622100834717", "name": "IQOS イルマ i ワン リーフグリーン", "brand": "IQOS", "official_price": 3980, "buyback_price": 3000, "rate": 75.38, "profit": -980, "group": "iqos_one_green"},
-                {"jan": "7622100834687", "name": "IQOS イルマ i ワン ビビッドテラコッタ", "brand": "IQOS", "official_price": 3980, "buyback_price": 2800, "rate": 70.35, "profit": -1180, "group": "iqos_one_terracotta"},
-                {"jan": "7622100834724", "name": "IQOS イルマ i ワン デジタルバイオレット", "brand": "IQOS", "official_price": 3980, "buyback_price": 2800, "rate": 70.35, "profit": -1180, "group": "iqos_one_violet"},
-                {"jan": "7622100834663", "name": "IQOS イルマ i ワン ブリーズブルー", "brand": "IQOS", "official_price": 3980, "buyback_price": 1600, "rate": 40.2, "profit": -2380, "group": "iqos_one_blue"},
-                {"jan": "7622100834649", "name": "IQOS イルマ i ワン ミッドナイトブラック", "brand": "IQOS", "official_price": 3980, "buyback_price": 1700, "rate": 42.71, "profit": -2280, "group": "iqos_one_black"},
-                {"jan": "7622100547938", "name": "IQOS イルマ i ワン セレッティ モデル", "brand": "IQOS", "official_price": 6980, "buyback_price": 6000, "rate": 85.96, "profit": -980, "group": "iqos_one_seletti"},
-                {"jan": "7622100547525", "name": "IQOS イルマ i ワン ミネラ モデル", "brand": "IQOS", "official_price": 4980, "buyback_price": 4400, "rate": 88.35, "profit": -580, "group": "iqos_one_minera"},
-                {"jan": "7622100547020", "name": "IQOS イルマ i ワン アニバーサリーモデル", "brand": "IQOS", "official_price": 5980, "buyback_price": 5300, "rate": 88.63, "profit": -680, "group": "iqos_one_anniversary"},
-                {"jan": "7622100548096", "name": "IQOS イルマ i ギャラクシーブルー", "brand": "IQOS", "official_price": 6980, "buyback_price": 5500, "rate": 78.8, "profit": -1480, "group": "iqos_kit_galaxy"},
-                {"jan": "7622100834601", "name": "IQOS イルマ i リーフグリーン", "brand": "IQOS", "official_price": 6980, "buyback_price": 4500, "rate": 64.47, "profit": -2480, "group": "iqos_kit_green"},
-                {"jan": "7622100547488", "name": "IQOS イルマ i ミネラ モデル", "brand": "IQOS", "official_price": 9980, "buyback_price": 6000, "rate": 60.12, "profit": -3980, "group": "iqos_kit_minera"},
-                {"jan": "7622100547044", "name": "IQOS イルマ i アニバーサリーモデル 錫セット", "brand": "IQOS", "official_price": 9980, "buyback_price": 7000, "rate": 70.14, "profit": -2980, "group": "iqos_kit_anniversary"},
-                {"jan": "7622100547976", "name": "IQOS イルマ i セレッティ モデル", "brand": "IQOS", "official_price": 14980, "buyback_price": 10500, "rate": 70.09, "profit": -4480, "group": "iqos_kit_seletti"},
-                {"jan": "7622100834465", "name": "IQOS イルマ i プライム ブリーズブルー", "brand": "IQOS", "official_price": 12980, "buyback_price": 7600, "rate": 58.55, "profit": -5380, "group": "iqos_prime_blue"},
-                {"jan": "7622100834380", "name": "IQOS イルマ i プライム ミッドナイトブラック", "brand": "IQOS", "official_price": 12980, "buyback_price": 7600, "rate": 58.55, "profit": -5380, "group": "iqos_prime_black"},
-                {"jan": "7622100834502", "name": "IQOS イルマ i プライム アスペングリーン", "brand": "IQOS", "official_price": 12980, "buyback_price": 7900, "rate": 60.86, "profit": -5080, "group": "iqos_prime_aspen"},
-                {"jan": "7622100834540", "name": "IQOS イルマ i プライム ガーネットレッド限定モデル", "brand": "IQOS", "official_price": 12980, "buyback_price": 9000, "rate": 69.34, "profit": -3980, "group": "iqos_prime_garnet"},
-                {"jan": "7622100547464", "name": "IQOS イルマ i プライム ミネラ モデル", "brand": "IQOS", "official_price": 14980, "buyback_price": 9800, "rate": 65.42, "profit": -5180, "group": "iqos_prime_minera"},
-                {"jan": "7622100546993", "name": "IQOS イルマ i プライム アニバーサリーモデル 錫セット", "brand": "IQOS", "official_price": 17980, "buyback_price": 12000, "rate": 66.74, "profit": -5980, "group": "iqos_prime_anniversary"},
-                {"jan": "7622100547952", "name": "IQOS イルマ i プライム セレッティ モデル", "brand": "IQOS", "official_price": 24980, "buyback_price": 18000, "rate": 72.06, "profit": -6980, "group": "iqos_prime_seletti"}
-            ]
-        };
+</div>
 
-        // ============================================
-        // データ読み込み
-        // ============================================
-        async function loadData() {
-            try {
-                // まず外部JSONを試す（GitHub Pages用）
-                const response = await fetch('data/prices.json');
-                if (response.ok) {
-                    const contentType = response.headers.get('content-type');
-                    if (contentType && contentType.includes('application/json')) {
-                        const data = await response.json();
-                        let products = data.all_products || [];
-                        
-                        // 買取0円の商品を埋め込みデータで補完
-                        const embeddedMap = new Map();
-                        for (const p of EMBEDDED_DATA.all_products || []) {
-                            embeddedMap.set(p.jan, p);
-                        }
-                        products = products.map(p => {
-                            if (p.buyback_price === 0 && embeddedMap.has(p.jan)) {
-                                const fallback = embeddedMap.get(p.jan);
-                                if (fallback.buyback_price > 0) {
-                                    console.log(`買取0円を補完: ${p.name} → ¥${fallback.buyback_price}`);
-                                    return { ...p, 
-                                        buyback_price: fallback.buyback_price, 
-                                        rate: fallback.rate, 
-                                        profit: fallback.profit 
-                                    };
-                                }
-                            }
-                            return p;
-                        });
-                        
-                        allProducts = products;
-                        const updateTime = new Date(data.updated_at);
-                        document.getElementById('updateTime').textContent = 
-                            `最終更新: ${updateTime.toLocaleString('ja-JP')}`;
-                        renderProducts();
-                        renderManualProducts();
-                        return;
-                    }
-                }
-            } catch (error) {
-                console.log('外部JSON読み込み失敗、埋め込みデータを使用');
-            }
-            
-            // フォールバック：埋め込みデータを使用
-            allProducts = EMBEDDED_DATA.all_products || [];
-            const updateTime = new Date(EMBEDDED_DATA.updated_at);
-            document.getElementById('updateTime').textContent = 
-                `最終更新: ${updateTime.toLocaleString('ja-JP')}`;
-            renderProducts();
-            renderManualProducts();
-        }
+<div class="footer">
+  データ元: <a href="https://www.mobile-ichiban.com/Prod/2/01" target="_blank">モバイル一番</a> | 3時間ごと自動更新<br>
+  © 2026 C-Creation
+</div>
 
-        // ============================================
-        // ============================================
-        // 組み合わせ検索アルゴリズム
-        // 段階的に条件を緩和して必ず結果を出す
-        // ============================================
-        function findCombinations(points) {
-            // ポイント額に応じた個数上限
-            const userMaxItems = parseInt(document.getElementById('maxItemsSelect').value) || 0;
-            let MAX_TOTAL;
-            if (userMaxItems > 0) {
-                MAX_TOTAL = userMaxItems;
-            } else {
-                // 制限なし：ポイント額に応じた上限
-                if (points <= 50000) MAX_TOTAL = 20;
-                else if (points <= 100000) MAX_TOTAL = 25;
-                else MAX_TOTAL = 30;
-            }
+<script>
+// =============================================================================
+// EMBEDDED_DATA - スクレイパーv6が自動更新（買取0円の場合はここの値を使用）
+// =============================================================================
+const EMBEDDED_DATA = [
+  {"name":"Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド","jan":"4902370548501","buyback":40700,"retail":37980,"rate":107.16,"category":"Switch"},
+  {"name":"Nintendo Switch (有機ELモデル) ホワイト","jan":"4902370548495","buyback":40700,"retail":37980,"rate":107.16,"category":"Switch"},
+  {"name":"PlayStation 5 Pro CFI-7000B01 2TB","jan":"4948872416320","buyback":107300,"retail":119980,"rate":89.43,"category":"PS5"},
+  {"name":"PlayStation 5 slim CFI-2000A01","jan":"4948872415934","buyback":74700,"retail":79980,"rate":93.4,"category":"PS5"},
+  {"name":"Meta Quest 3S 128GB","jan":"0815820025238","buyback":38600,"retail":48400,"rate":79.75,"category":"Meta Quest"},
+  {"name":"Steam Deck OLED 1TB","jan":"0814585022308","buyback":103800,"retail":99800,"rate":104.01,"category":"Steam Deck"},
+  {"name":"ROG Xbox Ally X 1TB","jan":"0199291152984","buyback":133200,"retail":139800,"rate":95.28,"category":"その他"},
+  {"name":"Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版","jan":"4902370553505","buyback":51000,"retail":49980,"rate":102.04,"category":"Switch 2"},
+  {"name":"Nintendo Switch 2 多言語対応版","jan":"4902370552683","buyback":85000,"retail":69980,"rate":121.46,"category":"Switch 2"},
+  {"name":"Nintendo Switch 2 国内版","jan":"4902370553024","buyback":46300,"retail":49980,"rate":92.64,"category":"Switch 2"},
+  {"name":"Nintendo Switch 2 マリオカート ワールド セット 国内版","jan":"4902370553031","buyback":51500,"retail":55980,"rate":92.0,"category":"Switch 2"},
+  {"name":"Nintendo Switch 2 Proコントローラー","jan":"4902370552843","buyback":8300,"retail":9878,"rate":84.03,"category":"Switch 2"},
+  {"name":"Joy-Con 2 (L)/(R) ライトブルー/ライトレッド","jan":"4902370552744","buyback":8600,"retail":9878,"rate":87.06,"category":"Switch 2"},
+  {"name":"Nintendo Switch Joy-Con 2 (L) ライトブルー","jan":"4902370552706","buyback":3500,"retail":5478,"rate":63.89,"category":"Switch 2"},
+  {"name":"Nintendo Switch Joy-Con 2 (R) ライトレッド","jan":"4902370552720","buyback":3500,"retail":5478,"rate":63.89,"category":"Switch 2"},
+  {"name":"Nintendo Switch 2 ドックセット","jan":"4902370552911","buyback":11200,"retail":12980,"rate":86.29,"category":"Switch 2"},
+  {"name":"SanDisk microSD Express Card 256GB for Nintendo Switch 2","jan":"4523052030185","buyback":5800,"retail":6578,"rate":88.17,"category":"Switch 2"},
+  {"name":"Samsung microSD Express Card 256GB for Nintendo Switch 2","jan":"8806095700670","buyback":5800,"retail":6578,"rate":88.17,"category":"Switch 2"},
+  {"name":"Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド 新型","jan":"4902370550733","buyback":32500,"retail":32978,"rate":98.55,"category":"Switch"},
+  {"name":"instax mini Evo Cinema","jan":"4547410562293","buyback":49000,"retail":47300,"rate":103.59,"category":"その他"},
+  {"name":"instax WIDE 400 チェキ","jan":"4547410529975","buyback":21500,"retail":26730,"rate":80.43,"category":"その他"},
+  {"name":"instax mini 99 ブラック","jan":"4547410529845","buyback":24700,"retail":30580,"rate":80.77,"category":"その他"},
+  {"name":"FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2","jan":"4547410377231","buyback":2680,"retail":2100,"rate":127.62,"category":"その他"},
+  {"name":"FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1","jan":"4547410377224","buyback":1300,"retail":1100,"rate":118.18,"category":"その他"},
+  {"name":"FUJIFILM 写ルンです シンプルエース 27枚撮り","jan":"4547410369137","buyback":2600,"retail":2178,"rate":119.38,"category":"その他"},
+  {"name":"FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版","jan":"4547410550955","buyback":2500,"retail":2178,"rate":114.78,"category":"その他"},
+  {"name":"FUJIFILM チェキスクエア用 フィルム 20枚 WW2","jan":"4547410370003","buyback":2400,"retail":2100,"rate":114.29,"category":"その他"},
+  {"name":"FUJIFILM チェキスクエア用 フィルム 10枚 WW1","jan":"4547410348613","buyback":1200,"retail":1100,"rate":109.09,"category":"その他"},
+  {"name":"instax mini 90 チェキ ネオクラシック ブラック","jan":"4547410260649","buyback":43500,"retail":28600,"rate":152.1,"category":"その他"},
+  {"name":"instax mini 90 チェキ ネオクラシック ブラウン","jan":"4547410269307","buyback":43500,"retail":28600,"rate":152.1,"category":"その他"},
+  {"name":"instax mini 12 クレイホワイト","jan":"4547410489149","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
+  {"name":"instax mini 12 パステルブルー","jan":"4547410489118","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
+  {"name":"instax mini 12 ライラックパープル","jan":"4547410489156","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
+  {"name":"instax mini 12 ミントグリーン","jan":"4547410489132","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
+  {"name":"instax mini 12 ブロッサムピンク","jan":"4547410489125","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
+  {"name":"instax mini 12 チェキ くまモン","jan":"4547410557954","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
+  {"name":"instax mini 12 チェキ EXPO 2025","jan":"4547410534122","buyback":11200,"retail":16800,"rate":66.67,"category":"その他"},
+  {"name":"instax mini Evo チェキ Limited Edition PINK","jan":"4547410555844","buyback":52000,"retail":41580,"rate":125.06,"category":"その他"},
+  {"name":"instax mini Evo チェキ USB ブラック","jan":"4547410520088","buyback":25500,"retail":34650,"rate":73.59,"category":"その他"}
+];
 
-            // 候補: 買取率80%以上（買取0円除外）& グループ代表
-            const candidates = [...allProducts].filter(p => p.rate >= 80 && p.buyback_price > 0).sort((a, b) => b.rate - a.rate);
-            const grouped = [];
-            const seenGroups = new Set();
-            for (const p of candidates) {
-                if (p.group) {
-                    if (seenGroups.has(p.group)) continue;
-                    seenGroups.add(p.group);
-                }
-                grouped.push(p);
-            }
+// =============================================================================
+// グローバル状態
+// =============================================================================
+let allProducts = [];
+let activeFilter = 'すべて';
+let activeSimFilter = 'すべて';
+let customSelections = {};  // jan -> quantity
+let lastResult = null;
 
-            function maxQtyFor(p, slots) {
-                return Math.min(p.official_price >= 30000 ? 1 : 3, slots);
-            }
-
-            function buildResult(cart) {
-                let tp = 0, tb = 0, tc = 0;
-                const items = [];
-                for (const [jan, info] of Object.entries(cart)) {
-                    tp += info.product.official_price * info.qty;
-                    tb += info.product.buyback_price * info.qty;
-                    tc += info.qty;
-                    items.push({ ...info.product, qty: info.qty });
-                }
-                if (tc === 0 || tp === 0 || tp > points) return null;
-                return {
-                    items, itemCount: tc, totalPrice: tp, totalBuyback: tb,
-                    avgRate: Math.round((tb / tp) * 10000) / 100,
-                    cashOut: 0, profit: tb - tp, pointsUsed: tp,
-                    pointsRemaining: points - tp,
-                    utilizationRate: Math.round((tp / points) * 10000) / 100
-                };
-            }
-
-            // ============ Greedy法 ============
-            function greedyFill(mainList, maxTotal) {
-                const cart = {};
-                let remaining = points, count = 0;
-                
-                // パス1: メイン戦略で詰める
-                for (const p of mainList) {
-                    if (count >= maxTotal || remaining <= 0) break;
-                    if (p.official_price > remaining) continue;
-                    const maxQ = Math.min(
-                        p.official_price >= 30000 ? 1 : 3,
-                        maxTotal - count,
-                        Math.floor(remaining / p.official_price)
-                    );
-                    if (maxQ <= 0) continue;
-                    cart[p.jan] = { product: p, qty: maxQ };
-                    remaining -= p.official_price * maxQ;
-                    count += maxQ;
-                }
-                
-                // パス2: 残額を全商品から埋める（高額→安い順で最大限詰める）
-                // 買取0円と極端に低いrateは除外
-                const allByPrice = [...allProducts]
-                    .filter(p => p.buyback_price > 0 && p.rate >= 50)
-                    .sort((a, b) => b.official_price - a.official_price);
-                for (const p of allByPrice) {
-                    if (count >= maxTotal || remaining <= 0) break;
-                    if (p.official_price > remaining) continue;
-                    
-                    if (cart[p.jan]) {
-                        // 既にカートにある → 個数追加可能か
-                        const info = cart[p.jan];
-                        if (info.product.official_price >= 30000) continue;
-                        const canAdd = Math.min(3 - info.qty, maxTotal - count, Math.floor(remaining / p.official_price));
-                        if (canAdd <= 0) continue;
-                        info.qty += canAdd;
-                        remaining -= p.official_price * canAdd;
-                        count += canAdd;
-                    } else {
-                        const maxQ = Math.min(
-                            p.official_price >= 30000 ? 1 : 3,
-                            maxTotal - count,
-                            Math.floor(remaining / p.official_price)
-                        );
-                        if (maxQ <= 0) continue;
-                        cart[p.jan] = { product: p, qty: maxQ };
-                        remaining -= p.official_price * maxQ;
-                        count += maxQ;
-                    }
-                }
-                
-                return buildResult(cart);
-            }
-
-            // ソート戦略（多様な観点で最適解を探す）
-            const profitPositive = [...grouped].filter(p => p.profit > 0).sort((a, b) => b.profit - a.profit);
-            const profitNonPos = grouped.filter(p => p.profit <= 0);
-            const strategies = [
-                // 利益プラス優先 → 残りを安い順で埋める（消化率最大化）
-                [...profitPositive, ...profitNonPos.sort((a, b) => a.official_price - b.official_price)],
-                // 利益プラス優先 → 残りを高額順
-                [...profitPositive, ...profitNonPos.sort((a, b) => b.official_price - a.official_price)],
-                // 利益額順（全商品）
-                [...grouped].sort((a, b) => b.profit - a.profit),
-                // 高額順
-                [...grouped].sort((a, b) => b.official_price - a.official_price),
-                // 買取率順
-                [...grouped].sort((a, b) => b.rate - a.rate),
-                // 利益率順
-                [...grouped].sort((a, b) => ((b.buyback_price - b.official_price) / b.official_price) - ((a.buyback_price - a.official_price) / a.official_price)),
-                // 全商品高額順（rate制限なし）
-                [...allProducts].filter(p => p.buyback_price > 0).sort((a, b) => b.official_price - a.official_price)
-            ];
-
-            const allResults = [];
-            
-            // 個数上限を段階的に上げながら試す
-            for (const mt of [MAX_TOTAL, MAX_TOTAL + 5, MAX_TOTAL + 10]) {
-                for (const list of strategies) {
-                    const r = greedyFill(list, mt);
-                    if (r) allResults.push(r);
-                }
-            }
-
-            // ============ 探索法（2秒タイムアウト） ============
-            const minPrice = points * 0.97;
-            const SEARCH_LIMIT = 500;
-            const startTime = Date.now();
-
-            function search(idx, cart, totalPrice, totalBuyback, totalCount) {
-                if (Date.now() - startTime > 2000) return;
-                if (allResults.length >= SEARCH_LIMIT) return;
-                if (totalCount >= MAX_TOTAL) return;
-
-                if (totalCount > 0 && totalPrice >= minPrice && totalPrice <= points) {
-                    const avgRate = (totalBuyback / totalPrice) * 100;
-                    if (avgRate >= 90) {
-                        const items = [];
-                        for (const [jan, info] of Object.entries(cart)) {
-                            items.push({ ...info.product, qty: info.qty });
-                        }
-                        allResults.push({
-                            items, itemCount: totalCount, totalPrice, totalBuyback,
-                            avgRate: Math.round(avgRate * 100) / 100, cashOut: 0,
-                            profit: totalBuyback - totalPrice, pointsUsed: totalPrice,
-                            pointsRemaining: points - totalPrice,
-                            utilizationRate: Math.round((totalPrice / points) * 10000) / 100
-                        });
-                    }
-                }
-
-                for (let i = idx; i < grouped.length; i++) {
-                    const p = grouped[i];
-                    const mq = maxQtyFor(p, MAX_TOTAL - totalCount);
-                    for (let q = 1; q <= mq; q++) {
-                        const newPrice = totalPrice + p.official_price * q;
-                        if (newPrice > points) break;
-                        cart[p.jan] = { product: p, qty: q };
-                        search(i + 1, cart, newPrice, totalBuyback + p.buyback_price * q, totalCount + q);
-                        if (allResults.length >= SEARCH_LIMIT || Date.now() - startTime > 2000) {
-                            delete cart[p.jan]; return;
-                        }
-                    }
-                    delete cart[p.jan];
-                }
-            }
-
-            search(0, {}, 0, 0, 0);
-
-            // ============ 重複除去 ============
-            const uniqueMap = new Map();
-            for (const r of allResults) {
-                const key = r.items.map(i => `${i.jan}x${i.qty}`).sort().join(',');
-                if (!uniqueMap.has(key) || r.profit > uniqueMap.get(key).profit) {
-                    uniqueMap.set(key, r);
-                }
-            }
-            let unique = [...uniqueMap.values()];
-
-            // 消化率が高い結果を優先（段階的フィルター）
-            for (const minUtil of [98, 97, 95, 90, 0]) {
-                const filtered = unique.filter(r => r.utilizationRate >= minUtil);
-                if (filtered.length > 0) { unique = filtered; break; }
-            }
-
-            // ソート: 消化率高い → 利益効率 → 個数少ない
-            unique.sort((a, b) => {
-                if (Math.abs(b.utilizationRate - a.utilizationRate) > 2) return b.utilizationRate - a.utilizationRate;
-                const effA = a.profit / a.itemCount;
-                const effB = b.profit / b.itemCount;
-                if (Math.abs(effB - effA) > 10) return effB - effA;
-                if (a.itemCount !== b.itemCount) return a.itemCount - b.itemCount;
-                return b.profit - a.profit;
-            });
-
-            return unique.slice(0, 15);
-        }
-
-
-
-        // ============================================
-        // 検索実行
-        // ============================================
-        function executeSearch() {
-            const points = parseInt(document.getElementById('pointsInput').value) || 50000;
-            
-            const results = findCombinations(points);
-            
-            // 最高利益の組み合わせを探す（消化率97%以上のみ）
-            let bestProfit = null;
-            for (const r of results) {
-                if (r.utilizationRate < 97) continue;
-                if (!bestProfit || r.profit > bestProfit.profit) {
-                    bestProfit = r;
-                }
-            }
-            // 98%以上がなければ、消化率90%以上で最も高い利益のものを採用
-            if (!bestProfit && results.length > 0) {
-                const viable = results.filter(r => r.utilizationRate >= 90);
-                if (viable.length > 0) {
-                    bestProfit = viable.reduce((best, r) => 
-                        !best || r.profit > best.profit ? r : best, null);
-                }
-            }
-            
-            // 買取率順（上位15件）
-            const byRate = results.slice(0, 15);
-            
-            renderResults(byRate, bestProfit, points);
-            
-            // 個数上限をサブタイトルに反映
-            const uMax = parseInt(document.getElementById('maxItemsSelect').value) || 0;
-            const maxLabel = uMax > 0 ? `${uMax}個以内` : '個数制限なし';
-            const bpSub = document.getElementById('bestProfitSubtitle');
-            if (bpSub) bpSub.textContent = `${maxLabel} × 消化率97%↑ × 利益最大`;
-        }
-
-        // ============================================
-        // 検索結果表示
-        // ============================================
-        function renderResults(results, bestProfit, points) {
-            const section = document.getElementById('resultsSection');
-            const list = document.getElementById('resultsList');
-            const title = document.getElementById('resultsTitle');
-            const subtitle = document.getElementById('resultsSubtitle');
-            const bpSection = document.getElementById('bestProfitSection');
-            const bpResult = document.getElementById('bestProfitResult');
-            
-            section.style.display = 'block';
-            
-            // 最高利益セクション
-            if (bestProfit) {
-                bpSection.style.display = 'block';
-                const bpId = 'bp';
-                // 個数状態を保存
-                window._cardQty = window._cardQty || {};
-                window._cardQty[bpId] = {};
-                window._cardItems[bpId] = bestProfit.items;
-                bestProfit.items.forEach(item => { window._cardQty[bpId][item.jan] = item.qty || 1; });
-                
-                const profitClass = bestProfit.profit >= 0 ? 'positive' : 'negative';
-                const profitSign = bestProfit.profit >= 0 ? '+' : '';
-                bpResult.innerHTML = `
-                    <div class="combination-card best-profit" id="card-${bpId}">
-                        <div class="best-profit-label">💰 最高利益</div>
-                        <div class="combination-header">
-                            <div class="combination-rank">
-                                <div class="rank-badge gold">👑</div>
-                                <div class="combination-info">
-                                    <h3 id="card-${bpId}-title">${bestProfit.itemCount}点の組み合わせ</h3>
-                                    <p id="card-${bpId}-desc">ポイント ${bestProfit.pointsUsed.toLocaleString()}円使用（消化率 ${bestProfit.utilizationRate}%）→ 残り ${bestProfit.pointsRemaining.toLocaleString()}円</p>
-                                </div>
-                            </div>
-                            <div class="combination-stats" id="card-${bpId}-stats">
-                                <div class="stat-item">
-                                    <div class="stat-value ${profitClass}" style="font-size:1.3rem">${profitSign}¥${bestProfit.profit.toLocaleString()}</div>
-                                    <div class="stat-label">利益</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value">${bestProfit.itemCount}個</div>
-                                    <div class="stat-label">個数</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value">¥${bestProfit.totalBuyback.toLocaleString()}</div>
-                                    <div class="stat-label">合計買取</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value">${bestProfit.avgRate}%</div>
-                                    <div class="stat-label">平均買取率</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value">${bestProfit.utilizationRate}%</div>
-                                    <div class="stat-label">消化率</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="combination-items">
-                            ${bestProfit.items.map(item => {
-                                const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
-                                const qty = item.qty || 1;
-                                const subtotalPrice = item.official_price * qty;
-                                const subtotalBuyback = item.buyback_price * qty;
-                                const priceHtml = qty > 1
-                                    ? `<span class="price-tag subtotal"><span class="price-tag-label">定価</span>¥${item.official_price.toLocaleString()} ×${qty}</span><span class="price-arrow">→</span><span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${subtotalBuyback.toLocaleString()}</span>`
-                                    : `<span class="price-tag retail"><span class="price-tag-label">定価</span>¥${item.official_price.toLocaleString()}</span><span class="price-arrow">→</span><span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${item.buyback_price.toLocaleString()}</span>`;
-                                return `
-                                    <div class="combo-item-adj">
-                                        <div class="combo-item-left">
-                                            <span class="combo-item-name">${escapeHtml(item.name)}</span>
-                                            <div class="combo-item-price">${priceHtml}</div>
-                                        </div>
-                                        <div class="combo-item-right">
-                                            <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
-                                            <div class="qty-adj">
-                                                <button class="qty-btn minus" onclick="adjustCardQty('${bpId}','${item.jan}',-1)">−</button>
-                                                <span class="qty-value has-items" id="qty-${bpId}-${item.jan}">${qty}</span>
-                                                <button class="qty-btn plus" onclick="adjustCardQty('${bpId}','${item.jan}',1)">＋</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                `;
-                            }).join('')}
-                        </div>
-                        <div class="suggest-area" id="suggest-${bpId}"></div>
-                    </div>
-                `;
-            } else {
-                bpSection.style.display = 'none';
-            }
-            
-            // 買取率順セクション
-            title.textContent = `📊 おすすめ組み合わせ （${results.length}件）`;
-            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 買取率95%↑ / 利益効率順`;
-            
-            if (results.length === 0) {
-                list.innerHTML = `
-                    <div class="no-results">
-                        <div class="no-results-icon">😢</div>
-                        <p>条件に合う組み合わせが見つかりませんでした</p>
-                        <div class="tips-box">
-                            <h4>💡 ヒント</h4>
-                            <ul>
-                                <li>ポイント額を調整してみてください</li>
-                                <li>手動カスタマイズで自由に組み合わせを試せます</li>
-                            </ul>
-                        </div>
-                    </div>
-                `;
-                return;
-            }
-            
-            list.innerHTML = results.map((combo, index) => {
-                const cardId = 'r' + index;
-                window._cardQty[cardId] = {};
-                window._cardItems[cardId] = combo.items;
-                combo.items.forEach(item => { window._cardQty[cardId][item.jan] = item.qty || 1; });
-                
-                const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
-                const isRecommended = index === 0;
-                const profitClass = combo.profit >= 0 ? 'positive' : 'negative';
-                const profitSign = combo.profit >= 0 ? '+' : '';
-                
-                return `
-                    <div class="combination-card ${isRecommended ? 'recommended' : ''}" id="card-${cardId}">
-                        <div class="combination-header">
-                            <div class="combination-rank">
-                                <div class="rank-badge ${rankClass}">${index + 1}</div>
-                                <div class="combination-info">
-                                    <h3 id="card-${cardId}-title">${combo.itemCount}点の組み合わせ ${isRecommended ? '⭐ おすすめ' : ''}</h3>
-                                    <p id="card-${cardId}-desc">ポイント ${combo.pointsUsed.toLocaleString()}円使用（消化率 ${combo.utilizationRate}%）→ 残り ${combo.pointsRemaining.toLocaleString()}円</p>
-                                </div>
-                            </div>
-                            <div class="combination-stats" id="card-${cardId}-stats">
-                                <div class="stat-item">
-                                    <div class="stat-value ${profitClass}">${profitSign}¥${combo.profit.toLocaleString()}</div>
-                                    <div class="stat-label">損益</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value">${combo.itemCount}個</div>
-                                    <div class="stat-label">個数</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value">${combo.avgRate}%</div>
-                                    <div class="stat-label">平均買取率</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value">¥${combo.totalBuyback.toLocaleString()}</div>
-                                    <div class="stat-label">合計買取</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value">${combo.utilizationRate}%</div>
-                                    <div class="stat-label">消化率</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="combination-items">
-                            ${combo.items.map(item => {
-                                const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
-                                const qty = item.qty || 1;
-                                const subtotalPrice = item.official_price * qty;
-                                const subtotalBuyback = item.buyback_price * qty;
-                                const priceHtml = qty > 1
-                                    ? `<span class="price-tag subtotal"><span class="price-tag-label">定価</span>¥${item.official_price.toLocaleString()} ×${qty}</span><span class="price-arrow">→</span><span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${subtotalBuyback.toLocaleString()}</span>`
-                                    : `<span class="price-tag retail"><span class="price-tag-label">定価</span>¥${item.official_price.toLocaleString()}</span><span class="price-arrow">→</span><span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${item.buyback_price.toLocaleString()}</span>`;
-                                return `
-                                    <div class="combo-item-adj">
-                                        <div class="combo-item-left">
-                                            <span class="combo-item-name">${escapeHtml(item.name)}</span>
-                                            <div class="combo-item-price">${priceHtml}</div>
-                                        </div>
-                                        <div class="combo-item-right">
-                                            <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
-                                            <div class="qty-adj">
-                                                <button class="qty-btn minus" onclick="adjustCardQty('${cardId}','${item.jan}',-1)">−</button>
-                                                <span class="qty-value has-items" id="qty-${cardId}-${item.jan}">${qty}</span>
-                                                <button class="qty-btn plus" onclick="adjustCardQty('${cardId}','${item.jan}',1)">＋</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                `;
-                            }).join('')}
-                        </div>
-                        <div class="suggest-area" id="suggest-${cardId}"></div>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // ============================================
-        // カード内 個数調整
-        // ============================================
-        // _cardItems: cardId → [{jan, official_price, buyback_price, rate, name}]
-        window._cardItems = {};
-        window._cardQty = {};
-
-        function adjustCardQty(cardId, jan, delta) {
-            const qty = window._cardQty[cardId] || {};
-            const current = qty[jan] || 0;
-            const newQty = Math.max(0, current + delta);
-            qty[jan] = newQty;
-            window._cardQty[cardId] = qty;
-
-            // 数字表示更新
-            const el = document.getElementById(`qty-${cardId}-${jan}`);
-            if (el) {
-                el.textContent = newQty;
-                el.className = 'qty-value' + (newQty > 0 ? ' has-items' : '');
-            }
-
-            // 合計再計算
-            recalcCard(cardId);
-        }
-
-        function recalcCard(cardId) {
-            const qty = window._cardQty[cardId] || {};
-            const items = window._cardItems[cardId] || [];
-            const points = parseInt(document.getElementById('pointsInput').value) || 50000;
-
-            let totalPrice = 0, totalBuyback = 0, totalCount = 0;
-            for (const item of items) {
-                const q = qty[item.jan] || 0;
-                totalPrice += item.official_price * q;
-                totalBuyback += item.buyback_price * q;
-                totalCount += q;
-            }
-
-            const avgRate = totalPrice > 0 ? Math.round((totalBuyback / totalPrice) * 10000) / 100 : 0;
-            const profit = totalBuyback - totalPrice;
-            const pointsUsed = Math.min(totalPrice, points);
-            const cashOut = Math.max(0, totalPrice - points);
-            const remaining = Math.max(0, points - totalPrice);
-            const utilization = totalPrice > 0 ? Math.round((Math.min(totalPrice, points) / points) * 10000) / 100 : 0;
-
-            const profitClass = profit >= 0 ? 'positive' : 'negative';
-            const profitSign = profit >= 0 ? '+' : '';
-
-            // title更新
-            const titleEl = document.getElementById(`card-${cardId}-title`);
-            if (titleEl) {
-                const base = titleEl.textContent.replace(/\d+点/, totalCount + '点');
-                titleEl.textContent = totalCount > 0 ? base : '0点の組み合わせ';
-            }
-
-            // desc更新
-            const descEl = document.getElementById(`card-${cardId}-desc`);
-            if (descEl) {
-                if (totalCount === 0) {
-                    descEl.textContent = '商品を追加してください';
-                } else {
-                    descEl.textContent = `ポイント ${pointsUsed.toLocaleString()}円使用（消化率 ${utilization}%）→ 残り ${remaining.toLocaleString()}円${cashOut > 0 ? ' ⚠️ 手出し ¥' + cashOut.toLocaleString() : ''}`;
-                }
-            }
-
-            // stats更新
-            const statsEl = document.getElementById(`card-${cardId}-stats`);
-            if (statsEl) {
-                const isBp = cardId === 'bp';
-                if (isBp) {
-                    statsEl.innerHTML = `
-                        <div class="stat-item">
-                            <div class="stat-value ${profitClass}" style="font-size:1.3rem">${profitSign}¥${profit.toLocaleString()}</div>
-                            <div class="stat-label">利益</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">${totalCount}個</div>
-                            <div class="stat-label">個数</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">¥${totalBuyback.toLocaleString()}</div>
-                            <div class="stat-label">合計買取</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">${avgRate}%</div>
-                            <div class="stat-label">平均買取率</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">${utilization}%</div>
-                            <div class="stat-label">消化率</div>
-                        </div>
-                    `;
-                } else {
-                    statsEl.innerHTML = `
-                        <div class="stat-item">
-                            <div class="stat-value ${profitClass}">${profitSign}¥${profit.toLocaleString()}</div>
-                            <div class="stat-label">損益</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">${totalCount}個</div>
-                            <div class="stat-label">個数</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">${avgRate}%</div>
-                            <div class="stat-label">平均買取率</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">¥${totalBuyback.toLocaleString()}</div>
-                            <div class="stat-label">合計買取</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">${utilization}%</div>
-                            <div class="stat-label">消化率</div>
-                        </div>
-                    `;
-                }
-            }
-
-            // 提案: 余ったポイントで追加できる商品を表示
-            showSuggestions(cardId, remaining, qty, items, totalPrice, totalBuyback);
-        }
-
-        function showSuggestions(cardId, remaining, currentQty, currentItems, currentTotalPrice, currentTotalBuyback) {
-            const suggestEl = document.getElementById(`suggest-${cardId}`);
-            if (!suggestEl) return;
-
-            if (remaining < 500) {
-                suggestEl.innerHTML = '';
-                return;
-            }
-
-            const usedGroups = new Set();
-            for (const item of currentItems) {
-                if ((currentQty[item.jan] || 0) > 0 && item.group) {
-                    usedGroups.add(item.group);
-                }
-            }
-
-            // 追加後に全体平均95%以上を維持できる商品のみ
-            const candidates = allProducts
-                .filter(p => {
-                    if (p.rate < 90) return false;
-                    if (p.official_price > remaining) return false;
-                    if (p.group && usedGroups.has(p.group)) return false;
-                    // 追加後の全体平均買取率チェック
-                    const newTotalPrice = currentTotalPrice + p.official_price;
-                    const newTotalBuyback = currentTotalBuyback + p.buyback_price;
-                    const newAvgRate = (newTotalBuyback / newTotalPrice) * 100;
-                    if (newAvgRate < 95) return false;
-                    return true;
-                })
-                .sort((a, b) => b.rate - a.rate)
-                .slice(0, 5);
-
-            if (candidates.length === 0) {
-                suggestEl.innerHTML = `
-                    <div class="suggest-empty">
-                        残り ¥${remaining.toLocaleString()} で追加できる商品はありません
-                    </div>
-                `;
-                return;
-            }
-
-            suggestEl.innerHTML = `
-                <div class="suggest-header">
-                    💡 残り ¥${remaining.toLocaleString()} で追加できる商品（追加後も全体95%以上）
-                </div>
-                ${candidates.map(p => {
-                    const rateClass = p.rate >= 100 ? 'high' : p.rate >= 95 ? 'medium' : 'low';
-                    const simPrice = currentTotalPrice + p.official_price;
-                    const simBuyback = currentTotalBuyback + p.buyback_price;
-                    const simRate = Math.round((simBuyback / simPrice) * 10000) / 100;
-                    return `
-                        <div class="suggest-item">
-                            <div class="suggest-item-info">
-                                <span class="suggest-item-name">${escapeHtml(p.name)}</span>
-                                <span class="suggest-item-price">¥${p.official_price.toLocaleString()} → 買取 ¥${p.buyback_price.toLocaleString()}　追加後平均: ${simRate}%</span>
-                            </div>
-                            <span class="combo-item-rate ${rateClass}">${p.rate}%</span>
-                            <button class="suggest-add-btn" onclick="addSuggestion('${cardId}','${p.jan}')">＋追加</button>
-                        </div>
-                    `;
-                }).join('')}
-            `;
-        }
-
-        function addSuggestion(cardId, jan) {
-            const items = window._cardItems[cardId] || [];
-            const product = allProducts.find(p => p.jan === jan);
-            if (!product) return;
-
-            if (!items.find(i => i.jan === jan)) {
-                items.push(product);
-                window._cardItems[cardId] = items;
-
-                const container = document.getElementById(`card-${cardId}`);
-                if (container) {
-                    const itemsDiv = container.querySelector('.combination-items');
-                    if (itemsDiv) {
-                        const rateClass = product.rate >= 100 ? 'high' : product.rate >= 95 ? 'medium' : 'low';
-                        const row = document.createElement('div');
-                        row.className = 'combo-item-adj added-item';
-                        row.id = `row-${cardId}-${jan}`;
-                        row.innerHTML = `
-                            <div class="combo-item-left">
-                                <span class="combo-item-name">${escapeHtml(product.name)}</span>
-                                <div class="combo-item-price"><span class="price-tag retail"><span class="price-tag-label">定価</span>¥${product.official_price.toLocaleString()}</span><span class="price-arrow">→</span><span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${product.buyback_price.toLocaleString()}</span></div>
-                            </div>
-                            <div class="combo-item-right">
-                                <span class="combo-item-rate ${rateClass}">${product.rate}%</span>
-                                <div class="qty-adj">
-                                    <button class="qty-btn minus" onclick="adjustCardQty('${cardId}','${jan}',-1)">−</button>
-                                    <span class="qty-value has-items" id="qty-${cardId}-${jan}">1</span>
-                                    <button class="qty-btn plus" onclick="adjustCardQty('${cardId}','${jan}',1)">＋</button>
-                                </div>
-                            </div>
-                        `;
-                        itemsDiv.appendChild(row);
-                    }
-                }
-            }
-
-            const qty = window._cardQty[cardId] || {};
-            qty[jan] = (qty[jan] || 0) + 1;
-            window._cardQty[cardId] = qty;
-
-            const qtyEl = document.getElementById(`qty-${cardId}-${jan}`);
-            if (qtyEl) {
-                qtyEl.textContent = qty[jan];
-                qtyEl.className = 'qty-value has-items';
-            }
-
-            recalcCard(cardId);
-        }
-        // ============================================
-        // ============================================
-        // 商品一覧表示
-        // ============================================
-        function renderProducts() {
-            const listEl = document.getElementById('productsList');
-            
-            let filtered = currentCategory === 'all' 
-                ? allProducts 
-                : allProducts.filter(p => getCategory(p) === currentCategory);
-            
-            // 買取率でソート
-            filtered.sort((a, b) => b.rate - a.rate);
-            
-            if (filtered.length === 0) {
-                listEl.innerHTML = `
-                    <div class="empty-state">
-                        <div class="empty-state-icon">📭</div>
-                        <p>商品がありません</p>
-                    </div>
-                `;
-                return;
-            }
-            
-            listEl.innerHTML = filtered.map(product => {
-                const rateClass = product.rate >= 100 ? 'excellent' : 
-                                  product.rate >= 95 ? 'good' : 'normal';
-                const categoryLabels = { switch2: 'Switch 2', switch: 'Switch', ps5: 'PS5', steam: 'Steam Deck', meta: 'Meta Quest', other: 'その他' };
-                const cat = getCategory(product);
-                const catLabel = categoryLabels[cat] || product.brand;
-                const profit = product.buyback_price - product.official_price;
-                const profitSign = profit >= 0 ? '+' : '';
-                const profitClass = profit >= 0 ? 'profit-plus' : 'profit-minus';
-                
-                return `
-                    <div class="product-item">
-                        <div class="product-info">
-                            <div class="product-name">${escapeHtml(product.name)}</div>
-                            <div class="product-meta">
-                                <span class="cat-label cat-${cat}">${escapeHtml(catLabel)}</span>
-                                JAN: ${product.jan}
-                            </div>
-                        </div>
-                        <div class="product-price-row">
-                            <span class="price-tag retail"><span class="price-tag-label">定価</span>¥${product.official_price.toLocaleString()}</span>
-                            <span class="price-arrow">→</span>
-                            <span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${product.buyback_price.toLocaleString()}</span>
-                            <span class="product-profit ${profitClass}">${profitSign}¥${profit.toLocaleString()}</span>
-                            <span class="product-rate ${rateClass}">${product.rate}%</span>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // ============================================
-        // ユーティリティ
-        // ============================================
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        // ============================================
-        // 手動カスタマイズ
-        // ============================================
-        const cart = {}; // { jan: qty }
-        let manualCategoryFilter = 'all';
-
-        function renderManualProducts() {
-            const container = document.getElementById('manualProducts');
-            let filtered = manualCategoryFilter === 'all'
-                ? allProducts
-                : allProducts.filter(p => getCategory(p) === manualCategoryFilter);
-            
-            filtered.sort((a, b) => b.rate - a.rate);
-
-            container.innerHTML = filtered.map(p => {
-                const qty = cart[p.jan] || 0;
-                const rateClass = p.rate >= 100 ? 'excellent' : p.rate >= 95 ? 'good' : 'normal';
-                const inCart = qty > 0 ? 'in-cart' : '';
-                return `
-                    <div class="manual-product-row ${inCart}">
-                        <div class="mp-info">
-                            <div class="mp-name">${escapeHtml(p.name)}</div>
-                            <div class="mp-prices-row">
-                                <span class="price-tag retail"><span class="price-tag-label">定価</span>¥${p.official_price.toLocaleString()}</span>
-                                <span class="price-arrow">→</span>
-                                <span class="price-tag buyback"><span class="price-tag-label">買取</span>¥${p.buyback_price.toLocaleString()}</span>
-                            </div>
-                        </div>
-                        <div class="mp-rate ${rateClass}">${p.rate}%</div>
-                        <div class="mp-qty">
-                            <button class="qty-btn minus" onclick="changeQty('${p.jan}', -1)">−</button>
-                            <span class="qty-value ${qty > 0 ? 'has-items' : ''}">${qty}</span>
-                            <button class="qty-btn plus" onclick="changeQty('${p.jan}', 1)">＋</button>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-
-            updateSummary();
-        }
-
-        function changeQty(jan, delta) {
-            const current = cart[jan] || 0;
-            const newQty = Math.max(0, current + delta);
-            if (newQty === 0) {
-                delete cart[jan];
-            } else {
-                cart[jan] = newQty;
-            }
-            renderManualProducts();
-        }
-
-        function updateSummary() {
-            const summaryEl = document.getElementById('manualSummary');
-            const gridEl = document.getElementById('summaryGrid');
-            const totalItems = Object.values(cart).reduce((s, q) => s + q, 0);
-
-            if (totalItems === 0) {
-                summaryEl.style.display = 'none';
-                return;
-            }
-            summaryEl.style.display = 'block';
-
-            const points = parseInt(document.getElementById('manualPointsInput').value) || 50000;
-            let totalPrice = 0;
-            let totalBuyback = 0;
-
-            for (const [jan, qty] of Object.entries(cart)) {
-                const p = allProducts.find(x => x.jan === jan);
-                if (p) {
-                    totalPrice += p.official_price * qty;
-                    totalBuyback += p.buyback_price * qty;
-                }
-            }
-
-            const avgRate = totalPrice > 0 ? Math.round((totalBuyback / totalPrice) * 10000) / 100 : 0;
-            const profit = totalBuyback - totalPrice;
-            const pointsUsed = Math.min(totalPrice, points);
-            const cashOut = Math.max(0, totalPrice - points);
-            const utilizationPct = Math.min(100, Math.round((totalPrice / points) * 10000) / 100);
-            const isOver = totalPrice > points;
-
-            const profitClass = profit >= 0 ? 'positive' : 'negative';
-            const profitSign = profit >= 0 ? '+' : '';
-
-            gridEl.innerHTML = `
-                <div class="summary-item">
-                    <div class="summary-value">${totalItems}点</div>
-                    <div class="summary-label">商品数</div>
-                </div>
-                <div class="summary-item">
-                    <div class="summary-value">¥${totalPrice.toLocaleString()}</div>
-                    <div class="summary-label">合計定価</div>
-                </div>
-                <div class="summary-item">
-                    <div class="summary-value">¥${totalBuyback.toLocaleString()}</div>
-                    <div class="summary-label">合計買取</div>
-                </div>
-                <div class="summary-item">
-                    <div class="summary-value">${avgRate}%</div>
-                    <div class="summary-label">平均買取率</div>
-                </div>
-                <div class="summary-item">
-                    <div class="summary-value ${profitClass}">${profitSign}¥${profit.toLocaleString()}</div>
-                    <div class="summary-label">損益</div>
-                </div>
-                <div class="summary-item">
-                    <div class="summary-value ${isOver ? 'over-budget' : ''}">¥${cashOut.toLocaleString()}</div>
-                    <div class="summary-label">${isOver ? '⚠️ 手出し' : '手出し'}</div>
-                </div>
-                <div class="summary-bar">
-                    <div class="progress-track">
-                        <div class="progress-fill ${isOver ? 'over' : ''}" style="width: ${Math.min(utilizationPct, 100)}%"></div>
-                    </div>
-                    <div class="progress-label">ポイント消化 ${utilizationPct}%（${pointsUsed.toLocaleString()}円 / ${points.toLocaleString()}円）</div>
-                </div>
-            `;
-        }
-
-        // ============================================
-        // イベントリスナー
-        // ============================================
+// =============================================================================
+// データ読み込み
+// =============================================================================
+async function loadData() {
+  let products = EMBEDDED_DATA;
+  
+  try {
+    const res = await fetch('data/prices.json?' + Date.now());
+    if (res.ok) {
+      const json = await res.json();
+      // 新形式: { updated, source, count, products: [...] }
+      const fetched = json.products || json;
+      if (Array.isArray(fetched) && fetched.length > 0) {
+        // 外部JSONで買取0円の場合、EMBEDDED_DATAの値を補完
+        const embeddedMap = {};
+        EMBEDDED_DATA.forEach(e => { if (e.jan) embeddedMap[e.jan] = e; });
         
-        // タブ切り替え
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                
-                btn.classList.add('active');
-                document.getElementById(`tab-${btn.dataset.tab}`).classList.add('active');
-            });
+        fetched.forEach(p => {
+          if (p.buyback === 0 && p.jan && embeddedMap[p.jan]) {
+            p.buyback = embeddedMap[p.jan].buyback;
+            p.retail = embeddedMap[p.jan].retail || p.retail;
+            p.rate = embeddedMap[p.jan].rate || p.rate;
+          }
         });
+        products = fetched;
+        
+        // 更新日時
+        if (json.updated) {
+          const d = new Date(json.updated);
+          if (!isNaN(d.getTime())) {
+            document.getElementById('lastUpdate').textContent = 
+              `最終更新: ${d.toLocaleDateString('ja-JP')} ${d.toLocaleTimeString('ja-JP', {hour:'2-digit',minute:'2-digit'})}`;
+          }
+        }
+      }
+    }
+  } catch(e) {
+    console.log('Using EMBEDDED_DATA:', e);
+  }
+  
+  // retail/rateが無い場合はEMBEDDED_DATAから補完
+  const embMap = {};
+  EMBEDDED_DATA.forEach(e => { if (e.jan) embMap[e.jan] = e; });
+  products.forEach(p => {
+    if ((!p.retail || p.retail === 0) && p.jan && embMap[p.jan]) {
+      p.retail = embMap[p.jan].retail;
+    }
+    if (p.retail > 0 && (!p.rate || p.rate === 0)) {
+      p.rate = Math.round(p.buyback / p.retail * 10000) / 100;
+    }
+    if (!p.category) p.category = 'その他';
+  });
+  
+  // buyback > 0 のみ
+  allProducts = products.filter(p => p.buyback > 0);
+  allProducts.sort((a, b) => (b.rate || 0) - (a.rate || 0));
+  
+  if (!document.getElementById('lastUpdate').textContent.includes('最終更新')) {
+    const now = new Date();
+    document.getElementById('lastUpdate').textContent = 
+      `最終更新: ${now.toLocaleDateString('ja-JP')} ${now.toLocaleTimeString('ja-JP', {hour:'2-digit',minute:'2-digit'})}`;
+  }
+  
+  buildFilters();
+  renderProducts();
+  renderCustomList();
+}
 
-        // フィルターボタン（全商品一覧）
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentCategory = btn.dataset.category;
-                renderProducts();
-            });
+// =============================================================================
+// フィルター
+// =============================================================================
+function buildFilters() {
+  const cats = ['すべて', ...new Set(allProducts.map(p => p.category))];
+  
+  const buildBtns = (containerId, setter) => {
+    const el = document.getElementById(containerId);
+    el.innerHTML = '';
+    cats.forEach(c => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn' + (c === 'すべて' ? ' active' : '');
+      btn.textContent = c;
+      btn.onclick = () => {
+        el.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        setter(c);
+      };
+      el.appendChild(btn);
+    });
+  };
+  
+  buildBtns('productFilters', c => { activeFilter = c; renderProducts(); });
+  buildBtns('simFilters', c => { activeSimFilter = c; });
+}
+
+// =============================================================================
+// 全商品一覧
+// =============================================================================
+function renderProducts() {
+  const list = document.getElementById('productList');
+  const filtered = activeFilter === 'すべて' ? allProducts : allProducts.filter(p => p.category === activeFilter);
+  
+  if (filtered.length === 0) {
+    list.innerHTML = '<div class="loading">商品がありません</div>';
+    return;
+  }
+  
+  list.innerHTML = filtered.map(p => {
+    const rateClass = p.rate >= 100 ? 'rate-high' : p.rate >= 85 ? 'rate-mid' : 'rate-low';
+    const profit = p.buyback - (p.retail || 0);
+    return `
+      <div class="product-item">
+        <div class="product-info">
+          <div class="product-name">${p.name}</div>
+          <div class="product-prices">
+            <span>定価 ¥${(p.retail||0).toLocaleString()}</span>
+            <span class="arrow">→</span>
+            <span class="buyback">買取 ¥${p.buyback.toLocaleString()}</span>
+            ${profit > 0 ? `<span style="color:var(--success);font-weight:600">+¥${profit.toLocaleString()}</span>` : ''}
+          </div>
+        </div>
+        <div class="product-rate ${rateClass}">${p.rate}%</div>
+      </div>`;
+  }).join('');
+}
+
+// =============================================================================
+// 手動カスタマイズ
+// =============================================================================
+function renderCustomList() {
+  const list = document.getElementById('customList');
+  list.innerHTML = allProducts.map(p => {
+    const qty = customSelections[p.jan] || 0;
+    return `
+      <div class="custom-product">
+        <input type="checkbox" ${qty > 0 ? 'checked' : ''} onchange="toggleCustom('${p.jan}', this.checked)">
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:600;font-size:0.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.name}</div>
+          <div style="font-size:0.75rem;color:var(--text-secondary)">¥${(p.retail||0).toLocaleString()} → ¥${p.buyback.toLocaleString()} (${p.rate}%)</div>
+        </div>
+        <div class="qty-controls" style="display:flex;align-items:center;gap:6px">
+          <button class="qty-btn" onclick="changeCustomQty('${p.jan}',-1)">−</button>
+          <span style="font-family:var(--font-en);font-weight:600;min-width:20px;text-align:center">${qty}</span>
+          <button class="qty-btn" onclick="changeCustomQty('${p.jan}',1)">＋</button>
+        </div>
+      </div>`;
+  }).join('');
+  updateCustomSummary();
+}
+
+function toggleCustom(jan, checked) {
+  if (checked && !customSelections[jan]) customSelections[jan] = 1;
+  if (!checked) delete customSelections[jan];
+  renderCustomList();
+}
+
+function changeCustomQty(jan, delta) {
+  const current = customSelections[jan] || 0;
+  const newQty = Math.max(0, current + delta);
+  if (newQty === 0) delete customSelections[jan];
+  else customSelections[jan] = newQty;
+  renderCustomList();
+}
+
+function updateCustomSummary() {
+  let totalRetail = 0, totalBuyback = 0;
+  for (const [jan, qty] of Object.entries(customSelections)) {
+    const p = allProducts.find(x => x.jan === jan);
+    if (p) {
+      totalRetail += (p.retail || 0) * qty;
+      totalBuyback += p.buyback * qty;
+    }
+  }
+  const profit = totalBuyback - totalRetail;
+  const avgRate = totalRetail > 0 ? Math.round(totalBuyback / totalRetail * 10000) / 100 : 0;
+  document.getElementById('customTotal').textContent = `¥${totalRetail.toLocaleString()}`;
+  document.getElementById('customBuyback').textContent = `¥${totalBuyback.toLocaleString()}`;
+  document.getElementById('customProfit').textContent = `${profit >= 0 ? '+' : ''}¥${profit.toLocaleString()}`;
+  document.getElementById('customProfit').style.color = profit >= 0 ? 'var(--success)' : 'var(--danger)';
+  document.getElementById('customRate').textContent = `${avgRate}%`;
+}
+
+// =============================================================================
+// シミュレーター（ハイブリッド: Greedy + 探索）
+// =============================================================================
+function executeSearch() {
+  const points = parseInt(document.getElementById('pointsInput').value) || 0;
+  const maxItems = parseInt(document.getElementById('maxItemsSelect').value) || 8;
+  
+  if (points < 1000) {
+    document.getElementById('searchResult').innerHTML = '<div class="card" style="color:var(--danger)">1,000円以上のポイントを入力してください</div>';
+    return;
+  }
+  
+  // フィルター適用
+  let candidates = allProducts.filter(p => p.buyback > 0 && p.retail > 0);
+  if (activeSimFilter !== 'すべて') {
+    candidates = candidates.filter(p => p.category === activeSimFilter);
+  }
+  
+  // 個数制限: 高額(¥30,000以上)は1個、それ以外は最大3個
+  const getMaxQty = (p) => p.retail >= 30000 ? 1 : 3;
+  
+  // --- Greedy法（7戦略） ---
+  const strategies = [
+    // 利益優先
+    (a, b) => (b.buyback - b.retail) - (a.buyback - a.retail),
+    // 買取率優先
+    (a, b) => b.rate - a.rate,
+    // 高額優先
+    (a, b) => b.retail - a.retail,
+    // 安い順（残額埋め）
+    (a, b) => a.retail - b.retail,
+    // 利益率×価格
+    (a, b) => (b.rate * b.retail) - (a.rate * a.retail),
+    // 利益額優先（プラスのみ先）
+    (a, b) => {
+      const aProfit = a.buyback > a.retail ? 1 : 0;
+      const bProfit = b.buyback > b.retail ? 1 : 0;
+      if (aProfit !== bProfit) return bProfit - aProfit;
+      return b.rate - a.rate;
+    },
+    // ランダム寄りの混合
+    (a, b) => (b.buyback - b.retail) * 0.5 + (b.rate - a.rate) * 100,
+  ];
+  
+  let allResults = [];
+  
+  for (const maxTotal of [points, points + 5000, points + 10000]) {
+    for (const sortFn of strategies) {
+      const sorted = [...candidates].sort(sortFn);
+      const result = greedyFill(sorted, candidates, points, maxTotal, maxItems, getMaxQty);
+      if (result && result.items.length > 0) {
+        allResults.push(result);
+      }
+    }
+  }
+  
+  // --- 探索法 ---
+  const highRate = candidates.filter(p => p.rate >= 90).sort((a, b) => b.rate - a.rate).slice(0, 20);
+  if (highRate.length > 0) {
+    const explored = exploreSearch(highRate, candidates, points, maxItems, getMaxQty);
+    allResults.push(...explored);
+  }
+  
+  // --- 最適解選択 ---
+  // 消化率97%以上で最高利益
+  let best = null;
+  for (const r of allResults) {
+    const usage = r.totalRetail / points;
+    if (usage >= 0.97) {
+      if (!best || r.profit > best.profit) best = r;
+    }
+  }
+  // 97%以上がなければ消化率順
+  if (!best) {
+    allResults.sort((a, b) => {
+      const aUsage = a.totalRetail / points;
+      const bUsage = b.totalRetail / points;
+      if (Math.abs(aUsage - bUsage) > 0.02) return bUsage - aUsage;
+      return b.profit - a.profit;
+    });
+    best = allResults[0];
+  }
+  
+  if (!best || best.items.length === 0) {
+    document.getElementById('searchResult').innerHTML = '<div class="card">条件に合う組み合わせが見つかりませんでした。ポイント額やカテゴリを変更してみてください。</div>';
+    return;
+  }
+  
+  lastResult = best;
+  renderResult(best, points);
+}
+
+function greedyFill(sortedCandidates, allProducts, points, maxTotal, maxItems, getMaxQty) {
+  const items = [];  // {product, qty}
+  let totalRetail = 0;
+  let totalBuyback = 0;
+  let count = 0;
+  const used = {};  // jan -> qty
+  
+  // パス1: ソート順に詰める
+  for (const p of sortedCandidates) {
+    if (count >= maxItems) break;
+    if (totalRetail >= maxTotal) break;
+    
+    const maxQ = Math.min(getMaxQty(p), maxItems - count);
+    for (let q = 0; q < maxQ; q++) {
+      if (totalRetail + p.retail > maxTotal) break;
+      if (count >= maxItems) break;
+      
+      const curQty = used[p.jan] || 0;
+      if (curQty >= getMaxQty(p)) break;
+      
+      totalRetail += p.retail;
+      totalBuyback += p.buyback;
+      used[p.jan] = curQty + 1;
+      count++;
+      
+      const existing = items.find(i => i.product.jan === p.jan);
+      if (existing) existing.qty++;
+      else items.push({ product: p, qty: 1 });
+    }
+  }
+  
+  // パス2: 残額をallProducts全体から埋める（buyback>0 & rate>=50）
+  const fillers = allProducts
+    .filter(p => p.buyback > 0 && p.rate >= 50)
+    .sort((a, b) => a.retail - b.retail);  // 安い順
+  
+  for (const p of fillers) {
+    if (count >= maxItems) break;
+    
+    const maxQ = Math.min(getMaxQty(p), maxItems - count);
+    for (let q = 0; q < maxQ; q++) {
+      if (totalRetail + p.retail > maxTotal) break;
+      if (count >= maxItems) break;
+      
+      const curQty = used[p.jan] || 0;
+      if (curQty >= getMaxQty(p)) break;
+      
+      totalRetail += p.retail;
+      totalBuyback += p.buyback;
+      used[p.jan] = curQty + 1;
+      count++;
+      
+      const existing = items.find(i => i.product.jan === p.jan);
+      if (existing) existing.qty++;
+      else items.push({ product: p, qty: 1 });
+    }
+  }
+  
+  const profit = totalBuyback - totalRetail;
+  const avgRate = totalRetail > 0 ? Math.round(totalBuyback / totalRetail * 10000) / 100 : 0;
+  
+  return { items, totalRetail, totalBuyback, profit, avgRate, count };
+}
+
+function exploreSearch(highRate, allProducts, points, maxItems, getMaxQty) {
+  const results = [];
+  const SEARCH_LIMIT = 500;
+  let searched = 0;
+  
+  const minPrice = points * 0.97;
+  
+  function dfs(idx, items, totalRetail, totalBuyback, count, used) {
+    if (searched >= SEARCH_LIMIT) return;
+    if (totalRetail > points) return;
+    if (count > maxItems) return;
+    
+    if (totalRetail >= minPrice && count <= maxItems) {
+      searched++;
+      const profit = totalBuyback - totalRetail;
+      const avgRate = totalRetail > 0 ? Math.round(totalBuyback / totalRetail * 10000) / 100 : 0;
+      if (avgRate >= 90) {
+        results.push({
+          items: items.map(i => ({...i})),
+          totalRetail, totalBuyback, profit, avgRate, count
         });
+      }
+    }
+    
+    for (let i = idx; i < highRate.length && searched < SEARCH_LIMIT; i++) {
+      const p = highRate[i];
+      const curQty = used[p.jan] || 0;
+      if (curQty >= getMaxQty(p)) continue;
+      if (totalRetail + p.retail > points) continue;
+      
+      const existing = items.find(x => x.product.jan === p.jan);
+      if (existing) existing.qty++;
+      else items.push({ product: p, qty: 1 });
+      
+      used[p.jan] = curQty + 1;
+      
+      dfs(i, items, totalRetail + p.retail, totalBuyback + p.buyback, count + 1, used);
+      
+      if (existing) existing.qty--;
+      else items.pop();
+      used[p.jan] = curQty;
+      if (existing && existing.qty === 0) {
+        items.splice(items.indexOf(existing), 1);
+      }
+    }
+  }
+  
+  dfs(0, [], 0, 0, 0, {});
+  return results;
+}
 
-        // 手動カスタマイズのカテゴリフィルター
-        document.querySelectorAll('.manual-filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.manual-filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                manualCategoryFilter = btn.dataset.mcat;
-                renderManualProducts();
-            });
-        });
+// =============================================================================
+// 結果表示
+// =============================================================================
+function renderResult(result, points) {
+  const usage = Math.round(result.totalRetail / points * 10000) / 100;
+  const remaining = points - result.totalRetail;
+  
+  const el = document.getElementById('searchResult');
+  el.innerHTML = `
+    <div class="result-card">
+      <div class="result-header">
+        <span class="result-badge">🏆 最高利益</span>
+        <span style="font-size:0.85rem;color:var(--text-secondary)">${result.count}点の組み合わせ</span>
+      </div>
+      <div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:12px">
+        ポイント ${result.totalRetail.toLocaleString()}円使用（消化率 ${usage}%）→ 残り ${remaining.toLocaleString()}円
+      </div>
+      <div class="result-stats">
+        <div class="result-stat">
+          <div class="value profit">${result.profit >= 0 ? '+' : ''}¥${result.profit.toLocaleString()}</div>
+          <div class="label">利益</div>
+        </div>
+        <div class="result-stat">
+          <div class="value">${result.count}個</div>
+          <div class="label">個数</div>
+        </div>
+        <div class="result-stat">
+          <div class="value">¥${result.totalBuyback.toLocaleString()}</div>
+          <div class="label">合計買取</div>
+        </div>
+        <div class="result-stat">
+          <div class="value">${result.avgRate}%</div>
+          <div class="label">平均買取率</div>
+        </div>
+        <div class="result-stat">
+          <div class="value">${usage}%</div>
+          <div class="label">消化率</div>
+        </div>
+      </div>
+      ${result.items.map(i => {
+        const p = i.product;
+        const rateClass = p.rate >= 100 ? 'rate-high' : p.rate >= 85 ? 'rate-mid' : 'rate-low';
+        return `
+          <div class="result-item ${p.rate >= 100 ? 'result-item-highlight' : ''}">
+            <div style="flex:1;min-width:0">
+              <div style="font-weight:600;font-size:0.85rem">${p.name}</div>
+              <div style="font-size:0.75rem;color:var(--text-secondary)">
+                定価 ¥${(p.retail||0).toLocaleString()} → <span style="color:var(--success);font-weight:600">買取 ¥${p.buyback.toLocaleString()}</span>
+              </div>
+            </div>
+            <div class="product-rate ${rateClass}">${p.rate}%</div>
+            <div class="qty-controls">
+              <button class="qty-btn" onclick="adjustResult('${p.jan}',-1)">−</button>
+              <span style="font-family:var(--font-en);font-weight:600">${i.qty}</span>
+              <button class="qty-btn" onclick="adjustResult('${p.jan}',1)">＋</button>
+            </div>
+          </div>`;
+      }).join('')}
+      ${remaining > 0 ? `<div class="result-remaining">残り ¥${remaining.toLocaleString()} で追加できる商品はありません</div>` : ''}
+    </div>`;
+}
 
-        // 検索ボタン
-        document.getElementById('searchBtn').addEventListener('click', executeSearch);
+function adjustResult(jan, delta) {
+  if (!lastResult) return;
+  const item = lastResult.items.find(i => i.product.jan === jan);
+  if (!item) return;
+  
+  const newQty = item.qty + delta;
+  if (newQty <= 0) {
+    lastResult.items = lastResult.items.filter(i => i.product.jan !== jan);
+  } else {
+    item.qty = newQty;
+  }
+  
+  // 再計算
+  let tr = 0, tb = 0, cnt = 0;
+  lastResult.items.forEach(i => {
+    tr += (i.product.retail || 0) * i.qty;
+    tb += i.product.buyback * i.qty;
+    cnt += i.qty;
+  });
+  lastResult.totalRetail = tr;
+  lastResult.totalBuyback = tb;
+  lastResult.profit = tb - tr;
+  lastResult.avgRate = tr > 0 ? Math.round(tb / tr * 10000) / 100 : 0;
+  lastResult.count = cnt;
+  
+  const points = parseInt(document.getElementById('pointsInput').value) || 0;
+  renderResult(lastResult, points);
+}
 
-        // 手動カスタマイズのポイント入力変更
-        document.getElementById('manualPointsInput').addEventListener('input', updateSummary);
+// =============================================================================
+// タブ切り替え
+// =============================================================================
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
 
-        // Enterキーで検索
-        document.querySelectorAll('.form-input').forEach(input => {
-            input.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') executeSearch();
-            });
-        });
-
-        // ============================================
-        // 初期化
-        // ============================================
-        loadData();
-    </script>
+// 起動
+loadData();
+</script>
 </body>
 </html>
