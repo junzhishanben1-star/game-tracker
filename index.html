@@ -426,12 +426,11 @@
         }
 
         // ============================================
-        // 組み合わせ検索アルゴリズム（同一商品最大3個）
+        // 組み合わせ検索アルゴリズム（¥30,000以上は1個/その他最大3個）
         // ============================================
         function findCombinations(points, maxItems) {
             const results = [];
             const minPrice = points * 0.98; // 消化率98%以上
-            const MAX_PER_ITEM = 3; // 同一商品は最大3個
             
             // 買取率90%以上 & 高い順、同一グループ代表のみ
             const sorted = [...allProducts].filter(p => p.rate >= 90).sort((a, b) => b.rate - a.rate);
@@ -473,9 +472,9 @@
                 
                 for (let i = idx; i < grouped.length; i++) {
                     const p = grouped[i];
+                    const maxQty = p.official_price >= 30000 ? 1 : 3;
                     
-                    // 1〜3個試す
-                    for (let q = 1; q <= MAX_PER_ITEM; q++) {
+                    for (let q = 1; q <= maxQty; q++) {
                         const addPrice = p.official_price * q;
                         const newPrice = totalPrice + addPrice;
                         
