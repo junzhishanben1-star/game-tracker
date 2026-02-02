@@ -267,7 +267,7 @@
                 <div id="bestProfitSection" style="display: none;">
                     <div class="results-header">
                         <h3 class="results-title">🏆 最も利益が出る組み合わせ</h3>
-                        <p class="results-subtitle">ポイント内 × 消化率98%以上 × 平均買取率95%以上で利益最大</p>
+                        <p class="results-subtitle">5個以内 × 消化率98%↑ × 買取率95%↑ × 利益最大</p>
                     </div>
                     <div id="bestProfitResult"></div>
                 </div>
@@ -426,11 +426,13 @@
         }
 
         // ============================================
-        // 組み合わせ検索アルゴリズム（¥30,000以上は1個/その他最大3個）
+        // 組み合わせ検索アルゴリズム（少数精鋭・利益最大化）
+        // ¥30,000以上: 最大1個 / それ以外: 最大3個 / 総個数: 最大5個
         // ============================================
         function findCombinations(points, maxItems) {
             const results = [];
             const minPrice = points * 0.98; // 消化率98%以上
+            const MAX_TOTAL = 5; // 総個数上限
             
             // 買取率90%以上 & 高い順、同一グループ代表のみ
             const sorted = [...allProducts].filter(p => p.rate >= 90).sort((a, b) => b.rate - a.rate);
@@ -468,11 +470,15 @@
                     }
                 }
                 
-                if (results.length >= 300) return;
+                if (results.length >= 500) return;
+                if (totalCount >= MAX_TOTAL) return; // 総個数上限
                 
                 for (let i = idx; i < grouped.length; i++) {
                     const p = grouped[i];
-                    const maxQty = p.official_price >= 30000 ? 1 : 3;
+                    const maxQty = Math.min(
+                        p.official_price >= 30000 ? 1 : 3,
+                        MAX_TOTAL - totalCount // 残り枠
+                    );
                     
                     for (let q = 1; q <= maxQty; q++) {
                         const addPrice = p.official_price * q;
@@ -484,7 +490,7 @@
                         
                         search(i + 1, cart, newPrice, totalBuyback + p.buyback_price * q, totalCount + q);
                         
-                        if (results.length >= 300) { delete cart[p.jan]; return; }
+                        if (results.length >= 500) { delete cart[p.jan]; return; }
                     }
                     delete cart[p.jan];
                 }
@@ -502,10 +508,13 @@
             }
             const unique = [...uniqueMap.values()];
             
+            // ソート: 1商品あたり利益効率 → 個数が少ない → 利益が高い
             unique.sort((a, b) => {
-                if (b.avgRate !== a.avgRate) return b.avgRate - a.avgRate;
-                if (b.utilizationRate !== a.utilizationRate) return b.utilizationRate - a.utilizationRate;
-                return a.itemCount - b.itemCount;
+                const effA = a.profit / a.itemCount;
+                const effB = b.profit / b.itemCount;
+                if (Math.abs(effB - effA) > 10) return effB - effA;
+                if (a.itemCount !== b.itemCount) return a.itemCount - b.itemCount;
+                return b.profit - a.profit;
             });
             
             return unique.slice(0, 15);
@@ -575,6 +584,10 @@
                                     <div class="stat-label">利益</div>
                                 </div>
                                 <div class="stat-item">
+                                    <div class="stat-value">${bestProfit.itemCount}個</div>
+                                    <div class="stat-label">個数</div>
+                                </div>
+                                <div class="stat-item">
                                     <div class="stat-value">¥${bestProfit.totalBuyback.toLocaleString()}</div>
                                     <div class="stat-label">合計買取</div>
                                 </div>
@@ -623,8 +636,8 @@
             }
             
             // 買取率順セクション
-            title.textContent = `📊 買取率が高い順 （${results.length}件）`;
-            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率98%以上 / 平均買取率95%以上`;
+            title.textContent = `📊 おすすめ組み合わせ （${results.length}件）`;
+            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 総5個以内 / 消化率98%↑ / 買取率95%↑ / 利益効率順`;
             
             if (results.length === 0) {
                 list.innerHTML = `
@@ -666,6 +679,14 @@
                             </div>
                             <div class="combination-stats" id="card-${cardId}-stats">
                                 <div class="stat-item">
+                                    <div class="stat-value ${profitClass}">${profitSign}¥${combo.profit.toLocaleString()}</div>
+                                    <div class="stat-label">損益</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">${combo.itemCount}個</div>
+                                    <div class="stat-label">個数</div>
+                                </div>
+                                <div class="stat-item">
                                     <div class="stat-value">${combo.avgRate}%</div>
                                     <div class="stat-label">平均買取率</div>
                                 </div>
@@ -676,10 +697,6 @@
                                 <div class="stat-item">
                                     <div class="stat-value">${combo.utilizationRate}%</div>
                                     <div class="stat-label">消化率</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-value ${profitClass}">${profitSign}¥${combo.profit.toLocaleString()}</div>
-                                    <div class="stat-label">損益</div>
                                 </div>
                             </div>
                         </div>
@@ -792,6 +809,10 @@
                             <div class="stat-label">利益</div>
                         </div>
                         <div class="stat-item">
+                            <div class="stat-value">${totalCount}個</div>
+                            <div class="stat-label">個数</div>
+                        </div>
+                        <div class="stat-item">
                             <div class="stat-value">¥${totalBuyback.toLocaleString()}</div>
                             <div class="stat-label">合計買取</div>
                         </div>
@@ -807,6 +828,14 @@
                 } else {
                     statsEl.innerHTML = `
                         <div class="stat-item">
+                            <div class="stat-value ${profitClass}">${profitSign}¥${profit.toLocaleString()}</div>
+                            <div class="stat-label">損益</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">${totalCount}個</div>
+                            <div class="stat-label">個数</div>
+                        </div>
+                        <div class="stat-item">
                             <div class="stat-value">${avgRate}%</div>
                             <div class="stat-label">平均買取率</div>
                         </div>
@@ -817,10 +846,6 @@
                         <div class="stat-item">
                             <div class="stat-value">${utilization}%</div>
                             <div class="stat-label">消化率</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value ${profitClass}">${profitSign}¥${profit.toLocaleString()}</div>
-                            <div class="stat-label">損益</div>
                         </div>
                     `;
                 }
