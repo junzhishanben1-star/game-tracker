@@ -1059,7 +1059,7 @@
                 <div id="bestProfitSection" style="display: none;">
                     <div class="results-header">
                         <h3 class="results-title">🏆 最も利益が出る組み合わせ</h3>
-                        <p class="results-subtitle">ポイント内 × 消化率99%以上で利益最大</p>
+                        <p class="results-subtitle">ポイント内 × 消化率95%以上 × 平均買取率95%以上で利益最大</p>
                     </div>
                     <div id="bestProfitResult"></div>
                 </div>
@@ -1212,25 +1212,41 @@
         }
 
         // ============================================
-        // 組み合わせ検索アルゴリズム（商品数指定対応）
+        // 組み合わせ検索アルゴリズム（複数個購入対応）
         // ============================================
         function findCombinations(points, maxItems) {
             const results = [];
-            const minPrice = points * 0.99; // 消化率99%
+            const minPrice = points * 0.95; // 消化率95%以上
             
-            // 買取率が高い順にソートしておく
+            // 買取率90%以上 & 買取率高い順
             const sorted = [...allProducts].filter(p => p.rate >= 90).sort((a, b) => b.rate - a.rate);
             
-            // 枝刈り付き再帰探索
-            function search(startIdx, combo, totalPrice, totalBuyback, usedGroups) {
-                // 現在の組み合わせが条件を満たすか
-                if (combo.length > 0 && totalPrice >= minPrice && totalPrice <= points) {
+            // グループごとに代表商品をまとめる（同一グループから1種のみ）
+            // グループなしの商品はそのまま
+            const grouped = [];
+            const seenGroups = new Set();
+            for (const p of sorted) {
+                if (p.group) {
+                    if (seenGroups.has(p.group)) continue;
+                    seenGroups.add(p.group);
+                }
+                grouped.push(p);
+            }
+            
+            // 枝刈り付き再帰探索（同一商品の複数個OK）
+            function search(idx, cart, totalPrice, totalBuyback, totalCount) {
+                // 条件チェック
+                if (totalCount > 0 && totalPrice >= minPrice && totalPrice <= points) {
                     const avgRate = (totalBuyback / totalPrice) * 100;
-                    // 組み合わせ全体の平均買取率が95%以上のみ
                     if (avgRate >= 95) {
+                        // cart を items 配列に変換（{...product, qty} 形式）
+                        const items = [];
+                        for (const [jan, info] of Object.entries(cart)) {
+                            items.push({ ...info.product, qty: info.qty });
+                        }
                         results.push({
-                            items: [...combo],
-                            itemCount: combo.length,
+                            items,
+                            itemCount: totalCount,
                             totalPrice,
                             totalBuyback,
                             avgRate: Math.round(avgRate * 100) / 100,
@@ -1243,39 +1259,76 @@
                     }
                 }
                 
-                // 上限に達した or 十分な結果が集まった
-                if (combo.length >= maxItems || results.length >= 200) return;
+                if (results.length >= 300) return;
                 
-                for (let i = startIdx; i < sorted.length; i++) {
-                    const p = sorted[i];
-                    const newTotal = totalPrice + p.official_price;
+                for (let i = idx; i < grouped.length; i++) {
+                    const p = grouped[i];
+                    const maxQty = Math.floor((points - totalPrice) / p.official_price);
+                    if (maxQty <= 0) continue;
                     
-                    // 枝刈り: 予算オーバー
-                    if (newTotal > points) continue;
-                    
-                    // 枝刈り: 同一グループ
-                    if (p.group && usedGroups.has(p.group)) continue;
-                    
-                    if (p.group) usedGroups.add(p.group);
-                    combo.push(p);
-                    
-                    search(i + 1, combo, newTotal, totalBuyback + p.buyback_price, usedGroups);
-                    
-                    combo.pop();
-                    if (p.group) usedGroups.delete(p.group);
+                    // この商品を1個〜maxQty個追加して探索
+                    const limit = Math.min(maxQty, Math.max(1, Math.floor((points - totalPrice) * 0.5 / p.official_price) + 1), 30);
+                    for (let q = 1; q <= limit; q++) {
+                        const newPrice = totalPrice + p.official_price * q;
+                        const newBuyback = totalBuyback + p.buyback_price * q;
+                        const newCount = totalCount + q;
+                        
+                        if (newPrice > points) break;
+                        
+                        cart[p.jan] = { product: p, qty: q };
+                        
+                        // この商品だけで条件を満たすかチェック
+                        if (newPrice >= minPrice) {
+                            const avgRate = (newBuyback / newPrice) * 100;
+                            if (avgRate >= 95) {
+                                const items = [];
+                                for (const [jan, info] of Object.entries(cart)) {
+                                    items.push({ ...info.product, qty: info.qty });
+                                }
+                                results.push({
+                                    items,
+                                    itemCount: newCount,
+                                    totalPrice: newPrice,
+                                    totalBuyback: newBuyback,
+                                    avgRate: Math.round(avgRate * 100) / 100,
+                                    cashOut: 0,
+                                    profit: newBuyback - newPrice,
+                                    pointsUsed: newPrice,
+                                    pointsRemaining: points - newPrice,
+                                    utilizationRate: Math.round((newPrice / points) * 10000) / 100
+                                });
+                            }
+                        }
+                        
+                        // 次の商品の探索（種類数制限）
+                        if (Object.keys(cart).length < maxItems && results.length < 300) {
+                            search(i + 1, cart, newPrice, newBuyback, newCount);
+                        }
+                    }
+                    delete cart[p.jan];
                 }
             }
             
-            search(0, [], 0, 0, new Set());
+            search(0, {}, 0, 0, 0);
+            
+            // 重複除去（同じ商品構成は1つだけ）
+            const uniqueMap = new Map();
+            for (const r of results) {
+                const key = r.items.map(i => `${i.jan}x${i.qty}`).sort().join(',');
+                if (!uniqueMap.has(key) || r.avgRate > uniqueMap.get(key).avgRate) {
+                    uniqueMap.set(key, r);
+                }
+            }
+            const unique = [...uniqueMap.values()];
             
             // ソート：平均買取率が高い順
-            results.sort((a, b) => {
+            unique.sort((a, b) => {
                 if (b.avgRate !== a.avgRate) return b.avgRate - a.avgRate;
                 if (b.utilizationRate !== a.utilizationRate) return b.utilizationRate - a.utilizationRate;
                 return a.itemCount - b.itemCount;
             });
             
-            return results.slice(0, 15);
+            return unique.slice(0, 15);
         }
 
         // ============================================
@@ -1321,7 +1374,7 @@
                 window._cardQty = window._cardQty || {};
                 window._cardQty[bpId] = {};
                 window._cardItems[bpId] = bestProfit.items;
-                bestProfit.items.forEach(item => { window._cardQty[bpId][item.jan] = 1; });
+                bestProfit.items.forEach(item => { window._cardQty[bpId][item.jan] = item.qty || 1; });
                 
                 const profitClass = bestProfit.profit >= 0 ? 'positive' : 'negative';
                 const profitSign = bestProfit.profit >= 0 ? '+' : '';
@@ -1354,17 +1407,18 @@
                         <div class="combination-items">
                             ${bestProfit.items.map(item => {
                                 const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
+                                const qty = item.qty || 1;
                                 return `
                                     <div class="combo-item-adj">
                                         <div class="combo-item-left">
-                                            <span class="combo-item-name">${escapeHtml(item.name)}</span>
+                                            <span class="combo-item-name">${escapeHtml(item.name)}${qty > 1 ? '' : ''}</span>
                                             <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()} / 買取 ¥${item.buyback_price.toLocaleString()}</span>
                                         </div>
                                         <div class="combo-item-right">
                                             <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
                                             <div class="qty-adj">
                                                 <button class="qty-btn minus" onclick="adjustCardQty('${bpId}','${item.jan}',-1)">−</button>
-                                                <span class="qty-value has-items" id="qty-${bpId}-${item.jan}">1</span>
+                                                <span class="qty-value has-items" id="qty-${bpId}-${item.jan}">${qty}</span>
                                                 <button class="qty-btn plus" onclick="adjustCardQty('${bpId}','${item.jan}',1)">＋</button>
                                             </div>
                                         </div>
@@ -1381,7 +1435,7 @@
             
             // 買取率順セクション
             title.textContent = `📊 買取率が高い順 （${results.length}件）`;
-            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率99%以上`;
+            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率95%以上 / 平均買取率95%以上`;
             
             if (results.length === 0) {
                 list.innerHTML = `
@@ -1404,7 +1458,7 @@
                 const cardId = 'r' + index;
                 window._cardQty[cardId] = {};
                 window._cardItems[cardId] = combo.items;
-                combo.items.forEach(item => { window._cardQty[cardId][item.jan] = 1; });
+                combo.items.forEach(item => { window._cardQty[cardId][item.jan] = item.qty || 1; });
                 
                 const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
                 const isRecommended = index === 0;
@@ -1443,6 +1497,7 @@
                         <div class="combination-items">
                             ${combo.items.map(item => {
                                 const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
+                                const qty = item.qty || 1;
                                 return `
                                     <div class="combo-item-adj">
                                         <div class="combo-item-left">
@@ -1453,7 +1508,7 @@
                                             <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
                                             <div class="qty-adj">
                                                 <button class="qty-btn minus" onclick="adjustCardQty('${cardId}','${item.jan}',-1)">−</button>
-                                                <span class="qty-value has-items" id="qty-${cardId}-${item.jan}">1</span>
+                                                <span class="qty-value has-items" id="qty-${cardId}-${item.jan}">${qty}</span>
                                                 <button class="qty-btn plus" onclick="adjustCardQty('${cardId}','${item.jan}',1)">＋</button>
                                             </div>
                                         </div>
