@@ -212,11 +212,12 @@ input:focus, select:focus { outline: none; border-color: var(--primary); }
           <label>個数上限</label>
           <select id="maxItemsSelect">
             <option value="5">5個</option>
-            <option value="8" selected>8個（デフォルト）</option>
+            <option value="8">8個</option>
             <option value="12">12個</option>
             <option value="20">20個</option>
             <option value="999">制限なし</option>
           </select>
+          <div class="hint" style="font-size:0.75rem;color:var(--text-secondary);margin-top:4px">ポイント額に応じて自動調整されます</div>
         </div>
       </div>
       <div class="filter-section">
@@ -672,6 +673,24 @@ document.querySelectorAll('.tab').forEach(function(tab) {
   });
 });
 
+// =============================================================================
+// ポイント額に応じた個数上限の自動調整
+// =============================================================================
+function autoAdjustMaxItems() {
+  var pts = parseInt(document.getElementById('pointsInput').value) || 0;
+  var sel = document.getElementById('maxItemsSelect');
+  var best;
+  if (pts <= 50000) best = '5';
+  else if (pts <= 100000) best = '8';
+  else if (pts <= 200000) best = '12';
+  else best = '20';
+  sel.value = best;
+}
+document.getElementById('pointsInput').addEventListener('change', autoAdjustMaxItems);
+document.getElementById('pointsInput').addEventListener('input', autoAdjustMaxItems);
+
+// 初期実行
+autoAdjustMaxItems();
 loadData();
 </script>
 </body>
