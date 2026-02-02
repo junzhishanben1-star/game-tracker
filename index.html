@@ -231,6 +231,23 @@
             border-left: 4px solid var(--success);
         }
 
+        .combination-card.best-profit {
+            background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%);
+            border-left: 4px solid #f59e0b;
+            border: 2px solid #f59e0b;
+        }
+
+        .best-profit-label {
+            display: inline-block;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
         .combination-header {
             display: flex;
             justify-content: space-between;
@@ -884,18 +901,22 @@
                         <input type="number" class="form-input" id="pointsInput" placeholder="50000" value="50000">
                         <span class="form-hint">ビックカメラ・ヤマダ電機等のポイント</span>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">最大商品種類数</label>
-                        <input type="number" class="form-input" id="maxItemsInput" placeholder="5" value="5" min="1" max="10">
-                        <span class="form-hint">組み合わせに含める最大種類数</span>
-                    </div>
                 </div>
-                <button class="search-btn" id="searchBtn">🔎 最適な組み合わせを自動検索</button>
+                <button class="search-btn" id="searchBtn">🔎 最適な組み合わせを検索</button>
             </div>
 
             <!-- 検索結果 -->
             <div class="results-section" id="resultsSection" style="display: none;">
-                <div class="results-header">
+                <!-- 最高利益 -->
+                <div id="bestProfitSection" style="display: none;">
+                    <div class="results-header">
+                        <h3 class="results-title">🏆 最も利益が出る組み合わせ</h3>
+                        <p class="results-subtitle">ポイント内 × 消化率99%以上で利益最大</p>
+                    </div>
+                    <div id="bestProfitResult"></div>
+                </div>
+                <!-- 買取率順 -->
+                <div class="results-header" style="margin-top: 24px;">
                     <h3 class="results-title" id="resultsTitle">検索結果</h3>
                     <p class="results-subtitle" id="resultsSubtitle"></p>
                 </div>
@@ -1111,26 +1132,89 @@
         // ============================================
         function executeSearch() {
             const points = parseInt(document.getElementById('pointsInput').value) || 50000;
-            const maxItems = parseInt(document.getElementById('maxItemsInput').value) || 5;
             
-            const results = findCombinations(points, Math.min(maxItems, 10));
+            const results = findCombinations(points, 10);
             
-            renderResults(results, points);
+            // 最高利益の組み合わせを探す
+            let bestProfit = null;
+            for (const r of results) {
+                if (!bestProfit || r.profit > bestProfit.profit) {
+                    bestProfit = r;
+                }
+            }
+            
+            // 買取率順（上位15件）
+            const byRate = results.slice(0, 15);
+            
+            renderResults(byRate, bestProfit, points);
         }
 
         // ============================================
         // 検索結果表示
         // ============================================
-        function renderResults(results, points) {
+        function renderResults(results, bestProfit, points) {
             const section = document.getElementById('resultsSection');
             const list = document.getElementById('resultsList');
             const title = document.getElementById('resultsTitle');
             const subtitle = document.getElementById('resultsSubtitle');
+            const bpSection = document.getElementById('bestProfitSection');
+            const bpResult = document.getElementById('bestProfitResult');
             
             section.style.display = 'block';
             
-            title.textContent = `✅ ${results.length}件の組み合わせが見つかりました`;
-            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率99%以上 / 買取率が高い順に表示`;
+            // 最高利益セクション
+            if (bestProfit) {
+                bpSection.style.display = 'block';
+                const profitClass = bestProfit.profit >= 0 ? 'positive' : 'negative';
+                const profitSign = bestProfit.profit >= 0 ? '+' : '';
+                bpResult.innerHTML = `
+                    <div class="combination-card best-profit">
+                        <div class="best-profit-label">💰 最高利益</div>
+                        <div class="combination-header">
+                            <div class="combination-rank">
+                                <div class="rank-badge gold">👑</div>
+                                <div class="combination-info">
+                                    <h3>${bestProfit.itemCount}点の組み合わせ</h3>
+                                    <p>ポイント ${bestProfit.pointsUsed.toLocaleString()}円使用（消化率 ${bestProfit.utilizationRate}%）→ 残り ${bestProfit.pointsRemaining.toLocaleString()}円</p>
+                                </div>
+                            </div>
+                            <div class="combination-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value ${profitClass}" style="font-size:1.3rem">${profitSign}¥${bestProfit.profit.toLocaleString()}</div>
+                                    <div class="stat-label">利益</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">${bestProfit.avgRate}%</div>
+                                    <div class="stat-label">平均買取率</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">${bestProfit.utilizationRate}%</div>
+                                    <div class="stat-label">消化率</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="combination-items">
+                            ${bestProfit.items.map(item => {
+                                const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
+                                return `
+                                    <div class="combo-item">
+                                        <span class="combo-item-name">${escapeHtml(item.name)}</span>
+                                        <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()}</span>
+                                        <span class="combo-item-buyback">買取 ¥${item.buyback_price.toLocaleString()}</span>
+                                        <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            } else {
+                bpSection.style.display = 'none';
+            }
+            
+            // 買取率順セクション
+            title.textContent = `📊 買取率が高い順 （${results.length}件）`;
+            subtitle.textContent = `ポイント ${points.toLocaleString()}円 / 消化率99%以上`;
             
             if (results.length === 0) {
                 list.innerHTML = `
@@ -1140,8 +1224,8 @@
                         <div class="tips-box">
                             <h4>💡 ヒント</h4>
                             <ul>
-                                <li>目標買取率を下げてみてください（90%など）</li>
                                 <li>ポイント額を調整してみてください</li>
+                                <li>手動カスタマイズで自由に組み合わせを試せます</li>
                             </ul>
                         </div>
                     </div>
