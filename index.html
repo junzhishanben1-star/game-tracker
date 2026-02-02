@@ -454,7 +454,29 @@
                     const contentType = response.headers.get('content-type');
                     if (contentType && contentType.includes('application/json')) {
                         const data = await response.json();
-                        allProducts = data.all_products || [];
+                        let products = data.all_products || [];
+                        
+                        // 買取0円の商品を埋め込みデータで補完
+                        const embeddedMap = new Map();
+                        for (const p of EMBEDDED_DATA.all_products || []) {
+                            embeddedMap.set(p.jan, p);
+                        }
+                        products = products.map(p => {
+                            if (p.buyback_price === 0 && embeddedMap.has(p.jan)) {
+                                const fallback = embeddedMap.get(p.jan);
+                                if (fallback.buyback_price > 0) {
+                                    console.log(`買取0円を補完: ${p.name} → ¥${fallback.buyback_price}`);
+                                    return { ...p, 
+                                        buyback_price: fallback.buyback_price, 
+                                        rate: fallback.rate, 
+                                        profit: fallback.profit 
+                                    };
+                                }
+                            }
+                            return p;
+                        });
+                        
+                        allProducts = products;
                         const updateTime = new Date(data.updated_at);
                         document.getElementById('updateTime').textContent = 
                             `最終更新: ${updateTime.toLocaleString('ja-JP')}`;
