@@ -387,6 +387,51 @@
         }
 
         /* 商品一覧 */
+        .combo-item-adj {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 16px;
+            background: white;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            gap: 12px;
+        }
+
+        .combo-item-left {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .combo-item-left .combo-item-name {
+            display: block;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .combo-item-left .combo-item-price {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--gray-500);
+            margin-top: 2px;
+        }
+
+        .combo-item-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .qty-adj {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* 商品一覧 */
         .products-section {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -1165,20 +1210,27 @@
             // 最高利益セクション
             if (bestProfit) {
                 bpSection.style.display = 'block';
+                const bpId = 'bp';
+                // 個数状態を保存
+                window._cardQty = window._cardQty || {};
+                window._cardQty[bpId] = {};
+                window._cardItems[bpId] = bestProfit.items;
+                bestProfit.items.forEach(item => { window._cardQty[bpId][item.jan] = 1; });
+                
                 const profitClass = bestProfit.profit >= 0 ? 'positive' : 'negative';
                 const profitSign = bestProfit.profit >= 0 ? '+' : '';
                 bpResult.innerHTML = `
-                    <div class="combination-card best-profit">
+                    <div class="combination-card best-profit" id="card-${bpId}">
                         <div class="best-profit-label">💰 最高利益</div>
                         <div class="combination-header">
                             <div class="combination-rank">
                                 <div class="rank-badge gold">👑</div>
                                 <div class="combination-info">
-                                    <h3>${bestProfit.itemCount}点の組み合わせ</h3>
-                                    <p>ポイント ${bestProfit.pointsUsed.toLocaleString()}円使用（消化率 ${bestProfit.utilizationRate}%）→ 残り ${bestProfit.pointsRemaining.toLocaleString()}円</p>
+                                    <h3 id="card-${bpId}-title">${bestProfit.itemCount}点の組み合わせ</h3>
+                                    <p id="card-${bpId}-desc">ポイント ${bestProfit.pointsUsed.toLocaleString()}円使用（消化率 ${bestProfit.utilizationRate}%）→ 残り ${bestProfit.pointsRemaining.toLocaleString()}円</p>
                                 </div>
                             </div>
-                            <div class="combination-stats">
+                            <div class="combination-stats" id="card-${bpId}-stats">
                                 <div class="stat-item">
                                     <div class="stat-value ${profitClass}" style="font-size:1.3rem">${profitSign}¥${bestProfit.profit.toLocaleString()}</div>
                                     <div class="stat-label">利益</div>
@@ -1197,11 +1249,19 @@
                             ${bestProfit.items.map(item => {
                                 const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
                                 return `
-                                    <div class="combo-item">
-                                        <span class="combo-item-name">${escapeHtml(item.name)}</span>
-                                        <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()}</span>
-                                        <span class="combo-item-buyback">買取 ¥${item.buyback_price.toLocaleString()}</span>
-                                        <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
+                                    <div class="combo-item-adj">
+                                        <div class="combo-item-left">
+                                            <span class="combo-item-name">${escapeHtml(item.name)}</span>
+                                            <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()} / 買取 ¥${item.buyback_price.toLocaleString()}</span>
+                                        </div>
+                                        <div class="combo-item-right">
+                                            <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
+                                            <div class="qty-adj">
+                                                <button class="qty-btn minus" onclick="adjustCardQty('${bpId}','${item.jan}',-1)">−</button>
+                                                <span class="qty-value has-items" id="qty-${bpId}-${item.jan}">1</span>
+                                                <button class="qty-btn plus" onclick="adjustCardQty('${bpId}','${item.jan}',1)">＋</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 `;
                             }).join('')}
@@ -1234,22 +1294,27 @@
             }
             
             list.innerHTML = results.map((combo, index) => {
+                const cardId = 'r' + index;
+                window._cardQty[cardId] = {};
+                window._cardItems[cardId] = combo.items;
+                combo.items.forEach(item => { window._cardQty[cardId][item.jan] = 1; });
+                
                 const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
                 const isRecommended = index === 0;
                 const profitClass = combo.profit >= 0 ? 'positive' : 'negative';
                 const profitSign = combo.profit >= 0 ? '+' : '';
                 
                 return `
-                    <div class="combination-card ${isRecommended ? 'recommended' : ''}">
+                    <div class="combination-card ${isRecommended ? 'recommended' : ''}" id="card-${cardId}">
                         <div class="combination-header">
                             <div class="combination-rank">
                                 <div class="rank-badge ${rankClass}">${index + 1}</div>
                                 <div class="combination-info">
-                                    <h3>${combo.itemCount}点の組み合わせ ${isRecommended ? '⭐ おすすめ' : ''}</h3>
-                                    <p>ポイント ${combo.pointsUsed.toLocaleString()}円使用（消化率 ${combo.utilizationRate}%）→ 残り ${combo.pointsRemaining.toLocaleString()}円</p>
+                                    <h3 id="card-${cardId}-title">${combo.itemCount}点の組み合わせ ${isRecommended ? '⭐ おすすめ' : ''}</h3>
+                                    <p id="card-${cardId}-desc">ポイント ${combo.pointsUsed.toLocaleString()}円使用（消化率 ${combo.utilizationRate}%）→ 残り ${combo.pointsRemaining.toLocaleString()}円</p>
                                 </div>
                             </div>
-                            <div class="combination-stats">
+                            <div class="combination-stats" id="card-${cardId}-stats">
                                 <div class="stat-item">
                                     <div class="stat-value">${combo.avgRate}%</div>
                                     <div class="stat-label">平均買取率</div>
@@ -1272,11 +1337,19 @@
                             ${combo.items.map(item => {
                                 const rateClass = item.rate >= 100 ? 'high' : item.rate >= 95 ? 'medium' : 'low';
                                 return `
-                                    <div class="combo-item">
-                                        <span class="combo-item-name">${escapeHtml(item.name)}</span>
-                                        <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()}</span>
-                                        <span class="combo-item-buyback">買取 ¥${item.buyback_price.toLocaleString()}</span>
-                                        <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
+                                    <div class="combo-item-adj">
+                                        <div class="combo-item-left">
+                                            <span class="combo-item-name">${escapeHtml(item.name)}</span>
+                                            <span class="combo-item-price">定価 ¥${item.official_price.toLocaleString()} / 買取 ¥${item.buyback_price.toLocaleString()}</span>
+                                        </div>
+                                        <div class="combo-item-right">
+                                            <span class="combo-item-rate ${rateClass}">${item.rate}%</span>
+                                            <div class="qty-adj">
+                                                <button class="qty-btn minus" onclick="adjustCardQty('${cardId}','${item.jan}',-1)">−</button>
+                                                <span class="qty-value has-items" id="qty-${cardId}-${item.jan}">1</span>
+                                                <button class="qty-btn plus" onclick="adjustCardQty('${cardId}','${item.jan}',1)">＋</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 `;
                             }).join('')}
@@ -1284,6 +1357,113 @@
                     </div>
                 `;
             }).join('');
+        }
+
+        // ============================================
+        // カード内 個数調整
+        // ============================================
+        // _cardItems: cardId → [{jan, official_price, buyback_price, rate, name}]
+        window._cardItems = {};
+        window._cardQty = {};
+
+        function adjustCardQty(cardId, jan, delta) {
+            const qty = window._cardQty[cardId] || {};
+            const current = qty[jan] || 0;
+            const newQty = Math.max(0, current + delta);
+            qty[jan] = newQty;
+            window._cardQty[cardId] = qty;
+
+            // 数字表示更新
+            const el = document.getElementById(`qty-${cardId}-${jan}`);
+            if (el) {
+                el.textContent = newQty;
+                el.className = 'qty-value' + (newQty > 0 ? ' has-items' : '');
+            }
+
+            // 合計再計算
+            recalcCard(cardId);
+        }
+
+        function recalcCard(cardId) {
+            const qty = window._cardQty[cardId] || {};
+            const items = window._cardItems[cardId] || [];
+            const points = parseInt(document.getElementById('pointsInput').value) || 50000;
+
+            let totalPrice = 0, totalBuyback = 0, totalCount = 0;
+            for (const item of items) {
+                const q = qty[item.jan] || 0;
+                totalPrice += item.official_price * q;
+                totalBuyback += item.buyback_price * q;
+                totalCount += q;
+            }
+
+            const avgRate = totalPrice > 0 ? Math.round((totalBuyback / totalPrice) * 10000) / 100 : 0;
+            const profit = totalBuyback - totalPrice;
+            const pointsUsed = Math.min(totalPrice, points);
+            const cashOut = Math.max(0, totalPrice - points);
+            const remaining = Math.max(0, points - totalPrice);
+            const utilization = totalPrice > 0 ? Math.round((Math.min(totalPrice, points) / points) * 10000) / 100 : 0;
+
+            const profitClass = profit >= 0 ? 'positive' : 'negative';
+            const profitSign = profit >= 0 ? '+' : '';
+
+            // title更新
+            const titleEl = document.getElementById(`card-${cardId}-title`);
+            if (titleEl) {
+                const base = titleEl.textContent.replace(/\d+点/, totalCount + '点');
+                titleEl.textContent = totalCount > 0 ? base : '0点の組み合わせ';
+            }
+
+            // desc更新
+            const descEl = document.getElementById(`card-${cardId}-desc`);
+            if (descEl) {
+                if (totalCount === 0) {
+                    descEl.textContent = '商品を追加してください';
+                } else {
+                    descEl.textContent = `ポイント ${pointsUsed.toLocaleString()}円使用（消化率 ${utilization}%）→ 残り ${remaining.toLocaleString()}円${cashOut > 0 ? ' ⚠️ 手出し ¥' + cashOut.toLocaleString() : ''}`;
+                }
+            }
+
+            // stats更新
+            const statsEl = document.getElementById(`card-${cardId}-stats`);
+            if (statsEl) {
+                const isBp = cardId === 'bp';
+                if (isBp) {
+                    statsEl.innerHTML = `
+                        <div class="stat-item">
+                            <div class="stat-value ${profitClass}" style="font-size:1.3rem">${profitSign}¥${profit.toLocaleString()}</div>
+                            <div class="stat-label">利益</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">${avgRate}%</div>
+                            <div class="stat-label">平均買取率</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">${utilization}%</div>
+                            <div class="stat-label">消化率</div>
+                        </div>
+                    `;
+                } else {
+                    statsEl.innerHTML = `
+                        <div class="stat-item">
+                            <div class="stat-value">${avgRate}%</div>
+                            <div class="stat-label">平均買取率</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">${utilization}%</div>
+                            <div class="stat-label">ポイント消化率</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">¥${cashOut.toLocaleString()}</div>
+                            <div class="stat-label">手出し</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value ${profitClass}">${profitSign}¥${profit.toLocaleString()}</div>
+                            <div class="stat-label">損益</div>
+                        </div>
+                    `;
+                }
+            }
         }
 
         // ============================================
