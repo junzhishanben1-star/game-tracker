@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-02-02T10:53:25",
+  "updated_at": "2026-02-02T11:01:53",
   "all_products": [
     {
       "jan": "4902370552683",
-      "name": "Nintendo Switch 2 多言語対応版",
+      "name": "BEE-S-KB6AA &nbsp;",
       "brand": "Nintendo",
       "official_price": 69980,
       "buyback_price": 85000,
@@ -13,7 +13,7 @@
     },
     {
       "jan": "4902370553024",
-      "name": "Nintendo Switch 2 国内版",
+      "name": "BEE-S-KB6CA &nbsp;",
       "brand": "Nintendo",
       "official_price": 49980,
       "buyback_price": 46300,
@@ -23,11 +23,11 @@
     },
     {
       "jan": "4902370553031",
-      "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
+      "name": "BEE-S-KB6PA &nbsp;",
       "brand": "Nintendo",
       "official_price": 53980,
       "buyback_price": 51500,
-      "rate": 95.42,
+      "rate": 95.41,
       "profit": -2480,
       "group": "switch2_main"
     },
@@ -116,14 +116,14 @@
       "name": "Nintendo Switch 2 Proコントローラー",
       "brand": "Nintendo",
       "official_price": 9980,
-      "buyback_price": 8400,
-      "rate": 84.17,
-      "profit": -1580,
+      "buyback_price": 8300,
+      "rate": 83.17,
+      "profit": -1680,
       "group": "switch2_procon"
     },
     {
       "jan": "4902370552744",
-      "name": "Joy-Con 2 (L)/(R) ライトブルー/ライトレッド",
+      "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA  ライトブルー/ライトレッド",
       "brand": "Nintendo",
       "official_price": 9980,
       "buyback_price": 8600,
@@ -133,7 +133,7 @@
     },
     {
       "jan": "4902370552911",
-      "name": "Nintendo Switch 2 ドックセット",
+      "name": "Nintendo Switch 2 ドックセット BEE-A-CASAA",
       "brand": "Nintendo",
       "official_price": 12980,
       "buyback_price": 11200,
@@ -153,21 +153,21 @@
     },
     {
       "jan": "4902370552706",
-      "name": "Joy-Con 2 (L) ライトブルー",
+      "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
       "brand": "Nintendo",
       "official_price": 4480,
       "buyback_price": 3500,
-      "rate": 78.13,
+      "rate": 78.12,
       "profit": -980,
       "group": "joycon2_left"
     },
     {
       "jan": "4902370552720",
-      "name": "Joy-Con 2 (R) ライトレッド",
+      "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
       "brand": "Nintendo",
       "official_price": 4480,
       "buyback_price": 3500,
-      "rate": 78.13,
+      "rate": 78.12,
       "profit": -980,
       "group": "joycon2_right"
     },
@@ -263,12 +263,12 @@
     },
     {
       "jan": "4902370535730",
-      "name": "Joy-Conストラップ ネオンレッド",
+      "name": "Nintendo Switch Proコントローラー",
       "brand": "Nintendo",
       "official_price": 858,
-      "buyback_price": 600,
-      "rate": 69.93,
-      "profit": -258,
+      "buyback_price": 6500,
+      "rate": 757.58,
+      "profit": 5642,
       "group": "joycon_strap_red"
     },
     {
@@ -293,17 +293,17 @@
     },
     {
       "jan": "4902370544060",
-      "name": "Nintendo Switch ACアダプター",
+      "name": "Nintendo Switch Joy-Con(L)/(R) ネオンブルー/ネオンイエロー",
       "brand": "Nintendo",
       "official_price": 3278,
-      "buyback_price": 2500,
-      "rate": 76.27,
-      "profit": -778,
+      "buyback_price": 7500,
+      "rate": 228.8,
+      "profit": 4222,
       "group": "switch_ac"
     },
     {
       "jan": "4547410377224",
-      "name": "FUJIFILM チェキフィルム 10枚入 INSTAX MINI JP 1",
+      "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "brand": "FUJIFILM",
       "official_price": 1100,
       "buyback_price": 1300,
@@ -313,7 +313,7 @@
     },
     {
       "jan": "4547410377231",
-      "name": "FUJIFILM チェキフィルム 20枚入 INSTAX MINI JP 2",
+      "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
       "brand": "FUJIFILM",
       "official_price": 2100,
       "buyback_price": 2680,
@@ -326,9 +326,9 @@
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
       "brand": "FUJIFILM",
       "official_price": 2178,
-      "buyback_price": 2600,
-      "rate": 119.38,
-      "profit": 422,
+      "buyback_price": 2670,
+      "rate": 122.59,
+      "profit": 492,
       "group": "utsurundesu"
     },
     {
@@ -343,7 +343,7 @@
     },
     {
       "jan": "4547410348613",
-      "name": "FUJIFILM チェキスクエア フィルム 10枚 WW1",
+      "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
       "brand": "FUJIFILM",
       "official_price": 1320,
       "buyback_price": 1200,
@@ -353,7 +353,7 @@
     },
     {
       "jan": "4547410370003",
-      "name": "FUJIFILM チェキスクエア フィルム 20枚 WW2",
+      "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "brand": "FUJIFILM",
       "official_price": 2480,
       "buyback_price": 2400,
