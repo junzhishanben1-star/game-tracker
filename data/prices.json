@@ -1,16 +1,8 @@
 {
-  "updated": "2026-02-03T08:00:26.388581",
+  "updated": "2026-02-03T11:09:57.833320",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 48,
   "products": [
-    {
-      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
-      "jan": "4902370548501",
-      "buyback": 40700,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 107.16
-    },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
@@ -156,6 +148,14 @@
       "rate": 88.17
     },
     {
+      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
+      "jan": "4902370548501",
+      "buyback": 40700,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 107.16
+    },
+    {
       "name": "HAD-S-KABAH",
       "jan": "4902370550733",
       "buyback": 32500,
@@ -164,60 +164,12 @@
       "rate": 98.55
     },
     {
-      "name": "OPPO A3 5G 4GB+128GB SIMフリー [ブラック]",
-      "jan": "4580038879855",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 128GB SIMフリー [ミッドナイトブラック]",
-      "jan": "6932554438258",
-      "buyback": 20000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
-      "jan": "4521329431529",
-      "buyback": 13200,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スカーレット&バイオレット 強化拡張パック クリムゾンヘイズ BOX sv5a",
-      "jan": "4521329361239",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
-      "buyback": 49300,
+      "buyback": 49500,
       "category": "その他",
       "retail": 47300,
-      "rate": 104.23
+      "rate": 104.65
     },
     {
       "name": "instax WIDE 400 チェキ",
