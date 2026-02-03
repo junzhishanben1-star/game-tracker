@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-02T16:07:28.543274",
+  "updated": "2026-02-03T05:10:33.252417",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -22,39 +22,39 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 107300,
+      "buyback": 107400,
       "category": "PS5",
       "retail": 119980,
-      "rate": 89.43
+      "rate": 89.51
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 74700,
+      "buyback": 74800,
       "category": "PS5",
       "retail": 79980,
-      "rate": 93.4
+      "rate": 93.52
     },
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 38600,
+      "buyback": 38700,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 79.75
+      "rate": 79.96
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 103800,
+      "buyback": 103900,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 104.01
+      "rate": 104.11
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 103800,
+      "buyback": 103900,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -70,10 +70,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 51000,
+      "buyback": 51200,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 102.04
+      "rate": 102.44
     },
     {
       "name": "BEE-S-KB6AA",
@@ -162,6 +162,54 @@
       "category": "その他",
       "retail": 32978,
       "rate": 98.55
+    },
+    {
+      "name": "OPPO A3 5G 4GB+128GB SIMフリー [ブラック]",
+      "jan": "4580038879855",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 128GB SIMフリー [ミッドナイトブラック]",
+      "jan": "6932554438258",
+      "buyback": 20000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
+      "jan": "4521329431529",
+      "buyback": 13200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スカーレット&バイオレット 強化拡張パック クリムゾンヘイズ BOX sv5a",
+      "jan": "4521329361239",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
