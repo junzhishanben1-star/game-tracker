@@ -1,8 +1,24 @@
 {
-  "updated": "2026-02-04T08:00:49.359773",
+  "updated": "2026-02-04T11:10:05.368365",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 48,
   "products": [
+    {
+      "name": "BEE-S-KB6CA",
+      "jan": "4902370553024",
+      "buyback": 46300,
+      "category": "その他",
+      "retail": 49980,
+      "rate": 92.64
+    },
+    {
+      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
+      "jan": "4902370548501",
+      "buyback": 40700,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 107.16
+    },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
@@ -10,6 +26,14 @@
       "category": "Switch",
       "retail": 37980,
       "rate": 107.16
+    },
+    {
+      "name": "HAD-S-KABAH",
+      "jan": "4902370550733",
+      "buyback": 32600,
+      "category": "その他",
+      "retail": 32978,
+      "rate": 98.85
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -84,14 +108,6 @@
       "rate": 121.46
     },
     {
-      "name": "BEE-S-KB6CA",
-      "jan": "4902370553024",
-      "buyback": 46300,
-      "category": "その他",
-      "retail": 49980,
-      "rate": 92.64
-    },
-    {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
       "buyback": 51500,
@@ -148,76 +164,20 @@
       "rate": 88.17
     },
     {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
-      "buyback": 5800,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 88.17
-    },
-    {
-      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
-      "jan": "4902370548501",
-      "buyback": 40700,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 107.16
-    },
-    {
-      "name": "OPPO A3 5G 4GB+128GB SIMフリー [ブラック]",
-      "jan": "4580038879855",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
-      "jan": "4942857239126",
-      "buyback": 12000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
-      "buyback": 50200,
+      "buyback": 50500,
       "category": "その他",
       "retail": 47300,
-      "rate": 106.13
+      "rate": 106.77
     },
     {
-      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
-      "jan": "4521329431529",
-      "buyback": 13500,
+      "name": "instax mini 12 パステルブルー",
+      "jan": "4547410489118",
+      "buyback": 11200,
       "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スカーレット&バイオレット 強化拡張パック クリムゾンヘイズ BOX sv5a",
-      "jan": "4521329361239",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "retail": 16800,
+      "rate": 66.67
     },
     {
       "name": "instax WIDE 400 チェキ",
@@ -302,14 +262,6 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 11200,
-      "category": "その他",
-      "retail": 16800,
-      "rate": 66.67
-    },
-    {
-      "name": "instax mini 12 パステルブルー",
-      "jan": "4547410489118",
       "buyback": 11200,
       "category": "その他",
       "retail": 16800,
