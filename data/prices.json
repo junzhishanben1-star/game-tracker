@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-06T21:33:58.540263",
+  "updated": "2026-02-07T02:04:55.857567",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 50,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -38,7 +38,7 @@
     {
       "name": "Nintendo Switch Lite コーラル",
       "jan": "4902370545302",
-      "buyback": 22500,
+      "buyback": 22400,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -164,6 +164,22 @@
       "rate": 88.17
     },
     {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
       "buyback": 51000,
@@ -206,10 +222,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1310,
+      "buyback": 1300,
       "category": "その他",
       "retail": 1100,
-      "rate": 119.09
+      "rate": 118.18
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
@@ -222,10 +238,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2460,
+      "buyback": 2450,
       "category": "その他",
       "retail": 2178,
-      "rate": 112.95
+      "rate": 112.49
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
@@ -318,10 +334,10 @@
     {
       "name": "instax mini Evo チェキ USB ブラック",
       "jan": "4547410520088",
-      "buyback": 25500,
+      "buyback": 25600,
       "category": "その他",
       "retail": 34650,
-      "rate": 73.59
+      "rate": 73.88
     },
     {
       "name": "AURA STUDIO 3",
