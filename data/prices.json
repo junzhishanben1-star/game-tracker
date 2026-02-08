@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-08T09:33:31.435379",
+  "updated": "2026-02-08T12:54:04.760461",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 48,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -162,22 +162,6 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 88.17
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
