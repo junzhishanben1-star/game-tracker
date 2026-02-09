@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-08T21:31:07.798417",
+  "updated": "2026-02-09T02:24:57.545453",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 50,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -118,10 +118,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8300,
+      "buyback": 8400,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 84.03
+      "rate": 85.04
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -162,6 +162,22 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 88.17
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
