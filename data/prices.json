@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-09T23:06:41.143278",
+  "updated": "2026-02-10T02:32:33.213730",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 50,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -46,26 +46,26 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 107500,
+      "buyback": 107600,
       "category": "PS5",
       "retail": 119980,
-      "rate": 89.6
+      "rate": 89.68
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 74800,
+      "buyback": 74900,
       "category": "PS5",
       "retail": 79980,
-      "rate": 93.52
+      "rate": 93.65
     },
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 38800,
+      "buyback": 38900,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 80.17
+      "rate": 80.37
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -164,6 +164,22 @@
       "rate": 88.17
     },
     {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
       "buyback": 51000,
@@ -206,10 +222,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1280,
+      "buyback": 1270,
       "category": "その他",
       "retail": 1100,
-      "rate": 116.36
+      "rate": 115.45
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
