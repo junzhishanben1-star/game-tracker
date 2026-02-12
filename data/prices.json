@@ -1,15 +1,15 @@
 {
-  "updated": "2026-02-12T02:24:22.793768",
+  "updated": "2026-02-12T05:00:27.064489",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 45500,
+      "buyback": 45300,
       "category": "その他",
       "retail": 49980,
-      "rate": 91.04
+      "rate": 90.64
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -46,7 +46,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 72500,
+      "buyback": 72700,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
