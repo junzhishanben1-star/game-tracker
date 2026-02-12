@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-12T07:04:24.301232",
+  "updated": "2026-02-12T09:53:45.829150",
   "source": "mobile-ichiban.com",
-  "count": 56,
+  "count": 55,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -46,7 +46,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 72700,
+      "buyback": 72800,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -188,6 +188,14 @@
       "rate": 0
     },
     {
+      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
+      "jan": "4942857239126",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "iPad Pro 13インチ Wi-Fi 256GB MDYJ4J/A [スペースブラック]",
       "jan": "4549995616729",
       "buyback": 169000,
@@ -207,22 +215,6 @@
       "name": "Panasonic EH-NA0J [ディープネイビー]",
       "jan": "4549980652961",
       "buyback": 30000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンターフクオカ",
-      "jan": "4521329431536",
-      "buyback": 25000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "遊戯王OCG デュエルモンスターズ BLAZING DOMINION BOX",
-      "jan": "4988602179415",
-      "buyback": 5900,
       "category": "その他",
       "retail": 0,
       "rate": 0
