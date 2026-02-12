@@ -1,15 +1,15 @@
 {
-  "updated": "2026-02-12T05:00:27.064489",
+  "updated": "2026-02-12T07:04:24.301232",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 45300,
+      "buyback": 45000,
       "category": "その他",
       "retail": 49980,
-      "rate": 90.64
+      "rate": 90.04
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -230,10 +230,10 @@
     {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
-      "buyback": 51000,
+      "buyback": 50000,
       "category": "その他",
       "retail": 47300,
-      "rate": 107.82
+      "rate": 105.71
     },
     {
       "name": "instax WIDE 400 チェキ",
@@ -318,58 +318,58 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 11300,
+      "buyback": 11100,
       "category": "その他",
       "retail": 16800,
-      "rate": 67.26
+      "rate": 66.07
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 11300,
+      "buyback": 11100,
       "category": "その他",
       "retail": 16800,
-      "rate": 67.26
+      "rate": 66.07
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 11300,
+      "buyback": 11100,
       "category": "その他",
       "retail": 16800,
-      "rate": 67.26
+      "rate": 66.07
     },
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 11300,
+      "buyback": 11100,
       "category": "その他",
       "retail": 16800,
-      "rate": 67.26
+      "rate": 66.07
     },
     {
       "name": "instax mini 12 ブロッサムピンク",
       "jan": "4547410489125",
-      "buyback": 11300,
+      "buyback": 11100,
       "category": "その他",
       "retail": 16800,
-      "rate": 67.26
+      "rate": 66.07
     },
     {
       "name": "instax mini 12 チェキ くまモン",
       "jan": "4547410557954",
-      "buyback": 11300,
+      "buyback": 11100,
       "category": "その他",
       "retail": 16800,
-      "rate": 67.26
+      "rate": 66.07
     },
     {
       "name": "instax mini 12 チェキ EXPO 2025",
       "jan": "4547410534122",
-      "buyback": 11300,
+      "buyback": 11100,
       "category": "その他",
       "retail": 16800,
-      "rate": 67.26
+      "rate": 66.07
     },
     {
       "name": "instax mini Evo チェキ Limited Edition PINK",
@@ -382,10 +382,10 @@
     {
       "name": "instax mini Evo チェキ USB ブラック",
       "jan": "4547410520088",
-      "buyback": 25600,
+      "buyback": 25000,
       "category": "その他",
       "retail": 34650,
-      "rate": 73.88
+      "rate": 72.15
     },
     {
       "name": "AURA STUDIO 3",
