@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-13T02:25:54.575695",
+  "updated": "2026-02-13T04:55:09.001169",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 41100,
+      "buyback": 41200,
       "category": "Switch",
       "retail": 37980,
-      "rate": 108.21
+      "rate": 108.48
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -142,26 +142,26 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 5800,
+      "buyback": 5500,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 88.17
+      "rate": 83.61
     },
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 5800,
+      "buyback": 5500,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 88.17
+      "rate": 83.61
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 41100,
+      "buyback": 41200,
       "category": "Switch",
       "retail": 37980,
-      "rate": 108.21
+      "rate": 108.48
     },
     {
       "name": "HAD-S-KABAH",
