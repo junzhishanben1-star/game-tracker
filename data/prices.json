@@ -1,23 +1,23 @@
 {
-  "updated": "2026-02-14T04:43:31.048490",
+  "updated": "2026-02-14T06:47:56.113848",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 43500,
+      "buyback": 43000,
       "category": "その他",
       "retail": 49980,
-      "rate": 87.03
+      "rate": 86.03
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 41200,
+      "buyback": 41000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 108.48
+      "rate": 107.95
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -158,10 +158,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 41000,
+      "buyback": 40800,
       "category": "Switch",
       "retail": 37980,
-      "rate": 107.95
+      "rate": 107.42
     },
     {
       "name": "HAD-S-KABAH",
