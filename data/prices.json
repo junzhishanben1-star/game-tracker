@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-14T02:07:11.498232",
+  "updated": "2026-02-14T04:43:31.048490",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -158,10 +158,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 41200,
+      "buyback": 41000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 108.48
+      "rate": 107.95
     },
     {
       "name": "HAD-S-KABAH",
@@ -238,10 +238,10 @@
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 24800,
+      "buyback": 24500,
       "category": "その他",
       "retail": 30580,
-      "rate": 81.1
+      "rate": 80.12
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
