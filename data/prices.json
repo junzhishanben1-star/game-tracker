@@ -1,15 +1,15 @@
 {
-  "updated": "2026-02-13T21:37:57.266717",
+  "updated": "2026-02-14T02:07:11.498232",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 55,
   "products": [
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 44000,
+      "buyback": 43500,
       "category": "その他",
       "retail": 49980,
-      "rate": 88.04
+      "rate": 87.03
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -170,6 +170,54 @@
       "category": "その他",
       "retail": 32978,
       "rate": 99.46
+    },
+    {
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
+      "jan": "4942857239126",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Pro 13インチ Wi-Fi 256GB MDYJ4J/A [スペースブラック]",
+      "jan": "4549995616729",
+      "buyback": 169000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Panasonic Technics EAH-AZ100-S シルバー",
+      "jan": "4549980797297",
+      "buyback": 29500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Panasonic EH-NA0J [ディープネイビー]",
+      "jan": "4549980652961",
+      "buyback": 30000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
