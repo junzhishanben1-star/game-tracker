@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-16T02:14:18.730874",
+  "updated": "2026-02-16T05:01:36.232239",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 41000,
+      "buyback": 41200,
       "category": "Switch",
       "retail": 37980,
-      "rate": 107.95
+      "rate": 108.48
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -110,7 +110,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 8700,
+      "buyback": 8900,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -158,10 +158,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 39600,
+      "buyback": 39800,
       "category": "Switch",
       "retail": 37980,
-      "rate": 104.27
+      "rate": 104.79
     },
     {
       "name": "HAD-S-KABAH",
