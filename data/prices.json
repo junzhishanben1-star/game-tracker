@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-18T07:04:10.237327",
+  "updated": "2026-02-18T09:52:01.319523",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 56,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -38,7 +38,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 72800,
+      "buyback": 72900,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -172,17 +172,17 @@
       "rate": 99.46
     },
     {
-      "name": "arrows We2 FCG02 au [ライトオレンジ]",
-      "jan": "4941787128326",
-      "buyback": 12500,
+      "name": "AQUOS sense9 SH-M29 128GB SIMフリー [ブラック]",
+      "jan": "4550556144322",
+      "buyback": 43000,
       "category": "その他",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 15500,
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 12500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -207,6 +207,22 @@
       "name": "パープル",
       "jan": "4549995526516",
       "buyback": 62000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 162000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 75000,
       "category": "その他",
       "retail": 0,
       "rate": 0
