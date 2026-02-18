@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-18T02:15:00.132712",
+  "updated": "2026-02-18T04:55:56.363876",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -110,7 +110,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 8900,
+      "buyback": 9000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -158,10 +158,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 40000,
+      "buyback": 40300,
       "category": "Switch",
       "retail": 37980,
-      "rate": 105.32
+      "rate": 106.11
     },
     {
       "name": "HAD-S-KABAH",
