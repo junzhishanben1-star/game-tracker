@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-18T04:55:56.363876",
+  "updated": "2026-02-18T07:04:10.237327",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 107600,
+      "buyback": 107700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 89.68
+      "rate": 89.76
     },
     {
       "name": "Meta Quest 3S 128GB",
@@ -158,10 +158,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 40300,
+      "buyback": 40500,
       "category": "Switch",
       "retail": 37980,
-      "rate": 106.11
+      "rate": 106.64
     },
     {
       "name": "HAD-S-KABAH",
