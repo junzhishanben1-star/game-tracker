@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-20T09:43:44.740879",
+  "updated": "2026-02-20T13:02:39.076378",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -172,57 +172,9 @@
       "rate": 106.64
     },
     {
-      "name": "AQUOS sense9 SH-M29 128GB SIMフリー [ブラック]",
-      "jan": "4550556144322",
-      "buyback": 43000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "arrows We2 FCG02 au [ライトオレンジ]",
-      "jan": "4941787128326",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
-      "jan": "4942857239126",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Pro 13インチ Wi-Fi 256GB MDYJ4J/A [スペースブラック]",
-      "jan": "4549995616729",
-      "buyback": 169000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 26700,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 162300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 76000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -286,18 +238,18 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2400,
+      "buyback": 2420,
       "category": "その他",
       "retail": 2100,
-      "rate": 114.29
+      "rate": 115.24
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
       "jan": "4547410348613",
-      "buyback": 1200,
+      "buyback": 1210,
       "category": "その他",
       "retail": 1100,
-      "rate": 109.09
+      "rate": 110.0
     },
     {
       "name": "instax mini 90 チェキ ネオクラシック [ブラック]",
