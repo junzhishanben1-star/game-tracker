@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-23T05:00:30.396136",
+  "updated": "2026-02-23T07:07:24.255325",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -30,10 +30,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 39100,
+      "buyback": 39200,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 80.79
+      "rate": 80.99
     },
     {
       "name": "Meta Quest 3 512GB",
