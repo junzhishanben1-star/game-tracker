@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-23T07:07:24.255325",
+  "updated": "2026-02-23T09:58:12.704975",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -204,14 +204,6 @@
       "rate": 0
     },
     {
-      "name": "instax mini Evo チェキ USB ブラウン",
-      "jan": "4547410520125",
-      "buyback": 26700,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "CANON PowerShot G7 X Mark III [ブラック]",
       "jan": "4549292137743",
       "buyback": 161300,
@@ -378,6 +370,14 @@
       "category": "その他",
       "retail": 41580,
       "rate": 125.06
+    },
+    {
+      "name": "instax mini Evo チェキ USB ブラック",
+      "jan": "4547410520088",
+      "buyback": 25200,
+      "category": "その他",
+      "retail": 34650,
+      "rate": 72.73
     },
     {
       "name": "AURA STUDIO 3",
