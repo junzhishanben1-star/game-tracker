@@ -1,23 +1,39 @@
 {
-  "updated": "2026-02-24T07:03:14.672612",
+  "updated": "2026-02-24T09:55:44.875878",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 53,
   "products": [
+    {
+      "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
+      "jan": "4902370553871",
+      "buyback": 9000,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 41200,
+      "buyback": 41300,
       "category": "Switch",
       "retail": 37980,
-      "rate": 108.48
+      "rate": 108.74
+    },
+    {
+      "name": "Nintendo Switch (有機ELモデル) ホワイト",
+      "jan": "4902370548495",
+      "buyback": 40600,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 106.9
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 107800,
+      "buyback": 107900,
       "category": "PS5",
       "retail": 119980,
-      "rate": 89.85
+      "rate": 89.93
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -38,7 +54,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 73000,
+      "buyback": 73100,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -46,26 +62,18 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 104500,
+      "buyback": 104600,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 104.71
+      "rate": 104.81
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 104500,
+      "buyback": 104600,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
-    },
-    {
-      "name": "ROG Xbox Ally X 1TB",
-      "jan": "0199291152984",
-      "buyback": 134000,
-      "category": "その他",
-      "retail": 139800,
-      "rate": 95.85
     },
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
@@ -78,18 +86,18 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 70000,
+      "buyback": 71000,
       "category": "その他",
       "retail": 69980,
-      "rate": 100.03
+      "rate": 101.46
     },
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 43000,
+      "buyback": 43500,
       "category": "その他",
       "retail": 49980,
-      "rate": 86.03
+      "rate": 87.03
     },
     {
       "name": "BEE-S-KB6PA",
@@ -102,10 +110,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8400,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 85.04
+      "rate": 86.05
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -114,14 +122,6 @@
       "category": "Switch 2",
       "retail": 9878,
       "rate": 89.09
-    },
-    {
-      "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
-      "jan": "4902370553871",
-      "buyback": 9000,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
@@ -164,25 +164,25 @@
       "rate": 83.61
     },
     {
-      "name": "Nintendo Switch (有機ELモデル) ホワイト",
-      "jan": "4902370548495",
-      "buyback": 40500,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 106.64
-    },
-    {
-      "name": "AQUOS sense9 SH-M29 128GB SIMフリー [ブラック]",
-      "jan": "4550556144322",
-      "buyback": 43000,
+      "name": "HAD-S-KABAH",
+      "jan": "4902370550733",
+      "buyback": 33000,
       "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "retail": 32978,
+      "rate": 100.07
     },
     {
       "name": "arrows We2 FCG02 au [ライトオレンジ]",
       "jan": "4941787128326",
       "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
+      "jan": "4942857244236",
+      "buyback": 15500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -196,17 +196,9 @@
       "rate": 0
     },
     {
-      "name": "iPad Pro 13インチ Wi-Fi 256GB MDYJ4J/A [スペースブラック]",
-      "jan": "4549995616729",
-      "buyback": 169000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 161300,
+      "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
+      "jan": "4547410441536",
+      "buyback": 18000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -254,10 +246,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1260,
+      "buyback": 1270,
       "category": "その他",
       "retail": 1100,
-      "rate": 114.55
+      "rate": 115.45
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
@@ -270,10 +262,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2380,
+      "buyback": 2400,
       "category": "その他",
       "retail": 2178,
-      "rate": 109.27
+      "rate": 110.19
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
@@ -370,14 +362,6 @@
       "category": "その他",
       "retail": 41580,
       "rate": 125.06
-    },
-    {
-      "name": "instax mini Evo チェキ USB ブラック",
-      "jan": "4547410520088",
-      "buyback": 25800,
-      "category": "その他",
-      "retail": 34650,
-      "rate": 74.46
     },
     {
       "name": "AURA STUDIO 3",
