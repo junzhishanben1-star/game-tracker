@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-23T21:47:32.876965",
+  "updated": "2026-02-24T02:11:55.823504",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -170,6 +170,54 @@
       "category": "Switch",
       "retail": 37980,
       "rate": 106.64
+    },
+    {
+      "name": "AQUOS sense9 SH-M29 128GB SIMフリー [ブラック]",
+      "jan": "4550556144322",
+      "buyback": 43000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
+      "jan": "4942857239126",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Pro 13インチ Wi-Fi 256GB MDYJ4J/A [スペースブラック]",
+      "jan": "4549995616729",
+      "buyback": 169000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 161300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 76500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
