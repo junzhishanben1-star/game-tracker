@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-25T07:05:07.660191",
+  "updated": "2026-02-25T09:57:37.486611",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -76,6 +76,14 @@
       "rate": 0
     },
     {
+      "name": "ROG Xbox Ally X 1TB",
+      "jan": "0199291152984",
+      "buyback": 138000,
+      "category": "その他",
+      "retail": 139800,
+      "rate": 98.71
+    },
+    {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
       "buyback": 51700,
@@ -86,10 +94,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 71000,
+      "buyback": 72000,
       "category": "その他",
       "retail": 69980,
-      "rate": 101.46
+      "rate": 102.89
     },
     {
       "name": "BEE-S-KB6CA",
@@ -162,14 +170,6 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 83.61
-    },
-    {
-      "name": "HAD-S-KABAH",
-      "jan": "4902370550733",
-      "buyback": 33000,
-      "category": "その他",
-      "retail": 32978,
-      "rate": 100.07
     },
     {
       "name": "arrows We2 FCG02 au [ライトオレンジ]",
