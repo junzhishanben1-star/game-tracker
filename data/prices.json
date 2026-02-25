@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-24T21:41:03.818427",
+  "updated": "2026-02-25T02:16:05.309978",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 53,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 107900,
+      "buyback": 108700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 89.93
+      "rate": 90.6
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -46,10 +46,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 39200,
+      "buyback": 39300,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 80.99
+      "rate": 81.2
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 104600,
+      "buyback": 104800,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 104.81
+      "rate": 105.01
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 104600,
+      "buyback": 104800,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -172,9 +172,41 @@
       "rate": 100.07
     },
     {
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
+      "jan": "4942857244236",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
+      "jan": "4942857239126",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
       "jan": "4547410441536",
       "buyback": 18000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 76500,
       "category": "その他",
       "retail": 0,
       "rate": 0
