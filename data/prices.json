@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-26T07:03:12.282585",
+  "updated": "2026-02-26T09:53:48.546746",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -46,15 +46,15 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 39300,
+      "buyback": 39500,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 81.2
+      "rate": 81.61
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 73300,
+      "buyback": 73500,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 105000,
+      "buyback": 105200,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 105.21
+      "rate": 105.41
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 105000,
+      "buyback": 105200,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -206,7 +206,7 @@
     {
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
-      "buyback": 77000,
+      "buyback": 77200,
       "category": "その他",
       "retail": 0,
       "rate": 0
