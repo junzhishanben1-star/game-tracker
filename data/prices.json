@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-26T02:09:01.934996",
+  "updated": "2026-02-26T04:52:47.846167",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -14,26 +14,26 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 41300,
+      "buyback": 41600,
       "category": "Switch",
       "retail": 37980,
-      "rate": 108.74
+      "rate": 109.53
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 40700,
+      "buyback": 41000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 107.16
+      "rate": 107.95
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 108800,
+      "buyback": 109000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 90.68
+      "rate": 90.85
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -54,7 +54,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 73100,
+      "buyback": 73300,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 104800,
+      "buyback": 105000,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 105.01
+      "rate": 105.21
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 104800,
+      "buyback": 105000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
