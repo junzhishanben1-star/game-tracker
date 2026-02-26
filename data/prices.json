@@ -1,6 +1,399 @@
 {
-  "updated": "2026-02-26T18:56:33.387761",
+  "updated": "2026-02-26T21:35:11.536983",
   "source": "mobile-ichiban.com",
-  "count": 0,
-  "products": []
+  "count": 49,
+  "products": [
+    {
+      "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
+      "jan": "4902370553871",
+      "buyback": 9000,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
+      "jan": "4902370548501",
+      "buyback": 41600,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 109.53
+    },
+    {
+      "name": "Nintendo Switch (有機ELモデル) ホワイト",
+      "jan": "4902370548495",
+      "buyback": 41000,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 107.95
+    },
+    {
+      "name": "PlayStation 5 Pro CFI-7000B01 2TB",
+      "jan": "4948872416320",
+      "buyback": 109000,
+      "category": "PS5",
+      "retail": 119980,
+      "rate": 90.85
+    },
+    {
+      "name": "PlayStation VR2 CFIJ-17000",
+      "jan": "4948872016490",
+      "buyback": 49000,
+      "category": "PS5",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Meta Quest 3S 128GB",
+      "jan": "0815820025238",
+      "buyback": 39500,
+      "category": "Meta Quest",
+      "retail": 48400,
+      "rate": 81.61
+    },
+    {
+      "name": "Meta Quest 3 512GB",
+      "jan": "815820024170",
+      "buyback": 73500,
+      "category": "Meta Quest",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Deck OLED 1TB",
+      "jan": "0814585022308",
+      "buyback": 105200,
+      "category": "Steam Deck",
+      "retail": 99800,
+      "rate": 105.41
+    },
+    {
+      "name": "Steam Deck OLED 1TB",
+      "jan": "0814585022629",
+      "buyback": 105200,
+      "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ROG Xbox Ally X 1TB",
+      "jan": "0199291152984",
+      "buyback": 140000,
+      "category": "その他",
+      "retail": 139800,
+      "rate": 100.14
+    },
+    {
+      "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
+      "jan": "4902370553505",
+      "buyback": 51700,
+      "category": "Switch 2",
+      "retail": 49980,
+      "rate": 103.44
+    },
+    {
+      "name": "BEE-S-KB6AA",
+      "jan": "4902370552683",
+      "buyback": 72000,
+      "category": "その他",
+      "retail": 69980,
+      "rate": 102.89
+    },
+    {
+      "name": "BEE-S-KB6CA",
+      "jan": "4902370553024",
+      "buyback": 43500,
+      "category": "その他",
+      "retail": 49980,
+      "rate": 87.03
+    },
+    {
+      "name": "BEE-S-KB6PA",
+      "jan": "4902370553031",
+      "buyback": 51500,
+      "category": "その他",
+      "retail": 55980,
+      "rate": 92.0
+    },
+    {
+      "name": "Nintendo Switch 2 Proコントローラー",
+      "jan": "4902370552843",
+      "buyback": 8500,
+      "category": "Switch 2",
+      "retail": 9878,
+      "rate": 86.05
+    },
+    {
+      "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
+      "jan": "4902370552744",
+      "buyback": 8800,
+      "category": "Switch 2",
+      "retail": 9878,
+      "rate": 89.09
+    },
+    {
+      "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
+      "jan": "4902370552706",
+      "buyback": 3800,
+      "category": "Switch 2",
+      "retail": 5478,
+      "rate": 69.37
+    },
+    {
+      "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
+      "jan": "4902370552720",
+      "buyback": 3800,
+      "category": "Switch 2",
+      "retail": 5478,
+      "rate": 69.37
+    },
+    {
+      "name": "Nintendo Switch 2 ドックセット BEE-A-CASAA",
+      "jan": "4902370552911",
+      "buyback": 11200,
+      "category": "Switch 2",
+      "retail": 12980,
+      "rate": 86.29
+    },
+    {
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 5500,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 83.61
+    },
+    {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 5500,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 83.61
+    },
+    {
+      "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
+      "jan": "4547410441536",
+      "buyback": 18200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "instax mini Evo Cinema",
+      "jan": "4547410562293",
+      "buyback": 50000,
+      "category": "その他",
+      "retail": 47300,
+      "rate": 105.71
+    },
+    {
+      "name": "instax WIDE 400 チェキ",
+      "jan": "4547410529975",
+      "buyback": 22000,
+      "category": "その他",
+      "retail": 26730,
+      "rate": 82.3
+    },
+    {
+      "name": "instax mini 99 ブラック",
+      "jan": "4547410529845",
+      "buyback": 25000,
+      "category": "その他",
+      "retail": 30580,
+      "rate": 81.75
+    },
+    {
+      "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
+      "jan": "4547410377231",
+      "buyback": 2680,
+      "category": "その他",
+      "retail": 2100,
+      "rate": 127.62
+    },
+    {
+      "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
+      "jan": "4547410377224",
+      "buyback": 1270,
+      "category": "その他",
+      "retail": 1100,
+      "rate": 115.45
+    },
+    {
+      "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
+      "jan": "4547410369137",
+      "buyback": 2670,
+      "category": "その他",
+      "retail": 2178,
+      "rate": 122.59
+    },
+    {
+      "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
+      "jan": "4547410550955",
+      "buyback": 2380,
+      "category": "その他",
+      "retail": 2178,
+      "rate": 109.27
+    },
+    {
+      "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
+      "jan": "4547410370003",
+      "buyback": 2450,
+      "category": "その他",
+      "retail": 2100,
+      "rate": 116.67
+    },
+    {
+      "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
+      "jan": "4547410348613",
+      "buyback": 1210,
+      "category": "その他",
+      "retail": 1100,
+      "rate": 110.0
+    },
+    {
+      "name": "instax mini 90 チェキ ネオクラシック [ブラック]",
+      "jan": "4547410260649",
+      "buyback": 43500,
+      "category": "その他",
+      "retail": 28600,
+      "rate": 152.1
+    },
+    {
+      "name": "instax mini 90 チェキ ネオクラシック [ブラウン]",
+      "jan": "4547410269307",
+      "buyback": 43500,
+      "category": "その他",
+      "retail": 28600,
+      "rate": 152.1
+    },
+    {
+      "name": "instax mini 12 クレイホワイト",
+      "jan": "4547410489149",
+      "buyback": 11500,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 68.45
+    },
+    {
+      "name": "instax mini 12 パステルブルー",
+      "jan": "4547410489118",
+      "buyback": 11500,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 68.45
+    },
+    {
+      "name": "instax mini 12 ライラックパープル",
+      "jan": "4547410489156",
+      "buyback": 11500,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 68.45
+    },
+    {
+      "name": "instax mini 12 ミントグリーン",
+      "jan": "4547410489132",
+      "buyback": 11500,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 68.45
+    },
+    {
+      "name": "instax mini 12 ブロッサムピンク",
+      "jan": "4547410489125",
+      "buyback": 11500,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 68.45
+    },
+    {
+      "name": "instax mini 12 チェキ くまモン",
+      "jan": "4547410557954",
+      "buyback": 11500,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 68.45
+    },
+    {
+      "name": "instax mini 12 チェキ EXPO 2025",
+      "jan": "4547410534122",
+      "buyback": 11500,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 68.45
+    },
+    {
+      "name": "instax mini Evo チェキ Limited Edition PINK",
+      "jan": "4547410555844",
+      "buyback": 52000,
+      "category": "その他",
+      "retail": 41580,
+      "rate": 125.06
+    },
+    {
+      "name": "AURA STUDIO 3",
+      "jan": "4968929058907",
+      "buyback": 18000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "HomePod 第2世代 MQJ83J/A [ホワイト]",
+      "jan": "4549995368079",
+      "buyback": 34000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "HomePod mini [オレンジ]",
+      "jan": "4549995219913",
+      "buyback": 9500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "HomePod mini [ホワイト]",
+      "jan": "4549995157079",
+      "buyback": 9500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "HomePod mini [スペースグレイ]",
+      "jan": "4549995157062",
+      "buyback": 9500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "HomePod mini [ブルー]",
+      "jan": "4549995219906",
+      "buyback": 9500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "HomePod mini [イエロー]",
+      "jan": "4549995219920",
+      "buyback": 9500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "HomePod 第2世代 MQJ73J/A [ミッドナイト]",
+      "jan": "4549995368062",
+      "buyback": 34000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    }
+  ]
 }
