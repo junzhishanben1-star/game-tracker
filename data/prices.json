@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-25T21:37:17.069753",
+  "updated": "2026-02-26T02:09:01.934996",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 53,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -22,18 +22,18 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 40600,
+      "buyback": 40700,
       "category": "Switch",
       "retail": 37980,
-      "rate": 106.9
+      "rate": 107.16
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 108700,
+      "buyback": 108800,
       "category": "PS5",
       "retail": 119980,
-      "rate": 90.6
+      "rate": 90.68
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -78,10 +78,10 @@
     {
       "name": "ROG Xbox Ally X 1TB",
       "jan": "0199291152984",
-      "buyback": 138000,
+      "buyback": 140000,
       "category": "その他",
       "retail": 139800,
-      "rate": 98.71
+      "rate": 100.14
     },
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
@@ -172,9 +172,41 @@
       "rate": 83.61
     },
     {
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
+      "jan": "4942857244236",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
+      "jan": "4942857239126",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
       "jan": "4547410441536",
       "buyback": 18200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 77000,
       "category": "その他",
       "retail": 0,
       "rate": 0
