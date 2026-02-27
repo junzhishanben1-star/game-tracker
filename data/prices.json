@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-26T21:35:11.536983",
+  "updated": "2026-02-27T02:07:57.941362",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 53,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -84,6 +84,14 @@
       "rate": 100.14
     },
     {
+      "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
+      "jan": "4902370553802",
+      "buyback": 9000,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
       "buyback": 51700,
@@ -164,17 +172,41 @@
       "rate": 83.61
     },
     {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
-      "buyback": 5500,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 83.61
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
+      "jan": "4942857244236",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
+      "jan": "4942857239126",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
       "jan": "4547410441536",
       "buyback": 18200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 77200,
       "category": "その他",
       "retail": 0,
       "rate": 0
