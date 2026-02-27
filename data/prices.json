@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-27T02:07:57.941362",
+  "updated": "2026-02-27T04:47:40.645692",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 54,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -207,6 +207,14 @@
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
       "buyback": 77200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモン30周年記念 おかえり! ピカチュウ 1/1 ポケットモンスター",
+      "jan": "4904810097181",
+      "buyback": 13000,
       "category": "その他",
       "retail": 0,
       "rate": 0
