@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-28T01:57:55.091580",
+  "updated": "2026-02-28T04:17:39.137985",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -46,15 +46,15 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 39500,
+      "buyback": 39600,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 81.61
+      "rate": 81.82
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 73500,
+      "buyback": 73600,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 105200,
+      "buyback": 106000,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 105.41
+      "rate": 106.21
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 105200,
+      "buyback": 106000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
