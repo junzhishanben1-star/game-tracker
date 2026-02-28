@@ -1,7 +1,7 @@
 {
-  "updated": "2026-02-28T09:29:29.741010",
+  "updated": "2026-02-28T12:49:12.569095",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 49,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -134,10 +134,10 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 8800,
+      "buyback": 8900,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.09
+      "rate": 90.1
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
@@ -172,41 +172,9 @@
       "rate": 85.13
     },
     {
-      "name": "arrows We2 FCG02 au [ライトオレンジ]",
-      "jan": "4941787128326",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
-      "jan": "4942857244236",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
-      "jan": "4942857239126",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
       "jan": "4547410441536",
       "buyback": 18300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 77200,
       "category": "その他",
       "retail": 0,
       "rate": 0
