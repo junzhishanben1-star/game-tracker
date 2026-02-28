@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-28T06:41:46.133928",
+  "updated": "2026-02-28T09:29:29.741010",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -14,18 +14,18 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 41600,
+      "buyback": 42000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 109.53
+      "rate": 110.58
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 41000,
+      "buyback": 41300,
       "category": "Switch",
       "retail": 37980,
-      "rate": 107.95
+      "rate": 108.74
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -166,10 +166,10 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 5500,
+      "buyback": 5600,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 83.61
+      "rate": 85.13
     },
     {
       "name": "arrows We2 FCG02 au [ライトオレンジ]",
@@ -238,18 +238,18 @@
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
       "jan": "4547410377231",
-      "buyback": 2680,
+      "buyback": 2700,
       "category": "その他",
       "retail": 2100,
-      "rate": 127.62
+      "rate": 128.57
     },
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1270,
+      "buyback": 1280,
       "category": "その他",
       "retail": 1100,
-      "rate": 115.45
+      "rate": 116.36
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
