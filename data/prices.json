@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-01T06:50:24.113179",
+  "updated": "2026-03-01T09:32:39.014582",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 106100,
+      "buyback": 106300,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 106.31
+      "rate": 106.51
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 106100,
+      "buyback": 106300,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
