@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-02T04:50:22.873766",
+  "updated": "2026-03-02T07:01:24.745266",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 109000,
+      "buyback": 109200,
       "category": "PS5",
       "retail": 119980,
-      "rate": 90.85
+      "rate": 91.02
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -46,15 +46,15 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 39700,
+      "buyback": 39800,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 82.02
+      "rate": 82.23
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 73700,
+      "buyback": 73800,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -126,10 +126,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8500,
+      "buyback": 8600,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 86.05
+      "rate": 87.06
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -204,9 +204,9 @@
       "rate": 0
     },
     {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 74000,
+      "name": "遊戯王オフィシャルカードゲーム デュエルモンスターズ LIMIT OVER COLLECTION THE HEROES",
+      "jan": "4988602179507",
+      "buyback": 7000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,10 +214,10 @@
     {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
-      "buyback": 50000,
+      "buyback": 48500,
       "category": "その他",
       "retail": 47300,
-      "rate": 105.71
+      "rate": 102.54
     },
     {
       "name": "instax WIDE 400 チェキ",
