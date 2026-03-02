@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-02T07:01:24.745266",
+  "updated": "2026-03-02T09:53:46.385099",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -14,18 +14,18 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 42000,
+      "buyback": 42200,
       "category": "Switch",
       "retail": 37980,
-      "rate": 110.58
+      "rate": 111.11
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 41300,
+      "buyback": 41500,
       "category": "Switch",
       "retail": 37980,
-      "rate": 108.74
+      "rate": 109.27
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 106300,
+      "buyback": 106500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 106.51
+      "rate": 106.71
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 106300,
+      "buyback": 106500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
