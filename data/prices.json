@@ -1,12 +1,12 @@
 {
-  "updated": "2026-03-03T02:13:03.236725",
+  "updated": "2026-03-03T04:48:55.441298",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 54,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 9000,
+      "buyback": 9100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 45000,
+      "buyback": 46000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,39 +62,31 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 106500,
+      "buyback": 107200,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 106.71
+      "rate": 107.41
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 106500,
+      "buyback": 107200,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "ROG Xbox Ally X 1TB",
-      "jan": "0199291152984",
-      "buyback": 143000,
-      "category": "その他",
-      "retail": 139800,
-      "rate": 102.29
-    },
-    {
-      "name": "バイオハザード レクイエム デラックスエディション/Switch 2",
-      "jan": "4976219137485",
+      "name": "バイオハザード レクイエム /PS5",
+      "jan": "4976219137492",
       "buyback": 7900,
-      "category": "Switch 2",
+      "category": "PS5",
       "retail": 0,
       "rate": 0
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
       "jan": "4902370553802",
-      "buyback": 9000,
+      "buyback": 9200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -118,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 43500,
+      "buyback": 43800,
       "category": "その他",
       "retail": 49980,
-      "rate": 87.03
+      "rate": 87.64
     },
     {
       "name": "BEE-S-KB6PA",
@@ -142,10 +134,10 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 8900,
+      "buyback": 9000,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 90.1
+      "rate": 91.11
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
@@ -172,6 +164,14 @@
       "rate": 86.29
     },
     {
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 5600,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 85.13
+    },
+    {
       "name": "arrows We2 FCG02 au [ライトオレンジ]",
       "jan": "4941787128326",
       "buyback": 12500,
@@ -196,9 +196,17 @@
       "rate": 0
     },
     {
+      "name": "SONY WF-1000XM6 BZ ブラック",
+      "jan": "4548736171763",
+      "buyback": 41700,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "遊戯王オフィシャルカードゲーム デュエルモンスターズ LIMIT OVER COLLECTION THE HEROES",
       "jan": "4988602179507",
-      "buyback": 7000,
+      "buyback": 7500,
       "category": "その他",
       "retail": 0,
       "rate": 0
