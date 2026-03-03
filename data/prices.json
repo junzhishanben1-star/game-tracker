@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-02T21:36:30.670483",
+  "updated": "2026-03-03T02:13:03.236725",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 53,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 49000,
+      "buyback": 45000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -82,6 +82,14 @@
       "category": "その他",
       "retail": 139800,
       "rate": 102.29
+    },
+    {
+      "name": "バイオハザード レクイエム デラックスエディション/Switch 2",
+      "jan": "4976219137485",
+      "buyback": 7900,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -164,17 +172,33 @@
       "rate": 86.29
     },
     {
-      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "4523052030185",
-      "buyback": 5600,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 85.13
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
-      "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
-      "jan": "4547410441536",
-      "buyback": 18300,
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
+      "jan": "4942857244236",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
+      "jan": "4942857239126",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "遊戯王オフィシャルカードゲーム デュエルモンスターズ LIMIT OVER COLLECTION THE HEROES",
+      "jan": "4988602179507",
+      "buyback": 7000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -330,6 +354,14 @@
       "category": "その他",
       "retail": 41580,
       "rate": 125.06
+    },
+    {
+      "name": "instax mini Evo チェキ USB ブラック",
+      "jan": "4547410520088",
+      "buyback": 26000,
+      "category": "その他",
+      "retail": 34650,
+      "rate": 75.04
     },
     {
       "name": "AURA STUDIO 3",
