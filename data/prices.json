@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-03T04:48:55.441298",
+  "updated": "2026-03-03T06:55:41.593103",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -30,15 +30,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 109200,
+      "buyback": 109400,
       "category": "PS5",
       "retail": 119980,
-      "rate": 91.02
+      "rate": 91.18
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 46000,
+      "buyback": 47000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -46,15 +46,15 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 39800,
+      "buyback": 39900,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 82.23
+      "rate": 82.44
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 73800,
+      "buyback": 73900,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 107200,
+      "buyback": 108500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 107.41
+      "rate": 108.72
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 107200,
+      "buyback": 108500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -78,7 +78,7 @@
     {
       "name": "バイオハザード レクイエム /PS5",
       "jan": "4976219137492",
-      "buyback": 7900,
+      "buyback": 8000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -198,7 +198,7 @@
     {
       "name": "SONY WF-1000XM6 BZ ブラック",
       "jan": "4548736171763",
-      "buyback": 41700,
+      "buyback": 42000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,10 +214,10 @@
     {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
-      "buyback": 48500,
+      "buyback": 48000,
       "category": "その他",
       "retail": 47300,
-      "rate": 102.54
+      "rate": 101.48
     },
     {
       "name": "instax WIDE 400 チェキ",
@@ -302,58 +302,58 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 16800,
-      "rate": 68.45
+      "rate": 69.05
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 16800,
-      "rate": 68.45
+      "rate": 69.05
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 16800,
-      "rate": 68.45
+      "rate": 69.05
     },
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 16800,
-      "rate": 68.45
+      "rate": 69.05
     },
     {
       "name": "instax mini 12 ブロッサムピンク",
       "jan": "4547410489125",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 16800,
-      "rate": 68.45
+      "rate": 69.05
     },
     {
       "name": "instax mini 12 チェキ くまモン",
       "jan": "4547410557954",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 16800,
-      "rate": 68.45
+      "rate": 69.05
     },
     {
       "name": "instax mini 12 チェキ EXPO 2025",
       "jan": "4547410534122",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 16800,
-      "rate": 68.45
+      "rate": 69.05
     },
     {
       "name": "instax mini Evo チェキ Limited Edition PINK",
