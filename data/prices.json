@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-04T02:06:45.243371",
+  "updated": "2026-03-04T04:42:25.826507",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 55,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -14,31 +14,31 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 42200,
+      "buyback": 42400,
       "category": "Switch",
       "retail": 37980,
-      "rate": 111.11
+      "rate": 111.64
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 41500,
+      "buyback": 41900,
       "category": "Switch",
       "retail": 37980,
-      "rate": 109.27
+      "rate": 110.32
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 109400,
+      "buyback": 109500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 91.18
+      "rate": 91.27
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 47000,
+      "buyback": 47300,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -204,6 +204,14 @@
       "rate": 0
     },
     {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 36000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "遊戯王オフィシャルカードゲーム デュエルモンスターズ LIMIT OVER COLLECTION THE HEROES",
       "jan": "4988602179507",
       "buyback": 7500,
@@ -246,10 +254,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1280,
+      "buyback": 1310,
       "category": "その他",
       "retail": 1100,
-      "rate": 116.36
+      "rate": 119.09
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
