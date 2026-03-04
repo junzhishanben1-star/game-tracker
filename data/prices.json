@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-04T06:52:12.169382",
+  "updated": "2026-03-04T09:43:00.985249",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 109500,
+      "buyback": 109700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 91.27
+      "rate": 91.43
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -78,7 +78,7 @@
     {
       "name": "バイオハザード レクイエム /PS5",
       "jan": "4976219137492",
-      "buyback": 8000,
+      "buyback": 8100,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -118,10 +118,10 @@
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 51500,
+      "buyback": 51000,
       "category": "その他",
       "retail": 55980,
-      "rate": 92.0
+      "rate": 91.1
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
