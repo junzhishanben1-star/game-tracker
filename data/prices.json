@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-04T09:43:00.985249",
+  "updated": "2026-03-04T13:00:57.303695",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 49,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -94,10 +94,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 51700,
+      "buyback": 51000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 103.44
+      "rate": 102.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -170,54 +170,6 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 85.13
-    },
-    {
-      "name": "arrows We2 FCG02 au [ライトオレンジ]",
-      "jan": "4941787128326",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
-      "jan": "4942857244236",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "arrows We2 F-52E docomo [ネイビーグリーン]",
-      "jan": "4942857239126",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SONY WF-1000XM6 BZ ブラック",
-      "jan": "4548736171763",
-      "buyback": 42000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 36000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "遊戯王オフィシャルカードゲーム デュエルモンスターズ LIMIT OVER COLLECTION THE HEROES",
-      "jan": "4988602179507",
-      "buyback": 9500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
