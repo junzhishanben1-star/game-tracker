@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-06T02:09:40.106896",
+  "updated": "2026-03-06T04:44:22.921110",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 43800,
+      "buyback": 44000,
       "category": "その他",
       "retail": 49980,
-      "rate": 87.64
+      "rate": 88.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -206,7 +206,7 @@
     {
       "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
       "jan": "4521329431529",
-      "buyback": 14600,
+      "buyback": 15300,
       "category": "その他",
       "retail": 0,
       "rate": 0
