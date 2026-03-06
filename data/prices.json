@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-05T21:38:31.043662",
+  "updated": "2026-03-06T02:09:40.106896",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -30,7 +30,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 47800,
+      "buyback": 48000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -38,10 +38,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 40000,
+      "buyback": 40100,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 82.64
+      "rate": 82.85
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -70,7 +70,7 @@
     {
       "name": "ぽこ あ ポケモン/Switch2",
       "jan": "4521329460420",
-      "buyback": 8100,
+      "buyback": 8200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -172,6 +172,54 @@
       "rate": 86.29
     },
     {
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 12500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
+      "jan": "4942857244236",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SONY WF-1000XM6 BZ ブラック",
+      "jan": "4548736171763",
+      "buyback": 42200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 36000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
+      "jan": "4521329431529",
+      "buyback": 14600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "遊戯王オフィシャルカードゲーム デュエルモンスターズ LIMIT OVER COLLECTION THE HEROES",
+      "jan": "4988602179507",
+      "buyback": 9500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
       "buyback": 47000,
@@ -206,10 +254,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1310,
+      "buyback": 1320,
       "category": "その他",
       "retail": 1100,
-      "rate": 119.09
+      "rate": 120.0
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
