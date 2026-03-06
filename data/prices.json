@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-06T09:41:10.159868",
+  "updated": "2026-03-06T12:59:51.006300",
   "source": "mobile-ichiban.com",
-  "count": 56,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -170,62 +170,6 @@
       "category": "Switch 2",
       "retail": 12980,
       "rate": 86.29
-    },
-    {
-      "name": "Google Pixel 9a 128GB SIMフリー Porcelain",
-      "jan": "840353922358",
-      "buyback": 61000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
-      "jan": "4942857244236",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AirPods Pro 3 MFHP4J/A",
-      "jan": "4549995635232",
-      "buyback": 32500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SONY WF-1000XM6 BZ ブラック",
-      "jan": "4548736171763",
-      "buyback": 42200,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 36000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
-      "jan": "4521329431529",
-      "buyback": 15300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンタートウホク",
-      "jan": "4521329431277",
-      "buyback": 19500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
