@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-06T06:54:09.185654",
+  "updated": "2026-03-06T09:41:10.159868",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 56,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -20,6 +20,14 @@
       "rate": 110.58
     },
     {
+      "name": "Nintendo Switch Lite イエロー",
+      "jan": "4902370542936",
+      "buyback": 22700,
+      "category": "Switch",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
       "buyback": 109700,
@@ -30,7 +38,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 48000,
+      "buyback": 48200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -72,14 +80,6 @@
       "jan": "4521329460420",
       "buyback": 8200,
       "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "バイオハザード レクイエム /PS5",
-      "jan": "4976219137492",
-      "buyback": 8100,
-      "category": "PS5",
       "retail": 0,
       "rate": 0
     },
@@ -172,9 +172,9 @@
       "rate": 86.29
     },
     {
-      "name": "arrows We2 FCG02 au [ライトオレンジ]",
-      "jan": "4941787128326",
-      "buyback": 12500,
+      "name": "Google Pixel 9a 128GB SIMフリー Porcelain",
+      "jan": "840353922358",
+      "buyback": 61000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -183,6 +183,14 @@
       "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
       "jan": "4942857244236",
       "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AirPods Pro 3 MFHP4J/A",
+      "jan": "4549995635232",
+      "buyback": 32500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -212,9 +220,9 @@
       "rate": 0
     },
     {
-      "name": "遊戯王オフィシャルカードゲーム デュエルモンスターズ LIMIT OVER COLLECTION THE HEROES",
-      "jan": "4988602179507",
-      "buyback": 9500,
+      "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンタートウホク",
+      "jan": "4521329431277",
+      "buyback": 19500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -310,58 +318,58 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 11600,
+      "buyback": 11700,
       "category": "その他",
       "retail": 16800,
-      "rate": 69.05
+      "rate": 69.64
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 11600,
+      "buyback": 11700,
       "category": "その他",
       "retail": 16800,
-      "rate": 69.05
+      "rate": 69.64
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 11600,
+      "buyback": 11700,
       "category": "その他",
       "retail": 16800,
-      "rate": 69.05
+      "rate": 69.64
     },
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 11600,
+      "buyback": 11700,
       "category": "その他",
       "retail": 16800,
-      "rate": 69.05
+      "rate": 69.64
     },
     {
       "name": "instax mini 12 ブロッサムピンク",
       "jan": "4547410489125",
-      "buyback": 11600,
+      "buyback": 11700,
       "category": "その他",
       "retail": 16800,
-      "rate": 69.05
+      "rate": 69.64
     },
     {
       "name": "instax mini 12 チェキ くまモン",
       "jan": "4547410557954",
-      "buyback": 11600,
+      "buyback": 11700,
       "category": "その他",
       "retail": 16800,
-      "rate": 69.05
+      "rate": 69.64
     },
     {
       "name": "instax mini 12 チェキ EXPO 2025",
       "jan": "4547410534122",
-      "buyback": 11600,
+      "buyback": 11700,
       "category": "その他",
       "retail": 16800,
-      "rate": 69.05
+      "rate": 69.64
     },
     {
       "name": "instax mini Evo チェキ Limited Edition PINK",
