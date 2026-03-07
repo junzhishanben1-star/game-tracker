@@ -1,15 +1,15 @@
 {
-  "updated": "2026-03-07T04:23:34.923675",
+  "updated": "2026-03-07T06:43:50.605909",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 42500,
+      "buyback": 42700,
       "category": "Switch",
       "retail": 37980,
-      "rate": 111.9
+      "rate": 112.43
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 48200,
+      "buyback": 48500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
