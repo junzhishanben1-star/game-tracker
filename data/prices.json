@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-09T04:53:46.609761",
+  "updated": "2026-03-09T07:05:25.551682",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -38,10 +38,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 40500,
+      "buyback": 40600,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 83.68
+      "rate": 83.88
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -254,26 +254,26 @@
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 25200,
+      "buyback": 25500,
       "category": "その他",
       "retail": 30580,
-      "rate": 82.41
+      "rate": 83.39
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
       "jan": "4547410377231",
-      "buyback": 2700,
+      "buyback": 2710,
       "category": "その他",
       "retail": 2100,
-      "rate": 128.57
+      "rate": 129.05
     },
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1320,
+      "buyback": 1340,
       "category": "その他",
       "retail": 1100,
-      "rate": 120.0
+      "rate": 121.82
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
@@ -286,10 +286,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2380,
+      "buyback": 2400,
       "category": "その他",
       "retail": 2178,
-      "rate": 109.27
+      "rate": 110.19
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
