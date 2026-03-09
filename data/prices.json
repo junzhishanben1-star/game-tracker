@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-09T02:13:08.582702",
+  "updated": "2026-03-09T04:53:46.609761",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -30,7 +30,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 48600,
+      "buyback": 48800,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -126,15 +126,15 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 9100,
+      "buyback": 9000,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 92.12
+      "rate": 91.11
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 9200,
+      "buyback": 9100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
