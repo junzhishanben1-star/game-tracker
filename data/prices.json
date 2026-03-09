@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-09T07:05:25.551682",
+  "updated": "2026-03-09T09:55:01.945817",
   "source": "mobile-ichiban.com",
-  "count": 57,
+  "count": 56,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -18,6 +18,14 @@
       "category": "Switch",
       "retail": 37980,
       "rate": 110.58
+    },
+    {
+      "name": "HAD-S-KABAH",
+      "jan": "4902370550733",
+      "buyback": 33500,
+      "category": "その他",
+      "retail": 32978,
+      "rate": 101.58
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -94,10 +102,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 72000,
+      "buyback": 72800,
       "category": "その他",
       "retail": 69980,
-      "rate": 102.89
+      "rate": 104.03
     },
     {
       "name": "BEE-S-KB6CA",
@@ -118,10 +126,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8700,
+      "buyback": 8750,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 88.07
+      "rate": 88.58
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -164,14 +172,6 @@
       "rate": 86.29
     },
     {
-      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "4523052030185",
-      "buyback": 5600,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 85.13
-    },
-    {
       "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
       "jan": "840353922303",
       "buyback": 62000,
@@ -183,14 +183,6 @@
       "name": "AQUOS wish5 SH-52F 4G+64G docomo スミ",
       "jan": "4942857244236",
       "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AirPods Pro 3 MFHP4J/A",
-      "jan": "4549995635232",
-      "buyback": 32500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -212,17 +204,17 @@
       "rate": 0
     },
     {
-      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
-      "jan": "4521329431529",
-      "buyback": 17500,
+      "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
+      "jan": "0840414647961",
+      "buyback": 7100,
       "category": "その他",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンタートウホク",
-      "jan": "4521329431277",
-      "buyback": 19500,
+      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
+      "jan": "4521329431529",
+      "buyback": 17500,
       "category": "その他",
       "retail": 0,
       "rate": 0
