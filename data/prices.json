@@ -1,8 +1,16 @@
 {
-  "updated": "2026-03-10T02:06:15.553045",
+  "updated": "2026-03-10T04:44:21.211004",
   "source": "mobile-ichiban.com",
-  "count": 56,
+  "count": 55,
   "products": [
+    {
+      "name": "BEE-S-KB6CA",
+      "jan": "4902370553024",
+      "buyback": 44300,
+      "category": "その他",
+      "retail": 49980,
+      "rate": 88.64
+    },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
@@ -108,14 +116,6 @@
       "rate": 104.03
     },
     {
-      "name": "BEE-S-KB6CA",
-      "jan": "4902370553024",
-      "buyback": 44000,
-      "category": "その他",
-      "retail": 49980,
-      "rate": 88.04
-    },
-    {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
       "buyback": 51000,
@@ -142,7 +142,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 9000,
+      "buyback": 9100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -199,14 +199,6 @@
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
       "buyback": 36000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
-      "jan": "0840414647961",
-      "buyback": 7100,
       "category": "その他",
       "retail": 0,
       "rate": 0
