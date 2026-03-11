@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-11T06:57:42.806461",
+  "updated": "2026-03-11T09:44:49.240911",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 53,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -46,7 +46,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 49100,
+      "buyback": 49500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -70,15 +70,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 110000,
+      "buyback": 110500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 110.22
+      "rate": 110.72
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 110000,
+      "buyback": 110500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -196,17 +196,9 @@
       "rate": 0
     },
     {
-      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
-      "jan": "4521329431932",
-      "buyback": 8800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
-      "jan": "4521329431529",
-      "buyback": 17500,
+      "name": "Panasonic 4Kディーガ DMR-4T403",
+      "jan": "4549980712573",
+      "buyback": 76000,
       "category": "その他",
       "retail": 0,
       "rate": 0
