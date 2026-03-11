@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-11T04:45:45.762171",
+  "updated": "2026-03-11T06:57:42.806461",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 110500,
+      "buyback": 110600,
       "category": "PS5",
       "retail": 119980,
-      "rate": 92.1
+      "rate": 92.18
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
@@ -46,7 +46,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 49000,
+      "buyback": 49100,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -54,10 +54,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 40600,
+      "buyback": 40800,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 83.88
+      "rate": 84.3
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -246,10 +246,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1340,
+      "buyback": 1350,
       "category": "その他",
       "retail": 1100,
-      "rate": 121.82
+      "rate": 122.73
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
