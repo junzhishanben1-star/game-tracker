@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-11T09:44:49.240911",
+  "updated": "2026-03-11T13:04:22.215864",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 49,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -170,38 +170,6 @@
       "category": "Switch 2",
       "retail": 12980,
       "rate": 86.29
-    },
-    {
-      "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
-      "jan": "840353922303",
-      "buyback": 62000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SONY WF-1000XM6 BZ ブラック",
-      "jan": "4548736171763",
-      "buyback": 42000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 36000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Panasonic 4Kディーガ DMR-4T403",
-      "jan": "4549980712573",
-      "buyback": 76000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
