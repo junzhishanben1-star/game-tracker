@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-12T06:59:26.493329",
+  "updated": "2026-03-12T09:45:50.913102",
   "source": "mobile-ichiban.com",
-  "count": 52,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -62,18 +62,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 41000,
+      "buyback": 41100,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 84.71
-    },
-    {
-      "name": "Meta Quest 3 512GB",
-      "jan": "815820024170",
-      "buyback": 73700,
-      "category": "Meta Quest",
-      "retail": 0,
-      "rate": 0
+      "rate": 84.92
     },
     {
       "name": "Steam Deck OLED 1TB",
@@ -94,7 +86,7 @@
     {
       "name": "ぽこ あ ポケモン/Switch2",
       "jan": "4521329460420",
-      "buyback": 8600,
+      "buyback": 8650,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -172,9 +164,33 @@
       "rate": 86.29
     },
     {
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 5800,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 88.17
+    },
+    {
       "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
       "jan": "840353922303",
       "buyback": 62000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "16G+256GB M4",
+      "jan": "4549995437157",
+      "buyback": 70000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -188,9 +204,9 @@
       "rate": 0
     },
     {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 36000,
+      "name": "Panasonic 4Kディーガ DMR-4T403",
+      "jan": "4549980712573",
+      "buyback": 76000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -198,10 +214,10 @@
     {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
-      "buyback": 46000,
+      "buyback": 45500,
       "category": "その他",
       "retail": 47300,
-      "rate": 97.25
+      "rate": 96.19
     },
     {
       "name": "instax WIDE 400 チェキ",
