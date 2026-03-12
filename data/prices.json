@@ -1,8 +1,16 @@
 {
-  "updated": "2026-03-12T02:11:28.894334",
+  "updated": "2026-03-12T04:49:35.094534",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 52,
   "products": [
+    {
+      "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
+      "jan": "4902370553802",
+      "buyback": 9800,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
@@ -54,10 +62,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 40800,
+      "buyback": 41000,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 84.3
+      "rate": 84.71
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -87,14 +95,6 @@
       "name": "ぽこ あ ポケモン/Switch2",
       "jan": "4521329460420",
       "buyback": 8550,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
-      "jan": "4902370553802",
-      "buyback": 9200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -134,10 +134,10 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 8800,
+      "buyback": 8700,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.09
+      "rate": 88.07
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -191,14 +191,6 @@
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
       "buyback": 36000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Panasonic 4Kディーガ DMR-4T403",
-      "jan": "4549980712573",
-      "buyback": 76000,
       "category": "その他",
       "retail": 0,
       "rate": 0
