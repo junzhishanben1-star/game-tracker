@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-12T21:35:10.164936",
+  "updated": "2026-03-13T02:08:52.135704",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -14,18 +14,18 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 44500,
+      "buyback": 44800,
       "category": "その他",
       "retail": 49980,
-      "rate": 89.04
+      "rate": 89.64
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 42700,
+      "buyback": 43000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 112.43
+      "rate": 113.22
     },
     {
       "name": "HAD-S-KABAH",
@@ -70,15 +70,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 110500,
+      "buyback": 111000,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 110.72
+      "rate": 111.22
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 110500,
+      "buyback": 111000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "ぽこ あ ポケモン/Switch2",
       "jan": "4521329460420",
-      "buyback": 8650,
+      "buyback": 8700,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -172,6 +172,46 @@
       "rate": 88.17
     },
     {
+      "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
+      "jan": "840353922303",
+      "buyback": 62000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "16G+256GB M4",
+      "jan": "4549995437157",
+      "buyback": 70000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SONY WF-1000XM6 BZ ブラック",
+      "jan": "4548736171763",
+      "buyback": 41500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Panasonic 4Kディーガ DMR-4T403",
+      "jan": "4549980712573",
+      "buyback": 76000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
       "buyback": 45500,
@@ -198,10 +238,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
       "jan": "4547410377231",
-      "buyback": 2730,
+      "buyback": 2750,
       "category": "その他",
       "retail": 2100,
-      "rate": 130.0
+      "rate": 130.95
     },
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
@@ -222,10 +262,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2430,
+      "buyback": 2440,
       "category": "その他",
       "retail": 2178,
-      "rate": 111.57
+      "rate": 112.03
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
@@ -326,10 +366,10 @@
     {
       "name": "instax mini Evo チェキ USB ブラック",
       "jan": "4547410520088",
-      "buyback": 26400,
+      "buyback": 26500,
       "category": "その他",
       "retail": 34650,
-      "rate": 76.19
+      "rate": 76.48
     },
     {
       "name": "AURA STUDIO 3",
