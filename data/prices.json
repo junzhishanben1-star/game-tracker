@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-13T06:57:14.517378",
+  "updated": "2026-03-13T09:42:00.152524",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -38,18 +38,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 110600,
+      "buyback": 111500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 92.18
+      "rate": 92.93
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 76600,
+      "buyback": 77500,
       "category": "PS5",
       "retail": 79980,
-      "rate": 95.77
+      "rate": 96.9
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -62,10 +62,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 41100,
+      "buyback": 41200,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 84.92
+      "rate": 85.12
     },
     {
       "name": "Steam Deck OLED 1TB",
@@ -86,7 +86,7 @@
     {
       "name": "ぽこ あ ポケモン/Switch2",
       "jan": "4521329460420",
-      "buyback": 8700,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -190,15 +190,15 @@
     {
       "name": "16G+256GB M4",
       "jan": "4549995437157",
-      "buyback": 70000,
+      "buyback": 75000,
       "category": "その他",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "SONY WF-1000XM6 BZ ブラック",
-      "jan": "4548736171763",
-      "buyback": 41500,
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 38500,
       "category": "その他",
       "retail": 0,
       "rate": 0
