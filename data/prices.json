@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-14T02:06:48.734600",
+  "updated": "2026-03-14T04:44:37.405264",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -38,18 +38,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 111500,
+      "buyback": 111600,
       "category": "PS5",
       "retail": 119980,
-      "rate": 92.93
+      "rate": 93.02
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 77500,
+      "buyback": 77600,
       "category": "PS5",
       "retail": 79980,
-      "rate": 96.9
+      "rate": 97.02
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -62,10 +62,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 41200,
+      "buyback": 41300,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 85.12
+      "rate": 85.33
     },
     {
       "name": "Steam Deck OLED 1TB",
@@ -206,7 +206,7 @@
     {
       "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
       "jan": "4521329432786",
-      "buyback": 8500,
+      "buyback": 9000,
       "category": "その他",
       "retail": 0,
       "rate": 0
