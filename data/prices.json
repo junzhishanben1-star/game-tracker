@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-14T21:29:12.793968",
+  "updated": "2026-03-15T02:32:06.622138",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -54,7 +54,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 49600,
+      "buyback": 49500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "ぽこ あ ポケモン/Switch2",
       "jan": "4521329460420",
-      "buyback": 8800,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -170,6 +170,46 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 88.17
+    },
+    {
+      "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
+      "jan": "840353922303",
+      "buyback": 62000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "16G+256GB M4",
+      "jan": "4549995437157",
+      "buyback": 75000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 38500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Panasonic 4Kディーガ DMR-4T403",
+      "jan": "4549980712573",
+      "buyback": 76000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
+      "jan": "4521329432786",
+      "buyback": 9000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
