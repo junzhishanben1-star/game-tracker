@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-15T21:29:55.466565",
+  "updated": "2026-03-16T02:32:48.067333",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -38,18 +38,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 112000,
+      "buyback": 112100,
       "category": "PS5",
       "retail": 119980,
-      "rate": 93.35
+      "rate": 93.43
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 78000,
+      "buyback": 78100,
       "category": "PS5",
       "retail": 79980,
-      "rate": 97.52
+      "rate": 97.65
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -86,7 +86,7 @@
     {
       "name": "ぽこ あ ポケモン/Switch2",
       "jan": "4521329460420",
-      "buyback": 8600,
+      "buyback": 8700,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -254,18 +254,18 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
       "jan": "4547410369137",
-      "buyback": 2670,
+      "buyback": 2680,
       "category": "その他",
       "retail": 2178,
-      "rate": 122.59
+      "rate": 123.05
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2440,
+      "buyback": 2450,
       "category": "その他",
       "retail": 2178,
-      "rate": 112.03
+      "rate": 112.49
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
