@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-17T07:07:12.059615",
+  "updated": "2026-03-17T09:58:23.067831",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -60,14 +60,6 @@
       "rate": 0
     },
     {
-      "name": "Meta Quest 3S 128GB",
-      "jan": "0815820025238",
-      "buyback": 41300,
-      "category": "Meta Quest",
-      "retail": 48400,
-      "rate": 85.33
-    },
-    {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
       "buyback": 111300,
@@ -82,6 +74,14 @@
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
+    },
+    {
+      "name": "ROG Xbox Ally X 1TB",
+      "jan": "0199291152984",
+      "buyback": 148500,
+      "category": "その他",
+      "retail": 139800,
+      "rate": 106.22
     },
     {
       "name": "ぽこ あ ポケモン/Switch2",
@@ -180,17 +180,17 @@
       "rate": 0
     },
     {
-      "name": "16G+256GB M4",
-      "jan": "4549995437157",
-      "buyback": 75000,
+      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
+      "jan": "6941565969903",
+      "buyback": 68000,
       "category": "その他",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "AirPods Pro 3 MFHP4J/A",
-      "jan": "4549995635232",
-      "buyback": 32500,
+      "name": "16G+256GB M4",
+      "jan": "4549995437157",
+      "buyback": 80000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -204,9 +204,17 @@
       "rate": 0
     },
     {
-      "name": "Panasonic 4Kディーガ DMR-4T403",
-      "jan": "4549980712573",
-      "buyback": 76000,
+      "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
+      "jan": "4521329432786",
+      "buyback": 10500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
+      "jan": "4521329431932",
+      "buyback": 10000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -222,18 +230,18 @@
     {
       "name": "instax WIDE 400 チェキ",
       "jan": "4547410529975",
-      "buyback": 22800,
+      "buyback": 23000,
       "category": "その他",
       "retail": 26730,
-      "rate": 85.3
+      "rate": 86.05
     },
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 25800,
+      "buyback": 26000,
       "category": "その他",
       "retail": 30580,
-      "rate": 84.37
+      "rate": 85.02
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
@@ -270,18 +278,18 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2450,
+      "buyback": 2540,
       "category": "その他",
       "retail": 2100,
-      "rate": 116.67
+      "rate": 120.95
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
       "jan": "4547410348613",
-      "buyback": 1210,
+      "buyback": 1270,
       "category": "その他",
       "retail": 1100,
-      "rate": 110.0
+      "rate": 115.45
     },
     {
       "name": "instax mini 90 チェキ ネオクラシック [ブラック]",
