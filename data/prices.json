@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-17T21:40:02.296224",
+  "updated": "2026-03-18T02:15:30.850212",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -172,6 +172,54 @@
       "rate": 88.17
     },
     {
+      "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
+      "jan": "840353922303",
+      "buyback": 62000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
+      "jan": "6941565969903",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "16G+256GB M4",
+      "jan": "4549995437157",
+      "buyback": 80000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 38500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
+      "jan": "4521329432786",
+      "buyback": 9000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
+      "jan": "4521329431932",
+      "buyback": 9500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo Cinema",
       "jan": "4547410562293",
       "buyback": 43000,
@@ -206,10 +254,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1350,
+      "buyback": 1360,
       "category": "その他",
       "retail": 1100,
-      "rate": 122.73
+      "rate": 123.64
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
