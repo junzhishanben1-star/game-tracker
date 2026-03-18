@@ -1,16 +1,8 @@
 {
-  "updated": "2026-03-18T07:04:33.505949",
+  "updated": "2026-03-18T09:57:52.060439",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 57,
   "products": [
-    {
-      "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
-      "jan": "4902370553802",
-      "buyback": 9800,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
@@ -20,12 +12,12 @@
       "rate": 91.64
     },
     {
-      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
-      "jan": "4902370548501",
-      "buyback": 43000,
+      "name": "Nintendo Switch (有機ELモデル) ホワイト",
+      "jan": "4902370548495",
+      "buyback": 42200,
       "category": "Switch",
       "retail": 37980,
-      "rate": 113.22
+      "rate": 111.11
     },
     {
       "name": "HAD-S-KABAH",
@@ -38,18 +30,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 112600,
+      "buyback": 112700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 93.85
+      "rate": 93.93
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 78600,
+      "buyback": 78700,
       "category": "PS5",
       "retail": 79980,
-      "rate": 98.27
+      "rate": 98.4
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -76,17 +68,9 @@
       "rate": 0
     },
     {
-      "name": "ROG Xbox Ally X 1TB",
-      "jan": "0199291152984",
-      "buyback": 148700,
-      "category": "その他",
-      "retail": 139800,
-      "rate": 106.37
-    },
-    {
-      "name": "ぽこ あ ポケモン/Switch2",
-      "jan": "4521329460420",
-      "buyback": 8600,
+      "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
+      "jan": "4902370553802",
+      "buyback": 9800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -172,12 +156,52 @@
       "rate": 88.17
     },
     {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 5800,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 88.17
+    },
+    {
+      "name": "Nintendo Switch おしゃべりフラワー",
+      "jan": "4902370553475",
+      "buyback": 4200,
+      "category": "Switch",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
       "jan": "840353922303",
       "buyback": 62000,
       "category": "その他",
       "retail": 0,
       "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [ミッドナイトブラック]",
+      "jan": "4549046156198",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Pro 11インチ Wi-Fi 256GB MDWK4J/A [スペースブラック]",
+      "jan": "4549995616606",
+      "buyback": 138000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
+      "jan": "4547410377224",
+      "buyback": 1360,
+      "category": "その他",
+      "retail": 1100,
+      "rate": 123.64
     },
     {
       "name": "DJI OSMO POCKET 3 クリエイターコンボ",
@@ -204,9 +228,9 @@
       "rate": 0
     },
     {
-      "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
-      "jan": "4521329432786",
-      "buyback": 10000,
+      "name": "Amazon Echo Dot Max 2025年発売 グラファイト",
+      "jan": "0840414666054",
+      "buyback": 7000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -250,14 +274,6 @@
       "category": "その他",
       "retail": 2100,
       "rate": 130.95
-    },
-    {
-      "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
-      "jan": "4547410377224",
-      "buyback": 1360,
-      "category": "その他",
-      "retail": 1100,
-      "rate": 123.64
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
