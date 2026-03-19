@@ -1,15 +1,15 @@
 {
-  "updated": "2026-03-18T21:37:00.462041",
+  "updated": "2026-03-19T02:24:36.096079",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 57,
   "products": [
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 45800,
+      "buyback": 46000,
       "category": "その他",
       "retail": 49980,
-      "rate": 91.64
+      "rate": 92.04
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -30,18 +30,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 112700,
+      "buyback": 113000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 93.93
+      "rate": 94.18
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 78700,
+      "buyback": 79000,
       "category": "PS5",
       "retail": 79980,
-      "rate": 98.4
+      "rate": 98.77
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -94,10 +94,10 @@
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 51000,
+      "buyback": 51800,
       "category": "その他",
       "retail": 55980,
-      "rate": 91.1
+      "rate": 92.53
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -172,12 +172,76 @@
       "rate": 0
     },
     {
+      "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
+      "jan": "840353922303",
+      "buyback": 62000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [ミッドナイトブラック]",
+      "jan": "4549046156198",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Pro 11インチ Wi-Fi 256GB MDWK4J/A [スペースブラック]",
+      "jan": "4549995616606",
+      "buyback": 138000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1360,
       "category": "その他",
       "retail": 1100,
       "rate": 123.64
+    },
+    {
+      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
+      "jan": "6941565969903",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "16G+256GB M4",
+      "jan": "4549995437157",
+      "buyback": 80000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 38500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Amazon Echo Dot Max 2025年発売 グラファイト",
+      "jan": "0840414666054",
+      "buyback": 7000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
+      "jan": "4521329431932",
+      "buyback": 9500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini Evo Cinema",
