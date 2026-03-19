@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-19T02:24:36.096079",
+  "updated": "2026-03-19T04:57:04.952817",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -22,10 +22,10 @@
     {
       "name": "HAD-S-KABAH",
       "jan": "4902370550733",
-      "buyback": 33500,
+      "buyback": 33600,
       "category": "その他",
       "retail": 32978,
-      "rate": 101.58
+      "rate": 101.89
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -102,10 +102,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8800,
+      "buyback": 8850,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.09
+      "rate": 89.59
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -118,7 +118,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 9100,
+      "buyback": 9150,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -150,18 +150,18 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 5800,
+      "buyback": 6000,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 88.17
+      "rate": 91.21
     },
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 5800,
+      "buyback": 6000,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 88.17
+      "rate": 91.21
     },
     {
       "name": "Nintendo Switch おしゃべりフラワー",
