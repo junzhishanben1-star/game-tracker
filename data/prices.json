@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-20T09:44:21.046839",
+  "updated": "2026-03-20T13:03:14.558127",
   "source": "mobile-ichiban.com",
-  "count": 56,
+  "count": 49,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -172,68 +172,12 @@
       "rate": 0
     },
     {
-      "name": "Google Pixel 9a 128GB SIMフリー Obsidian",
-      "jan": "840353922303",
-      "buyback": 62000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [ミッドナイトブラック]",
-      "jan": "4549046156198",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Pro 11インチ Wi-Fi 256GB MDWK4J/A [スペースブラック]",
-      "jan": "4549995616606",
-      "buyback": 138000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1370,
       "category": "その他",
       "retail": 1100,
       "rate": 124.55
-    },
-    {
-      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
-      "jan": "6941565969903",
-      "buyback": 68000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "16G+256GB M4",
-      "jan": "4549995437157",
-      "buyback": 80000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Amazon Echo Dot Max 2025年発売 グラファイト",
-      "jan": "0840414666054",
-      "buyback": 7000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "遊戯王 OCG デュエルモンスターズ LIMIT OVER COLLECTION THE RIVALS",
-      "jan": "4988602179514",
-      "buyback": 10500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
