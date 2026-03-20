@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-20T06:58:41.085635",
+  "updated": "2026-03-20T09:44:21.046839",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
@@ -102,10 +102,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8850,
+      "buyback": 8900,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.59
+      "rate": 90.1
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -230,18 +230,10 @@
     {
       "name": "遊戯王 OCG デュエルモンスターズ LIMIT OVER COLLECTION THE RIVALS",
       "jan": "4988602179514",
-      "buyback": 11000,
+      "buyback": 10500,
       "category": "その他",
       "retail": 0,
       "rate": 0
-    },
-    {
-      "name": "instax mini Evo Cinema",
-      "jan": "4547410562293",
-      "buyback": 43000,
-      "category": "その他",
-      "retail": 47300,
-      "rate": 90.91
     },
     {
       "name": "instax WIDE 400 チェキ",
@@ -386,6 +378,14 @@
       "category": "その他",
       "retail": 34650,
       "rate": 76.48
+    },
+    {
+      "name": "instax mini Evo チェキ USB ブラウン",
+      "jan": "4547410520125",
+      "buyback": 27500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "AURA STUDIO 3",
