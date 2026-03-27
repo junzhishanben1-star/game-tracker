@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-27T09:57:42.564829",
+  "updated": "2026-03-27T13:10:36.598308",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -172,57 +172,17 @@
       "rate": 0
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15000,
+      "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
+      "jan": "4547410377224",
+      "buyback": 1370,
       "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "retail": 1100,
+      "rate": 124.55
     },
     {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 27800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
-      "jan": "6941565969903",
-      "buyback": 68000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
-      "jan": "4521329432786",
-      "buyback": 10000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
-      "jan": "4521329431932",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スカーレット&バイオレット 強化拡張パック ポケモンカード151 BOX sv2a",
-      "jan": "4521329346038",
-      "buyback": 46000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -250,14 +210,6 @@
       "category": "その他",
       "retail": 2100,
       "rate": 132.38
-    },
-    {
-      "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
-      "jan": "4547410377224",
-      "buyback": 1370,
-      "category": "その他",
-      "retail": 1100,
-      "rate": 124.55
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
