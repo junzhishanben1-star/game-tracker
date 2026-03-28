@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-27T21:37:19.674240",
+  "updated": "2026-03-28T02:13:41.643015",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -78,10 +78,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 50500,
+      "buyback": 49500,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 101.04
+      "rate": 99.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -94,10 +94,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 44500,
+      "buyback": 44000,
       "category": "その他",
       "retail": 49980,
-      "rate": 89.04
+      "rate": 88.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,6 +172,22 @@
       "rate": 0
     },
     {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1370,
@@ -183,6 +199,30 @@
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 27800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
+      "jan": "6941565969903",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
+      "jan": "4521329431932",
+      "buyback": 12000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スカーレット&バイオレット 強化拡張パック ポケモンカード151 BOX sv2a",
+      "jan": "4521329346038",
+      "buyback": 46000,
       "category": "その他",
       "retail": 0,
       "rate": 0
