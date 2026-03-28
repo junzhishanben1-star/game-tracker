@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T04:55:30.727020",
+  "updated": "2026-03-28T07:02:02.466101",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -30,18 +30,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 115800,
+      "buyback": 116700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 96.52
+      "rate": 97.27
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 80000,
+      "buyback": 80700,
       "category": "PS5",
       "retail": 79980,
-      "rate": 100.03
+      "rate": 100.9
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -54,15 +54,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 112800,
+      "buyback": 113000,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 113.03
+      "rate": 113.23
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 112800,
+      "buyback": 113000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -70,10 +70,10 @@
     {
       "name": "ROG Xbox Ally X 1TB",
       "jan": "0199291152984",
-      "buyback": 149000,
+      "buyback": 149500,
       "category": "その他",
       "retail": 139800,
-      "rate": 106.58
+      "rate": 106.94
     },
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
@@ -86,10 +86,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 74500,
+      "buyback": 75000,
       "category": "その他",
       "retail": 69980,
-      "rate": 106.46
+      "rate": 107.17
     },
     {
       "name": "BEE-S-KB6CA",
@@ -110,18 +110,18 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8900,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 90.1
+      "rate": 89.09
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 8400,
+      "buyback": 8200,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 85.04
+      "rate": 83.01
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -166,7 +166,7 @@
     {
       "name": "Nintendo Switch おしゃべりフラワー",
       "jan": "4902370553475",
-      "buyback": 3800,
+      "buyback": 3500,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -230,10 +230,10 @@
     {
       "name": "instax WIDE 400 チェキ",
       "jan": "4547410529975",
-      "buyback": 23000,
+      "buyback": 23200,
       "category": "その他",
       "retail": 26730,
-      "rate": 86.05
+      "rate": 86.79
     },
     {
       "name": "instax mini 99 ブラック",
