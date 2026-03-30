@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-30T05:27:47.100432",
+  "updated": "2026-03-30T07:46:28.302562",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -30,18 +30,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 117000,
+      "buyback": 117500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 97.52
+      "rate": 97.93
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 81000,
+      "buyback": 81500,
       "category": "PS5",
       "retail": 79980,
-      "rate": 101.28
+      "rate": 101.9
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
