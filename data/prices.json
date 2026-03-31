@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-31T07:18:35.094511",
+  "updated": "2026-03-31T10:07:59.276087",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -118,10 +118,10 @@
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 51800,
+      "buyback": 52000,
       "category": "その他",
       "retail": 55980,
-      "rate": 92.53
+      "rate": 92.89
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -172,44 +172,12 @@
       "rate": 86.29
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1380,
       "category": "その他",
       "retail": 1100,
       "rate": 125.45
-    },
-    {
-      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
-      "jan": "6941565969903",
-      "buyback": 68000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
-      "jan": "4521329431932",
-      "buyback": 13000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
