@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-30T21:44:08.150681",
+  "updated": "2026-03-31T02:30:59.945913",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 53,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -62,7 +62,7 @@
     {
       "name": "Xbox Series S 1TB ロボット ホワイト EP2-00650",
       "jan": "4549576246994",
-      "buyback": 62000,
+      "buyback": 62500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -70,15 +70,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 113000,
+      "buyback": 113200,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 113.23
+      "rate": 113.43
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 113000,
+      "buyback": 113200,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -86,10 +86,10 @@
     {
       "name": "ROG Xbox Ally X 1TB",
       "jan": "0199291152984",
-      "buyback": 149500,
+      "buyback": 150000,
       "category": "その他",
       "retail": 139800,
-      "rate": 106.94
+      "rate": 107.3
     },
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
@@ -172,12 +172,44 @@
       "rate": 86.29
     },
     {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1380,
       "category": "その他",
       "retail": 1100,
       "rate": 125.45
+    },
+    {
+      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
+      "jan": "6941565969903",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
+      "jan": "4521329431932",
+      "buyback": 13000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
@@ -190,10 +222,10 @@
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 26300,
+      "buyback": 26400,
       "category": "その他",
       "retail": 30580,
-      "rate": 86.0
+      "rate": 86.33
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
