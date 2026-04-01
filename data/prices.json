@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T02:42:02.361211",
+  "updated": "2026-04-01T05:27:19.599946",
   "source": "mobile-ichiban.com",
   "count": 53,
   "products": [
@@ -38,18 +38,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 118000,
+      "buyback": 118500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 98.35
+      "rate": 98.77
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 82000,
+      "buyback": 82500,
       "category": "PS5",
       "retail": 79980,
-      "rate": 102.53
+      "rate": 103.15
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -70,15 +70,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 113200,
+      "buyback": 113500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 113.43
+      "rate": 113.73
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 113200,
+      "buyback": 113500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 43500,
+      "buyback": 45200,
       "category": "その他",
       "retail": 49980,
-      "rate": 87.03
+      "rate": 90.44
     },
     {
       "name": "BEE-S-KB6PA",
