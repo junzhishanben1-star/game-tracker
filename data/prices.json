@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-02T02:27:50.781685",
+  "updated": "2026-04-02T05:05:27.922598",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -38,10 +38,10 @@
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 82500,
+      "buyback": 83000,
       "category": "PS5",
       "retail": 79980,
-      "rate": 103.15
+      "rate": 103.78
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -78,10 +78,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 49500,
+      "buyback": 48500,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 99.04
+      "rate": 97.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -190,10 +190,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1400,
+      "buyback": 1410,
       "category": "その他",
       "retail": 1100,
-      "rate": 127.27
+      "rate": 128.18
     },
     {
       "name": "DJI OSMO POCKET 3 クリエイターコンボ",
@@ -206,7 +206,7 @@
     {
       "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
       "jan": "4521329431932",
-      "buyback": 14500,
+      "buyback": 14000,
       "category": "その他",
       "retail": 0,
       "rate": 0
