@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-02T05:05:27.922598",
+  "updated": "2026-04-02T07:15:56.358606",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -46,7 +46,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 49300,
+      "buyback": 49500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -206,7 +206,7 @@
     {
       "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
       "jan": "4521329431932",
-      "buyback": 14000,
+      "buyback": 13500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -294,79 +294,79 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 12200,
+      "buyback": 12300,
       "category": "その他",
       "retail": 16800,
-      "rate": 72.62
+      "rate": 73.21
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 12200,
+      "buyback": 12300,
       "category": "その他",
       "retail": 16800,
-      "rate": 72.62
+      "rate": 73.21
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 12200,
+      "buyback": 12300,
       "category": "その他",
       "retail": 16800,
-      "rate": 72.62
+      "rate": 73.21
     },
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 12200,
+      "buyback": 12300,
       "category": "その他",
       "retail": 16800,
-      "rate": 72.62
+      "rate": 73.21
     },
     {
       "name": "instax mini 12 ブロッサムピンク",
       "jan": "4547410489125",
-      "buyback": 12200,
+      "buyback": 12300,
       "category": "その他",
       "retail": 16800,
-      "rate": 72.62
+      "rate": 73.21
     },
     {
       "name": "instax mini 12 チェキ くまモン",
       "jan": "4547410557954",
-      "buyback": 12200,
+      "buyback": 12300,
       "category": "その他",
       "retail": 16800,
-      "rate": 72.62
+      "rate": 73.21
     },
     {
       "name": "instax mini 12 チェキ EXPO 2025",
       "jan": "4547410534122",
-      "buyback": 12200,
+      "buyback": 12300,
       "category": "その他",
       "retail": 16800,
-      "rate": 72.62
+      "rate": 73.21
     },
     {
       "name": "instax mini Evo チェキ Limited Edition PINK",
       "jan": "4547410555844",
-      "buyback": 53000,
+      "buyback": 53500,
       "category": "その他",
       "retail": 41580,
-      "rate": 127.47
+      "rate": 128.67
     },
     {
       "name": "instax mini Evo チェキ USB ブラック",
       "jan": "4547410520088",
-      "buyback": 26800,
+      "buyback": 27000,
       "category": "その他",
       "retail": 34650,
-      "rate": 77.34
+      "rate": 77.92
     },
     {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
-      "buyback": 27900,
+      "buyback": 28000,
       "category": "その他",
       "retail": 0,
       "rate": 0
