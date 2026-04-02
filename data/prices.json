@@ -1,16 +1,8 @@
 {
-  "updated": "2026-04-02T07:15:56.358606",
+  "updated": "2026-04-02T10:04:37.588930",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
-    {
-      "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
-      "jan": "4902370553802",
-      "buyback": 9800,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
@@ -18,6 +10,14 @@
       "category": "Switch",
       "retail": 37980,
       "rate": 116.64
+    },
+    {
+      "name": "Nintendo Switch (有機ELモデル) ホワイト",
+      "jan": "4902370548495",
+      "buyback": 42300,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 111.37
     },
     {
       "name": "Nintendo Switch Lite ブルー",
@@ -52,14 +52,6 @@
       "rate": 0
     },
     {
-      "name": "Xbox Series S 1TB ロボット ホワイト EP2-00650",
-      "jan": "4549576246994",
-      "buyback": 62500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
       "buyback": 113500,
@@ -72,6 +64,14 @@
       "jan": "0814585022629",
       "buyback": 113500,
       "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
+      "jan": "4902370553802",
+      "buyback": 9800,
+      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -190,10 +190,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1410,
+      "buyback": 1430,
       "category": "その他",
       "retail": 1100,
-      "rate": 128.18
+      "rate": 130.0
     },
     {
       "name": "DJI OSMO POCKET 3 クリエイターコンボ",
@@ -206,7 +206,7 @@
     {
       "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
       "jan": "4521329431932",
-      "buyback": 13500,
+      "buyback": 14000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,7 +214,7 @@
     {
       "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
       "jan": "4521329431529",
-      "buyback": 23500,
+      "buyback": 24500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -238,10 +238,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
       "jan": "4547410377231",
-      "buyback": 2800,
+      "buyback": 2830,
       "category": "その他",
       "retail": 2100,
-      "rate": 133.33
+      "rate": 134.76
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
