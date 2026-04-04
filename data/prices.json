@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-04T04:52:33.305448",
+  "updated": "2026-04-04T07:05:09.818303",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 42300,
+      "buyback": 42400,
       "category": "Switch",
       "retail": 37980,
-      "rate": 111.37
+      "rate": 111.64
     },
     {
       "name": "Nintendo Switch Lite ブルー",
@@ -30,18 +30,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 121000,
+      "buyback": 122000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 100.85
+      "rate": 101.68
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 83500,
+      "buyback": 84500,
       "category": "PS5",
       "retail": 79980,
-      "rate": 104.4
+      "rate": 105.65
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
