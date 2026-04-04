@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-04T02:13:50.996673",
+  "updated": "2026-04-04T04:52:33.305448",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -126,7 +126,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 8900,
+      "buyback": 8700,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -158,18 +158,18 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6300,
+      "buyback": 6200,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 95.77
+      "rate": 94.25
     },
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6300,
+      "buyback": 6200,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 95.77
+      "rate": 94.25
     },
     {
       "name": "Google Pixel 9a 128GB SIMフリー Iris",
