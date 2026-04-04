@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-04T09:41:04.556794",
+  "updated": "2026-04-04T12:59:16.297876",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -158,34 +158,18 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6200,
+      "buyback": 6100,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 94.25
+      "rate": 92.73
     },
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6200,
+      "buyback": 6100,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 94.25
-    },
-    {
-      "name": "Google Pixel 9a 128GB SIMフリー Iris",
-      "jan": "840353922402",
-      "buyback": 63500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "rate": 92.73
     },
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
@@ -194,30 +178,6 @@
       "category": "その他",
       "retail": 1100,
       "rate": 130.0
-    },
-    {
-      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
-      "jan": "6941565969903",
-      "buyback": 68000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
-      "jan": "4521329431932",
-      "buyback": 13000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
-      "jan": "4521329431529",
-      "buyback": 23000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
