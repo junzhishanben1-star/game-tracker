@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-03T21:36:53.266122",
+  "updated": "2026-04-04T02:13:50.996673",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -46,7 +46,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 50000,
+      "buyback": 50300,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -54,15 +54,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 114000,
+      "buyback": 114500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 114.23
+      "rate": 114.73
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 114000,
+      "buyback": 114500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -172,12 +172,52 @@
       "rate": 95.77
     },
     {
+      "name": "Google Pixel 9a 128GB SIMフリー Iris",
+      "jan": "840353922402",
+      "buyback": 63500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1430,
       "category": "その他",
       "retail": 1100,
       "rate": 130.0
+    },
+    {
+      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
+      "jan": "6941565969903",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
+      "jan": "4521329431932",
+      "buyback": 13000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
+      "jan": "4521329431529",
+      "buyback": 23000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
