@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-06T21:40:23.770040",
+  "updated": "2026-04-07T02:31:54.383605",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 85000,
+      "buyback": 87500,
       "category": "PS5",
       "retail": 79980,
-      "rate": 106.28
+      "rate": 109.4
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -180,12 +180,52 @@
       "rate": 91.21
     },
     {
+      "name": "Google Pixel 9a 128GB SIMフリー Iris",
+      "jan": "840353922402",
+      "buyback": 63500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1430,
       "category": "その他",
       "retail": 1100,
       "rate": 130.0
+    },
+    {
+      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
+      "jan": "6941565969903",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
+      "jan": "4521329431932",
+      "buyback": 13000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スカーレット&バイオレット 強化拡張パック ポケモンカード151 BOX sv2a",
+      "jan": "4521329346038",
+      "buyback": 52300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
