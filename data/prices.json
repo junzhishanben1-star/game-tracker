@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-07T07:20:31.058776",
+  "updated": "2026-04-07T10:09:50.367501",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 87300,
+      "buyback": 87500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 87300,
+      "buyback": 87500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -74,6 +74,14 @@
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
+    },
+    {
+      "name": "ROG Xbox Ally X 1TB",
+      "jan": "0199291152984",
+      "buyback": 151000,
+      "category": "その他",
+      "retail": 139800,
+      "rate": 108.01
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -172,30 +180,6 @@
       "rate": 91.21
     },
     {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
-      "buyback": 6000,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 91.21
-    },
-    {
-      "name": "Google Pixel 9a 128GB SIMフリー Iris",
-      "jan": "840353922402",
-      "buyback": 63500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1430,
@@ -204,28 +188,12 @@
       "rate": 130.0
     },
     {
-      "name": "DJI OSMO POCKET 3 クリエイターコンボ",
-      "jan": "6941565969903",
-      "buyback": 68000,
+      "name": "instax mini 12 ミントグリーン",
+      "jan": "4547410489132",
+      "buyback": 12500,
       "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
-      "jan": "4521329431932",
-      "buyback": 13000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スカーレット&バイオレット 強化拡張パック ポケモンカード151 BOX sv2a",
-      "jan": "4521329346038",
-      "buyback": 52300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "retail": 16800,
+      "rate": 74.4
     },
     {
       "name": "instax WIDE 400 チェキ",
@@ -318,14 +286,6 @@
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 12500,
-      "category": "その他",
-      "retail": 16800,
-      "rate": 74.4
-    },
-    {
-      "name": "instax mini 12 ミントグリーン",
-      "jan": "4547410489132",
       "buyback": 12500,
       "category": "その他",
       "retail": 16800,
