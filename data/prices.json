@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-07T21:43:52.629056",
+  "updated": "2026-04-08T02:32:46.405489",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -15,6 +15,14 @@
       "name": "Nintendo Switch Lite ブルー",
       "jan": "4902370547672",
       "buyback": 23300,
+      "category": "Switch",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Nintendo Switch Proコントローラー",
+      "jan": "4902370535730",
+      "buyback": 6700,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -172,12 +180,28 @@
       "rate": 86.29
     },
     {
-      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "4523052030185",
-      "buyback": 6000,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 91.21
+      "name": "Google Pixel 9a 128GB SIMフリー Iris",
+      "jan": "840353922402",
+      "buyback": 63500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
+      "jan": "4549995662009",
+      "buyback": 85000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
@@ -190,18 +214,26 @@
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 12500,
+      "buyback": 12600,
       "category": "その他",
       "retail": 16800,
-      "rate": 74.4
+      "rate": 75.0
+    },
+    {
+      "name": "遊戯王OCG デュエルモンスターズ BLAZING DOMINION BOX",
+      "jan": "4988602179415",
+      "buyback": 6500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
       "jan": "4547410529975",
-      "buyback": 23700,
+      "buyback": 24000,
       "category": "その他",
       "retail": 26730,
-      "rate": 88.66
+      "rate": 89.79
     },
     {
       "name": "instax mini 99 ブラック",
@@ -270,50 +302,50 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 12500,
+      "buyback": 12600,
       "category": "その他",
       "retail": 16800,
-      "rate": 74.4
+      "rate": 75.0
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 12500,
+      "buyback": 12600,
       "category": "その他",
       "retail": 16800,
-      "rate": 74.4
+      "rate": 75.0
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 12500,
+      "buyback": 12600,
       "category": "その他",
       "retail": 16800,
-      "rate": 74.4
+      "rate": 75.0
     },
     {
       "name": "instax mini 12 ブロッサムピンク",
       "jan": "4547410489125",
-      "buyback": 12500,
+      "buyback": 12600,
       "category": "その他",
       "retail": 16800,
-      "rate": 74.4
+      "rate": 75.0
     },
     {
       "name": "instax mini 12 チェキ くまモン",
       "jan": "4547410557954",
-      "buyback": 12500,
+      "buyback": 12600,
       "category": "その他",
       "retail": 16800,
-      "rate": 74.4
+      "rate": 75.0
     },
     {
       "name": "instax mini 12 チェキ EXPO 2025",
       "jan": "4547410534122",
-      "buyback": 12500,
+      "buyback": 12600,
       "category": "その他",
       "retail": 16800,
-      "rate": 74.4
+      "rate": 75.0
     },
     {
       "name": "instax mini Evo チェキ Limited Edition PINK",
