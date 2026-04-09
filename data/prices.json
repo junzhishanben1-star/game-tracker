@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-08T21:43:05.940286",
+  "updated": "2026-04-09T02:28:27.502141",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 56,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -180,6 +180,38 @@
       "rate": 91.21
     },
     {
+      "name": "Google Pixel 9a 128GB SIMフリー Iris",
+      "jan": "840353922402",
+      "buyback": 63500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [ミッドナイトブラック]",
+      "jan": "4549046156198",
+      "buyback": 16500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
+      "jan": "4549995662009",
+      "buyback": 85500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1440,
@@ -194,6 +226,22 @@
       "category": "その他",
       "retail": 16800,
       "rate": 75.0
+    },
+    {
+      "name": "スカーレット&バイオレット 強化拡張パック ポケモンカード151 BOX sv2a",
+      "jan": "4521329346038",
+      "buyback": 60000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "遊戯王OCG デュエルモンスターズ BLAZING DOMINION BOX",
+      "jan": "4988602179415",
+      "buyback": 7000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
@@ -214,10 +262,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
       "jan": "4547410377231",
-      "buyback": 2850,
+      "buyback": 2870,
       "category": "その他",
       "retail": 2100,
-      "rate": 135.71
+      "rate": 136.67
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
