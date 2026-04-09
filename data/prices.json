@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-09T02:28:27.502141",
+  "updated": "2026-04-09T05:12:16.198639",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
@@ -78,10 +78,10 @@
     {
       "name": "ROG Xbox Ally X 1TB",
       "jan": "0199291152984",
-      "buyback": 151500,
+      "buyback": 151700,
       "category": "その他",
       "retail": 139800,
-      "rate": 108.37
+      "rate": 108.51
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -270,10 +270,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
       "jan": "4547410369137",
-      "buyback": 2680,
+      "buyback": 2700,
       "category": "その他",
       "retail": 2178,
-      "rate": 123.05
+      "rate": 123.97
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
@@ -286,18 +286,18 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2540,
+      "buyback": 2600,
       "category": "その他",
       "retail": 2100,
-      "rate": 120.95
+      "rate": 123.81
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
       "jan": "4547410348613",
-      "buyback": 1270,
+      "buyback": 1300,
       "category": "その他",
       "retail": 1100,
-      "rate": 115.45
+      "rate": 118.18
     },
     {
       "name": "instax mini 90 チェキ ネオクラシック [ブラック]",
