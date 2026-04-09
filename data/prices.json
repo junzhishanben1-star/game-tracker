@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-09T07:26:00.577673",
+  "updated": "2026-04-09T10:15:19.578207",
   "source": "mobile-ichiban.com",
-  "count": 56,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -74,14 +74,6 @@
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
-    },
-    {
-      "name": "ROG Xbox Ally X 1TB",
-      "jan": "0199291152984",
-      "buyback": 151700,
-      "category": "その他",
-      "retail": 139800,
-      "rate": 108.51
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
@@ -180,36 +172,12 @@
       "rate": 91.21
     },
     {
-      "name": "Google Pixel 9a 128GB SIMフリー Iris",
-      "jan": "840353922402",
-      "buyback": 63500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [ミッドナイトブラック]",
-      "jan": "4549046156198",
-      "buyback": 16500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
-      "jan": "4549995662009",
-      "buyback": 85500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 6000,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 91.21
     },
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
@@ -226,22 +194,6 @@
       "category": "その他",
       "retail": 16800,
       "rate": 75.0
-    },
-    {
-      "name": "スカーレット&バイオレット 強化拡張パック ポケモンカード151 BOX sv2a",
-      "jan": "4521329346038",
-      "buyback": 60000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "遊戯王OCG デュエルモンスターズ BLAZING DOMINION BOX",
-      "jan": "4988602179415",
-      "buyback": 7000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
