@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-11T04:57:50.578860",
+  "updated": "2026-04-11T07:03:52.199599",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -14,7 +14,7 @@
     {
       "name": "Nintendo Switch Lite ブルー",
       "jan": "4902370547672",
-      "buyback": 23700,
+      "buyback": 23800,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -22,23 +22,23 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 129700,
+      "buyback": 132700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 108.1
+      "rate": 110.6
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 91700,
+      "buyback": 94000,
       "category": "PS5",
       "retail": 79980,
-      "rate": 114.65
+      "rate": 117.53
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 51800,
+      "buyback": 52000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -230,7 +230,7 @@
     {
       "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
       "jan": "4521329432786",
-      "buyback": 11500,
+      "buyback": 13000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -238,7 +238,7 @@
     {
       "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
       "jan": "4521329431932",
-      "buyback": 14500,
+      "buyback": 15000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -246,7 +246,7 @@
     {
       "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
       "jan": "4521329431529",
-      "buyback": 25000,
+      "buyback": 27000,
       "category": "その他",
       "retail": 0,
       "rate": 0
