@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-11T09:42:48.323167",
+  "updated": "2026-04-11T13:01:18.613321",
   "source": "mobile-ichiban.com",
-  "count": 57,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -94,10 +94,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 75300,
+      "buyback": 75500,
       "category": "その他",
       "retail": 69980,
-      "rate": 107.6
+      "rate": 107.89
     },
     {
       "name": "BEE-S-KB6CA",
@@ -180,38 +180,6 @@
       "rate": 91.21
     },
     {
-      "name": "Google Pixel 9a 128GB SIMフリー Iris",
-      "jan": "840353922402",
-      "buyback": 63500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Pro 11インチ Wi-Fi 256GB MDWK4J/A [スペースブラック]",
-      "jan": "4549995616606",
-      "buyback": 141000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
-      "jan": "4549995662009",
-      "buyback": 85500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1460,
@@ -226,30 +194,6 @@
       "category": "その他",
       "retail": 16800,
       "rate": 75.0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
-      "jan": "4521329432786",
-      "buyback": 13000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
-      "jan": "4521329431932",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
-      "jan": "4521329431529",
-      "buyback": 27000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
