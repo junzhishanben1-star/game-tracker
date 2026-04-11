@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-11T02:24:42.695494",
+  "updated": "2026-04-11T04:57:50.578860",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 51000,
+      "buyback": 51800,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 116000,
+      "buyback": 116100,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 116.23
+      "rate": 116.33
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 116000,
+      "buyback": 116100,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
