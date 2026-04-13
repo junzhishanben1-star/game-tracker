@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-13T08:06:42.789300",
+  "updated": "2026-04-13T10:48:16.677886",
   "source": "mobile-ichiban.com",
-  "count": 58,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -180,52 +180,12 @@
       "rate": 91.21
     },
     {
-      "name": "Google Pixel 9a 128GB SIMフリー Iris",
-      "jan": "840353922402",
-      "buyback": 63500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 16000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Pro 11インチ Wi-Fi 256GB MDWK4J/A [スペースブラック]",
-      "jan": "4549995616606",
-      "buyback": 141000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
-      "jan": "4549995662009",
-      "buyback": 85500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
-      "jan": "4549995560107",
-      "buyback": 53500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1470,
+      "buyback": 1480,
       "category": "その他",
       "retail": 1100,
-      "rate": 133.64
+      "rate": 134.55
     },
     {
       "name": "instax mini 12 ミントグリーン",
@@ -234,30 +194,6 @@
       "category": "その他",
       "retail": 16800,
       "rate": 75.0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
-      "jan": "4521329432786",
-      "buyback": 13000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
-      "jan": "4521329431932",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
-      "jan": "4521329431529",
-      "buyback": 27000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
@@ -278,10 +214,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
       "jan": "4547410377231",
-      "buyback": 2870,
+      "buyback": 2880,
       "category": "その他",
       "retail": 2100,
-      "rate": 136.67
+      "rate": 137.14
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
