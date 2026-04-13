@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-13T05:44:32.302551",
+  "updated": "2026-04-13T08:06:42.789300",
   "source": "mobile-ichiban.com",
-  "count": 57,
+  "count": 58,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -134,7 +134,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 8600,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -207,6 +207,14 @@
       "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
       "jan": "4549995662009",
       "buyback": 85500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
+      "jan": "4549995560107",
+      "buyback": 53500,
       "category": "その他",
       "retail": 0,
       "rate": 0
