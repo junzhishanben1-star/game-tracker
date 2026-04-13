@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-13T02:46:40.129664",
+  "updated": "2026-04-13T05:44:32.302551",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -22,18 +22,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 133000,
+      "buyback": 133200,
       "category": "PS5",
       "retail": 119980,
-      "rate": 110.85
+      "rate": 111.02
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 94500,
+      "buyback": 94700,
       "category": "PS5",
       "retail": 79980,
-      "rate": 118.15
+      "rate": 118.4
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -102,10 +102,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 44500,
+      "buyback": 44000,
       "category": "その他",
       "retail": 49980,
-      "rate": 89.04
+      "rate": 88.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -126,10 +126,10 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 8600,
+      "buyback": 8400,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 87.06
+      "rate": 85.04
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
