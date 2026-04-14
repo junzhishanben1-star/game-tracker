@@ -1,15 +1,15 @@
 {
-  "updated": "2026-04-14T02:38:57.569191",
+  "updated": "2026-04-14T05:26:30.001092",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 43200,
+      "buyback": 43300,
       "category": "Switch",
       "retail": 37980,
-      "rate": 113.74
+      "rate": 114.01
     },
     {
       "name": "Nintendo Switch Lite ブルー",
@@ -22,23 +22,23 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 133200,
+      "buyback": 133400,
       "category": "PS5",
       "retail": 119980,
-      "rate": 111.02
+      "rate": 111.19
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 94700,
+      "buyback": 94800,
       "category": "PS5",
       "retail": 79980,
-      "rate": 118.4
+      "rate": 118.53
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 52000,
+      "buyback": 52300,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 116100,
+      "buyback": 116300,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 116.33
+      "rate": 116.53
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 116100,
+      "buyback": 116300,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -222,10 +222,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1480,
+      "buyback": 1490,
       "category": "その他",
       "retail": 1100,
-      "rate": 134.55
+      "rate": 135.45
     },
     {
       "name": "instax mini 12 ミントグリーン",
