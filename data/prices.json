@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-14T21:54:59.883990",
+  "updated": "2026-04-15T02:37:22.511278",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 56,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -180,12 +180,60 @@
       "rate": 86.29
     },
     {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
+      "jan": "4549995662009",
+      "buyback": 85500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
+      "jan": "4549995560107",
+      "buyback": 53500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1490,
       "category": "その他",
       "retail": 1100,
       "rate": 135.45
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
+      "jan": "4521329431932",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック インフェルノX BOX m2",
+      "jan": "4521329431529",
+      "buyback": 27000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スカーレット&バイオレット 強化拡張パック ポケモンカード151 BOX sv2a",
+      "jan": "4521329346038",
+      "buyback": 66000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ",
