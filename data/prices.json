@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-16T05:33:10.075710",
+  "updated": "2026-04-16T07:49:46.242907",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -54,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 88000,
+      "buyback": 88100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 88000,
+      "buyback": 88100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -228,7 +228,7 @@
       "rate": 0
     },
     {
-      "name": "instax WIDE 400 チェキ",
+      "name": "instax WIDE 400 チェキ GREEN",
       "jan": "4547410529975",
       "buyback": 24000,
       "category": "その他",
