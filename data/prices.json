@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-18T09:51:54.334138",
+  "updated": "2026-04-18T13:05:37.331340",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -180,44 +180,12 @@
       "rate": 69.37
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
-      "jan": "4549995662009",
-      "buyback": 85500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1500,
       "category": "その他",
       "retail": 1100,
       "rate": 136.36
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック ニンジャスピナー BOX m4",
-      "jan": "4521329432786",
-      "buyback": 13500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA ハイクラスパック MEGAドリームex BOX m2a",
-      "jan": "4521329431932",
-      "buyback": 15700,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ GREEN",
