@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-18T05:09:02.154433",
+  "updated": "2026-04-18T07:11:16.597931",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -30,18 +30,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 135500,
+      "buyback": 136000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 112.94
+      "rate": 113.35
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 96200,
+      "buyback": 97000,
       "category": "PS5",
       "retail": 79980,
-      "rate": 120.28
+      "rate": 121.28
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -54,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 88200,
+      "buyback": 88300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 88200,
+      "buyback": 88300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 85000,
+      "buyback": 85300,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -78,15 +78,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 118000,
+      "buyback": 118100,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 118.24
+      "rate": 118.34
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 118000,
+      "buyback": 118100,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
