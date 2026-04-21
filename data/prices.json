@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-21T07:53:35.714530",
+  "updated": "2026-04-21T10:20:07.528951",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 49,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -94,7 +94,7 @@
     {
       "name": "マリオカート ワールド/Switch2",
       "jan": "4902370553260",
-      "buyback": 8000,
+      "buyback": 8100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 50300,
+      "buyback": 50000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 100.64
+      "rate": 100.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -170,38 +170,6 @@
       "category": "Switch 2",
       "retail": 12980,
       "rate": 86.29
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
-      "jan": "4549995662009",
-      "buyback": 82500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンターヒロシマ",
-      "jan": "4521329427669",
-      "buyback": 29000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "遊戯王OCG デュエルモンスターズ BLAZING DOMINION BOX",
-      "jan": "4988602179415",
-      "buyback": 7500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ GREEN",
