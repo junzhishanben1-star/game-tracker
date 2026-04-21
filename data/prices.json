@@ -1,23 +1,31 @@
 {
-  "updated": "2026-04-20T21:50:14.855837",
+  "updated": "2026-04-21T02:40:47.461124",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 53,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 8800,
+      "buyback": 9000,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.09
+      "rate": 91.11
+    },
+    {
+      "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
+      "jan": "4902370553871",
+      "buyback": 9000,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 43700,
+      "buyback": 43500,
       "category": "Switch",
       "retail": 37980,
-      "rate": 115.06
+      "rate": 114.53
     },
     {
       "name": "HAD-S-KAAAH",
@@ -156,14 +164,6 @@
       "rate": 89.09
     },
     {
-      "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
-      "jan": "4902370553871",
-      "buyback": 8800,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
       "jan": "4902370552706",
       "buyback": 3800,
@@ -180,20 +180,44 @@
       "rate": 69.37
     },
     {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
+      "jan": "4549995662009",
+      "buyback": 82500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンターヒロシマ",
+      "jan": "4521329427669",
+      "buyback": 29000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ GREEN",
       "jan": "4547410529975",
-      "buyback": 24000,
+      "buyback": 24100,
       "category": "その他",
       "retail": 26730,
-      "rate": 89.79
+      "rate": 90.16
     },
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 26500,
+      "buyback": 26600,
       "category": "その他",
       "retail": 30580,
-      "rate": 86.66
+      "rate": 86.98
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
@@ -262,58 +286,58 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 12600,
+      "buyback": 12500,
       "category": "その他",
       "retail": 16800,
-      "rate": 75.0
+      "rate": 74.4
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 12600,
+      "buyback": 12500,
       "category": "その他",
       "retail": 16800,
-      "rate": 75.0
+      "rate": 74.4
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 12600,
+      "buyback": 12500,
       "category": "その他",
       "retail": 16800,
-      "rate": 75.0
+      "rate": 74.4
     },
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 12600,
+      "buyback": 12500,
       "category": "その他",
       "retail": 16800,
-      "rate": 75.0
+      "rate": 74.4
     },
     {
       "name": "instax mini 12 ブロッサムピンク",
       "jan": "4547410489125",
-      "buyback": 12600,
+      "buyback": 12500,
       "category": "その他",
       "retail": 16800,
-      "rate": 75.0
+      "rate": 74.4
     },
     {
       "name": "instax mini 12 チェキ くまモン",
       "jan": "4547410557954",
-      "buyback": 12600,
+      "buyback": 12500,
       "category": "その他",
       "retail": 16800,
-      "rate": 75.0
+      "rate": 74.4
     },
     {
       "name": "instax mini 12 チェキ EXPO 2025",
       "jan": "4547410534122",
-      "buyback": 12600,
+      "buyback": 12500,
       "category": "その他",
       "retail": 16800,
-      "rate": 75.0
+      "rate": 74.4
     },
     {
       "name": "instax mini Evo チェキ Limited Edition PINK",
