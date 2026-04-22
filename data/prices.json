@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-22T05:28:15.461762",
+  "updated": "2026-04-22T07:50:29.794918",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 52,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -78,16 +78,24 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 118100,
+      "buyback": 118500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 118.34
+      "rate": 118.74
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 118100,
+      "buyback": 118500,
       "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "プラグマタ/Switch2",
+      "jan": "4976219137812",
+      "buyback": 6100,
+      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -110,10 +118,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 50000,
+      "buyback": 49500,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 100.04
+      "rate": 99.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -164,14 +172,6 @@
       "rate": 69.37
     },
     {
-      "name": "Nintendo Switch 2 ドックセット BEE-A-CASAA",
-      "jan": "4902370552911",
-      "buyback": 11200,
-      "category": "Switch 2",
-      "retail": 12980,
-      "rate": 86.29
-    },
-    {
       "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
       "jan": "4942857242850",
       "buyback": 15500,
@@ -191,14 +191,6 @@
       "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンターヒロシマ",
       "jan": "4521329427669",
       "buyback": 29000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "遊戯王OCG デュエルモンスターズ BLAZING DOMINION BOX",
-      "jan": "4988602179415",
-      "buyback": 7500,
       "category": "その他",
       "retail": 0,
       "rate": 0
