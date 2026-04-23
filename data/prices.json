@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-22T21:53:21.029316",
+  "updated": "2026-04-23T02:43:17.178821",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 52,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -38,18 +38,18 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 136400,
+      "buyback": 136800,
       "category": "PS5",
       "retail": 119980,
-      "rate": 113.69
+      "rate": 114.02
     },
     {
       "name": "PlayStation 5 slim CFI-2000A01",
       "jan": "4948872415934",
-      "buyback": 97400,
+      "buyback": 97700,
       "category": "PS5",
       "retail": 79980,
-      "rate": 121.78
+      "rate": 122.16
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -92,17 +92,17 @@
       "rate": 109.44
     },
     {
-      "name": "プラグマタ/Switch2",
-      "jan": "4976219137812",
-      "buyback": 6100,
+      "name": "マリオカート ワールド/Switch2",
+      "jan": "4902370553260",
+      "buyback": 8100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "マリオカート ワールド/Switch2",
-      "jan": "4902370553260",
-      "buyback": 8100,
+      "name": "プラグマタ/Switch2",
+      "jan": "4976219137812",
+      "buyback": 6100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -170,6 +170,30 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
+      "jan": "4549995662009",
+      "buyback": 82500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンターヒロシマ",
+      "jan": "4521329427669",
+      "buyback": 29000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ GREEN",
@@ -318,10 +342,10 @@
     {
       "name": "instax mini Evo チェキ USB ブラック",
       "jan": "4547410520088",
-      "buyback": 26500,
+      "buyback": 26300,
       "category": "その他",
       "retail": 34650,
-      "rate": 76.48
+      "rate": 75.9
     },
     {
       "name": "instax mini Evo チェキ USB ブラウン",
