@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-23T07:56:51.345444",
+  "updated": "2026-04-23T10:23:03.324746",
   "source": "mobile-ichiban.com",
-  "count": 52,
+  "count": 49,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -170,30 +170,6 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad Air 11インチ Wi-Fi 128GB 第8世代 MH314J/A ブルー",
-      "jan": "4549995662009",
-      "buyback": 82500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スカーレット＆バイオレット スペシャルBOX ポケモンセンターヒロシマ",
-      "jan": "4521329427669",
-      "buyback": 29000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ GREEN",
