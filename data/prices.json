@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-25T05:14:02.211137",
+  "updated": "2026-04-25T07:19:51.672057",
   "source": "mobile-ichiban.com",
-  "count": 51,
+  "count": 52,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -22,18 +22,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 43500,
+      "buyback": 43200,
       "category": "Switch",
       "retail": 37980,
-      "rate": 114.53
-    },
-    {
-      "name": "Nintendo Switch Lite ブルー",
-      "jan": "4902370547672",
-      "buyback": 24100,
-      "category": "Switch",
-      "retail": 0,
-      "rate": 0
+      "rate": 113.74
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -126,10 +118,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 43500,
+      "buyback": 43300,
       "category": "その他",
       "retail": 49980,
-      "rate": 87.03
+      "rate": 86.63
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,6 +164,14 @@
       "rate": 86.29
     },
     {
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 6100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 92.73
+    },
+    {
       "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
       "jan": "4942857242850",
       "buyback": 15500,
@@ -202,6 +202,14 @@
       "category": "その他",
       "retail": 41580,
       "rate": 128.67
+    },
+    {
+      "name": "遊戯王OCG デュエルモンスターズ CHAOS ORIGINS BOX",
+      "jan": "4988602179750",
+      "buyback": 7300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini 13 キャンディピンク",
