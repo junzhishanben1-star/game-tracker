@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-25T02:32:37.546909",
+  "updated": "2026-04-25T05:14:02.211137",
   "source": "mobile-ichiban.com",
   "count": 51,
   "products": [
@@ -30,7 +30,7 @@
     {
       "name": "Nintendo Switch Lite ブルー",
       "jan": "4902370547672",
-      "buyback": 23800,
+      "buyback": 24100,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -118,10 +118,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 75800,
+      "buyback": 76300,
       "category": "その他",
       "retail": 69980,
-      "rate": 108.32
+      "rate": 109.03
     },
     {
       "name": "BEE-S-KB6CA",
