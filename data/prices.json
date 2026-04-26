@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-25T21:39:03.344044",
+  "updated": "2026-04-26T02:49:27.225732",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 52,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -22,10 +22,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 43200,
+      "buyback": 43000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 113.74
+      "rate": 113.22
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -172,6 +172,22 @@
       "rate": 92.73
     },
     {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 16500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
       "buyback": 13000,
@@ -186,6 +202,14 @@
       "category": "その他",
       "retail": 41580,
       "rate": 128.67
+    },
+    {
+      "name": "遊戯王OCG デュエルモンスターズ CHAOS ORIGINS BOX",
+      "jan": "4988602179750",
+      "buyback": 6700,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini 13 キャンディピンク",
