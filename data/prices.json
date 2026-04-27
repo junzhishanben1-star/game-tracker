@@ -1,20 +1,20 @@
 {
-  "updated": "2026-04-27T05:57:29.337038",
+  "updated": "2026-04-27T08:29:06.719993",
   "source": "mobile-ichiban.com",
   "count": 52,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 9100,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 92.12
+      "rate": 89.09
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 9100,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -22,10 +22,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 42800,
+      "buyback": 42500,
       "category": "Switch",
       "retail": 37980,
-      "rate": 112.69
+      "rate": 111.9
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -278,10 +278,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1500,
+      "buyback": 1450,
       "category": "その他",
       "retail": 1100,
-      "rate": 136.36
+      "rate": 131.82
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
