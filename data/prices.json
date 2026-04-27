@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-27T02:52:05.064896",
+  "updated": "2026-04-27T05:57:29.337038",
   "source": "mobile-ichiban.com",
   "count": 52,
   "products": [
@@ -22,10 +22,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 43000,
+      "buyback": 42800,
       "category": "Switch",
       "retail": 37980,
-      "rate": 113.22
+      "rate": 112.69
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -94,7 +94,7 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
       "jan": "4902370553802",
-      "buyback": 9500,
+      "buyback": 9600,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -206,7 +206,15 @@
     {
       "name": "遊戯王OCG デュエルモンスターズ CHAOS ORIGINS BOX",
       "jan": "4988602179750",
-      "buyback": 6700,
+      "buyback": 6300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "instax WIDE 400 チェキ JET BLACK",
+      "jan": "4547410570632",
+      "buyback": 24300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -342,14 +350,6 @@
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 12000,
-      "category": "その他",
-      "retail": 16800,
-      "rate": 71.43
-    },
-    {
-      "name": "instax mini 12 ミントグリーン",
-      "jan": "4547410489132",
       "buyback": 12000,
       "category": "その他",
       "retail": 16800,
