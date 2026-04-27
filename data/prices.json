@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-27T08:29:06.719993",
+  "updated": "2026-04-27T11:06:34.842494",
   "source": "mobile-ichiban.com",
-  "count": 52,
+  "count": 49,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -78,7 +78,7 @@
     {
       "name": "マリオカート ワールド/Switch2",
       "jan": "4902370553260",
-      "buyback": 8100,
+      "buyback": 7900,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -172,22 +172,6 @@
       "rate": 92.73
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 16500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
       "buyback": 13200,
@@ -202,14 +186,6 @@
       "category": "その他",
       "retail": 41580,
       "rate": 128.67
-    },
-    {
-      "name": "遊戯王OCG デュエルモンスターズ CHAOS ORIGINS BOX",
-      "jan": "4988602179750",
-      "buyback": 6300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
