@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-28T06:11:53.679411",
+  "updated": "2026-04-28T11:07:53.026576",
   "source": "mobile-ichiban.com",
-  "count": 52,
+  "count": 49,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 136200,
+      "buyback": 136000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 113.52
+      "rate": 113.35
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -78,7 +78,7 @@
     {
       "name": "マリオカート ワールド/Switch2",
       "jan": "4902370553260",
-      "buyback": 7900,
+      "buyback": 7700,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -118,10 +118,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 43300,
+      "buyback": 43000,
       "category": "その他",
       "retail": 49980,
-      "rate": 86.63
+      "rate": 86.03
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,22 +172,6 @@
       "rate": 92.73
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 16500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
       "buyback": 13200,
@@ -202,14 +186,6 @@
       "category": "その他",
       "retail": 41580,
       "rate": 128.67
-    },
-    {
-      "name": "遊戯王OCG デュエルモンスターズ CHAOS ORIGINS BOX",
-      "jan": "4988602179750",
-      "buyback": 6000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
