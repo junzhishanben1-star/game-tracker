@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-28T02:58:48.912964",
+  "updated": "2026-04-28T06:11:53.679411",
   "source": "mobile-ichiban.com",
   "count": 52,
   "products": [
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 137100,
+      "buyback": 136200,
       "category": "PS5",
       "retail": 119980,
-      "rate": 114.27
+      "rate": 113.52
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -46,7 +46,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 85000,
+      "buyback": 84500,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
