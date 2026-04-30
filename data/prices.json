@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-30T06:09:53.239644",
+  "updated": "2026-04-30T10:57:58.639258",
   "source": "mobile-ichiban.com",
-  "count": 52,
+  "count": 50,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -94,7 +94,7 @@
     {
       "name": "マリオカート ワールド/Switch2",
       "jan": "4902370553260",
-      "buyback": 7700,
+      "buyback": 7200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -178,22 +178,6 @@
       "category": "Switch 2",
       "retail": 12980,
       "rate": 86.29
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 17000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax mini 13 フロストブルー",
