@@ -1,7 +1,7 @@
 {
-  "updated": "2026-04-29T22:00:47.176975",
+  "updated": "2026-04-30T02:58:25.741500",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 52,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -48,6 +48,22 @@
       "jan": "815820024170",
       "buyback": 84500,
       "category": "Meta Quest",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Deck OLED 512GB",
+      "jan": "0814585022254",
+      "buyback": 104800,
+      "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Deck OLED 512GB",
+      "jan": "0814585022605",
+      "buyback": 104800,
+      "category": "Steam Deck",
       "retail": 0,
       "rate": 0
     },
@@ -164,12 +180,20 @@
       "rate": 86.29
     },
     {
-      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "4523052030185",
-      "buyback": 6100,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 92.73
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 17000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini 13 フロストブルー",
