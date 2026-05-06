@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-05T22:05:59.758876",
+  "updated": "2026-05-06T02:59:28.559184",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 52,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -30,15 +30,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 136000,
+      "buyback": 132500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 113.35
+      "rate": 110.44
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 53000,
+      "buyback": 52000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 84500,
+      "buyback": 83300,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 104800,
+      "buyback": 104000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 104800,
+      "buyback": 104000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -70,15 +70,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 118800,
+      "buyback": 118000,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 119.04
+      "rate": 118.24
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 118800,
+      "buyback": 118000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -86,10 +86,10 @@
     {
       "name": "ROG Xbox Ally X 1TB",
       "jan": "0199291152984",
-      "buyback": 153500,
+      "buyback": 151000,
       "category": "その他",
       "retail": 139800,
-      "rate": 109.8
+      "rate": 108.01
     },
     {
       "name": "マリオカート ワールド/Switch2",
@@ -110,7 +110,7 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
       "jan": "4902370553802",
-      "buyback": 9600,
+      "buyback": 9500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -118,10 +118,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 49500,
+      "buyback": 49000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 99.04
+      "rate": 98.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -134,18 +134,18 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 42500,
+      "buyback": 42000,
       "category": "その他",
       "retail": 49980,
-      "rate": 85.03
+      "rate": 84.03
     },
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 51500,
+      "buyback": 51000,
       "category": "その他",
       "retail": 55980,
-      "rate": 92.0
+      "rate": 91.1
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -178,6 +178,22 @@
       "category": "Switch 2",
       "retail": 12980,
       "rate": 86.29
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 17000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini 13 フロストブルー",
@@ -262,10 +278,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1450,
+      "buyback": 1430,
       "category": "その他",
       "retail": 1100,
-      "rate": 131.82
+      "rate": 130.0
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
