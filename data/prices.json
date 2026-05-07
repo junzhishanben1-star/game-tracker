@@ -1,23 +1,15 @@
 {
-  "updated": "2026-05-07T06:13:41.619322",
+  "updated": "2026-05-07T11:11:23.157467",
   "source": "mobile-ichiban.com",
-  "count": 52,
+  "count": 50,
   "products": [
     {
-      "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
-      "jan": "4902370552744",
-      "buyback": 8700,
-      "category": "Switch 2",
-      "retail": 9878,
-      "rate": 88.07
-    },
-    {
-      "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
-      "jan": "4902370553871",
-      "buyback": 8800,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
+      "name": "BEE-S-KB6PA",
+      "jan": "4902370553031",
+      "buyback": 52300,
+      "category": "その他",
+      "retail": 55980,
+      "rate": 93.43
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -36,9 +28,9 @@
       "rate": 110.44
     },
     {
-      "name": "PlayStation VR2 CFIJ-17000",
-      "jan": "4948872016490",
-      "buyback": 52000,
+      "name": "PlayStation Portal リモートプレーヤー CFIJ-18000",
+      "jan": "4948872017084",
+      "buyback": 33000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -84,30 +76,6 @@
       "rate": 0
     },
     {
-      "name": "ROG Xbox Ally X 1TB",
-      "jan": "0199291152984",
-      "buyback": 151000,
-      "category": "その他",
-      "retail": 139800,
-      "rate": 108.01
-    },
-    {
-      "name": "マリオカート ワールド/Switch2",
-      "jan": "4902370553260",
-      "buyback": 7200,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "プラグマタ/Switch2",
-      "jan": "4976219137812",
-      "buyback": 6400,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
       "jan": "4902370553802",
       "buyback": 9600,
@@ -118,10 +86,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 49000,
+      "buyback": 50000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 98.04
+      "rate": 100.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -134,18 +102,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 43000,
+      "buyback": 43300,
       "category": "その他",
       "retail": 49980,
-      "rate": 86.03
-    },
-    {
-      "name": "BEE-S-KB6PA",
-      "jan": "4902370553031",
-      "buyback": 52300,
-      "category": "その他",
-      "retail": 55980,
-      "rate": 93.43
+      "rate": 86.63
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -154,6 +114,22 @@
       "category": "Switch 2",
       "retail": 9878,
       "rate": 88.07
+    },
+    {
+      "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
+      "jan": "4902370552744",
+      "buyback": 8500,
+      "category": "Switch 2",
+      "retail": 9878,
+      "rate": 86.05
+    },
+    {
+      "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
+      "jan": "4902370553871",
+      "buyback": 8600,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
@@ -180,20 +156,28 @@
       "rate": 86.29
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 6100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 92.73
     },
     {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 17000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 6100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 92.73
+    },
+    {
+      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
+      "jan": "4902370548501",
+      "buyback": 45000,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 118.48
     },
     {
       "name": "instax mini 13 フロストブルー",
@@ -202,14 +186,6 @@
       "category": "その他",
       "retail": 0,
       "rate": 0
-    },
-    {
-      "name": "instax mini Evo チェキ Limited Edition PINK",
-      "jan": "4547410555844",
-      "buyback": 53500,
-      "category": "その他",
-      "retail": 41580,
-      "rate": 128.67
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -278,10 +254,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1430,
+      "buyback": 1450,
       "category": "その他",
       "retail": 1100,
-      "rate": 130.0
+      "rate": 131.82
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
@@ -350,6 +326,14 @@
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
+      "buyback": 12000,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 71.43
+    },
+    {
+      "name": "instax mini 12 ミントグリーン",
+      "jan": "4547410489132",
       "buyback": 12000,
       "category": "その他",
       "retail": 16800,
