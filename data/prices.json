@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-08T05:33:29.095045",
+  "updated": "2026-05-08T07:44:44.240162",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 42500,
+      "buyback": 43500,
       "category": "Switch",
       "retail": 37980,
-      "rate": 111.9
+      "rate": 114.53
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -46,7 +46,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 105000,
+      "buyback": 105300,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 105000,
+      "buyback": 105300,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 119000,
+      "buyback": 119300,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 119.24
+      "rate": 119.54
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 119000,
+      "buyback": 119300,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -174,10 +174,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 45000,
+      "buyback": 47000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 118.48
+      "rate": 123.75
     },
     {
       "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
@@ -214,7 +214,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 13300,
+      "buyback": 13400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -222,7 +222,7 @@
     {
       "name": "CANON PowerShot G7 X Mark III [ブラック]",
       "jan": "4549292137743",
-      "buyback": 173000,
+      "buyback": 176500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -230,7 +230,7 @@
     {
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
-      "buyback": 84500,
+      "buyback": 85000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -254,7 +254,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 13300,
+      "buyback": 13400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,7 +262,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 13300,
+      "buyback": 13400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -270,7 +270,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 13300,
+      "buyback": 13400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -278,7 +278,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 13300,
+      "buyback": 13400,
       "category": "その他",
       "retail": 0,
       "rate": 0
