@@ -1,31 +1,31 @@
 {
-  "updated": "2026-05-08T22:00:38.707706",
+  "updated": "2026-05-09T02:53:49.897290",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 56,
   "products": [
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 53500,
+      "buyback": 54500,
       "category": "その他",
       "retail": 55980,
-      "rate": 95.57
+      "rate": 97.36
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 43500,
+      "buyback": 43600,
       "category": "Switch",
       "retail": 37980,
-      "rate": 114.53
+      "rate": 114.8
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 132500,
+      "buyback": 133000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 110.44
+      "rate": 110.85
     },
     {
       "name": "PlayStation Portal リモートプレーヤー CFIJ-18000",
@@ -44,34 +44,26 @@
       "rate": 0
     },
     {
-      "name": "Steam Deck OLED 512GB",
-      "jan": "0814585022254",
-      "buyback": 105300,
-      "category": "Steam Deck",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Steam Deck OLED 512GB",
-      "jan": "0814585022605",
-      "buyback": 105300,
-      "category": "Steam Deck",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 119300,
+      "buyback": 119600,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 119.54
+      "rate": 119.84
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 119300,
+      "buyback": 119600,
       "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "トモダチコレクション わくわく生活",
+      "jan": "4902370553963",
+      "buyback": 6100,
+      "category": "その他",
       "retail": 0,
       "rate": 0
     },
@@ -86,10 +78,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 50500,
+      "buyback": 51500,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 101.04
+      "rate": 103.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -102,10 +94,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 45100,
+      "buyback": 50000,
       "category": "その他",
       "retail": 49980,
-      "rate": 90.24
+      "rate": 100.04
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -174,15 +166,71 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 47000,
+      "buyback": 47100,
       "category": "Switch",
       "retail": 37980,
-      "rate": 123.75
+      "rate": 124.01
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 17000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Pro 11インチ Wi-Fi 256GB MDWK4J/A [スペースブラック]",
+      "jan": "4549995616606",
+      "buyback": 141000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スペースグレイ",
+      "jan": "4549995526486",
+      "buyback": 63000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
       "buyback": 13500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 176500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 85000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 20100,
       "category": "その他",
       "retail": 0,
       "rate": 0
