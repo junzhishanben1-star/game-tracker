@@ -1,23 +1,23 @@
 {
-  "updated": "2026-05-09T02:53:49.897290",
+  "updated": "2026-05-09T05:51:03.442323",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 54500,
+      "buyback": 55000,
       "category": "その他",
       "retail": 55980,
-      "rate": 97.36
+      "rate": 98.25
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 43600,
+      "buyback": 43800,
       "category": "Switch",
       "retail": 37980,
-      "rate": 114.8
+      "rate": 115.32
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -78,10 +78,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 51500,
+      "buyback": 52000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 103.04
+      "rate": 104.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -94,10 +94,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 50000,
+      "buyback": 51500,
       "category": "その他",
       "retail": 49980,
-      "rate": 100.04
+      "rate": 103.04
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -166,10 +166,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 47100,
+      "buyback": 47300,
       "category": "Switch",
       "retail": 37980,
-      "rate": 124.01
+      "rate": 124.54
     },
     {
       "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
