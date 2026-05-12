@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-11T22:09:49.947959",
+  "updated": "2026-05-12T03:23:58.807315",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 55,
   "products": [
     {
       "name": "BEE-S-KB6PA",
@@ -46,15 +46,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 119600,
+      "buyback": 119800,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 119.84
+      "rate": 120.04
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 119600,
+      "buyback": 119800,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -172,6 +172,30 @@
       "rate": 124.54
     },
     {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 17500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad Pro 11インチ Wi-Fi 256GB MDWK4J/A [スペースブラック]",
+      "jan": "4549995616606",
+      "buyback": 141000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 13700,
@@ -183,6 +207,30 @@
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
       "buyback": 13700,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 176500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 86000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 20100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -302,34 +350,34 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 16800,
-      "rate": 71.43
+      "rate": 72.02
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 16800,
-      "rate": 71.43
+      "rate": 72.02
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 16800,
-      "rate": 71.43
+      "rate": 72.02
     },
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 16800,
-      "rate": 71.43
+      "rate": 72.02
     },
     {
       "name": "AURA STUDIO 3",
