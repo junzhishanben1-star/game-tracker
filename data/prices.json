@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-12T03:23:58.807315",
+  "updated": "2026-05-12T08:42:20.820194",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -14,10 +14,18 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 43800,
+      "buyback": 44000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 115.32
+      "rate": 115.85
+    },
+    {
+      "name": "Nintendo Switch Lite グレー",
+      "jan": "4902370542929",
+      "buyback": 24600,
+      "category": "Switch",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -46,15 +54,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 119800,
+      "buyback": 120000,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 120.04
+      "rate": 120.24
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 119800,
+      "buyback": 120000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -62,7 +70,7 @@
     {
       "name": "トモダチコレクション わくわく生活",
       "jan": "4902370553963",
-      "buyback": 6150,
+      "buyback": 6200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -164,14 +172,6 @@
       "rate": 92.73
     },
     {
-      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
-      "jan": "4902370548501",
-      "buyback": 47300,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 124.54
-    },
-    {
       "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
       "jan": "4942857242850",
       "buyback": 15500,
@@ -198,15 +198,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 13700,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "instax mini 13 フロストブルー",
-      "jan": "4547410564631",
-      "buyback": 13700,
+      "buyback": 13800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -246,7 +238,15 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 13700,
+      "buyback": 13800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "instax mini 13 フロストブルー",
+      "jan": "4547410564631",
+      "buyback": 13800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -254,7 +254,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 13700,
+      "buyback": 13800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,7 +262,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 13700,
+      "buyback": 13800,
       "category": "その他",
       "retail": 0,
       "rate": 0
