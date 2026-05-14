@@ -1,28 +1,28 @@
 {
-  "updated": "2026-05-14T03:31:39.889457",
+  "updated": "2026-05-14T08:42:46.689612",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 54,
   "products": [
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6150,
+      "buyback": 6200,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 93.49
+      "rate": 94.25
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 44300,
+      "buyback": 44800,
       "category": "Switch",
       "retail": 37980,
-      "rate": 116.64
+      "rate": 117.96
     },
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 25000,
+      "buyback": 26100,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -36,17 +36,9 @@
       "rate": 111.69
     },
     {
-      "name": "PlayStation Portal リモートプレーヤー CFIJ-18000",
-      "jan": "4948872017084",
-      "buyback": 33000,
-      "category": "PS5",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 84300,
+      "buyback": 84000,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -64,6 +56,22 @@
       "jan": "0814585022629",
       "buyback": 120000,
       "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "マリオカート ワールド/Switch2",
+      "jan": "4902370553260",
+      "buyback": 8000,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スーパー マリオパーティ ジャンボリー Edition＋ジャンボリーTV /Switch 2",
+      "jan": "4902370553352",
+      "buyback": 7000,
+      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -102,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51500,
+      "buyback": 51000,
       "category": "その他",
       "retail": 49980,
-      "rate": 103.04
+      "rate": 102.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -134,7 +142,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 8600,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -164,14 +172,6 @@
       "rate": 86.29
     },
     {
-      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "4523052030185",
-      "buyback": 6150,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 93.49
-    },
-    {
       "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
       "jan": "4942857242850",
       "buyback": 15500,
@@ -188,17 +188,9 @@
       "rate": 0
     },
     {
-      "name": "iPad Pro 11インチ Wi-Fi 256GB MDWK4J/A [スペースブラック]",
-      "jan": "4549995616606",
-      "buyback": 141000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 14000,
+      "buyback": 14100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -230,7 +222,7 @@
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
-      "buyback": 24300,
+      "buyback": 24400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -238,7 +230,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 14000,
+      "buyback": 14100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -246,7 +238,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 14000,
+      "buyback": 14100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -254,7 +246,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 14000,
+      "buyback": 14100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,7 +254,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 14000,
+      "buyback": 14100,
       "category": "その他",
       "retail": 0,
       "rate": 0
