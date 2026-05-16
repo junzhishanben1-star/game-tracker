@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-16T05:58:33.669072",
+  "updated": "2026-05-16T08:11:09.844550",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -38,7 +38,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 83500,
+      "buyback": 83000,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 50500,
+      "buyback": 50000,
       "category": "その他",
       "retail": 49980,
-      "rate": 101.04
+      "rate": 100.04
     },
     {
       "name": "BEE-S-KB6PA",
