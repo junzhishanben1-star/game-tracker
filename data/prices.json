@@ -1,16 +1,8 @@
 {
-  "updated": "2026-05-19T09:45:19.888673",
+  "updated": "2026-05-19T15:24:57.623008",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 49,
   "products": [
-    {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
-      "buyback": 6200,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 94.25
-    },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
@@ -34,6 +26,14 @@
       "category": "PS5",
       "retail": 119980,
       "rate": 112.1
+    },
+    {
+      "name": "PlayStation 5 slim CFI-2000A01",
+      "jan": "4948872415934",
+      "buyback": 93500,
+      "category": "PS5",
+      "retail": 79980,
+      "rate": 116.9
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -172,49 +172,9 @@
       "rate": 86.29
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 18000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 14500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 179000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 88300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
-      "jan": "0840268942847",
-      "buyback": 20300,
       "category": "その他",
       "retail": 0,
       "rate": 0
