@@ -1,20 +1,20 @@
 {
-  "updated": "2026-05-20T03:40:00.888398",
+  "updated": "2026-05-20T09:38:13.554266",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 46800,
+      "buyback": 47500,
       "category": "Switch",
       "retail": 37980,
-      "rate": 123.22
+      "rate": 125.07
     },
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 27100,
+      "buyback": 27500,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 82800,
+      "buyback": 83000,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -46,15 +46,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 120800,
+      "buyback": 121500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 121.04
+      "rate": 121.74
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 120800,
+      "buyback": 121500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -78,7 +78,7 @@
     {
       "name": "トモダチコレクション わくわく生活",
       "jan": "4902370553963",
-      "buyback": 6000,
+      "buyback": 6100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -94,10 +94,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 53500,
+      "buyback": 53800,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 107.04
+      "rate": 107.64
     },
     {
       "name": "BEE-S-KB6AA",
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51600,
+      "buyback": 51800,
       "category": "その他",
       "retail": 49980,
-      "rate": 103.24
+      "rate": 103.64
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,9 +172,9 @@
       "rate": 86.29
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 13000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -190,7 +190,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 14500,
+      "buyback": 14600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -230,7 +230,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 14500,
+      "buyback": 14600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -238,7 +238,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 14500,
+      "buyback": 14600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -246,7 +246,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 14500,
+      "buyback": 14600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -254,7 +254,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 14500,
+      "buyback": 14600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -342,34 +342,34 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 12300,
+      "buyback": 12400,
       "category": "その他",
       "retail": 16800,
-      "rate": 73.21
+      "rate": 73.81
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 12300,
+      "buyback": 12400,
       "category": "その他",
       "retail": 16800,
-      "rate": 73.21
+      "rate": 73.81
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 12300,
+      "buyback": 12400,
       "category": "その他",
       "retail": 16800,
-      "rate": 73.21
+      "rate": 73.81
     },
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 12300,
+      "buyback": 12400,
       "category": "その他",
       "retail": 16800,
-      "rate": 73.21
+      "rate": 73.81
     },
     {
       "name": "AURA STUDIO 3",
