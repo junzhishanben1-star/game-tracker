@@ -1,15 +1,15 @@
 {
-  "updated": "2026-05-19T22:18:34.183572",
+  "updated": "2026-05-20T03:40:00.888398",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 46500,
+      "buyback": 46800,
       "category": "Switch",
       "retail": 37980,
-      "rate": 122.43
+      "rate": 123.22
     },
     {
       "name": "Nintendo Switch Lite グレー",
@@ -46,15 +46,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 120500,
+      "buyback": 120800,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 120.74
+      "rate": 121.04
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 120500,
+      "buyback": 120800,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "マリオカート ワールド/Switch2",
       "jan": "4902370553260",
-      "buyback": 8200,
+      "buyback": 7700,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "スーパー マリオパーティ ジャンボリー Edition＋ジャンボリーTV /Switch 2",
       "jan": "4902370553352",
-      "buyback": 7100,
+      "buyback": 6800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -78,7 +78,7 @@
     {
       "name": "トモダチコレクション わくわく生活",
       "jan": "4902370553963",
-      "buyback": 6100,
+      "buyback": 6000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51500,
+      "buyback": 51600,
       "category": "その他",
       "retail": 49980,
-      "rate": 103.04
+      "rate": 103.24
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,9 +172,49 @@
       "rate": 86.29
     },
     {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 18000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 179000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 89000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 20300,
       "category": "その他",
       "retail": 0,
       "rate": 0
