@@ -1,20 +1,20 @@
 {
-  "updated": "2026-05-21T03:47:59.440124",
+  "updated": "2026-05-21T09:43:01.998053",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 47800,
+      "buyback": 48100,
       "category": "Switch",
       "retail": 37980,
-      "rate": 125.86
+      "rate": 126.65
     },
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 27700,
+      "buyback": 28000,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -46,15 +46,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 123500,
+      "buyback": 124000,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 123.75
+      "rate": 124.25
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 123500,
+      "buyback": 124000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51800,
+      "buyback": 52000,
       "category": "その他",
       "retail": 49980,
-      "rate": 103.64
+      "rate": 104.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -206,7 +206,7 @@
     {
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
-      "buyback": 89000,
+      "buyback": 90000,
       "category": "その他",
       "retail": 0,
       "rate": 0
