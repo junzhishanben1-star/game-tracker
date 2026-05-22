@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-22T03:43:38.350693",
+  "updated": "2026-05-22T09:26:19.785908",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -14,7 +14,7 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 28000,
+      "buyback": 28100,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -46,24 +46,16 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 124000,
+      "buyback": 124200,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 124.25
+      "rate": 124.45
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 124000,
+      "buyback": 124200,
       "category": "Steam Deck",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "マリオカート ワールド/Switch2",
-      "jan": "4902370553260",
-      "buyback": 7700,
-      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -72,14 +64,6 @@
       "jan": "4902370553352",
       "buyback": 6800,
       "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "トモダチコレクション わくわく生活",
-      "jan": "4902370553963",
-      "buyback": 5700,
-      "category": "その他",
       "retail": 0,
       "rate": 0
     },
@@ -110,10 +94,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51500,
+      "buyback": 50000,
       "category": "その他",
       "retail": 49980,
-      "rate": 103.04
+      "rate": 100.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,6 +156,22 @@
       "rate": 86.29
     },
     {
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 6100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 92.73
+    },
+    {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 6100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 92.73
+    },
+    {
       "name": "arrows We2 FCG02 au [ライトオレンジ]",
       "jan": "4941787128326",
       "buyback": 13000,
@@ -182,7 +182,7 @@
     {
       "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
       "jan": "4942857244205",
-      "buyback": 18000,
+      "buyback": 18500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -207,6 +207,14 @@
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
       "buyback": 90000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Panasonic Technics EAH-AZ100-S シルバー",
+      "jan": "4549980797297",
+      "buyback": 30000,
       "category": "その他",
       "retail": 0,
       "rate": 0
