@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-24T21:58:57.359606",
+  "updated": "2026-05-25T03:55:36.228413",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -46,15 +46,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 124300,
+      "buyback": 124500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 124.55
+      "rate": 124.75
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 124300,
+      "buyback": 124500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -86,10 +86,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 76300,
+      "buyback": 76900,
       "category": "その他",
       "retail": 69980,
-      "rate": 109.03
+      "rate": 109.89
     },
     {
       "name": "BEE-S-KB6CA",
@@ -172,9 +172,57 @@
       "rate": 92.73
     },
     {
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 13000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 18500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 14600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 179000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 91500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Panasonic Technics EAH-AZ100-S シルバー",
+      "jan": "4549980797297",
+      "buyback": 30000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 20300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,10 +310,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2490,
+      "buyback": 2460,
       "category": "その他",
       "retail": 2178,
-      "rate": 114.33
+      "rate": 112.95
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
