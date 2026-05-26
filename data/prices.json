@@ -1,15 +1,15 @@
 {
-  "updated": "2026-05-26T03:37:48.431893",
+  "updated": "2026-05-26T09:58:56.121218",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 56,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 48100,
+      "buyback": 48300,
       "category": "Switch",
       "retail": 37980,
-      "rate": 126.65
+      "rate": 127.17
     },
     {
       "name": "Nintendo Switch Lite グレー",
@@ -38,7 +38,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 83000,
+      "buyback": 82800,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -206,7 +206,7 @@
     {
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
-      "buyback": 92000,
+      "buyback": 92300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -223,6 +223,14 @@
       "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
       "jan": "0840268942847",
       "buyback": 20300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック アビスアイ BOX m5",
+      "jan": "4521329462127",
+      "buyback": 15000,
       "category": "その他",
       "retail": 0,
       "rate": 0
