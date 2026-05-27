@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-27T03:55:11.013672",
+  "updated": "2026-05-27T09:52:41.594250",
   "source": "mobile-ichiban.com",
-  "count": 56,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -38,8 +38,16 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 82500,
+      "buyback": 82000,
       "category": "Meta Quest",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Controller",
+      "jan": "0814585022803",
+      "buyback": 20500,
+      "category": "その他",
       "retail": 0,
       "rate": 0
     },
@@ -78,10 +86,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 54400,
+      "buyback": 54800,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 108.84
+      "rate": 109.64
     },
     {
       "name": "BEE-S-KB6AA",
@@ -94,26 +102,26 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 49500,
+      "buyback": 49300,
       "category": "その他",
       "retail": 49980,
-      "rate": 99.04
+      "rate": 98.64
     },
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 56600,
+      "buyback": 56800,
       "category": "その他",
       "retail": 55980,
-      "rate": 101.11
+      "rate": 101.46
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8700,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 88.07
+      "rate": 89.09
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -126,7 +134,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 8700,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -158,14 +166,6 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6100,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 92.73
-    },
-    {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
       "buyback": 6100,
       "category": "Switch 2",
       "retail": 6578,
@@ -207,14 +207,6 @@
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
       "buyback": 93000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Panasonic Technics EAH-AZ100-S シルバー",
-      "jan": "4549980797297",
-      "buyback": 30000,
       "category": "その他",
       "retail": 0,
       "rate": 0
