@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-27T22:43:01.784288",
+  "updated": "2026-05-28T03:41:01.468449",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 55,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -46,7 +46,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 20500,
+      "buyback": 21000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -172,9 +172,57 @@
       "rate": 92.73
     },
     {
+      "name": "arrows We2 FCG02 au [ライトオレンジ]",
+      "jan": "4941787128326",
+      "buyback": 13000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 18500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 14600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 182000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 93000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 20300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック アビスアイ BOX m5",
+      "jan": "4521329462127",
+      "buyback": 14500,
       "category": "その他",
       "retail": 0,
       "rate": 0
