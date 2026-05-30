@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-29T22:39:12.414123",
+  "updated": "2026-05-30T03:30:04.314028",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 52,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -54,7 +54,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 21500,
+      "buyback": 22000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,15 +62,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 125000,
+      "buyback": 125500,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 125.25
+      "rate": 125.75
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 125000,
+      "buyback": 125500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -118,10 +118,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 50000,
+      "buyback": 50500,
       "category": "その他",
       "retail": 49980,
-      "rate": 100.04
+      "rate": 101.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,9 +172,33 @@
       "rate": 92.73
     },
     {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 18500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 14600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 182000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 95500,
       "category": "その他",
       "retail": 0,
       "rate": 0
