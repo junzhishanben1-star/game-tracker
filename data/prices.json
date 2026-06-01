@@ -1,15 +1,15 @@
 {
-  "updated": "2026-05-31T22:01:54.880935",
+  "updated": "2026-06-01T04:09:58.459098",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 53,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8800,
+      "buyback": 8900,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.09
+      "rate": 90.1
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -22,18 +22,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 48300,
+      "buyback": 47500,
       "category": "Switch",
       "retail": 37980,
-      "rate": 127.17
-    },
-    {
-      "name": "Nintendo Switch Lite グレー",
-      "jan": "4902370542929",
-      "buyback": 28100,
-      "category": "Switch",
-      "retail": 0,
-      "rate": 0
+      "rate": 125.07
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -172,9 +164,49 @@
       "rate": 92.73
     },
     {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 6100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 92.73
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 18500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 14600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 182000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 95500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
+      "jan": "4582769982897",
+      "buyback": 16800,
       "category": "その他",
       "retail": 0,
       "rate": 0
