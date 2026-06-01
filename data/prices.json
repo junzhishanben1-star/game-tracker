@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-01T04:09:58.459098",
+  "updated": "2026-06-01T11:36:38.852561",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -34,14 +34,6 @@
       "category": "PS5",
       "retail": 119980,
       "rate": 112.27
-    },
-    {
-      "name": "Meta Quest 3 512GB",
-      "jan": "815820024170",
-      "buyback": 81000,
-      "category": "Meta Quest",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "Steam Controller",
@@ -78,7 +70,7 @@
     {
       "name": "007 ファースト・ライト/PS5",
       "jan": "8809459216602",
-      "buyback": 7550,
+      "buyback": 7600,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -126,10 +118,10 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
       "jan": "4902370552744",
-      "buyback": 8500,
+      "buyback": 8400,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 86.05
+      "rate": 85.04
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
@@ -172,41 +164,17 @@
       "rate": 92.73
     },
     {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 18500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
+      "jan": "4902370548501",
+      "buyback": 49000,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 129.02
     },
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 14600,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 182000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 95500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
-      "jan": "4582769982897",
-      "buyback": 16800,
       "category": "その他",
       "retail": 0,
       "rate": 0
