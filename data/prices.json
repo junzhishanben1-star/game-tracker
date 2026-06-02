@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-01T21:35:08.679870",
+  "updated": "2026-06-02T04:03:15.623652",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 53,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8900,
+      "buyback": 9000,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 90.1
+      "rate": 91.11
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -46,15 +46,15 @@
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022308",
-      "buyback": 125800,
+      "buyback": 131000,
       "category": "Steam Deck",
       "retail": 99800,
-      "rate": 126.05
+      "rate": 131.26
     },
     {
       "name": "Steam Deck OLED 1TB",
       "jan": "0814585022629",
-      "buyback": 125800,
+      "buyback": 131000,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -172,6 +172,14 @@
       "rate": 129.02
     },
     {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 18500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
       "buyback": 14600,
@@ -180,9 +188,33 @@
       "rate": 0
     },
     {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 182000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 96000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
+      "jan": "4582769982897",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
-      "buyback": 24400,
+      "buyback": 23000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -222,10 +254,10 @@
     {
       "name": "instax WIDE 400 チェキ GREEN",
       "jan": "4547410529975",
-      "buyback": 24100,
+      "buyback": 23000,
       "category": "その他",
       "retail": 26730,
-      "rate": 90.16
+      "rate": 86.05
     },
     {
       "name": "instax mini 99 ブラック",
@@ -262,10 +294,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2460,
+      "buyback": 2490,
       "category": "その他",
       "retail": 2178,
-      "rate": 112.95
+      "rate": 114.33
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
