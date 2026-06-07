@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-06T22:04:23.534156",
+  "updated": "2026-06-07T04:01:15.051134",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 53,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -30,10 +30,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 47000,
+      "buyback": 46800,
       "category": "Switch",
       "retail": 37980,
-      "rate": 123.75
+      "rate": 123.22
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -110,10 +110,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 54800,
+      "buyback": 55000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 109.64
+      "rate": 110.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -134,10 +134,10 @@
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 56800,
+      "buyback": 57000,
       "category": "その他",
       "retail": 55980,
-      "rate": 101.46
+      "rate": 101.82
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -162,6 +162,46 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 19000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 183000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 97000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 36000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Echo Spot 2024年発売 オーシャンブルー",
+      "jan": "0840268912925",
+      "buyback": 6300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -222,10 +262,10 @@
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 26000,
+      "buyback": 25500,
       "category": "その他",
       "retail": 30580,
-      "rate": 85.02
+      "rate": 83.39
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
@@ -246,10 +286,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
       "jan": "4547410369137",
-      "buyback": 2700,
+      "buyback": 2600,
       "category": "その他",
       "retail": 2178,
-      "rate": 123.97
+      "rate": 119.38
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
