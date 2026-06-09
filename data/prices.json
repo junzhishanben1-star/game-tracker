@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-09T09:45:46.512313",
+  "updated": "2026-06-09T14:53:46.310863",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 48,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -162,46 +162,6 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 19000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 183000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 97500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 36500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Echo Spot 2024年発売 オーシャンブルー",
-      "jan": "0840268912925",
-      "buyback": 6300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
