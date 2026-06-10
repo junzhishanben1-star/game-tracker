@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-10T03:46:46.696738",
+  "updated": "2026-06-10T10:02:56.328522",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8800,
+      "buyback": 9000,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.09
+      "rate": 91.11
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -30,10 +30,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 46000,
+      "buyback": 45500,
       "category": "Switch",
       "retail": 37980,
-      "rate": 121.12
+      "rate": 119.8
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -54,24 +54,16 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 48800,
+      "buyback": 48900,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 100.83
+      "rate": 101.03
     },
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
       "buyback": 23500,
       "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "マリオカート ワールド/Switch2",
-      "jan": "4902370553260",
-      "buyback": 7600,
-      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -164,6 +156,14 @@
       "rate": 69.37
     },
     {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 6100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 92.73
+    },
+    {
       "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
       "jan": "4942857244205",
       "buyback": 19000,
@@ -204,6 +204,14 @@
       "rate": 0
     },
     {
+      "name": "ポケモンカードゲーム MEGA 拡張パック アビスアイ BOX m5",
+      "jan": "4521329462127",
+      "buyback": 12000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 23000,
@@ -238,7 +246,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 14600,
+      "buyback": 14500,
       "category": "その他",
       "retail": 0,
       "rate": 0
