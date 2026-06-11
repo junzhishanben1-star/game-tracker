@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-11T04:03:00.864318",
+  "updated": "2026-06-11T10:26:50.594530",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 48,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -20,28 +20,12 @@
       "rate": 0
     },
     {
-      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "4523052030185",
-      "buyback": 6200,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 94.25
-    },
-    {
-      "name": "Nintendo Switch (有機ELモデル) ホワイト",
-      "jan": "4902370548495",
-      "buyback": 45000,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 118.48
-    },
-    {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 135000,
+      "buyback": 135200,
       "category": "PS5",
       "retail": 119980,
-      "rate": 112.52
+      "rate": 112.69
     },
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
@@ -52,25 +36,49 @@
       "rate": 0
     },
     {
+      "name": "PlayStation Portal リモートプレーヤー CFIJ-18000",
+      "jan": "4948872017084",
+      "buyback": 34000,
+      "category": "PS5",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 48900,
+      "buyback": 49000,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 101.03
+      "rate": 101.24
+    },
+    {
+      "name": "Meta Quest 3 512GB",
+      "jan": "815820024170",
+      "buyback": 81800,
+      "category": "Meta Quest",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 23500,
+      "buyback": 24500,
       "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "マリオカート ワールド/Switch2",
+      "jan": "4902370553260",
+      "buyback": 7900,
+      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
     {
       "name": "スーパー マリオパーティ ジャンボリー Edition＋ジャンボリーTV /Switch 2",
       "jan": "4902370553352",
-      "buyback": 6800,
+      "buyback": 7100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -78,7 +86,7 @@
     {
       "name": "007 ファースト・ライト/PS5",
       "jan": "8809459216602",
-      "buyback": 8000,
+      "buyback": 8050,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -118,10 +126,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 47500,
+      "buyback": 46500,
       "category": "その他",
       "retail": 49980,
-      "rate": 95.04
+      "rate": 93.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -154,62 +162,6 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
-    },
-    {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
-      "buyback": 6000,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 91.21
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 19500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 183000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 97500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 37000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Echo Spot 2024年発売 オーシャンブルー",
-      "jan": "0840268912925",
-      "buyback": 6300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック アビスアイ BOX m5",
-      "jan": "4521329462127",
-      "buyback": 12000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -246,7 +198,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 14500,
+      "buyback": 14600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -302,10 +254,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2490,
+      "buyback": 2500,
       "category": "その他",
       "retail": 2178,
-      "rate": 114.33
+      "rate": 114.78
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
