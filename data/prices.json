@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-10T22:52:47.049991",
+  "updated": "2026-06-11T04:03:00.864318",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -30,10 +30,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 45500,
+      "buyback": 45000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 119.8
+      "rate": 118.48
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -78,7 +78,7 @@
     {
       "name": "007 ファースト・ライト/PS5",
       "jan": "8809459216602",
-      "buyback": 7700,
+      "buyback": 8000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -158,10 +158,58 @@
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6100,
+      "buyback": 6000,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 92.73
+      "rate": 91.21
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 19500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 183000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 97500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 37000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Echo Spot 2024年発売 オーシャンブルー",
+      "jan": "0840268912925",
+      "buyback": 6300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック アビスアイ BOX m5",
+      "jan": "4521329462127",
+      "buyback": 12000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
