@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-12T22:26:26.404759",
+  "updated": "2026-06-13T03:50:20.236371",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 53,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -118,26 +118,26 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 76900,
+      "buyback": 77100,
       "category": "その他",
       "retail": 69980,
-      "rate": 109.89
+      "rate": 110.17
     },
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 46500,
+      "buyback": 46000,
       "category": "その他",
       "retail": 49980,
-      "rate": 93.04
+      "rate": 92.04
     },
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 57000,
+      "buyback": 56800,
       "category": "その他",
       "retail": 55980,
-      "rate": 101.82
+      "rate": 101.46
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -162,6 +162,46 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 19500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 183000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 99500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 38000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック アビスアイ BOX m5",
+      "jan": "4521329462127",
+      "buyback": 10500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
