@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-19T22:05:49.777022",
+  "updated": "2026-06-20T03:43:59.367290",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 53,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -14,7 +14,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 9050,
+      "buyback": 9100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 77100,
+      "buyback": 77500,
       "category": "その他",
       "retail": 69980,
-      "rate": 110.17
+      "rate": 110.75
     },
     {
       "name": "BEE-S-KB6CA",
@@ -164,6 +164,46 @@
       "rate": 91.21
     },
     {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 19500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 183000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 98000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Lavender",
+      "jan": "0840353943353",
+      "buyback": 18300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 40000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 23000,
@@ -174,7 +214,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 14600,
+      "buyback": 14500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -182,7 +222,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 14600,
+      "buyback": 14500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -190,7 +230,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 14600,
+      "buyback": 14500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -198,7 +238,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 14500,
+      "buyback": 14400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -206,7 +246,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 14600,
+      "buyback": 14500,
       "category": "その他",
       "retail": 0,
       "rate": 0
