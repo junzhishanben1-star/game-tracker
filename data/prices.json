@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-20T03:43:59.367290",
+  "updated": "2026-06-20T08:58:59.019550",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -158,10 +158,10 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6000,
+      "buyback": 5800,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 91.21
+      "rate": 88.17
     },
     {
       "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
@@ -190,7 +190,7 @@
     {
       "name": "Google Fitbit Air Lavender",
       "jan": "0840353943353",
-      "buyback": 18300,
+      "buyback": 18500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -199,6 +199,14 @@
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
       "buyback": 40000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Obsidian",
+      "jan": "0840353943339",
+      "buyback": 18500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -278,10 +286,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1460,
+      "buyback": 1450,
       "category": "その他",
       "retail": 1100,
-      "rate": 132.73
+      "rate": 131.82
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
