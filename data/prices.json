@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-22T04:19:22.692460",
+  "updated": "2026-06-22T11:56:46.602138",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 48,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -14,7 +14,7 @@
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
       "jan": "4902370553871",
-      "buyback": 9100,
+      "buyback": 9200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 135500,
+      "buyback": 135700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 112.94
+      "rate": 113.1
     },
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
@@ -62,7 +62,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 25000,
+      "buyback": 25500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -164,46 +164,6 @@
       "rate": 88.17
     },
     {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 19500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 183000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 98000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Obsidian",
-      "jan": "0840353943339",
-      "buyback": 18500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 40500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 23000,
@@ -238,7 +198,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 14400,
+      "buyback": 14500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -302,18 +262,18 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2720,
+      "buyback": 2750,
       "category": "その他",
       "retail": 2100,
-      "rate": 129.52
+      "rate": 130.95
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
       "jan": "4547410348613",
-      "buyback": 1400,
+      "buyback": 1420,
       "category": "その他",
       "retail": 1100,
-      "rate": 127.27
+      "rate": 129.09
     },
     {
       "name": "instax mini 90 チェキ ネオクラシック [ブラック]",
