@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-23T03:38:19.172688",
+  "updated": "2026-06-23T09:41:35.518958",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 51,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -22,15 +22,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 135700,
+      "buyback": 135800,
       "category": "PS5",
       "retail": 119980,
-      "rate": 113.1
+      "rate": 113.19
     },
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
       "jan": "4948872415910",
-      "buyback": 80600,
+      "buyback": 80700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -60,14 +60,6 @@
       "rate": 0
     },
     {
-      "name": "Steam Controller",
-      "jan": "0814585022803",
-      "buyback": 25500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "マリオカート ワールド/Switch2",
       "jan": "4902370553260",
       "buyback": 8100,
@@ -86,7 +78,7 @@
     {
       "name": "007 ファースト・ライト/PS5",
       "jan": "8809459216602",
-      "buyback": 7700,
+      "buyback": 7600,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -110,10 +102,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 77500,
+      "buyback": 77600,
       "category": "その他",
       "retail": 69980,
-      "rate": 110.75
+      "rate": 110.89
     },
     {
       "name": "BEE-S-KB6CA",
@@ -164,14 +156,6 @@
       "rate": 88.17
     },
     {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
-      "jan": "4942857244205",
-      "buyback": 19500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "CANON PowerShot G7 X Mark III [ブラック]",
       "jan": "4549292137743",
       "buyback": 183000,
@@ -190,7 +174,7 @@
     {
       "name": "Google Fitbit Air Obsidian",
       "jan": "0840353943339",
-      "buyback": 18900,
+      "buyback": 19300,
       "category": "その他",
       "retail": 0,
       "rate": 0
