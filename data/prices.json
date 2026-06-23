@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-23T09:41:35.518958",
+  "updated": "2026-06-23T14:51:04.301958",
   "source": "mobile-ichiban.com",
-  "count": 51,
+  "count": 47,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -154,38 +154,6 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 88.17
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 183000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Canon PowerShot SX740 HS [シルバー]",
-      "jan": "4549292119060",
-      "buyback": 98000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Obsidian",
-      "jan": "0840353943339",
-      "buyback": 19300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 40500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
