@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-23T22:15:13.530898",
+  "updated": "2026-06-24T03:39:15.042300",
   "source": "mobile-ichiban.com",
-  "count": 47,
+  "count": 51,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -156,6 +156,38 @@
       "rate": 88.17
     },
     {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 183000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 98800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Obsidian",
+      "jan": "0840353943339",
+      "buyback": 19500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 40700,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 23000,
@@ -230,10 +262,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1450,
+      "buyback": 1430,
       "category": "その他",
       "retail": 1100,
-      "rate": 131.82
+      "rate": 130.0
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
