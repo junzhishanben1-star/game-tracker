@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-24T03:39:15.042300",
+  "updated": "2026-06-24T09:32:15.128951",
   "source": "mobile-ichiban.com",
-  "count": 51,
+  "count": 53,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 9050,
+      "buyback": 9100,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 91.62
+      "rate": 92.12
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -31,14 +31,6 @@
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
       "jan": "4948872415910",
       "buyback": 80700,
-      "category": "PS5",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "PlayStation Portal リモートプレーヤー CFIJ-18000",
-      "jan": "4948872017084",
-      "buyback": 34000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -76,14 +68,6 @@
       "rate": 0
     },
     {
-      "name": "007 ファースト・ライト/PS5",
-      "jan": "8809459216602",
-      "buyback": 7600,
-      "category": "PS5",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
       "jan": "4902370553802",
       "buyback": 9600,
@@ -110,10 +94,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 47500,
+      "buyback": 48000,
       "category": "その他",
       "retail": 49980,
-      "rate": 95.04
+      "rate": 96.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -156,9 +140,25 @@
       "rate": 88.17
     },
     {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 5800,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 88.17
+    },
+    {
+      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
+      "jan": "4902370548501",
+      "buyback": 48000,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 126.38
+    },
+    {
       "name": "CANON PowerShot G7 X Mark III [ブラック]",
       "jan": "4549292137743",
-      "buyback": 183000,
+      "buyback": 184000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -174,7 +174,15 @@
     {
       "name": "Google Fitbit Air Obsidian",
       "jan": "0840353943339",
-      "buyback": 19500,
+      "buyback": 20000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Microsoft Office Home 2024 POSA",
+      "jan": "4549576250618",
+      "buyback": 29000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -182,7 +190,15 @@
     {
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
-      "buyback": 40700,
+      "buyback": 42000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
+      "jan": "4582769982897",
+      "buyback": 15000,
       "category": "その他",
       "retail": 0,
       "rate": 0
