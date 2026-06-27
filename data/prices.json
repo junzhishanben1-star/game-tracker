@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T03:31:56.527216",
+  "updated": "2026-06-27T08:37:59.361568",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 136300,
+      "buyback": 136400,
       "category": "PS5",
       "retail": 119980,
-      "rate": 113.6
+      "rate": 113.69
     },
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
@@ -86,10 +86,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 78000,
+      "buyback": 78100,
       "category": "その他",
       "retail": 69980,
-      "rate": 111.46
+      "rate": 111.6
     },
     {
       "name": "BEE-S-KB6CA",
