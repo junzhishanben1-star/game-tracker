@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-28T22:04:00.395007",
+  "updated": "2026-06-29T04:00:06.913154",
   "source": "mobile-ichiban.com",
-  "count": 47,
+  "count": 54,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -14,10 +14,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 136400,
+      "buyback": 137000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 113.69
+      "rate": 114.19
     },
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
@@ -54,7 +54,7 @@
     {
       "name": "マリオカート ワールド/Switch2",
       "jan": "4902370553260",
-      "buyback": 8100,
+      "buyback": 7800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -86,10 +86,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 78100,
+      "buyback": 78200,
       "category": "その他",
       "retail": 69980,
-      "rate": 111.6
+      "rate": 111.75
     },
     {
       "name": "BEE-S-KB6CA",
@@ -156,6 +156,62 @@
       "rate": 88.17
     },
     {
+      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ライト ブルー]",
+      "jan": "4986773243508",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 183000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 97000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Obsidian",
+      "jan": "0840353943339",
+      "buyback": 20500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Microsoft Office Home 2024 POSA",
+      "jan": "4549576250618",
+      "buyback": 29000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 42500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
+      "jan": "4582769982897",
+      "buyback": 13500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 23000,
@@ -166,7 +222,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 14500,
+      "buyback": 14400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -174,7 +230,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 14500,
+      "buyback": 14400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -182,7 +238,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 14500,
+      "buyback": 14400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -190,7 +246,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 14500,
+      "buyback": 14400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -198,7 +254,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 14500,
+      "buyback": 14400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -230,10 +286,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1400,
+      "buyback": 1380,
       "category": "その他",
       "retail": 1100,
-      "rate": 127.27
+      "rate": 125.45
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
