@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T03:42:25.172968",
+  "updated": "2026-06-30T09:38:38.279829",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 137200,
+      "buyback": 137500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 114.35
+      "rate": 114.6
     },
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
@@ -86,10 +86,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 78400,
+      "buyback": 78500,
       "category": "その他",
       "retail": 69980,
-      "rate": 112.03
+      "rate": 112.17
     },
     {
       "name": "BEE-S-KB6CA",
@@ -174,7 +174,7 @@
     {
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
-      "buyback": 96500,
+      "buyback": 96000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -182,7 +182,7 @@
     {
       "name": "Google Fitbit Air Obsidian",
       "jan": "0840353943339",
-      "buyback": 20500,
+      "buyback": 21000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -286,10 +286,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1360,
+      "buyback": 1350,
       "category": "その他",
       "retail": 1100,
-      "rate": 123.64
+      "rate": 122.73
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
