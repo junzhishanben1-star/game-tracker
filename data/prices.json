@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-30T22:16:31.806178",
+  "updated": "2026-07-01T03:58:18.900703",
   "source": "mobile-ichiban.com",
-  "count": 47,
+  "count": 54,
   "products": [
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JABAB ライトパープル/ライトグリーン",
@@ -30,10 +30,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 49300,
+      "buyback": 49500,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 101.86
+      "rate": 102.27
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -86,18 +86,18 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 78500,
+      "buyback": 78600,
       "category": "その他",
       "retail": 69980,
-      "rate": 112.17
+      "rate": 112.32
     },
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 48500,
+      "buyback": 49500,
       "category": "その他",
       "retail": 49980,
-      "rate": 97.04
+      "rate": 99.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -110,10 +110,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 9150,
+      "buyback": 9200,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 92.63
+      "rate": 93.14
     },
     {
       "name": "Joy-Con 2 (L)/(R) BEE-A-JAAAA ライトブルー/ライトレッド",
@@ -154,6 +154,62 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 88.17
+    },
+    {
+      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ライト ブルー]",
+      "jan": "4986773243508",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 181000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Canon PowerShot SX740 HS [シルバー]",
+      "jan": "4549292119060",
+      "buyback": 96000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Obsidian",
+      "jan": "0840353943339",
+      "buyback": 21000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Microsoft Office Home 2024 POSA",
+      "jan": "4549576250618",
+      "buyback": 29000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 42500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
+      "jan": "4582769982897",
+      "buyback": 13500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
