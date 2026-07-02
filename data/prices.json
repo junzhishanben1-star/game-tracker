@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T03:39:07.372695",
+  "updated": "2026-07-02T08:58:08.765444",
   "source": "mobile-ichiban.com",
   "count": 54,
   "products": [
@@ -22,15 +22,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 138200,
+      "buyback": 138500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 115.19
+      "rate": 115.44
     },
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
       "jan": "4948872415910",
-      "buyback": 81700,
+      "buyback": 82000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -38,15 +38,15 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 49500,
+      "buyback": 49800,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 102.27
+      "rate": 102.89
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 81800,
+      "buyback": 82000,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -174,7 +174,7 @@
     {
       "name": "Canon PowerShot SX740 HS [シルバー]",
       "jan": "4549292119060",
-      "buyback": 96000,
+      "buyback": 95500,
       "category": "その他",
       "retail": 0,
       "rate": 0
