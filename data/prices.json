@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-04T21:59:57.958958",
+  "updated": "2026-07-05T03:28:19.790782",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch Lite ブルー",
@@ -154,6 +154,54 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
+    },
+    {
+      "name": "OPPO A3 5G 4GB+128GB SIMフリー [パープル]",
+      "jan": "4580038879862",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 19500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "DJI OSMO POCKET 4 スタンダードコンボ",
+      "jan": "6937224133099",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Obsidian",
+      "jan": "0840353943339",
+      "buyback": 21000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 44000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
+      "jan": "4582769982897",
+      "buyback": 11000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
