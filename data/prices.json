@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-06T03:36:26.728712",
+  "updated": "2026-07-06T10:23:55.923235",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 48,
   "products": [
     {
       "name": "Nintendo Switch Lite ブルー",
@@ -14,7 +14,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 47000,
+      "buyback": 47200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 139500,
+      "buyback": 141000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 116.27
+      "rate": 117.52
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
       "jan": "4948872415910",
-      "buyback": 82300,
+      "buyback": 83000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -156,54 +156,6 @@
       "rate": 69.37
     },
     {
-      "name": "OPPO A3 5G 4GB+128GB SIMフリー [パープル]",
-      "jan": "4580038879862",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 19500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "DJI OSMO POCKET 4 スタンダードコンボ",
-      "jan": "6937224133099",
-      "buyback": 68000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Obsidian",
-      "jan": "0840353943339",
-      "buyback": 21000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 44300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
-      "jan": "4582769982897",
-      "buyback": 11500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 23000,
@@ -214,7 +166,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 14000,
+      "buyback": 13500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -222,7 +174,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 14000,
+      "buyback": 13500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -230,7 +182,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 14000,
+      "buyback": 13500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -238,7 +190,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 14000,
+      "buyback": 13500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -246,7 +198,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 14000,
+      "buyback": 13500,
       "category": "その他",
       "retail": 0,
       "rate": 0
