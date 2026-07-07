@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-06T22:14:58.112785",
+  "updated": "2026-07-07T03:26:55.098450",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 54,
   "products": [
     {
       "name": "Nintendo Switch Lite ブルー",
@@ -14,7 +14,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 47200,
+      "buyback": 47300,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -22,15 +22,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 141000,
+      "buyback": 142000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 117.52
+      "rate": 118.35
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
       "jan": "4948872416030",
-      "buyback": 10500,
+      "buyback": 10600,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -46,10 +46,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 50000,
+      "buyback": 49000,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 103.31
+      "rate": 101.24
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -94,10 +94,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 78800,
+      "buyback": 79300,
       "category": "その他",
       "retail": 69980,
-      "rate": 112.6
+      "rate": 113.32
     },
     {
       "name": "BEE-S-KB6CA",
@@ -154,6 +154,54 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
+    },
+    {
+      "name": "OPPO A3 5G 4GB+128GB SIMフリー [パープル]",
+      "jan": "4580038879862",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 19500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "DJI OSMO POCKET 4 スタンダードコンボ",
+      "jan": "6937224133099",
+      "buyback": 67000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 45000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
+      "jan": "0840414647961",
+      "buyback": 8200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ONE PIECEカードゲーム 決戦の刻 BOX OP-16",
+      "jan": "4582769982897",
+      "buyback": 11500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
