@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-08T08:30:24.151061",
+  "updated": "2026-07-08T11:06:05.279163",
   "source": "mobile-ichiban.com",
-  "count": 55,
+  "count": 47,
   "products": [
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
@@ -22,7 +22,7 @@
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
       "jan": "4948872416030",
-      "buyback": 10800,
+      "buyback": 10900,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -36,28 +36,20 @@
       "rate": 0
     },
     {
+      "name": "Xbox Series X デジタル エディション EP2-00708 1TB ロボット ホワイト",
+      "jan": "4549576247038",
+      "buyback": 82200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
       "buyback": 49000,
       "category": "Meta Quest",
       "retail": 48400,
       "rate": 101.24
-    },
-    {
-      "name": "Meta Quest 3 512GB",
-      "jan": "815820024170",
-      "buyback": 82000,
-      "category": "Meta Quest",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Star Fox/Switch2",
-      "jan": "4902370554328",
-      "buyback": 4800,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "マリオカート ワールド/Switch2",
@@ -156,68 +148,12 @@
       "rate": 91.21
     },
     {
-      "name": "Google Pixel 10a 128GB SIMフリー Fog",
-      "jan": "840353949812",
-      "buyback": 63000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A3 5G 4GB+128GB SIMフリー [パープル]",
-      "jan": "4580038879862",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [ミッドナイトブラック]",
-      "jan": "4549046156198",
-      "buyback": 14200,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 21000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4A4J/A [ブルー]",
-      "jan": "4549995560084",
-      "buyback": 60000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AirPods Pro 3 MFHP4J/A",
-      "jan": "4549995635232",
-      "buyback": 31600,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 45000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
-      "jan": "0840414647961",
-      "buyback": 8900,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 5800,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 88.17
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
