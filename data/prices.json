@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T05:53:18.947531",
+  "updated": "2026-07-08T08:30:24.151061",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 144000,
+      "buyback": 145000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 120.02
+      "rate": 120.85
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
@@ -102,10 +102,10 @@
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 57200,
+      "buyback": 57300,
       "category": "その他",
       "retail": 55980,
-      "rate": 102.18
+      "rate": 102.36
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -150,10 +150,10 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 5800,
+      "buyback": 6000,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 88.17
+      "rate": 91.21
     },
     {
       "name": "Google Pixel 10a 128GB SIMフリー Fog",
