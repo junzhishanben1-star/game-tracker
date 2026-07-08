@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T02:44:14.895320",
+  "updated": "2026-07-08T05:53:18.947531",
   "source": "mobile-ichiban.com",
   "count": 55,
   "products": [
@@ -14,15 +14,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 143500,
+      "buyback": 144000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 119.6
+      "rate": 120.02
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
       "jan": "4948872416030",
-      "buyback": 10600,
+      "buyback": 10800,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +30,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
       "jan": "4948872415910",
-      "buyback": 83300,
+      "buyback": 83700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -78,10 +78,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 54200,
+      "buyback": 54500,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 108.44
+      "rate": 109.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -182,7 +182,7 @@
     {
       "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
       "jan": "4942857244229",
-      "buyback": 19500,
+      "buyback": 21000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,7 +214,7 @@
     {
       "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
       "jan": "0840414647961",
-      "buyback": 8200,
+      "buyback": 8900,
       "category": "その他",
       "retail": 0,
       "rate": 0
