@@ -1,15 +1,15 @@
 {
-  "updated": "2026-07-09T03:25:46.544856",
+  "updated": "2026-07-09T09:41:20.320711",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 146500,
+      "buyback": 147000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 122.1
+      "rate": 122.52
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
@@ -30,7 +30,7 @@
     {
       "name": "Xbox Series X デジタル エディション EP2-00708 1TB ロボット ホワイト",
       "jan": "4549576247038",
-      "buyback": 82500,
+      "buyback": 82800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -190,7 +190,7 @@
     {
       "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4A4J/A [ブルー]",
       "jan": "4549995560084",
-      "buyback": 60000,
+      "buyback": 60500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -206,7 +206,7 @@
     {
       "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
       "jan": "0840268942847",
-      "buyback": 20000,
+      "buyback": 20200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,7 +214,7 @@
     {
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
-      "buyback": 45000,
+      "buyback": 46000,
       "category": "その他",
       "retail": 0,
       "rate": 0
