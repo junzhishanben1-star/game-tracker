@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-09T22:29:26.105932",
+  "updated": "2026-07-10T03:22:49.535079",
   "source": "mobile-ichiban.com",
-  "count": 47,
+  "count": 57,
   "products": [
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
@@ -30,7 +30,7 @@
     {
       "name": "Xbox Series X デジタル エディション EP2-00708 1TB ロボット ホワイト",
       "jan": "4549576247038",
-      "buyback": 82800,
+      "buyback": 83000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -156,6 +156,86 @@
       "rate": 127.44
     },
     {
+      "name": "Google Pixel 10a 128GB SIMフリー Fog",
+      "jan": "840353949812",
+      "buyback": 63000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [ミッドナイトブラック]",
+      "jan": "4549046156198",
+      "buyback": 14200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
+      "jan": "4941787149536",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
+      "jan": "4942857244229",
+      "buyback": 21000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
+      "jan": "4549995560107",
+      "buyback": 60500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AirPods Pro 3 MFHP4J/A",
+      "jan": "4549995635232",
+      "buyback": 31600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 20500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 46000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
+      "jan": "0840414647961",
+      "buyback": 8900,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "遊戯王OCGデュエルモンスターズ THE CHRONICLES DECK 白の物語",
+      "jan": "4988602179118",
+      "buyback": 2700,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 23000,
@@ -230,10 +310,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1320,
+      "buyback": 1300,
       "category": "その他",
       "retail": 1100,
-      "rate": 120.0
+      "rate": 118.18
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
