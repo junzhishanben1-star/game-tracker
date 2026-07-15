@@ -1,20 +1,20 @@
 {
-  "updated": "2026-07-15T02:30:01.974389",
+  "updated": "2026-07-15T05:33:15.032228",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 148800,
+      "buyback": 149700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 124.02
+      "rate": 124.77
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
       "jan": "4948872416030",
-      "buyback": 11100,
+      "buyback": 11300,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
       "jan": "4948872415910",
-      "buyback": 84700,
+      "buyback": 85200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -134,18 +134,18 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6000,
+      "buyback": 6100,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 91.21
+      "rate": 92.73
     },
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 5800,
+      "buyback": 6100,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 88.17
+      "rate": 92.73
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -222,7 +222,7 @@
     {
       "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
       "jan": "0840414647961",
-      "buyback": 9100,
+      "buyback": 9200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -310,10 +310,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1310,
+      "buyback": 1350,
       "category": "その他",
       "retail": 1100,
-      "rate": 119.09
+      "rate": 122.73
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
