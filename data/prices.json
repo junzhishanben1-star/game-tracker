@@ -1,15 +1,15 @@
 {
-  "updated": "2026-07-16T02:38:15.557577",
+  "updated": "2026-07-16T05:42:41.913254",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 150500,
+      "buyback": 151000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 125.44
+      "rate": 125.85
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
       "jan": "4948872415910",
-      "buyback": 85700,
+      "buyback": 86000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +30,7 @@
     {
       "name": "Xbox Series X デジタル エディション EP2-00708 1TB ロボット ホワイト",
       "jan": "4549576247038",
-      "buyback": 84800,
+      "buyback": 85000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -38,10 +38,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 49300,
+      "buyback": 49700,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 101.86
+      "rate": 102.69
     },
     {
       "name": "マリオカート ワールド/Switch2",
@@ -206,7 +206,7 @@
     {
       "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
       "jan": "0840268942847",
-      "buyback": 21600,
+      "buyback": 21900,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,7 +214,7 @@
     {
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
-      "buyback": 47200,
+      "buyback": 47300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -222,7 +222,7 @@
     {
       "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
       "jan": "0840414647961",
-      "buyback": 9100,
+      "buyback": 9200,
       "category": "その他",
       "retail": 0,
       "rate": 0
