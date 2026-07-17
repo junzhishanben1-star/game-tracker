@@ -1,8 +1,16 @@
 {
-  "updated": "2026-07-17T08:11:36.700758",
+  "updated": "2026-07-17T10:48:36.214422",
   "source": "mobile-ichiban.com",
-  "count": 57,
+  "count": 47,
   "products": [
+    {
+      "name": "Nintendo Switch Lite コーラル",
+      "jan": "4902370545302",
+      "buyback": 27400,
+      "category": "Switch",
+      "retail": 0,
+      "rate": 0
+    },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
@@ -15,14 +23,6 @@
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
       "jan": "4948872416030",
       "buyback": 11700,
-      "category": "PS5",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "PlayStation 5 デジタル・エディション slim CFI-2000B01",
-      "jan": "4948872415910",
-      "buyback": 87500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -154,86 +154,6 @@
       "category": "Switch",
       "retail": 37980,
       "rate": 127.7
-    },
-    {
-      "name": "Google Pixel 10a 128GB SIMフリー Fog",
-      "jan": "840353949812",
-      "buyback": 66000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [ミッドナイトブラック]",
-      "jan": "4549046156198",
-      "buyback": 14500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
-      "jan": "4941787149536",
-      "buyback": 14500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 21000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
-      "jan": "4549995560107",
-      "buyback": 61500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "MacBook Neo 13インチ Liquid Retinaディスプレイ MHFF4J/A [インディゴ]",
-      "jan": "4549995664638",
-      "buyback": 91000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
-      "jan": "0840268942847",
-      "buyback": 22100,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 47300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
-      "jan": "0840414647961",
-      "buyback": 9200,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "遊戯王OCGデュエルモンスターズ THE CHRONICLES DECK 白の物語",
-      "jan": "4988602179118",
-      "buyback": 2700,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
