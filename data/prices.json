@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T02:32:19.677427",
+  "updated": "2026-07-18T05:28:16.323644",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 153500,
+      "buyback": 155500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 127.94
+      "rate": 129.6
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
@@ -30,7 +30,7 @@
     {
       "name": "Xbox Series X デジタル エディション EP2-00708 1TB ロボット ホワイト",
       "jan": "4549576247038",
-      "buyback": 85100,
+      "buyback": 85500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -158,7 +158,7 @@
     {
       "name": "Google Pixel 10a 128GB SIMフリー Fog",
       "jan": "840353949812",
-      "buyback": 66000,
+      "buyback": 67000,
       "category": "その他",
       "retail": 0,
       "rate": 0
