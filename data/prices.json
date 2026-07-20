@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20T02:59:25.749027",
+  "updated": "2026-07-20T06:23:52.782687",
   "source": "mobile-ichiban.com",
   "count": 57,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 156200,
+      "buyback": 157000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 130.19
+      "rate": 130.86
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
@@ -38,10 +38,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 50500,
+      "buyback": 50600,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 104.34
+      "rate": 104.55
     },
     {
       "name": "マリオカート ワールド/Switch2",
@@ -70,26 +70,26 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 79800,
+      "buyback": 80400,
       "category": "その他",
       "retail": 69980,
-      "rate": 114.03
+      "rate": 114.89
     },
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 49500,
+      "buyback": 50000,
       "category": "その他",
       "retail": 49980,
-      "rate": 99.04
+      "rate": 100.04
     },
     {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
-      "buyback": 57500,
+      "buyback": 57800,
       "category": "その他",
       "retail": 55980,
-      "rate": 102.72
+      "rate": 103.25
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -206,7 +206,7 @@
     {
       "name": "MacBook Neo 13インチ Liquid Retinaディスプレイ MHFF4J/A [インディゴ]",
       "jan": "4549995664638",
-      "buyback": 91000,
+      "buyback": 92000,
       "category": "その他",
       "retail": 0,
       "rate": 0
