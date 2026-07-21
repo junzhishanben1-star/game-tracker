@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21T05:52:55.875469",
+  "updated": "2026-07-21T08:30:37.071261",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
@@ -14,15 +14,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 159500,
+      "buyback": 160000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 132.94
+      "rate": 133.36
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
       "jan": "4948872416030",
-      "buyback": 11700,
+      "buyback": 11500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +30,7 @@
     {
       "name": "Xbox Series X デジタル エディション EP2-00708 1TB ロボット ホワイト",
       "jan": "4549576247038",
-      "buyback": 86000,
+      "buyback": 86300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,10 +62,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 80400,
+      "buyback": 80600,
       "category": "その他",
       "retail": 69980,
-      "rate": 114.89
+      "rate": 115.18
     },
     {
       "name": "BEE-S-KB6CA",
