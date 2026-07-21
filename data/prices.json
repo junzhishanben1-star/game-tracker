@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-21T08:30:37.071261",
+  "updated": "2026-07-21T11:10:18.587216",
   "source": "mobile-ichiban.com",
-  "count": 58,
+  "count": 47,
   "products": [
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -150,98 +150,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 45000,
+      "buyback": 44800,
       "category": "Switch",
       "retail": 37980,
-      "rate": 118.48
-    },
-    {
-      "name": "Google Pixel 10a 128GB SIMフリー Fog",
-      "jan": "840353949812",
-      "buyback": 67000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
-      "jan": "4941787149536",
-      "buyback": 14500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ライト ブルー]",
-      "jan": "4942857242836",
-      "buyback": 14500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AQUOS wish5 SH-52F 4G+64G docomo ユキ",
-      "jan": "4942857244229",
-      "buyback": 21500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
-      "jan": "4549995560107",
-      "buyback": 61500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 180000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "MacBook Neo 13インチ Liquid Retinaディスプレイ MHFF4J/A [インディゴ]",
-      "jan": "4549995664638",
-      "buyback": 92000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
-      "jan": "0840268942847",
-      "buyback": 22100,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 47300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Amazon Echo Dot Max 2025年発売 グレーシャーホワイト",
-      "jan": "0840414647961",
-      "buyback": 9200,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "遊戯王OCGデュエルモンスターズ BEYOND THE BRAVE BOX",
-      "jan": "4988602180305",
-      "buyback": 5700,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "rate": 117.96
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -254,7 +166,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 13000,
+      "buyback": 12800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,7 +174,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 13000,
+      "buyback": 12800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -270,7 +182,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 13000,
+      "buyback": 12800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -278,7 +190,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 13000,
+      "buyback": 12800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -286,7 +198,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 13000,
+      "buyback": 12800,
       "category": "その他",
       "retail": 0,
       "rate": 0
