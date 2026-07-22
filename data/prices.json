@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-22T05:52:25.256722",
+  "updated": "2026-07-22T08:31:12.343931",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
     {
       "name": "Nintendo Switch Lite コーラル",
       "jan": "4902370545302",
-      "buyback": 27500,
+      "buyback": 27600,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -14,15 +14,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 161500,
+      "buyback": 162000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 134.61
+      "rate": 135.02
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
       "jan": "4948872416030",
-      "buyback": 11200,
+      "buyback": 11000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -92,6 +92,14 @@
       "rate": 88.07
     },
     {
+      "name": "Nintendo Switch Joy-Con 2 (L) ブルー/(R) ライトイエロー BEE-A-JACAC",
+      "jan": "4902370554205",
+      "buyback": 9000,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
       "jan": "4902370552744",
       "buyback": 8200,
@@ -102,7 +110,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 9300,
+      "buyback": 9400,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -146,14 +154,6 @@
       "category": "Switch",
       "retail": 37980,
       "rate": 127.7
-    },
-    {
-      "name": "Nintendo Switch (有機ELモデル) ホワイト",
-      "jan": "4902370548495",
-      "buyback": 44800,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 117.96
     },
     {
       "name": "Google Pixel 10a 128GB SIMフリー Fog",
@@ -238,7 +238,7 @@
     {
       "name": "遊戯王OCGデュエルモンスターズ BEYOND THE BRAVE BOX",
       "jan": "4988602180305",
-      "buyback": 5700,
+      "buyback": 5800,
       "category": "その他",
       "retail": 0,
       "rate": 0
