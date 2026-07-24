@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T05:51:50.068757",
+  "updated": "2026-07-24T08:29:07.976018",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 164000,
+      "buyback": 164500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 136.69
+      "rate": 137.11
     },
     {
       "name": "Xbox Series X デジタル エディション EP2-00708 1TB ロボット ホワイト",
@@ -62,7 +62,7 @@
     {
       "name": "スプラトゥーン レイダース/Switch 2",
       "jan": "4902370554359",
-      "buyback": 6600,
+      "buyback": 6300,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Nintendo Switch 2 スプラトゥーン レイダース セット 国内版",
       "jan": "4902370554779",
-      "buyback": 61500,
+      "buyback": 60500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
