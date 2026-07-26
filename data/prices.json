@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-25T21:57:51.315171",
+  "updated": "2026-07-26T02:49:30.055068",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 56,
   "products": [
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ブルー/(R) ライトイエロー BEE-A-JACAC",
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 164500,
+      "buyback": 165700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 137.11
+      "rate": 138.11
     },
     {
       "name": "Xbox series x",
@@ -94,10 +94,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 50500,
+      "buyback": 50000,
       "category": "その他",
       "retail": 49980,
-      "rate": 101.04
+      "rate": 100.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -164,12 +164,76 @@
       "rate": 91.21
     },
     {
+      "name": "Google Pixel 10a 128GB SIMフリー Fog",
+      "jan": "840353949812",
+      "buyback": 68500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
+      "jan": "4941787149536",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ライト ブルー]",
+      "jan": "4942857242836",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
       "buyback": 2520,
       "category": "その他",
       "retail": 2178,
       "rate": 115.7
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 182000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "[ジェットブラック・ブラックスポーツバンド M/L]",
+      "jan": "4549995622720",
+      "buyback": 51500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 47300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 13600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
