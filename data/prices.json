@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-26T22:01:08.430845",
+  "updated": "2026-07-27T02:57:36.142277",
   "source": "mobile-ichiban.com",
-  "count": 48,
+  "count": 56,
   "products": [
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ブルー/(R) ライトイエロー BEE-A-JACAC",
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 165700,
+      "buyback": 166000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 138.11
+      "rate": 138.36
     },
     {
       "name": "Xbox series x",
@@ -62,7 +62,7 @@
     {
       "name": "Nintendo Switch 2 スプラトゥーン レイダース セット 国内版",
       "jan": "4902370554779",
-      "buyback": 56500,
+      "buyback": 56000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -164,12 +164,76 @@
       "rate": 91.21
     },
     {
+      "name": "Google Pixel 10a 128GB SIMフリー Fog",
+      "jan": "840353949812",
+      "buyback": 68500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
+      "jan": "4941787149536",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ライト ブルー]",
+      "jan": "4942857242836",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
       "buyback": 2520,
       "category": "その他",
       "retail": 2178,
       "rate": 115.7
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 182000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "[ジェットブラック・ブラックスポーツバンド M/L]",
+      "jan": "4549995622720",
+      "buyback": 51500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 47300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 13800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -182,7 +246,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 12700,
+      "buyback": 12500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -190,7 +254,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 12700,
+      "buyback": 12500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -198,7 +262,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 12700,
+      "buyback": 12500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -206,7 +270,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 12700,
+      "buyback": 12500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,7 +278,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 12700,
+      "buyback": 12500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,10 +326,10 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2730,
+      "buyback": 2700,
       "category": "その他",
       "retail": 2100,
-      "rate": 130.0
+      "rate": 128.57
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
@@ -294,34 +358,34 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 12400,
+      "buyback": 12000,
       "category": "その他",
       "retail": 16800,
-      "rate": 73.81
+      "rate": 71.43
     },
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 12400,
+      "buyback": 12000,
       "category": "その他",
       "retail": 16800,
-      "rate": 73.81
+      "rate": 71.43
     },
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
-      "buyback": 12400,
+      "buyback": 12000,
       "category": "その他",
       "retail": 16800,
-      "rate": 73.81
+      "rate": 71.43
     },
     {
       "name": "instax mini 12 ミントグリーン",
       "jan": "4547410489132",
-      "buyback": 12400,
+      "buyback": 12000,
       "category": "その他",
       "retail": 16800,
-      "rate": 73.81
+      "rate": 71.43
     },
     {
       "name": "HomePod 第2世代 MQJ83J/A [ホワイト]",
