@@ -1,8 +1,16 @@
 {
-  "updated": "2026-07-28T02:34:34.042608",
+  "updated": "2026-07-28T05:47:44.066038",
   "source": "mobile-ichiban.com",
-  "count": 59,
+  "count": 58,
   "products": [
+    {
+      "name": "Nintendo Switch 2 Proコントローラー",
+      "jan": "4902370552843",
+      "buyback": 8800,
+      "category": "Switch 2",
+      "retail": 9878,
+      "rate": 89.09
+    },
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ブルー/(R) ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
@@ -22,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 167000,
+      "buyback": 167500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 139.19
+      "rate": 139.61
     },
     {
       "name": "Xbox series x",
@@ -62,7 +70,7 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
       "jan": "4902370553802",
-      "buyback": 9900,
+      "buyback": 10000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -98,14 +106,6 @@
       "category": "その他",
       "retail": 55980,
       "rate": 103.25
-    },
-    {
-      "name": "Nintendo Switch 2 Proコントローラー",
-      "jan": "4902370552843",
-      "buyback": 8700,
-      "category": "Switch 2",
-      "retail": 9878,
-      "rate": 88.07
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
@@ -222,7 +222,7 @@
     {
       "name": "CANON PowerShot G7 X Mark III [ブラック]",
       "jan": "4549292137743",
-      "buyback": 182000,
+      "buyback": 183000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -247,14 +247,6 @@
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
       "buyback": 47300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 14200,
       "category": "その他",
       "retail": 0,
       "rate": 0
