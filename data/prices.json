@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31T02:51:25.699640",
+  "updated": "2026-07-31T06:15:42.704139",
   "source": "mobile-ichiban.com",
   "count": 61,
   "products": [
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 169000,
+      "buyback": 169300,
       "category": "PS5",
       "retail": 119980,
-      "rate": 140.86
+      "rate": 141.11
     },
     {
       "name": "Xbox series x",
@@ -150,26 +150,26 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
+      "buyback": 6400,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 97.29
+    },
+    {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
       "buyback": 6100,
       "category": "Switch 2",
       "retail": 6578,
       "rate": 92.73
     },
     {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
-      "buyback": 6000,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 91.21
-    },
-    {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 47700,
+      "buyback": 48000,
       "category": "Switch",
       "retail": 37980,
-      "rate": 125.59
+      "rate": 126.38
     },
     {
       "name": "Google Pixel 10a 128GB SIMフリー Fog",
@@ -246,7 +246,7 @@
     {
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
-      "buyback": 47300,
+      "buyback": 47600,
       "category": "その他",
       "retail": 0,
       "rate": 0
