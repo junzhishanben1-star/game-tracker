@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T02:49:43.992471",
+  "updated": "2026-08-01T05:56:11.982855",
   "source": "mobile-ichiban.com",
   "count": 61,
   "products": [
@@ -94,10 +94,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51000,
+      "buyback": 50700,
       "category": "その他",
       "retail": 49980,
-      "rate": 102.04
+      "rate": 101.44
     },
     {
       "name": "BEE-S-KB6PA",
@@ -254,7 +254,7 @@
     {
       "name": "ポケモンカードゲーム MEGA 拡張パック ストームエメラルダ BOX m6",
       "jan": "4521329462233",
-      "buyback": 22000,
+      "buyback": 21000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -270,7 +270,7 @@
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
-      "buyback": 22000,
+      "buyback": 21500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -318,10 +318,10 @@
     {
       "name": "instax WIDE 400 チェキ GREEN",
       "jan": "4547410529975",
-      "buyback": 22000,
+      "buyback": 21500,
       "category": "その他",
       "retail": 26730,
-      "rate": 82.3
+      "rate": 80.43
     },
     {
       "name": "instax mini 99 ブラック",
