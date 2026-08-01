@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T05:56:11.982855",
+  "updated": "2026-08-01T08:22:28.923346",
   "source": "mobile-ichiban.com",
   "count": 61,
   "products": [
@@ -94,10 +94,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 50700,
+      "buyback": 50200,
       "category": "その他",
       "retail": 49980,
-      "rate": 101.44
+      "rate": 100.44
     },
     {
       "name": "BEE-S-KB6PA",
@@ -110,7 +110,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ブルー/(R) ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 9300,
+      "buyback": 9200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -126,7 +126,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 8800,
+      "buyback": 8700,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -254,7 +254,7 @@
     {
       "name": "ポケモンカードゲーム MEGA 拡張パック ストームエメラルダ BOX m6",
       "jan": "4521329462233",
-      "buyback": 21000,
+      "buyback": 20000,
       "category": "その他",
       "retail": 0,
       "rate": 0
