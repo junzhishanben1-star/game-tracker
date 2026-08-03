@@ -1,15 +1,15 @@
 {
-  "updated": "2026-08-03T02:50:04.419907",
+  "updated": "2026-08-03T06:24:47.385297",
   "source": "mobile-ichiban.com",
   "count": 61,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8900,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 90.1
+      "rate": 89.09
     },
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -46,7 +46,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 83500,
+      "buyback": 83600,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -110,7 +110,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ブルー/(R) ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 9000,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -342,10 +342,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1360,
+      "buyback": 1350,
       "category": "その他",
       "retail": 1100,
-      "rate": 123.64
+      "rate": 122.73
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
