@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-03T22:10:38.980368",
+  "updated": "2026-08-04T02:33:33.849702",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 60,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -54,7 +54,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 83600,
+      "buyback": 84000,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -102,10 +102,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 50500,
+      "buyback": 50800,
       "category": "その他",
       "retail": 49980,
-      "rate": 101.04
+      "rate": 101.64
     },
     {
       "name": "BEE-S-KB6PA",
@@ -116,9 +116,9 @@
       "rate": 103.25
     },
     {
-      "name": "Nintendo Switch Joy-Con 2 (L) ブルー/(R) ライトイエロー BEE-A-JACAC",
+      "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 8800,
+      "buyback": 8700,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -170,6 +170,94 @@
       "category": "Switch",
       "retail": 37980,
       "rate": 126.38
+    },
+    {
+      "name": "Google Pixel 10a 128GB SIMフリー Fog",
+      "jan": "840353949812",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
+      "jan": "4941787149536",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ライト ブルー]",
+      "jan": "4942857242836",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4A4J/A [ブルー]",
+      "jan": "4549995560084",
+      "buyback": 63500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot SX740 HS [ブラック]",
+      "jan": "4549292119008",
+      "buyback": 96000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 22200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 47600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック ストームエメラルダ BOX m6",
+      "jan": "4521329462233",
+      "buyback": 17500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -230,10 +318,10 @@
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 24000,
+      "buyback": 23500,
       "category": "その他",
       "retail": 30580,
-      "rate": 78.48
+      "rate": 76.85
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
@@ -246,10 +334,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1350,
+      "buyback": 1330,
       "category": "その他",
       "retail": 1100,
-      "rate": 122.73
+      "rate": 120.91
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
@@ -262,10 +350,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2500,
+      "buyback": 2480,
       "category": "その他",
       "retail": 2178,
-      "rate": 114.78
+      "rate": 113.87
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
