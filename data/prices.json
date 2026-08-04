@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T02:33:33.849702",
+  "updated": "2026-08-04T05:48:07.311112",
   "source": "mobile-ichiban.com",
   "count": 60,
   "products": [
@@ -30,15 +30,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 169300,
+      "buyback": 169800,
       "category": "PS5",
       "retail": 119980,
-      "rate": 141.11
+      "rate": 141.52
     },
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 99800,
+      "buyback": 100000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 99800,
+      "buyback": 100000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 84000,
+      "buyback": 84300,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -214,7 +214,7 @@
     {
       "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4A4J/A [ブルー]",
       "jan": "4549995560084",
-      "buyback": 63500,
+      "buyback": 62500,
       "category": "その他",
       "retail": 0,
       "rate": 0
