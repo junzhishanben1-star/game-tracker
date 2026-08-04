@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T05:48:07.311112",
+  "updated": "2026-08-04T08:37:57.807755",
   "source": "mobile-ichiban.com",
   "count": 60,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6600,
+      "buyback": 6700,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 100.33
+      "rate": 101.85
     },
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -118,7 +118,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 8700,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -134,7 +134,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 8700,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -158,18 +158,18 @@
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6300,
+      "buyback": 6400,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 95.77
+      "rate": 97.29
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 48000,
+      "buyback": 48100,
       "category": "Switch",
       "retail": 37980,
-      "rate": 126.38
+      "rate": 126.65
     },
     {
       "name": "Google Pixel 10a 128GB SIMフリー Fog",
@@ -254,7 +254,7 @@
     {
       "name": "Pokemon GO Plus+",
       "jan": "4521329368009",
-      "buyback": 14500,
+      "buyback": 14700,
       "category": "その他",
       "retail": 0,
       "rate": 0
