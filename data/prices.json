@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05T05:47:12.058000",
+  "updated": "2026-08-05T08:37:00.602203",
   "source": "mobile-ichiban.com",
   "count": 60,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6700,
+      "buyback": 6800,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 101.85
+      "rate": 103.37
     },
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -86,10 +86,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 54500,
+      "buyback": 55000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 109.04
+      "rate": 110.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -158,10 +158,10 @@
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6400,
+      "buyback": 6500,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 97.29
+      "rate": 98.81
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -190,7 +190,7 @@
     {
       "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
       "jan": "4549046156204",
-      "buyback": 15000,
+      "buyback": 15300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -254,7 +254,7 @@
     {
       "name": "Pokemon GO Plus+",
       "jan": "4521329368009",
-      "buyback": 14800,
+      "buyback": 15100,
       "category": "その他",
       "retail": 0,
       "rate": 0
