@@ -1,15 +1,15 @@
 {
-  "updated": "2026-08-06T02:35:23.390810",
+  "updated": "2026-08-06T05:50:29.786779",
   "source": "mobile-ichiban.com",
   "count": 60,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8800,
+      "buyback": 8900,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.09
+      "rate": 90.1
     },
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
@@ -30,15 +30,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 172500,
+      "buyback": 172700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 143.77
+      "rate": 143.94
     },
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 100000,
+      "buyback": 100300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 100000,
+      "buyback": 100300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -246,7 +246,7 @@
     {
       "name": "ポケモンカードゲーム MEGA 拡張パック ストームエメラルダ BOX m6",
       "jan": "4521329462233",
-      "buyback": 20500,
+      "buyback": 20000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -254,7 +254,7 @@
     {
       "name": "Pokemon GO Plus+",
       "jan": "4521329368009",
-      "buyback": 15500,
+      "buyback": 15600,
       "category": "その他",
       "retail": 0,
       "rate": 0
