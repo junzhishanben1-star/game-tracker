@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T05:50:29.786779",
+  "updated": "2026-08-06T08:37:19.684541",
   "source": "mobile-ichiban.com",
   "count": 60,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6800,
+      "buyback": 7000,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 103.37
+      "rate": 106.42
     },
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 100300,
+      "buyback": 102000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 100300,
+      "buyback": 102000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -158,10 +158,10 @@
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6500,
+      "buyback": 6800,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 98.81
+      "rate": 103.37
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -318,10 +318,10 @@
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 23500,
+      "buyback": 22000,
       "category": "その他",
       "retail": 30580,
-      "rate": 76.85
+      "rate": 71.94
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
