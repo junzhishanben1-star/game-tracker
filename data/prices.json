@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-07T00:00:31.485792",
+  "updated": "2026-08-07T03:13:32.700401",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 59,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -62,7 +62,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 25200,
+      "buyback": 26000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -86,10 +86,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 55000,
+      "buyback": 55500,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 110.04
+      "rate": 111.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -170,6 +170,86 @@
       "category": "Switch",
       "retail": 37980,
       "rate": 126.65
+    },
+    {
+      "name": "Google Pixel 10a 128GB SIMフリー Fog",
+      "jan": "840353949812",
+      "buyback": 68000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS sense10 SH-M33 128GB SIMフリー [フルブラック]",
+      "jan": "4550556178846",
+      "buyback": 51000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS wish5 SH-52F 4G+64G docomo ミソラ",
+      "jan": "4942857244205",
+      "buyback": 21500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot SX740 HS [ブラック]",
+      "jan": "4549292119008",
+      "buyback": 94000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 22200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 47600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック ストームエメラルダ BOX m6",
+      "jan": "4521329462233",
+      "buyback": 19000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 15600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
