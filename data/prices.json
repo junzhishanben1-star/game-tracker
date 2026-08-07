@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T03:13:32.700401",
+  "updated": "2026-08-07T07:17:05.693463",
   "source": "mobile-ichiban.com",
   "count": 59,
   "products": [
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 172700,
+      "buyback": 173000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 143.94
+      "rate": 144.19
     },
     {
       "name": "Xbox series x",
@@ -62,7 +62,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 26000,
+      "buyback": 26500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Nintendo Switch 2 スプラトゥーン レイダース セット 国内版",
       "jan": "4902370554779",
-      "buyback": 56000,
+      "buyback": 55000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -102,10 +102,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 50800,
+      "buyback": 51000,
       "category": "その他",
       "retail": 49980,
-      "rate": 101.64
+      "rate": 102.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -246,7 +246,7 @@
     {
       "name": "Pokemon GO Plus+",
       "jan": "4521329368009",
-      "buyback": 15600,
+      "buyback": 16000,
       "category": "その他",
       "retail": 0,
       "rate": 0
