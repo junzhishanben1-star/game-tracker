@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-09T01:46:06.572549",
+  "updated": "2026-08-09T04:19:21.658572",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8900,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 90.1
+      "rate": 89.09
     },
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 102000,
+      "buyback": 102100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 102000,
+      "buyback": 102100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -230,7 +230,7 @@
     {
       "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
       "jan": "0850049670302",
-      "buyback": 47600,
+      "buyback": 47800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -246,7 +246,7 @@
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
-      "buyback": 21500,
+      "buyback": 21000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -294,10 +294,10 @@
     {
       "name": "instax WIDE 400 チェキ GREEN",
       "jan": "4547410529975",
-      "buyback": 21500,
+      "buyback": 21000,
       "category": "その他",
       "retail": 26730,
-      "rate": 80.43
+      "rate": 78.56
     },
     {
       "name": "instax mini 99 ブラック",
