@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10T01:49:37.730004",
+  "updated": "2026-08-10T04:39:23.809586",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
@@ -14,18 +14,18 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8800,
+      "buyback": 8700,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 89.09
+      "rate": 88.07
     },
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6800,
+      "buyback": 6900,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 103.37
+      "rate": 104.9
     },
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -174,10 +174,10 @@
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6500,
+      "buyback": 6700,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 98.81
+      "rate": 101.85
     },
     {
       "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
