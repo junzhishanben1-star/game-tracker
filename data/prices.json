@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-09T21:33:40.795467",
+  "updated": "2026-08-10T01:49:37.730004",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 58,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -180,6 +180,70 @@
       "rate": 98.81
     },
     {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SCG33 4G+64G au [ブルー]",
+      "jan": "4941787136048",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot SX740 HS [ブラック]",
+      "jan": "4549292119008",
+      "buyback": 94000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 22200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 47800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 21000,
@@ -278,10 +342,10 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2700,
+      "buyback": 2680,
       "category": "その他",
       "retail": 2100,
-      "rate": 128.57
+      "rate": 127.62
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
