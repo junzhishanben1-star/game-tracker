@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-10T21:42:39.359004",
+  "updated": "2026-08-11T01:46:04.635624",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 58,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -70,7 +70,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 26500,
+      "buyback": 24000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -94,7 +94,7 @@
     {
       "name": "Nintendo Switch 2 スプラトゥーン レイダース セット 国内版",
       "jan": "4902370554779",
-      "buyback": 55000,
+      "buyback": 54000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "Nintendo Switch 2 Pokemon LEGENDS Z-A セット 国内版",
       "jan": "4902370553505",
-      "buyback": 55500,
+      "buyback": 54000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 111.04
+      "rate": 108.04
     },
     {
       "name": "BEE-S-KB6AA",
@@ -178,6 +178,70 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 101.85
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SCG33 4G+64G au [ブルー]",
+      "jan": "4941787136048",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot SX740 HS [ブラック]",
+      "jan": "4549292119008",
+      "buyback": 93000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 22200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 47800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
