@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T03:51:45.852665",
+  "updated": "2026-08-17T06:56:09.379389",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
@@ -38,15 +38,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 173500,
+      "buyback": 173800,
       "category": "PS5",
       "retail": 119980,
-      "rate": 144.61
+      "rate": 144.86
     },
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 103000,
+      "buyback": 103100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 103000,
+      "buyback": 103100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 85500,
+      "buyback": 85700,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 24500,
+      "buyback": 21500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -222,7 +222,7 @@
     {
       "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
       "jan": "0840268942847",
-      "buyback": 22200,
+      "buyback": 22300,
       "category": "その他",
       "retail": 0,
       "rate": 0
