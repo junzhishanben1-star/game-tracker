@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-16T21:21:18.297478",
+  "updated": "2026-08-17T01:16:32.894586",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 58,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8700,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 88.07
+      "rate": 89.09
     },
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
@@ -38,15 +38,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 173000,
+      "buyback": 173500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 144.19
+      "rate": 144.61
     },
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 102100,
+      "buyback": 103000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 102100,
+      "buyback": 103000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 84500,
+      "buyback": 85500,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 23500,
+      "buyback": 24500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -142,10 +142,10 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
       "jan": "4902370552744",
-      "buyback": 8200,
+      "buyback": 8300,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 83.01
+      "rate": 84.03
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
@@ -178,6 +178,70 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 101.85
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SCG33 4G+64G au [ブルー]",
+      "jan": "4941787136048",
+      "buyback": 14500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot SX740 HS [ブラック]",
+      "jan": "4549292119008",
+      "buyback": 93000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
+      "jan": "0840268942847",
+      "buyback": 22200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 47800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 16000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
