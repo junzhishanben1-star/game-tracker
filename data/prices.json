@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T06:56:09.379389",
+  "updated": "2026-08-17T09:42:42.560568",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
@@ -22,10 +22,10 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 6900,
+      "buyback": 7000,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 104.9
+      "rate": 106.42
     },
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -68,14 +68,6 @@
       "rate": 0
     },
     {
-      "name": "Steam Controller",
-      "jan": "0814585022803",
-      "buyback": 21500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
       "buyback": 132000,
@@ -94,7 +86,7 @@
     {
       "name": "Nintendo Switch 2 スプラトゥーン レイダース セット 国内版",
       "jan": "4902370554779",
-      "buyback": 54000,
+      "buyback": 53000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -180,16 +172,24 @@
       "rate": 101.85
     },
     {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 15500,
+      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
+      "jan": "4902370548501",
+      "buyback": 48500,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 127.7
+    },
+    {
+      "name": "AQUOS sense10 SH-M33 128GB SIMフリー [フルブラック]",
+      "jan": "4550556178846",
+      "buyback": 51000,
       "category": "その他",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
       "buyback": 15500,
       "category": "その他",
       "retail": 0,
