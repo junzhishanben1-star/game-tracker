@@ -1,15 +1,15 @@
 {
-  "updated": "2026-08-19T01:16:06.078244",
+  "updated": "2026-08-19T03:48:06.689699",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51000,
+      "buyback": 51500,
       "category": "その他",
       "retail": 49980,
-      "rate": 102.04
+      "rate": 103.04
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -38,10 +38,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 174000,
+      "buyback": 174300,
       "category": "PS5",
       "retail": 119980,
-      "rate": 145.02
+      "rate": 145.27
     },
     {
       "name": "Xbox series x",
@@ -70,7 +70,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 85800,
+      "buyback": 86000,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
       "jan": "4902370553802",
-      "buyback": 10000,
+      "buyback": 10100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -166,10 +166,10 @@
     {
       "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
       "jan": "4902370548501",
-      "buyback": 48500,
+      "buyback": 48600,
       "category": "Switch",
       "retail": 37980,
-      "rate": 127.7
+      "rate": 127.96
     },
     {
       "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
@@ -222,7 +222,7 @@
     {
       "name": "Pokemon GO Plus+",
       "jan": "4521329368009",
-      "buyback": 16100,
+      "buyback": 16200,
       "category": "その他",
       "retail": 0,
       "rate": 0
