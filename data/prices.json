@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T03:48:06.689699",
+  "updated": "2026-08-19T09:37:59.170781",
   "source": "mobile-ichiban.com",
   "count": 56,
   "products": [
@@ -22,10 +22,10 @@
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
-      "buyback": 7100,
+      "buyback": 7200,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 107.94
+      "rate": 109.46
     },
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -38,10 +38,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 174300,
+      "buyback": 174700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 145.27
+      "rate": 145.61
     },
     {
       "name": "Xbox series x",
@@ -70,7 +70,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 86000,
+      "buyback": 86200,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -102,10 +102,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 81000,
+      "buyback": 81300,
       "category": "その他",
       "retail": 69980,
-      "rate": 115.75
+      "rate": 116.18
     },
     {
       "name": "BEE-S-KB6PA",
@@ -134,7 +134,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 8700,
+      "buyback": 8800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -222,7 +222,7 @@
     {
       "name": "Pokemon GO Plus+",
       "jan": "4521329368009",
-      "buyback": 16200,
+      "buyback": 16300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -238,7 +238,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -246,7 +246,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -254,7 +254,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,7 +262,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -270,7 +270,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 11500,
+      "buyback": 11600,
       "category": "その他",
       "retail": 0,
       "rate": 0
