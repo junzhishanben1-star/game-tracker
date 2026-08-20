@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-20T06:46:08.665917",
+  "updated": "2026-08-20T09:36:06.355769",
   "source": "mobile-ichiban.com",
-  "count": 56,
+  "count": 58,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -10,14 +10,6 @@
       "category": "その他",
       "retail": 49980,
       "rate": 103.04
-    },
-    {
-      "name": "Nintendo Switch 2 Proコントローラー",
-      "jan": "4902370552843",
-      "buyback": 8700,
-      "category": "Switch 2",
-      "retail": 9878,
-      "rate": 88.07
     },
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
@@ -76,6 +68,22 @@
       "rate": 0
     },
     {
+      "name": "Steam Deck OLED 512GB",
+      "jan": "0814585022254",
+      "buyback": 132000,
+      "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Deck OLED 512GB",
+      "jan": "0814585022605",
+      "buyback": 132000,
+      "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "Nintendo Switch 2 スプラトゥーン レイダース セット 国内版",
       "jan": "4902370554779",
       "buyback": 53000,
@@ -114,6 +122,14 @@
       "category": "その他",
       "retail": 55980,
       "rate": 103.61
+    },
+    {
+      "name": "Nintendo Switch 2 Proコントローラー",
+      "jan": "4902370552843",
+      "buyback": 8700,
+      "category": "Switch 2",
+      "retail": 9878,
+      "rate": 88.07
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
@@ -164,12 +180,20 @@
       "rate": 103.37
     },
     {
-      "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
-      "jan": "4902370548501",
-      "buyback": 48700,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 128.23
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 154000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS sense10 SH-M33 128GB SIMフリー [フルブラック]",
+      "jan": "4550556178846",
+      "buyback": 51000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
@@ -180,9 +204,17 @@
       "rate": 0
     },
     {
-      "name": "Galaxy A25 5G SCG33 4G+64G au [ブルー]",
-      "jan": "4941787136048",
-      "buyback": 14500,
+      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
+      "jan": "4941787149536",
+      "buyback": 15800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We3 F-52G 4G+64G docomo [ブラック]",
+      "jan": "4942857251739",
+      "buyback": 18000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -204,25 +236,9 @@
       "rate": 0
     },
     {
-      "name": "New Kindle Paperwhite 16GB ブラック 2024年発売",
-      "jan": "0840268942847",
-      "buyback": 22400,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 47800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Pokemon GO Plus+",
       "jan": "4521329368009",
-      "buyback": 16300,
+      "buyback": 16500,
       "category": "その他",
       "retail": 0,
       "rate": 0
