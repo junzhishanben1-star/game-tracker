@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-21T09:37:53.205698",
+  "updated": "2026-08-21T12:48:04.670686",
   "source": "mobile-ichiban.com",
-  "count": 57,
+  "count": 50,
   "products": [
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
@@ -178,62 +178,6 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
-    },
-    {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 157000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
-      "jan": "4986773243522",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 15800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
-      "jan": "4941787149536",
-      "buyback": 15800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "パープル",
-      "jan": "4549995526516",
-      "buyback": 71000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
-      "jan": "0840353962170",
-      "buyback": 58000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 16500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
