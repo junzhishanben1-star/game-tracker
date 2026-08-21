@@ -1,15 +1,15 @@
 {
-  "updated": "2026-08-21T01:18:44.767928",
+  "updated": "2026-08-21T03:52:26.360708",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51500,
+      "buyback": 51200,
       "category": "その他",
       "retail": 49980,
-      "rate": 103.04
+      "rate": 102.44
     },
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
@@ -22,7 +22,7 @@
     {
       "name": "Nintendo Switch Lite コーラル",
       "jan": "4902370545302",
-      "buyback": 27300,
+      "buyback": 27400,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -30,10 +30,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 175200,
+      "buyback": 175700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 146.02
+      "rate": 146.44
     },
     {
       "name": "Xbox series x",
@@ -182,7 +182,7 @@
     {
       "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
       "jan": "840353958241",
-      "buyback": 155000,
+      "buyback": 156000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -342,10 +342,10 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2600,
+      "buyback": 2580,
       "category": "その他",
       "retail": 2100,
-      "rate": 123.81
+      "rate": 122.86
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
