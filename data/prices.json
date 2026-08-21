@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-20T21:28:59.542545",
+  "updated": "2026-08-21T01:18:44.767928",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 58,
   "products": [
     {
       "name": "BEE-S-KB6CA",
@@ -178,6 +178,70 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 103.37
+    },
+    {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 155000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AQUOS sense10 SH-M33 128GB SIMフリー [フルブラック]",
+      "jan": "4550556178846",
+      "buyback": 51000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
+      "jan": "4941787149536",
+      "buyback": 15800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We3 F-52G 4G+64G docomo [ブラック]",
+      "jan": "4942857251739",
+      "buyback": 18000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot SX740 HS [ブラック]",
+      "jan": "4549292119008",
+      "buyback": 94500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 16500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
