@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T03:52:26.360708",
+  "updated": "2026-08-21T06:47:35.045454",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
@@ -54,15 +54,15 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 50300,
+      "buyback": 50500,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 103.93
+      "rate": 104.34
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 86300,
+      "buyback": 86500,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -182,7 +182,7 @@
     {
       "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
       "jan": "840353958241",
-      "buyback": 156000,
+      "buyback": 157000,
       "category": "その他",
       "retail": 0,
       "rate": 0
