@@ -1,16 +1,8 @@
 {
-  "updated": "2026-08-21T06:47:35.045454",
+  "updated": "2026-08-21T09:37:53.205698",
   "source": "mobile-ichiban.com",
-  "count": 58,
+  "count": 57,
   "products": [
-    {
-      "name": "BEE-S-KB6CA",
-      "jan": "4902370553024",
-      "buyback": 51200,
-      "category": "その他",
-      "retail": 49980,
-      "rate": 102.44
-    },
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "4523052030185",
@@ -34,6 +26,14 @@
       "category": "PS5",
       "retail": 119980,
       "rate": 146.44
+    },
+    {
+      "name": "PlayStation VR2 CFIJ-17000",
+      "jan": "4948872016490",
+      "buyback": 51000,
+      "category": "PS5",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "Xbox series x",
@@ -116,6 +116,14 @@
       "rate": 116.32
     },
     {
+      "name": "BEE-S-KB6CA",
+      "jan": "4902370553024",
+      "buyback": 51200,
+      "category": "その他",
+      "retail": 49980,
+      "rate": 102.44
+    },
+    {
       "name": "BEE-S-KB6PA",
       "jan": "4902370553031",
       "buyback": 58000,
@@ -172,14 +180,6 @@
       "rate": 69.37
     },
     {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
-      "buyback": 6800,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 103.37
-    },
-    {
       "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
       "jan": "840353958241",
       "buyback": 157000,
@@ -188,9 +188,9 @@
       "rate": 0
     },
     {
-      "name": "AQUOS sense10 SH-M33 128GB SIMフリー [フルブラック]",
-      "jan": "4550556178846",
-      "buyback": 51000,
+      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
+      "jan": "4986773243522",
+      "buyback": 15000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -212,14 +212,6 @@
       "rate": 0
     },
     {
-      "name": "arrows We3 F-52G 4G+64G docomo [ブラック]",
-      "jan": "4942857251739",
-      "buyback": 18000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "パープル",
       "jan": "4549995526516",
       "buyback": 71000,
@@ -228,9 +220,9 @@
       "rate": 0
     },
     {
-      "name": "CANON PowerShot SX740 HS [ブラック]",
-      "jan": "4549292119008",
-      "buyback": 94500,
+      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
+      "jan": "0840353962170",
+      "buyback": 58000,
       "category": "その他",
       "retail": 0,
       "rate": 0
