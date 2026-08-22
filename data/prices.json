@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-22T06:40:54.241339",
+  "updated": "2026-08-22T09:27:48.335932",
   "source": "mobile-ichiban.com",
-  "count": 57,
+  "count": 49,
   "products": [
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
@@ -394,70 +394,6 @@
       "category": "その他",
       "retail": 16800,
       "rate": 66.67
-    },
-    {
-      "name": "HomePod 第2世代 MQJ83J/A [ホワイト]",
-      "jan": "4549995368079",
-      "buyback": 35000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "HomePod mini [オレンジ]",
-      "jan": "4549995219913",
-      "buyback": 10000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "HomePod mini [ホワイト]",
-      "jan": "4549995157079",
-      "buyback": 10000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "HomePod mini [スペースグレイ]",
-      "jan": "4549995157062",
-      "buyback": 10000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "HomePod mini [ブルー]",
-      "jan": "4549995219906",
-      "buyback": 10000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "HomePod mini [イエロー]",
-      "jan": "4549995219920",
-      "buyback": 10000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "HomePod 第2世代 MDEY4J/A [ホワイト]",
-      "jan": "4549995566161",
-      "buyback": 40000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "HomePod 第2世代 MDEY4J/A [ホワイト]",
-      "jan": "4549995566178",
-      "buyback": 40000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     }
   ]
 }
