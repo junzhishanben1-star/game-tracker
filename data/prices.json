@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-23T01:20:28.954782",
+  "updated": "2026-08-23T03:52:00.968444",
   "source": "mobile-ichiban.com",
-  "count": 57,
+  "count": 56,
   "products": [
     {
       "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 81400,
+      "buyback": 81500,
       "category": "その他",
       "retail": 69980,
-      "rate": 116.32
+      "rate": 116.46
     },
     {
       "name": "BEE-S-KB6CA",
@@ -223,14 +223,6 @@
       "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
       "jan": "0840353962170",
       "buyback": 58000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ONE PIECEカードゲーム ブースターパック 世界最強の戦士 BOX OP-17",
-      "jan": "4582770058406",
-      "buyback": 19000,
       "category": "その他",
       "retail": 0,
       "rate": 0
