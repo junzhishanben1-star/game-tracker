@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-24T09:49:03.884368",
+  "updated": "2026-08-24T12:51:39.135565",
   "source": "mobile-ichiban.com",
-  "count": 58,
+  "count": 51,
   "products": [
     {
       "name": "Nintendo Switch Lite コーラル",
@@ -186,62 +186,6 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
-    },
-    {
-      "name": "Google Pixel 11 256GB SIMフリー Pistachio",
-      "jan": "840353956407",
-      "buyback": 106000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 159000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
-      "jan": "4986773243522",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 15800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "パープル",
-      "jan": "4549995526516",
-      "buyback": 71000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "FUJIFILM X100VI ブラック 2025版",
-      "jan": "4547410554267",
-      "buyback": 252000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
-      "jan": "0840353962170",
-      "buyback": 58500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
