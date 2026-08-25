@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T03:50:19.470151",
+  "updated": "2026-08-25T06:48:19.658471",
   "source": "mobile-ichiban.com",
   "count": 58,
   "products": [
@@ -14,15 +14,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 176500,
+      "buyback": 177000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 147.11
+      "rate": 147.52
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 51200,
+      "buyback": 51300,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +30,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 104000,
+      "buyback": 104300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 104000,
+      "buyback": 104300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 86800,
+      "buyback": 87000,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -118,10 +118,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 81500,
+      "buyback": 81600,
       "category": "その他",
       "retail": 69980,
-      "rate": 116.46
+      "rate": 116.6
     },
     {
       "name": "BEE-S-KB6CA",
@@ -190,7 +190,7 @@
     {
       "name": "Google Pixel 11 256GB SIMフリー Pistachio",
       "jan": "840353956254",
-      "buyback": 106000,
+      "buyback": 106500,
       "category": "その他",
       "retail": 0,
       "rate": 0
