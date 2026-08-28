@@ -1,23 +1,31 @@
 {
-  "updated": "2026-08-28T00:17:24.715171",
+  "updated": "2026-08-28T14:58:55.061911",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 49,
   "products": [
     {
-      "name": "Nintendo Switch Lite コーラル",
-      "jan": "4902370545302",
-      "buyback": 27400,
+      "name": "Nintendo Switch (有機ELモデル) ホワイト",
+      "jan": "4902370548495",
+      "buyback": 44800,
       "category": "Switch",
+      "retail": 37980,
+      "rate": 117.96
+    },
+    {
+      "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
+      "jan": "4948872417419",
+      "buyback": 47000,
+      "category": "PS5",
       "retail": 0,
       "rate": 0
     },
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 178200,
+      "buyback": 178500,
       "category": "PS5",
       "retail": 119980,
-      "rate": 148.52
+      "rate": 148.77
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -30,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 105000,
+      "buyback": 105300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -38,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 105000,
+      "buyback": 105300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,32 +54,16 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 51200,
+      "buyback": 51400,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 105.79
+      "rate": 106.2
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 87600,
+      "buyback": 88000,
       "category": "Meta Quest",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Steam Deck OLED 512GB",
-      "jan": "0814585022254",
-      "buyback": 132000,
-      "category": "Steam Deck",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Steam Deck OLED 512GB",
-      "jan": "0814585022605",
-      "buyback": 132000,
-      "category": "Steam Deck",
       "retail": 0,
       "rate": 0
     },
