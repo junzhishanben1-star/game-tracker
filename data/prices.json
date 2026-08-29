@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-29T06:13:10.567889",
+  "updated": "2026-08-29T14:12:55.409809",
   "source": "mobile-ichiban.com",
-  "count": 58,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -170,78 +170,6 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 109.46
-    },
-    {
-      "name": "Google Pixel 11 256GB SIMフリー Pistachio",
-      "jan": "840353956254",
-      "buyback": 104500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 157000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
-      "jan": "4986773243522",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 15800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "パープル",
-      "jan": "4549995526516",
-      "buyback": 71000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
-      "jan": "0840353962170",
-      "buyback": 59500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 48300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Amazon Echo Dot 5 (エコードット) グレーシャーホワイト",
-      "jan": "840080512204",
-      "buyback": 5400,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 16700,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
