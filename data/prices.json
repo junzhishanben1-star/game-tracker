@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-28T23:57:59.721415",
+  "updated": "2026-08-29T06:13:10.567889",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 58,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 178500,
+      "buyback": 178600,
       "category": "PS5",
       "retail": 119980,
-      "rate": 148.77
+      "rate": 148.86
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 105300,
+      "buyback": 105500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 105300,
+      "buyback": 105500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,10 +54,10 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 51400,
+      "buyback": 51800,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 106.2
+      "rate": 107.02
     },
     {
       "name": "Meta Quest 3 512GB",
@@ -172,6 +172,78 @@
       "rate": 109.46
     },
     {
+      "name": "Google Pixel 11 256GB SIMフリー Pistachio",
+      "jan": "840353956254",
+      "buyback": 104500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 157000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
+      "jan": "4986773243522",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
+      "jan": "0840353962170",
+      "buyback": 59500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 48300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Amazon Echo Dot 5 (エコードット) グレーシャーホワイト",
+      "jan": "840080512204",
+      "buyback": 5400,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 16700,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 21000,
@@ -182,7 +254,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -190,7 +262,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -198,7 +270,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -206,7 +278,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,7 +286,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 12000,
+      "buyback": 12100,
       "category": "その他",
       "retail": 0,
       "rate": 0
