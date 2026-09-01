@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-01T00:26:13.438813",
+  "updated": "2026-09-01T08:23:06.301750",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 58,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -22,15 +22,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 178600,
+      "buyback": 179700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 148.86
+      "rate": 149.77
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 52000,
+      "buyback": 52100,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 105800,
+      "buyback": 106300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 105800,
+      "buyback": 106300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,15 +54,15 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 52000,
+      "buyback": 52100,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 107.44
+      "rate": 107.64
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 88500,
+      "buyback": 88700,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -170,6 +170,78 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 109.46
+    },
+    {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 147000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
+      "jan": "4986773243522",
+      "buyback": 15000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 15800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "パープル",
+      "jan": "4549995526516",
+      "buyback": 71000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
+      "jan": "0840353962170",
+      "buyback": 59500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 48300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Amazon Echo Dot 5 (エコードット) グレーシャーホワイト",
+      "jan": "840080512204",
+      "buyback": 5400,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 17100,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
