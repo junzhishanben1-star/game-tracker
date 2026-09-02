@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-02T03:14:01.116568",
+  "updated": "2026-09-02T10:47:23.090218",
   "source": "mobile-ichiban.com",
-  "count": 58,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -14,7 +14,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 47000,
+      "buyback": 47500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 106300,
+      "buyback": 106700,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 106300,
+      "buyback": 106700,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,18 +54,26 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "0815820025238",
-      "buyback": 52100,
+      "buyback": 52300,
       "category": "Meta Quest",
       "retail": 48400,
-      "rate": 107.64
+      "rate": 108.06
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 88800,
+      "buyback": 89000,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
+    },
+    {
+      "name": "ROG Xbox Ally X 1TB",
+      "jan": "0199291152984",
+      "buyback": 154000,
+      "category": "その他",
+      "retail": 139800,
+      "rate": 110.16
     },
     {
       "name": "デビル メイ クライ 5 デビルハンターエディション /Switch 2",
@@ -110,10 +118,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51000,
+      "buyback": 51300,
       "category": "その他",
       "retail": 49980,
-      "rate": 102.04
+      "rate": 102.64
     },
     {
       "name": "BEE-S-KB6PA",
@@ -162,86 +170,6 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
-    },
-    {
-      "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
-      "jan": "4902370552720",
-      "buyback": 3800,
-      "category": "Switch 2",
-      "retail": 5478,
-      "rate": 69.37
-    },
-    {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
-      "jan": "4986773243522",
-      "buyback": 15000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 15800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 15800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
-      "jan": "4549995560107",
-      "buyback": 64000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
-      "jan": "0840353962170",
-      "buyback": 59500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 48300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Amazon Echo Dot 5 (エコードット) グレーシャーホワイト",
-      "jan": "840080512204",
-      "buyback": 5400,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17100,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -342,10 +270,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2500,
+      "buyback": 2510,
       "category": "その他",
       "retail": 2178,
-      "rate": 114.78
+      "rate": 115.24
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
