@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-03T23:01:39.120789",
+  "updated": "2026-09-04T03:14:08.563301",
   "source": "mobile-ichiban.com",
-  "count": 49,
+  "count": 57,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -30,7 +30,7 @@
     {
       "name": "PlayStation VR2 CFIJ-17000",
       "jan": "4948872016490",
-      "buyback": 52100,
+      "buyback": 52000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "Nintendo Switch 2 スプラトゥーン レイダース セット 国内版",
       "jan": "4902370554779",
-      "buyback": 53000,
+      "buyback": 52000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -170,6 +170,70 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
+    },
+    {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 146000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 15800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 15800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
+      "jan": "4549995560107",
+      "buyback": 64000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
+      "jan": "0840353962170",
+      "buyback": 59000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 48300,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Amazon Echo Dot 5 (エコードット) グレーシャーホワイト",
+      "jan": "840080512204",
+      "buyback": 5400,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 17400,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
