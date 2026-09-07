@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-07T03:15:29.165589",
+  "updated": "2026-09-07T11:46:20.932375",
   "source": "mobile-ichiban.com",
-  "count": 58,
+  "count": 49,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 180500,
+      "buyback": 181000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 150.44
+      "rate": 150.86
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 107500,
+      "buyback": 107800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 107500,
+      "buyback": 107800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 88300,
+      "buyback": 88500,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 51000,
+      "buyback": 51200,
       "category": "その他",
       "retail": 49980,
-      "rate": 102.04
+      "rate": 102.44
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,78 +172,6 @@
       "rate": 69.37
     },
     {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 17000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 17500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD4E4J/A [ピンク]",
-      "jan": "4549995560107",
-      "buyback": 64000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "DJI RC 2 ドローン用 コントローラー",
-      "jan": "6941565965981",
-      "buyback": 37500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
-      "jan": "0840353962170",
-      "buyback": 59000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 47000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Amazon Echo Dot 5 (エコードット) グレーシャーホワイト",
-      "jan": "840080512204",
-      "buyback": 5400,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 21000,
@@ -254,7 +182,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 12000,
+      "buyback": 11800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,7 +190,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 12000,
+      "buyback": 11800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -270,7 +198,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 12000,
+      "buyback": 11800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -278,7 +206,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 12000,
+      "buyback": 11800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -286,7 +214,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 12000,
+      "buyback": 11800,
       "category": "その他",
       "retail": 0,
       "rate": 0
