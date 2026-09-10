@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-10T03:25:30.643096",
+  "updated": "2026-09-10T10:47:31.068817",
   "source": "mobile-ichiban.com",
-  "count": 54,
+  "count": 45,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -22,10 +22,10 @@
     {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 181700,
+      "buyback": 182000,
       "category": "PS5",
       "retail": 119980,
-      "rate": 151.44
+      "rate": 151.69
     },
     {
       "name": "PlayStation VR2 CFIJ-17000",
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 108300,
+      "buyback": 108500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 108300,
+      "buyback": 108500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,8 +62,24 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 88700,
+      "buyback": 88800,
       "category": "Meta Quest",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Deck OLED 512GB",
+      "jan": "0814585022254",
+      "buyback": 132800,
+      "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Deck OLED 512GB",
+      "jan": "0814585022605",
+      "buyback": 132800,
+      "category": "Steam Deck",
       "retail": 0,
       "rate": 0
     },
@@ -118,10 +134,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8600,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 87.06
+      "rate": 86.05
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
@@ -164,100 +180,12 @@
       "rate": 69.37
     },
     {
-      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "4523052030185",
-      "buyback": 7100,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 107.94
-    },
-    {
-      "name": "Google Pixel 11 256GB SIMフリー Obsidian",
-      "jan": "840353955875",
-      "buyback": 96000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
-      "jan": "4986773243522",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 17000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 17500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
       "buyback": 2470,
       "category": "その他",
       "retail": 2178,
       "rate": 113.41
-    },
-    {
-      "name": "DJI RC 2 ドローン用 コントローラー",
-      "jan": "6941565965981",
-      "buyback": 37500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Satin Pyrite アルミケース Olive アクティブ バンド",
-      "jan": "0840353962170",
-      "buyback": 59000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Obsidian",
-      "jan": "0840353943339",
-      "buyback": 16300,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
-      "jan": "0850049670302",
-      "buyback": 47000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -270,7 +198,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 11500,
+      "buyback": 11400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -278,7 +206,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 11500,
+      "buyback": 11400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -286,7 +214,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 11500,
+      "buyback": 11400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -294,7 +222,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 11500,
+      "buyback": 11400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -302,7 +230,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 11500,
+      "buyback": 11400,
       "category": "その他",
       "retail": 0,
       "rate": 0
