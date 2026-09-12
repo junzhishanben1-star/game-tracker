@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-12T03:26:59.498912",
+  "updated": "2026-09-12T10:13:56.186342",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 45,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -20,25 +20,17 @@
       "rate": 0
     },
     {
-      "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
-      "jan": "4948872417419",
-      "buyback": 47000,
-      "category": "PS5",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "PlayStation 5 Pro CFI-7000B01 2TB",
       "jan": "4948872416320",
-      "buyback": 182500,
+      "buyback": 182700,
       "category": "PS5",
       "retail": 119980,
-      "rate": 152.11
+      "rate": 152.28
     },
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 109500,
+      "buyback": 109800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 109500,
+      "buyback": 109800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -110,10 +102,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 82000,
+      "buyback": 82200,
       "category": "その他",
       "retail": 69980,
-      "rate": 117.18
+      "rate": 117.46
     },
     {
       "name": "BEE-S-KB6CA",
@@ -180,44 +172,12 @@
       "rate": 69.37
     },
     {
-      "name": "Google Pixel 11 256GB SIMフリー Obsidian",
-      "jan": "840353955875",
-      "buyback": 97500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SM-A253Q 4G+64G SIMフリー [ブラック]",
-      "jan": "4986773243522",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 17000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 17500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 7100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 107.94
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
@@ -231,30 +191,6 @@
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 25500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "DJI RC 2 ドローン用 コントローラー",
-      "jan": "6941565965981",
-      "buyback": 37500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Obsidian",
-      "jan": "0840353943339",
-      "buyback": 16800,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17500,
       "category": "その他",
       "retail": 0,
       "rate": 0
