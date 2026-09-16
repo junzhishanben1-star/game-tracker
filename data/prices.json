@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-16T03:40:29.330549",
+  "updated": "2026-09-16T10:58:48.112154",
   "source": "mobile-ichiban.com",
-  "count": 51,
+  "count": 45,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション \"Marvel’s Wolverine\" バトルイエロー リミテッドエディション CFIJ-10033",
       "jan": "4948872850995",
-      "buyback": 98000,
+      "buyback": 99500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 110800,
+      "buyback": 111000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 110800,
+      "buyback": 111000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 89200,
+      "buyback": 89300,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -88,6 +88,14 @@
       "jan": "0814585022605",
       "buyback": 132800,
       "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ファイアーエムブレム 万紫千紅/Switch 2",
+      "jan": "4902370554472",
+      "buyback": 8000,
+      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -126,10 +134,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 52200,
+      "buyback": 52500,
       "category": "その他",
       "retail": 49980,
-      "rate": 104.44
+      "rate": 105.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,65 +180,9 @@
       "rate": 0
     },
     {
-      "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
-      "jan": "4902370552706",
-      "buyback": 3800,
-      "category": "Switch 2",
-      "retail": 5478,
-      "rate": 69.37
-    },
-    {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
-      "jan": "4549046156204",
-      "buyback": 17000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 17500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 25500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Sleepy Blue",
-      "jan": "0840353970458",
-      "buyback": 20000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -342,10 +294,10 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2520,
+      "buyback": 2450,
       "category": "その他",
       "retail": 2100,
-      "rate": 120.0
+      "rate": 116.67
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
