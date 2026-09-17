@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-16T23:36:24.703869",
+  "updated": "2026-09-17T03:45:33.839720",
   "source": "mobile-ichiban.com",
-  "count": 45,
+  "count": 51,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション \"Marvel’s Wolverine\" バトルイエロー リミテッドエディション CFIJ-10033",
       "jan": "4948872850995",
-      "buyback": 99500,
+      "buyback": 100000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -78,7 +78,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 132800,
+      "buyback": 133500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 132800,
+      "buyback": 133500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -94,7 +94,7 @@
     {
       "name": "ファイアーエムブレム 万紫千紅/Switch 2",
       "jan": "4902370554472",
-      "buyback": 8000,
+      "buyback": 8200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -180,9 +180,57 @@
       "rate": 0
     },
     {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 146000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "REDMI 15 5G 4GB+128GB Softbank [チタングレー]",
+      "jan": "4549046156204",
+      "buyback": 17000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 17500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 25500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Sleepy Blue",
+      "jan": "0840353970458",
+      "buyback": 21500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 17000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -270,10 +318,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1260,
+      "buyback": 1280,
       "category": "その他",
       "retail": 1100,
-      "rate": 114.55
+      "rate": 116.36
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
