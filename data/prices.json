@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T03:32:16.848631",
+  "updated": "2026-09-18T10:42:35.686410",
   "source": "mobile-ichiban.com",
   "count": 50,
   "products": [
@@ -22,18 +22,18 @@
     {
       "name": "PlayStation 5 デジタル・エディション \"Marvel’s Wolverine\" バトルイエロー リミテッドエディション CFIJ-10033",
       "jan": "4948872850995",
-      "buyback": 100500,
+      "buyback": 101500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "PlayStation 5 Pro CFI-7000B01 2TB",
-      "jan": "4948872416320",
-      "buyback": 186000,
+      "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
+      "jan": "4948872417075",
+      "buyback": 186500,
       "category": "PS5",
-      "retail": 119980,
-      "rate": 155.03
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
@@ -94,7 +94,7 @@
     {
       "name": "ファイアーエムブレム 万紫千紅/Switch 2",
       "jan": "4902370554472",
-      "buyback": 8600,
+      "buyback": 8700,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
