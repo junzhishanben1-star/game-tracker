@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-18T23:04:59.751901",
+  "updated": "2026-09-19T03:28:33.706557",
   "source": "mobile-ichiban.com",
-  "count": 45,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
@@ -62,7 +62,7 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "815820025238",
-      "buyback": 50600,
+      "buyback": 50700,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -94,7 +94,7 @@
     {
       "name": "ファイアーエムブレム 万紫千紅/Switch 2",
       "jan": "4902370554472",
-      "buyback": 8700,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -134,10 +134,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 52600,
+      "buyback": 53000,
       "category": "その他",
       "retail": 49980,
-      "rate": 105.24
+      "rate": 106.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -180,9 +180,49 @@
       "rate": 0
     },
     {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 146000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 17500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
-      "buyback": 25500,
+      "buyback": 25000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Sleepy Blue",
+      "jan": "0840353970458",
+      "buyback": 21500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 17600,
       "category": "その他",
       "retail": 0,
       "rate": 0
