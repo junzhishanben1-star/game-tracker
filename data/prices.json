@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-19T22:44:04.046764",
+  "updated": "2026-09-20T03:45:12.502948",
   "source": "mobile-ichiban.com",
-  "count": 45,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
@@ -180,9 +180,49 @@
       "rate": 0
     },
     {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 146000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
+      "jan": "4941787149543",
+      "buyback": 17500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
-      "buyback": 25000,
+      "buyback": 24500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Sleepy Blue",
+      "jan": "0840353970458",
+      "buyback": 21500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 17600,
       "category": "その他",
       "retail": 0,
       "rate": 0
