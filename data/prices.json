@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-21T03:40:35.605408",
+  "updated": "2026-09-21T12:11:10.021946",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 45,
   "products": [
     {
       "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション \"Marvel’s Wolverine\" バトルイエロー リミテッドエディション CFIJ-10033",
       "jan": "4948872850995",
-      "buyback": 101700,
+      "buyback": 101800,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +30,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 186700,
+      "buyback": 187200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 111300,
+      "buyback": 111500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 111300,
+      "buyback": 111500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "815820025238",
-      "buyback": 50700,
+      "buyback": 50800,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 89300,
+      "buyback": 89400,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -134,10 +134,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 53100,
+      "buyback": 53200,
       "category": "その他",
       "retail": 49980,
-      "rate": 106.24
+      "rate": 106.44
     },
     {
       "name": "BEE-S-KB6PA",
@@ -180,49 +180,9 @@
       "rate": 0
     },
     {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [グリーン]",
-      "jan": "4941787149543",
-      "buyback": 17500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 24500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Sleepy Blue",
-      "jan": "0840353970458",
-      "buyback": 20500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17600,
       "category": "その他",
       "retail": 0,
       "rate": 0
