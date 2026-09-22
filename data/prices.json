@@ -1,16 +1,8 @@
 {
-  "updated": "2026-09-22T03:39:10.267979",
+  "updated": "2026-09-22T11:05:58.068224",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 45,
   "products": [
-    {
-      "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
-      "jan": "4902370552195",
-      "buyback": 10400,
-      "category": "Switch",
-      "retail": 0,
-      "rate": 0
-    },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
@@ -134,10 +126,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 53200,
+      "buyback": 53300,
       "category": "その他",
       "retail": 49980,
-      "rate": 106.44
+      "rate": 106.64
     },
     {
       "name": "BEE-S-KB6PA",
@@ -180,52 +172,12 @@
       "rate": 0
     },
     {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 15500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
-      "jan": "4549995560077",
-      "buyback": 64000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "instax mini Evo チェキ USB ブラウン",
-      "jan": "4547410520125",
-      "buyback": 24500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 30th CELEBRATION FUTURISTIC BOX",
-      "jan": "4521329463872",
-      "buyback": 70000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17600,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
+      "jan": "4902370552706",
+      "buyback": 3800,
+      "category": "Switch 2",
+      "retail": 5478,
+      "rate": 69.37
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -374,6 +326,14 @@
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
+      "buyback": 11200,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 66.67
+    },
+    {
+      "name": "instax mini 12 ライラックパープル",
+      "jan": "4547410489156",
       "buyback": 11200,
       "category": "その他",
       "retail": 16800,
