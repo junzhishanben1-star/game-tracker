@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-21T23:53:10.901483",
+  "updated": "2026-09-22T03:39:10.267979",
   "source": "mobile-ichiban.com",
-  "count": 45,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
@@ -180,9 +180,49 @@
       "rate": 0
     },
     {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 146000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
+      "jan": "4549995560077",
+      "buyback": 64000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 24500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 30th CELEBRATION FUTURISTIC BOX",
+      "jan": "4521329463872",
+      "buyback": 70000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 17600,
       "category": "その他",
       "retail": 0,
       "rate": 0
