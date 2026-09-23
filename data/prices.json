@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-22T23:34:06.024782",
+  "updated": "2026-09-23T03:38:46.080813",
   "source": "mobile-ichiban.com",
-  "count": 45,
+  "count": 50,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 187200,
+      "buyback": 187700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 111500,
+      "buyback": 112300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 111500,
+      "buyback": 112300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -87,6 +87,22 @@
       "name": "ファイアーエムブレム 万紫千紅/Switch 2",
       "jan": "4902370554472",
       "buyback": 8600,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "マリオカート ワールド/Switch 2",
+      "jan": "4902370553260",
+      "buyback": 7900,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "スーパー マリオパーティ ジャンボリー Edition＋ジャンボリーTV /Switch 2",
+      "jan": "4902370553352",
+      "buyback": 7000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -158,26 +174,50 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
       "jan": "4902370552744",
-      "buyback": 8200,
-      "category": "Switch 2",
-      "retail": 9878,
-      "rate": 83.01
-    },
-    {
-      "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
-      "jan": "4902370553871",
       "buyback": 8100,
       "category": "Switch 2",
+      "retail": 9878,
+      "rate": 82.0
+    },
+    {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 146000,
+      "category": "その他",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
-      "jan": "4902370552706",
-      "buyback": 3800,
-      "category": "Switch 2",
-      "retail": 5478,
-      "rate": 69.37
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 15500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
+      "jan": "4549995560077",
+      "buyback": 64000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 161000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Sleepy Blue",
+      "jan": "0840353970458",
+      "buyback": 21500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
