@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-25T03:46:27.746396",
+  "updated": "2026-09-25T11:19:30.220305",
   "source": "mobile-ichiban.com",
-  "count": 50,
+  "count": 44,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -14,31 +14,15 @@
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6600,
+      "buyback": 6700,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 100.33
-    },
-    {
-      "name": "PlayStation 5 デジタル・エディション \"Marvel’s Wolverine\" バトルイエロー リミテッドエディション CFIJ-10033",
-      "jan": "4948872850995",
-      "buyback": 102000,
-      "category": "PS5",
-      "retail": 0,
-      "rate": 0
+      "rate": 101.85
     },
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 188700,
-      "category": "PS5",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "PS5 ディスクドライブ(Slimモデル用) CFI-ZDD1J",
-      "jan": "4948872416030",
-      "buyback": 10400,
+      "buyback": 189200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -46,7 +30,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 113300,
+      "buyback": 113500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 113300,
+      "buyback": 113500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -62,7 +46,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 89500,
+      "buyback": 89700,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -70,7 +54,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 20100,
+      "buyback": 20200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -86,7 +70,7 @@
     {
       "name": "マリオカート ワールド/Switch 2",
       "jan": "4902370553260",
-      "buyback": 8100,
+      "buyback": 8200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -94,7 +78,7 @@
     {
       "name": "スーパー マリオパーティ ジャンボリー Edition＋ジャンボリーTV /Switch 2",
       "jan": "4902370553352",
-      "buyback": 7000,
+      "buyback": 7100,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -126,10 +110,10 @@
     {
       "name": "BEE-S-KB6AA",
       "jan": "4902370552683",
-      "buyback": 82200,
+      "buyback": 82300,
       "category": "その他",
       "retail": 69980,
-      "rate": 117.46
+      "rate": 117.61
     },
     {
       "name": "BEE-S-KB6CA",
@@ -172,52 +156,20 @@
       "rate": 0
     },
     {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
+      "jan": "4902370552706",
+      "buyback": 3800,
+      "category": "Switch 2",
+      "retail": 5478,
+      "rate": 69.37
     },
     {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 16500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
-      "jan": "4549995560077",
-      "buyback": 64000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Sleepy Blue",
-      "jan": "0840353970458",
-      "buyback": 21500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AirPods Pro 3 MFHP4J/A",
-      "jan": "4549995635232",
-      "buyback": 32000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17600,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
+      "jan": "4902370552720",
+      "buyback": 3800,
+      "category": "Switch 2",
+      "retail": 5478,
+      "rate": 69.37
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -302,10 +254,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1290,
+      "buyback": 1300,
       "category": "その他",
       "retail": 1100,
-      "rate": 117.27
+      "rate": 118.18
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
@@ -318,10 +270,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2490,
+      "buyback": 2500,
       "category": "その他",
       "retail": 2178,
-      "rate": 114.33
+      "rate": 114.78
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
