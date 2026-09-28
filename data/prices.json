@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-28T04:02:46.413772",
+  "updated": "2026-09-28T13:06:23.240691",
   "source": "mobile-ichiban.com",
-  "count": 53,
+  "count": 44,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 190000,
+      "buyback": 190700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +30,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 114300,
+      "buyback": 115000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 114300,
+      "buyback": 115000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 90000,
+      "buyback": 90200,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -71,14 +71,6 @@
       "name": "マリオカート ワールド/Switch 2",
       "jan": "4902370553260",
       "buyback": 8200,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "スーパー マリオパーティ ジャンボリー Edition＋ジャンボリーTV /Switch 2",
-      "jan": "4902370553352",
-      "buyback": 6600,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -172,76 +164,20 @@
       "rate": 69.37
     },
     {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 7100,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 107.94
     },
     {
-      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
-      "jan": "4941787149536",
-      "buyback": 17500,
+      "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
+      "jan": "4547410550955",
+      "buyback": 2520,
       "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO Reno13 A 8GB+128GB アイスブルー AU",
-      "jan": "4941787147013",
-      "buyback": 26500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 16500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
-      "jan": "4549995560077",
-      "buyback": 64500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 161000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Fitbit Air Sleepy Blue",
-      "jan": "0840353970458",
-      "buyback": 20500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AirPods Pro 3 MFHP4J/A",
-      "jan": "4549995635232",
-      "buyback": 32000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Pokemon GO Plus+",
-      "jan": "4521329368009",
-      "buyback": 17700,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
+      "retail": 2178,
+      "rate": 115.7
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -254,7 +190,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 11100,
+      "buyback": 11200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -262,7 +198,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 11100,
+      "buyback": 11200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -270,7 +206,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 11100,
+      "buyback": 11200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -278,7 +214,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 11100,
+      "buyback": 11200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -286,7 +222,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 11100,
+      "buyback": 11200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -334,14 +270,6 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
       "jan": "4547410369137",
-      "buyback": 2500,
-      "category": "その他",
-      "retail": 2178,
-      "rate": 114.78
-    },
-    {
-      "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
-      "jan": "4547410550955",
       "buyback": 2500,
       "category": "その他",
       "retail": 2178,
