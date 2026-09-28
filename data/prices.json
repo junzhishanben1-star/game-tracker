@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T23:46:49.186848",
+  "updated": "2026-09-28T04:02:46.413772",
   "source": "mobile-ichiban.com",
-  "count": 44,
+  "count": 53,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 189700,
+      "buyback": 190000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +30,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 114000,
+      "buyback": 114300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 114000,
+      "buyback": 114300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -78,7 +78,7 @@
     {
       "name": "スーパー マリオパーティ ジャンボリー Edition＋ジャンボリーTV /Switch 2",
       "jan": "4902370553352",
-      "buyback": 7100,
+      "buyback": 6600,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -170,6 +170,78 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
+    },
+    {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 146000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
+      "jan": "4941787149536",
+      "buyback": 17500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "OPPO Reno13 A 8GB+128GB アイスブルー AU",
+      "jan": "4941787147013",
+      "buyback": 26500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 16500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
+      "jan": "4549995560077",
+      "buyback": 64500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 161000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Google Fitbit Air Sleepy Blue",
+      "jan": "0840353970458",
+      "buyback": 20500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AirPods Pro 3 MFHP4J/A",
+      "jan": "4549995635232",
+      "buyback": 32000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Pokemon GO Plus+",
+      "jan": "4521329368009",
+      "buyback": 17700,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
