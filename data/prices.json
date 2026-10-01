@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-01T04:31:30.230639",
+  "updated": "2026-10-01T12:35:27.981189",
   "source": "mobile-ichiban.com",
-  "count": 52,
+  "count": 44,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -10,6 +10,14 @@
       "category": "Switch 2",
       "retail": 9878,
       "rate": 87.06
+    },
+    {
+      "name": "Nintendo Switch (有機ELモデル) ホワイト",
+      "jan": "4902370548495",
+      "buyback": 44800,
+      "category": "Switch",
+      "retail": 37980,
+      "rate": 117.96
     },
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
@@ -38,8 +46,24 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 20500,
+      "buyback": 20600,
       "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Deck OLED 512GB",
+      "jan": "0814585022254",
+      "buyback": 135000,
+      "category": "Steam Deck",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Deck OLED 512GB",
+      "jan": "0814585022605",
+      "buyback": 135000,
+      "category": "Steam Deck",
       "retail": 0,
       "rate": 0
     },
@@ -148,100 +172,12 @@
       "rate": 107.94
     },
     {
-      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "8806095700670",
-      "buyback": 6700,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 101.85
-    },
-    {
-      "name": "Nintendo Switch (有機ELモデル) ホワイト",
-      "jan": "4902370548495",
-      "buyback": 44500,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 117.17
-    },
-    {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Google Pixel 10a 128GB SIMフリー Lavender",
-      "jan": "840353949874",
-      "buyback": 66500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "OPPO A5 5G 4GB+128GB au [ホワイト]",
-      "jan": "4941787149536",
-      "buyback": 17500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 16500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "arrows We3 F-52G 4G+64G docomo [ブラック]",
-      "jan": "4942857251739",
-      "buyback": 18500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
-      "jan": "4549995560077",
-      "buyback": 64500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
       "buyback": 2520,
       "category": "その他",
       "retail": 2178,
       "rate": 115.7
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 161000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "AirPods Pro 3 MFHP4J/A",
-      "jan": "4549995635232",
-      "buyback": 32500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ポケモンカードゲーム MEGA 拡張パック 30th CELEBRATION BOX m6a",
-      "jan": "4521329462424",
-      "buyback": 26000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
