@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-05T21:52:15.616007",
+  "updated": "2026-10-06T05:12:50.802422",
   "source": "mobile-ichiban.com",
-  "count": 44,
+  "count": 52,
   "products": [
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 192700,
+      "buyback": 194700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "マリオカート ワールド/Switch 2",
       "jan": "4902370553260",
-      "buyback": 8000,
+      "buyback": 7900,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -110,10 +110,10 @@
     {
       "name": "BEE-S-KB6CA",
       "jan": "4902370553024",
-      "buyback": 52800,
+      "buyback": 52500,
       "category": "その他",
       "retail": 49980,
-      "rate": 105.64
+      "rate": 105.04
     },
     {
       "name": "BEE-S-KB6PA",
@@ -172,12 +172,76 @@
       "rate": 109.46
     },
     {
+      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
+      "jan": "840353958241",
+      "buyback": 146000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
+      "jan": "4942857242850",
+      "buyback": 16500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "arrows We3 F-52G 4G+64G docomo [ブラック]",
+      "jan": "4942857251739",
+      "buyback": 17000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
+      "jan": "4549995560077",
+      "buyback": 65000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
       "buyback": 2520,
       "category": "その他",
       "retail": 2178,
       "rate": 115.7
+    },
+    {
+      "name": "CANON PowerShot G7 X Mark III [ブラック]",
+      "jan": "4549292137743",
+      "buyback": 164500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "AirPods Pro 3 MFHP4J/A",
+      "jan": "4549995635232",
+      "buyback": 32500,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "SpaceX 02535001 Starlink Mini WiFiルーター内蔵 スターリンクミニ",
+      "jan": "0850049670302",
+      "buyback": 43200,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ポケモンカードゲーム MEGA 拡張パック 30th CELEBRATION BOX m6a",
+      "jan": "4521329462424",
+      "buyback": 26000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
