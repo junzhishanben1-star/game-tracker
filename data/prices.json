@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-07T09:56:13.323902",
+  "updated": "2026-10-07T18:32:43.086473",
   "source": "mobile-ichiban.com",
-  "count": 51,
+  "count": 43,
   "products": [
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -164,38 +164,6 @@
       "rate": 69.37
     },
     {
-      "name": "Google Pixel 11 Pro XL 256GB SIMフリー Canyon",
-      "jan": "840353958241",
-      "buyback": 146000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Galaxy A25 5G SC-53F 4G+64G docomo [ブラック]",
-      "jan": "4942857242850",
-      "buyback": 16500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "arrows We3 F-52G 4G+64G docomo [ブラック]",
-      "jan": "4942857251739",
-      "buyback": 17000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "iPad 11インチ 第11世代 Wi-Fi 128GB MD3Y4J/A [シルバー]",
-      "jan": "4549995560077",
-      "buyback": 65000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
       "buyback": 2520,
@@ -207,38 +175,6 @@
       "name": "instax mini Evo チェキ USB ブラウン",
       "jan": "4547410520125",
       "buyback": 26000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot G7 X Mark III [ブラック]",
-      "jan": "4549292137743",
-      "buyback": 167000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "CANON PowerShot SX740 HS [ブラック]",
-      "jan": "4549292119008",
-      "buyback": 83500,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "RICOH GR IV",
-      "jan": "4549212311291",
-      "buyback": 206000,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Panasonic Technics EAH-AZ100-S シルバー",
-      "jan": "4549980797297",
-      "buyback": 29000,
       "category": "その他",
       "retail": 0,
       "rate": 0
