@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T00:45:35.589258",
+  "updated": "2026-10-08T10:08:10.499994",
   "source": "mobile-ichiban.com",
   "count": 43,
   "products": [
@@ -38,7 +38,7 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "815820025238",
-      "buyback": 52200,
+      "buyback": 52300,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 90700,
+      "buyback": 90800,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -56,14 +56,6 @@
       "jan": "0814585022803",
       "buyback": 20500,
       "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "マリオカート ワールド/Switch 2",
-      "jan": "4902370553260",
-      "buyback": 7700,
-      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -94,10 +86,10 @@
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 52200,
+      "buyback": 52000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 104.44
+      "rate": 104.04
     },
     {
       "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
@@ -126,7 +118,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 8200,
+      "buyback": 8000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -134,15 +126,15 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
       "jan": "4902370552744",
-      "buyback": 8300,
+      "buyback": 8000,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 84.03
+      "rate": 80.99
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 8300,
+      "buyback": 8000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -162,6 +154,22 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
+    },
+    {
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 7300,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 110.98
+    },
+    {
+      "name": "instax mini 13 クレイホワイト",
+      "jan": "4547410564662",
+      "buyback": 11400,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
@@ -214,14 +222,6 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 11400,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "instax mini 13 クレイホワイト",
-      "jan": "4547410564662",
       "buyback": 11400,
       "category": "その他",
       "retail": 0,
