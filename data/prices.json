@@ -1,16 +1,8 @@
 {
-  "updated": "2026-10-13T02:32:11.964796",
+  "updated": "2026-10-13T10:10:56.077809",
   "source": "mobile-ichiban.com",
   "count": 43,
   "products": [
-    {
-      "name": "Nintendo Switch (有機ELモデル) ホワイト",
-      "jan": "4902370548495",
-      "buyback": 44800,
-      "category": "Switch",
-      "retail": 37980,
-      "rate": 117.96
-    },
     {
       "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
       "jan": "4902370552195",
@@ -22,7 +14,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 51000,
+      "buyback": 50000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +22,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 196500,
+      "buyback": 196700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -54,7 +46,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 20700,
+      "buyback": 21000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -110,15 +102,15 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8500,
+      "buyback": 8600,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 86.05
+      "rate": 87.06
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 7800,
+      "buyback": 7600,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -126,15 +118,15 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
       "jan": "4902370552744",
-      "buyback": 8000,
+      "buyback": 7800,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 80.99
+      "rate": 78.96
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 8000,
+      "buyback": 7800,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -162,6 +154,14 @@
       "category": "Switch 2",
       "retail": 6578,
       "rate": 110.98
+    },
+    {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 6700,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 101.85
     },
     {
       "name": "instax mini 13 クレイホワイト",
