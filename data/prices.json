@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T20:59:39.286383",
+  "updated": "2026-10-13T02:32:11.964796",
   "source": "mobile-ichiban.com",
   "count": 43,
   "products": [
@@ -38,7 +38,7 @@
     {
       "name": "Meta Quest 3S 128GB",
       "jan": "815820025238",
-      "buyback": 52500,
+      "buyback": 50500,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -86,10 +86,10 @@
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 52000,
+      "buyback": 51500,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 104.04
+      "rate": 103.04
     },
     {
       "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
