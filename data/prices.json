@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-14T23:44:58.957229",
+  "updated": "2026-10-15T03:30:21.798775",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 50000,
+      "buyback": 50500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -14,7 +14,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 197000,
+      "buyback": 197700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -172,14 +172,6 @@
       "rate": 110.98
     },
     {
-      "name": "instax mini 13 クレイホワイト",
-      "jan": "4547410564662",
-      "buyback": 11400,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
       "buyback": 2530,
@@ -228,6 +220,14 @@
       "rate": 0
     },
     {
+      "name": "instax mini 13 クレイホワイト",
+      "jan": "4547410564662",
+      "buyback": 11400,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
       "name": "instax WIDE 400 チェキ GREEN",
       "jan": "4547410529975",
       "buyback": 20000,
@@ -262,10 +262,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1300,
+      "buyback": 1310,
       "category": "その他",
       "retail": 1100,
-      "rate": 118.18
+      "rate": 119.09
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
