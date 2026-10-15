@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-15T03:30:21.798775",
+  "updated": "2026-10-15T10:58:07.758874",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 50500,
+      "buyback": 50700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -55,6 +55,14 @@
       "name": "ドラゴンズドグマ 2 ダークアリズン /Switch2",
       "jan": "4976219140690",
       "buyback": 4900,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "あつまれ どうぶつの森 /Switch 2",
+      "jan": "4902370553901",
+      "buyback": 5300,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -162,14 +170,6 @@
       "category": "Switch 2",
       "retail": 5478,
       "rate": 69.37
-    },
-    {
-      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
-      "jan": "4523052030185",
-      "buyback": 7300,
-      "category": "Switch 2",
-      "retail": 6578,
-      "rate": 110.98
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
