@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-20T00:07:58.249049",
+  "updated": "2026-10-20T08:15:02.268438",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 51000,
+      "buyback": 51200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -14,7 +14,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 199700,
+      "buyback": 200000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "Nintendo Switch 2 スプラトゥーン レイダース セット 国内版",
       "jan": "4902370554779",
-      "buyback": 53500,
+      "buyback": 54500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -174,10 +174,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2550,
+      "buyback": 2560,
       "category": "その他",
       "retail": 2178,
-      "rate": 117.08
+      "rate": 117.54
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
