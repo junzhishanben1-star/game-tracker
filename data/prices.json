@@ -1,8 +1,16 @@
 {
-  "updated": "2026-10-20T08:15:02.268438",
+  "updated": "2026-10-20T14:08:55.743604",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
+    {
+      "name": "Nintendo Switch Lite グレー",
+      "jan": "4902370542929",
+      "buyback": 25900,
+      "category": "Switch",
+      "retail": 0,
+      "rate": 0
+    },
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
@@ -68,14 +76,6 @@
       "rate": 0
     },
     {
-      "name": "あつまれ どうぶつの森 /Switch 2",
-      "jan": "4902370553901",
-      "buyback": 5400,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "Lies of P：コンプリート エディション /Switch２",
       "jan": "4595057030378",
       "buyback": 6900,
@@ -126,7 +126,7 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
       "jan": "4902370553802",
-      "buyback": 10200,
+      "buyback": 10300,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -190,7 +190,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 11400,
+      "buyback": 11500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -198,7 +198,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 11400,
+      "buyback": 11500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -206,7 +206,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 11400,
+      "buyback": 11500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,7 +214,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 11400,
+      "buyback": 11500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -222,7 +222,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 11400,
+      "buyback": 11500,
       "category": "その他",
       "retail": 0,
       "rate": 0
