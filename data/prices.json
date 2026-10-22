@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T21:20:02.429593",
+  "updated": "2026-10-22T03:34:32.360422",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 51700,
+      "buyback": 52100,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -80,14 +80,6 @@
       "jan": "4902370553260",
       "buyback": 8000,
       "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Lies of P：コンプリート エディション /Switch２",
-      "jan": "4595057030378",
-      "buyback": 6900,
-      "category": "Switch",
       "retail": 0,
       "rate": 0
     },
@@ -166,6 +158,14 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
       "jan": "4902370552706",
+      "buyback": 3800,
+      "category": "Switch 2",
+      "retail": 5478,
+      "rate": 69.37
+    },
+    {
+      "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
+      "jan": "4902370552720",
       "buyback": 3800,
       "category": "Switch 2",
       "retail": 5478,
