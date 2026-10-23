@@ -1,20 +1,12 @@
 {
-  "updated": "2026-10-22T21:15:53.302370",
+  "updated": "2026-10-23T03:39:24.302924",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
     {
-      "name": "Nintendo Switch 2 Proコントローラー",
-      "jan": "4902370552843",
-      "buyback": 8700,
-      "category": "Switch 2",
-      "retail": 9878,
-      "rate": 88.07
-    },
-    {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 26000,
+      "buyback": 26200,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -130,6 +122,14 @@
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
+    },
+    {
+      "name": "Nintendo Switch 2 Proコントローラー",
+      "jan": "4902370552843",
+      "buyback": 8700,
+      "category": "Switch 2",
+      "retail": 9878,
+      "rate": 88.07
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
