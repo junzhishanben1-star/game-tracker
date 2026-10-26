@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T23:03:10.530065",
+  "updated": "2026-10-26T03:36:14.416805",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 202400,
+      "buyback": 202700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "マリオカート ワールド/Switch 2",
       "jan": "4902370553260",
-      "buyback": 8000,
+      "buyback": 7500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -126,10 +126,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8700,
+      "buyback": 8600,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 88.07
+      "rate": 87.06
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
