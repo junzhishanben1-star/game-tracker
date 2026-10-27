@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T00:15:56.664379",
+  "updated": "2026-10-27T08:42:23.545728",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
@@ -14,7 +14,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 53200,
+      "buyback": 53400,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 203200,
+      "buyback": 203700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -30,7 +30,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 91200,
+      "buyback": 91300,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 21000,
+      "buyback": 21300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -56,22 +56,6 @@
       "jan": "0814585022605",
       "buyback": 136300,
       "category": "Steam Deck",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ドラゴンズドグマ 2 ダークアリズン /Switch2",
-      "jan": "4976219140690",
-      "buyback": 4900,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "マリオカート ワールド/Switch 2",
-      "jan": "4902370553260",
-      "buyback": 7500,
-      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -172,12 +156,28 @@
       "rate": 69.37
     },
     {
+      "name": "SanDisk microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "4523052030185",
+      "buyback": 7500,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 114.02
+    },
+    {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 6700,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 101.85
+    },
+    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2560,
+      "buyback": 2570,
       "category": "その他",
       "retail": 2178,
-      "rate": 117.54
+      "rate": 118.0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
