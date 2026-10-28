@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T21:53:33.658128",
+  "updated": "2026-10-28T04:21:05.163421",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 203700,
+      "buyback": 204000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -110,15 +110,15 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8600,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 87.06
+      "rate": 86.05
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 8000,
+      "buyback": 7900,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -126,15 +126,15 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
       "jan": "4902370552744",
-      "buyback": 8000,
+      "buyback": 7900,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 80.99
+      "rate": 79.98
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 8000,
+      "buyback": 7900,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
