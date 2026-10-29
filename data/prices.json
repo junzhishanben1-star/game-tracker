@@ -1,12 +1,20 @@
 {
-  "updated": "2026-10-29T00:38:18.205714",
+  "updated": "2026-10-29T09:28:17.373823",
   "source": "mobile-ichiban.com",
-  "count": 43,
+  "count": 44,
   "products": [
+    {
+      "name": "ディスプレイスタンド付き",
+      "jan": "4902370554564",
+      "buyback": 12000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 26200,
+      "buyback": 26300,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -22,7 +30,15 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 205000,
+      "buyback": 205500,
+      "category": "PS5",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "PlayStation VR2 CFIJ-17000",
+      "jan": "4948872016490",
+      "buyback": 47200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -60,10 +76,18 @@
       "rate": 0
     },
     {
-      "name": "ディスプレイスタンド付き",
-      "jan": "4902370554564",
-      "buyback": 54500,
+      "name": "ROG Xbox Ally X 1TB",
+      "jan": "0199291152984",
+      "buyback": 154500,
       "category": "その他",
+      "retail": 139800,
+      "rate": 110.52
+    },
+    {
+      "name": "Nintendo Switch 2 ゼルダの伝説 40周年 アニバーサリーエディション 国内版",
+      "jan": "4902370554595",
+      "buyback": 58000,
+      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
@@ -148,28 +172,20 @@
       "rate": 0
     },
     {
-      "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
-      "jan": "4902370552706",
-      "buyback": 3800,
-      "category": "Switch 2",
-      "retail": 5478,
-      "rate": 69.37
-    },
-    {
-      "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
-      "jan": "4902370552720",
-      "buyback": 3800,
-      "category": "Switch 2",
-      "retail": 5478,
-      "rate": 69.37
-    },
-    {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
       "buyback": 2570,
       "category": "その他",
       "retail": 2178,
       "rate": 118.0
+    },
+    {
+      "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
+      "jan": "4547410441536",
+      "buyback": 18600,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax WIDE 400 チェキ JET BLACK",
@@ -310,14 +326,6 @@
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
-      "buyback": 11200,
-      "category": "その他",
-      "retail": 16800,
-      "rate": 66.67
-    },
-    {
-      "name": "instax mini 12 ライラックパープル",
-      "jan": "4547410489156",
       "buyback": 11200,
       "category": "その他",
       "retail": 16800,
