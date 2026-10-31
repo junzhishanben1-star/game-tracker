@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-30T21:59:36.350081",
+  "updated": "2026-10-31T04:24:47.377436",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 12300,
+      "buyback": 12400,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -22,7 +22,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 52000,
+      "buyback": 51000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -118,10 +118,10 @@
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 51500,
+      "buyback": 51300,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 103.04
+      "rate": 102.64
     },
     {
       "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
@@ -254,10 +254,10 @@
     {
       "name": "instax mini 99 ブラック",
       "jan": "4547410529845",
-      "buyback": 22500,
+      "buyback": 22000,
       "category": "その他",
       "retail": 30580,
-      "rate": 73.58
+      "rate": 71.94
     },
     {
       "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
