@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-02T00:20:19.176550",
+  "updated": "2026-11-02T10:38:46.145196",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 12600,
+      "buyback": 12700,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -14,7 +14,7 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 26400,
+      "buyback": 26500,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -31,14 +31,6 @@
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
       "buyback": 206000,
-      "category": "PS5",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "PlayStation VR2 CFIJ-17000",
-      "jan": "4948872016490",
-      "buyback": 47200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,7 +54,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 136300,
+      "buyback": 136500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -70,23 +62,15 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 136300,
+      "buyback": 136500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "ROG Xbox Ally X 1TB",
-      "jan": "0199291152984",
-      "buyback": 154500,
-      "category": "その他",
-      "retail": 139800,
-      "rate": 110.52
-    },
-    {
       "name": "Nintendo Switch 2 ゼルダの伝説 40周年 アニバーサリーエディション 国内版",
       "jan": "4902370554595",
-      "buyback": 57500,
+      "buyback": 56500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -118,10 +102,10 @@
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 51300,
+      "buyback": 51000,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 102.64
+      "rate": 102.04
     },
     {
       "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
@@ -170,6 +154,22 @@
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
+    },
+    {
+      "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
+      "jan": "4902370552706",
+      "buyback": 3800,
+      "category": "Switch 2",
+      "retail": 5478,
+      "rate": 69.37
+    },
+    {
+      "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
+      "jan": "4902370552720",
+      "buyback": 3800,
+      "category": "Switch 2",
+      "retail": 5478,
+      "rate": 69.37
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
@@ -270,10 +270,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1300,
+      "buyback": 1280,
       "category": "その他",
       "retail": 1100,
-      "rate": 118.18
+      "rate": 116.36
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
