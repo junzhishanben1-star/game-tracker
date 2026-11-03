@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:36:39.516538",
+  "updated": "2026-11-03T13:44:11.711910",
   "source": "mobile-ichiban.com",
   "count": 44,
   "products": [
@@ -46,7 +46,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 21500,
+      "buyback": 21600,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -126,10 +126,10 @@
     {
       "name": "Nintendo Switch 2 Proコントローラー",
       "jan": "4902370552843",
-      "buyback": 8400,
+      "buyback": 8500,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 85.04
+      "rate": 86.05
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
@@ -180,14 +180,6 @@
       "rate": 118.0
     },
     {
-      "name": "instax SQUARE SQ1 チェキスクエア [チョークホワイト]",
-      "jan": "4547410441536",
-      "buyback": 18600,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
-    {
       "name": "instax WIDE 400 チェキ JET BLACK",
       "jan": "4547410570632",
       "buyback": 20000,
@@ -198,7 +190,7 @@
     {
       "name": "instax mini 13 キャンディピンク",
       "jan": "4547410564648",
-      "buyback": 11400,
+      "buyback": 11300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -206,7 +198,7 @@
     {
       "name": "instax mini 13 ドリーミーパープル",
       "jan": "4547410564679",
-      "buyback": 11400,
+      "buyback": 11300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -214,7 +206,7 @@
     {
       "name": "instax mini 13 フロストブルー",
       "jan": "4547410564631",
-      "buyback": 11400,
+      "buyback": 11300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -222,7 +214,7 @@
     {
       "name": "instax mini 13 ラグーングリーン",
       "jan": "4547410564655",
-      "buyback": 11400,
+      "buyback": 11300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -230,7 +222,7 @@
     {
       "name": "instax mini 13 クレイホワイト",
       "jan": "4547410564662",
-      "buyback": 11400,
+      "buyback": 11300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -270,10 +262,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1280,
+      "buyback": 1290,
       "category": "その他",
       "retail": 1100,
-      "rate": 116.36
+      "rate": 117.27
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
@@ -326,6 +318,14 @@
     {
       "name": "instax mini 12 パステルブルー",
       "jan": "4547410489118",
+      "buyback": 11200,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 66.67
+    },
+    {
+      "name": "instax mini 12 ライラックパープル",
+      "jan": "4547410489156",
       "buyback": 11200,
       "category": "その他",
       "retail": 16800,
