@@ -1,15 +1,31 @@
 {
-  "updated": "2026-11-06T01:24:17.630099",
+  "updated": "2026-11-06T10:28:08.166662",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 12800,
+      "buyback": 13000,
       "category": "その他",
       "retail": 0,
       "rate": 0
+    },
+    {
+      "name": "Nintendo Switch 2 国内版",
+      "jan": "4902370553024",
+      "buyback": 51800,
+      "category": "Switch 2",
+      "retail": 49980,
+      "rate": 103.64
+    },
+    {
+      "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
+      "jan": "8806095700670",
+      "buyback": 6700,
+      "category": "Switch 2",
+      "retail": 6578,
+      "rate": 101.85
     },
     {
       "name": "Nintendo Switch Lite グレー",
@@ -22,7 +38,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 206200,
+      "buyback": 207200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -38,7 +54,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 21700,
+      "buyback": 21800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,7 +62,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 136700,
+      "buyback": 136800,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -54,7 +70,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 136700,
+      "buyback": 136800,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -94,18 +110,10 @@
     {
       "name": "Nintendo Switch 2 多言語対応版",
       "jan": "4902370552683",
-      "buyback": 82300,
+      "buyback": 82000,
       "category": "Switch 2",
       "retail": 69980,
-      "rate": 117.61
-    },
-    {
-      "name": "Nintendo Switch 2 国内版",
-      "jan": "4902370553024",
-      "buyback": 51000,
-      "category": "Switch 2",
-      "retail": 49980,
-      "rate": 102.04
+      "rate": 117.18
     },
     {
       "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
@@ -158,14 +166,6 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
       "jan": "4902370552706",
-      "buyback": 3800,
-      "category": "Switch 2",
-      "retail": 5478,
-      "rate": 69.37
-    },
-    {
-      "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
-      "jan": "4902370552720",
       "buyback": 3800,
       "category": "Switch 2",
       "retail": 5478,
