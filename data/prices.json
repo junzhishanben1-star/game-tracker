@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T21:59:58.373675",
+  "updated": "2026-11-10T06:12:31.230612",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
@@ -62,7 +62,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 137000,
+      "buyback": 137300,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 137000,
+      "buyback": 137300,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -78,7 +78,7 @@
     {
       "name": "ゼルダの伝説 時のオカリナ/Switch 2",
       "jan": "4902370554922",
-      "buyback": 7200,
+      "buyback": 7300,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -142,7 +142,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 7800,
+      "buyback": 8000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -158,7 +158,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 7800,
+      "buyback": 8000,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -262,10 +262,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1260,
+      "buyback": 1250,
       "category": "その他",
       "retail": 1100,
-      "rate": 114.55
+      "rate": 113.64
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
