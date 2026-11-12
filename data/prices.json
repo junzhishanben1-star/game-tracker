@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-12T06:00:09.001440",
+  "updated": "2026-11-12T15:01:57.686575",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 13200,
+      "buyback": 13300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -46,15 +46,23 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 207700,
+      "buyback": 208500,
       "category": "PS5",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Meta Quest 3S 128GB",
+      "jan": "815820025238",
+      "buyback": 48300,
+      "category": "Meta Quest",
       "retail": 0,
       "rate": 0
     },
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 92200,
+      "buyback": 92300,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -70,7 +78,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 137500,
+      "buyback": 137600,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -78,7 +86,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 137500,
+      "buyback": 137600,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -162,14 +170,6 @@
       "category": "Switch 2",
       "retail": 9878,
       "rate": 79.98
-    },
-    {
-      "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
-      "jan": "4902370553871",
-      "buyback": 8100,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
