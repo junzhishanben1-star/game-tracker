@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-11T21:46:08.338834",
+  "updated": "2026-11-12T06:00:09.001440",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 13100,
+      "buyback": 13200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 50900,
+      "buyback": 51000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 92100,
+      "buyback": 92200,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 21800,
+      "buyback": 22000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "ゼルダの伝説 時のオカリナ/Switch 2",
       "jan": "4902370554922",
-      "buyback": 7450,
+      "buyback": 7500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -158,10 +158,10 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
       "jan": "4902370552744",
-      "buyback": 7800,
+      "buyback": 7900,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 78.96
+      "rate": 79.98
     },
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
@@ -252,28 +252,12 @@
       "rate": 71.94
     },
     {
-      "name": "FUJIFILM チェキ用フィルム 20枚入 INSTAX MINI JP 2",
-      "jan": "4547410377231",
-      "buyback": 2700,
-      "category": "その他",
-      "retail": 2100,
-      "rate": 128.57
-    },
-    {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
       "buyback": 1250,
       "category": "その他",
       "retail": 1100,
       "rate": 113.64
-    },
-    {
-      "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り",
-      "jan": "4547410369137",
-      "buyback": 2500,
-      "category": "その他",
-      "retail": 2178,
-      "rate": 114.78
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
@@ -326,6 +310,22 @@
     {
       "name": "instax mini 12 ライラックパープル",
       "jan": "4547410489156",
+      "buyback": 11200,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 66.67
+    },
+    {
+      "name": "instax mini 12 ミントグリーン",
+      "jan": "4547410489132",
+      "buyback": 11200,
+      "category": "その他",
+      "retail": 16800,
+      "rate": 66.67
+    },
+    {
+      "name": "instax mini 12 ブロッサムピンク",
+      "jan": "4547410489125",
       "buyback": 11200,
       "category": "その他",
       "retail": 16800,
