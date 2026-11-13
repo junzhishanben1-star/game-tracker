@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T23:16:28.706725",
+  "updated": "2026-11-13T05:24:53.714208",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 51000,
+      "buyback": 51100,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -64,14 +64,6 @@
       "jan": "815820024170",
       "buyback": 92300,
       "category": "Meta Quest",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "Steam Controller",
-      "jan": "0814585022803",
-      "buyback": 22000,
-      "category": "その他",
       "retail": 0,
       "rate": 0
     },
@@ -170,6 +162,14 @@
       "category": "Switch 2",
       "retail": 9878,
       "rate": 79.98
+    },
+    {
+      "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
+      "jan": "4902370553871",
+      "buyback": 8100,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
