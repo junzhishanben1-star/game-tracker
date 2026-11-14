@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T05:14:21.747631",
+  "updated": "2026-11-14T13:03:40.377200",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
@@ -30,7 +30,7 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 26700,
+      "buyback": 26800,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -126,10 +126,10 @@
     {
       "name": "Nintendo Switch 2 マリオカート ワールド セット 国内版",
       "jan": "4902370553031",
-      "buyback": 58300,
+      "buyback": 58500,
       "category": "Switch 2",
       "retail": 55980,
-      "rate": 104.14
+      "rate": 104.5
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション",
