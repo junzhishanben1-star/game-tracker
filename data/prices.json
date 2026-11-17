@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T06:52:20.141580",
+  "updated": "2026-11-17T18:12:47.561198",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
@@ -30,7 +30,7 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 26900,
+      "buyback": 27000,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 208500,
+      "buyback": 208700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -87,6 +87,14 @@
       "name": "ゼルダの伝説 ブレス オブ ザ ワイルド/Switch 2",
       "jan": "4902370553291",
       "buyback": 6900,
+      "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "あつまれ どうぶつの森 /Switch 2",
+      "jan": "4902370553901",
+      "buyback": 5500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -162,14 +170,6 @@
       "category": "Switch 2",
       "retail": 9878,
       "rate": 79.98
-    },
-    {
-      "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
-      "jan": "4902370553871",
-      "buyback": 8200,
-      "category": "Switch 2",
-      "retail": 0,
-      "rate": 0
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
