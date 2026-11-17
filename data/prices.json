@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-16T21:42:29.909807",
+  "updated": "2026-11-17T06:52:20.141580",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 13200,
+      "buyback": 13000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 52400,
+      "buyback": 52500,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 104.84
+      "rate": 105.04
     },
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 51200,
+      "buyback": 50700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "ゼルダの伝説 ブレス オブ ザ ワイルド/Switch 2",
       "jan": "4902370553291",
-      "buyback": 6800,
+      "buyback": 6900,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -94,7 +94,7 @@
     {
       "name": "Nintendo Switch 2 ゼルダの伝説 40周年 アニバーサリーエディション 国内版",
       "jan": "4902370554595",
-      "buyback": 55000,
+      "buyback": 54500,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -166,7 +166,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトパープル/ライトグリーン BEE-A-JABAB",
       "jan": "4902370553871",
-      "buyback": 8100,
+      "buyback": 8200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
