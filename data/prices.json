@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T18:12:47.561198",
+  "updated": "2026-11-18T02:45:34.302585",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
@@ -22,10 +22,10 @@
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 6900,
+      "buyback": 7000,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 104.9
+      "rate": 106.42
     },
     {
       "name": "Nintendo Switch Lite グレー",
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 50700,
+      "buyback": 50500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 138200,
+      "buyback": 138500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 138200,
+      "buyback": 138500,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
