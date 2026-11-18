@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-18T02:45:34.302585",
+  "updated": "2026-11-18T11:13:09.132522",
   "source": "mobile-ichiban.com",
-  "count": 46,
+  "count": 47,
   "products": [
     {
       "name": "ディスプレイスタンド付き",
@@ -30,39 +30,55 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 27000,
+      "buyback": 27100,
       "category": "Switch",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
-      "jan": "4948872417419",
-      "buyback": 50500,
-      "category": "PS5",
       "retail": 0,
       "rate": 0
     },
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 208700,
+      "buyback": 210000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
     },
     {
-      "name": "Meta Quest 3S 128GB",
-      "jan": "815820025238",
-      "buyback": 48300,
+      "name": "Xbox series x",
+      "jan": "4549576275383",
+      "buyback": 121800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Xbox series x",
+      "jan": "4549576161617",
+      "buyback": 121800,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Meta Quest 3 512GB",
+      "jan": "815820024170",
+      "buyback": 92400,
       "category": "Meta Quest",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "Steam Controller",
+      "jan": "0814585022803",
+      "buyback": 22300,
+      "category": "その他",
       "retail": 0,
       "rate": 0
     },
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 138500,
+      "buyback": 138800,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -70,16 +86,8 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 138500,
+      "buyback": 138800,
       "category": "Steam Deck",
-      "retail": 0,
-      "rate": 0
-    },
-    {
-      "name": "ゼルダの伝説 時のオカリナ/Switch 2",
-      "jan": "4902370554922",
-      "buyback": 7400,
-      "category": "Switch 2",
       "retail": 0,
       "rate": 0
     },
