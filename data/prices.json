@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T02:18:42.219860",
+  "updated": "2026-11-19T11:12:21.087857",
   "source": "mobile-ichiban.com",
   "count": 47,
   "products": [
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 52500,
+      "buyback": 52800,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 105.04
+      "rate": 105.64
     },
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
@@ -30,7 +30,7 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 27100,
+      "buyback": 27200,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -38,7 +38,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 210700,
+      "buyback": 211200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "Meta Quest 3 512GB",
       "jan": "815820024170",
-      "buyback": 92400,
+      "buyback": 92500,
       "category": "Meta Quest",
       "retail": 0,
       "rate": 0
@@ -166,7 +166,7 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ブルー/ライトイエロー BEE-A-JACAC",
       "jan": "4902370554205",
-      "buyback": 8100,
+      "buyback": 8200,
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
@@ -174,10 +174,10 @@
     {
       "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
       "jan": "4902370552744",
-      "buyback": 7900,
+      "buyback": 8000,
       "category": "Switch 2",
       "retail": 9878,
-      "rate": 79.98
+      "rate": 80.99
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
