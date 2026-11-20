@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-20T02:02:15.824504",
+  "updated": "2026-11-20T10:58:49.334347",
   "source": "mobile-ichiban.com",
   "count": 47,
   "products": [
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 13000,
+      "buyback": 12800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -14,10 +14,10 @@
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 52800,
+      "buyback": 52900,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 105.64
+      "rate": 105.84
     },
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
@@ -30,15 +30,23 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 27200,
+      "buyback": 27300,
       "category": "Switch",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "PS5 ワイヤレスコントローラー “グランド・セフト・オートVI” ブラック リミテッドエディション CFI-ZCT2JZH",
+      "jan": "4948872417525",
+      "buyback": 12800,
+      "category": "PS5",
       "retail": 0,
       "rate": 0
     },
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 212500,
+      "buyback": 212700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -46,7 +54,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 121800,
+      "buyback": 122000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -54,7 +62,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 121800,
+      "buyback": 122000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -78,7 +86,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 139000,
+      "buyback": 139100,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -86,7 +94,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 139000,
+      "buyback": 139100,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -170,14 +178,6 @@
       "category": "Switch 2",
       "retail": 0,
       "rate": 0
-    },
-    {
-      "name": "Nintendo Switch Joy-Con 2 (L)/(R) ライトブルー/ライトレッド BEE-A-JAAAA",
-      "jan": "4902370552744",
-      "buyback": 8000,
-      "category": "Switch 2",
-      "retail": 9878,
-      "rate": 80.99
     },
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
