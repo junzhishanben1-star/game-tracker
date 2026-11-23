@@ -1,16 +1,8 @@
 {
-  "updated": "2026-11-22T19:08:15.214857",
+  "updated": "2026-11-23T01:25:57.062484",
   "source": "mobile-ichiban.com",
   "count": 47,
   "products": [
-    {
-      "name": "ディスプレイスタンド付き",
-      "jan": "4902370554564",
-      "buyback": 12200,
-      "category": "その他",
-      "retail": 0,
-      "rate": 0
-    },
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
@@ -86,7 +78,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 139100,
+      "buyback": 139200,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -94,7 +86,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 139100,
+      "buyback": 139200,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -120,6 +112,14 @@
       "jan": "4902370554595",
       "buyback": 54500,
       "category": "Switch 2",
+      "retail": 0,
+      "rate": 0
+    },
+    {
+      "name": "ディスプレイスタンド付き",
+      "jan": "4902370554564",
+      "buyback": 12000,
+      "category": "その他",
       "retail": 0,
       "rate": 0
     },
