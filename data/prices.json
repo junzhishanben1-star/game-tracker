@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-23T23:28:37.583055",
+  "updated": "2026-11-24T08:43:10.904515",
   "source": "mobile-ichiban.com",
   "count": 47,
   "products": [
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 53000,
+      "buyback": 53600,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 106.04
+      "rate": 107.24
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -46,7 +46,7 @@
     {
       "name": "PS5 ワイヤレスコントローラー “グランド・セフト・オートVI” ブラック リミテッドエディション CFI-ZCT2JZH",
       "jan": "4948872417525",
-      "buyback": 13200,
+      "buyback": 13500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 49500,
+      "buyback": 49700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 215200,
+      "buyback": 216700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 122300,
+      "buyback": 122500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -78,7 +78,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 122300,
+      "buyback": 122500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -94,7 +94,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 21000,
+      "buyback": 21200,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -102,7 +102,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022254",
-      "buyback": 139500,
+      "buyback": 139800,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -110,7 +110,7 @@
     {
       "name": "Steam Deck OLED 512GB",
       "jan": "0814585022605",
-      "buyback": 139500,
+      "buyback": 139800,
       "category": "Steam Deck",
       "retail": 0,
       "rate": 0
@@ -126,7 +126,7 @@
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 12000,
+      "buyback": 12300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -190,7 +190,7 @@
     {
       "name": "instax SQUARE 2 チェキ ミスティホワイト",
       "jan": "4547410581881",
-      "buyback": 13000,
+      "buyback": 14000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -198,7 +198,7 @@
     {
       "name": "instax SQUARE 2 チェキ ブリックレッド",
       "jan": "4547410581911",
-      "buyback": 13000,
+      "buyback": 14000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -206,7 +206,7 @@
     {
       "name": "instax SQUARE 2 チェキ スレートブルー",
       "jan": "4547410581942",
-      "buyback": 13000,
+      "buyback": 14000,
       "category": "その他",
       "retail": 0,
       "rate": 0
