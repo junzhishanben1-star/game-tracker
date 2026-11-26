@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-26T01:38:46.901734",
+  "updated": "2026-11-26T11:57:44.954351",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 54100,
+      "buyback": 54300,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 108.24
+      "rate": 108.64
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -22,18 +22,18 @@
     {
       "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2",
       "jan": "8806095700670",
-      "buyback": 7000,
+      "buyback": 7100,
       "category": "Switch 2",
       "retail": 6578,
-      "rate": 106.42
+      "rate": 107.94
     },
     {
       "name": "Nintendo Switch (有機ELモデル) ホワイト",
       "jan": "4902370548495",
-      "buyback": 42200,
+      "buyback": 42400,
       "category": "Switch",
       "retail": 37980,
-      "rate": 111.11
+      "rate": 111.64
     },
     {
       "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
@@ -46,7 +46,7 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 27600,
+      "buyback": 27700,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "PS5 ワイヤレスコントローラー “グランド・セフト・オートVI” ブラック リミテッドエディション CFI-ZCT2JZH",
       "jan": "4948872417525",
-      "buyback": 14100,
+      "buyback": 14500,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 50000,
+      "buyback": 50200,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 220200,
+      "buyback": 223000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -118,7 +118,7 @@
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 12700,
+      "buyback": 12800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -174,10 +174,10 @@
     {
       "name": "FUJIFILM 写ルンです シンプルエース 27枚撮り 2025版",
       "jan": "4547410550955",
-      "buyback": 2590,
+      "buyback": 2620,
       "category": "その他",
       "retail": 2178,
-      "rate": 118.92
+      "rate": 120.29
     },
     {
       "name": "instax SQUARE 2 チェキ ミスティホワイト",
