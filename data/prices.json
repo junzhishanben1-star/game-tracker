@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T21:11:45.996541",
+  "updated": "2026-11-27T07:00:52.337997",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
@@ -46,7 +46,7 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 27700,
+      "buyback": 28100,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "PS5 ワイヤレスコントローラー “グランド・セフト・オートVI” ブラック リミテッドエディション CFI-ZCT2JZH",
       "jan": "4948872417525",
-      "buyback": 14500,
+      "buyback": 14600,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -62,7 +62,7 @@
     {
       "name": "PlayStation 5 デジタル・エディション 日本語専用 CFI-2200B01 [825GB]",
       "jan": "4948872417419",
-      "buyback": 50200,
+      "buyback": 50700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 223000,
+      "buyback": 227000,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 123000,
+      "buyback": 123300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -94,7 +94,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 123000,
+      "buyback": 123300,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -118,7 +118,7 @@
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 12800,
+      "buyback": 12900,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -286,10 +286,10 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2450,
+      "buyback": 2430,
       "category": "その他",
       "retail": 2100,
-      "rate": 116.67
+      "rate": 115.71
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
