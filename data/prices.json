@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T07:00:52.337997",
+  "updated": "2026-11-27T18:43:26.866372",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
@@ -70,7 +70,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 227000,
+      "buyback": 227700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -86,7 +86,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 123300,
+      "buyback": 123500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -94,7 +94,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 123300,
+      "buyback": 123500,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -118,7 +118,7 @@
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 12900,
+      "buyback": 13000,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -178,6 +178,14 @@
       "category": "その他",
       "retail": 2178,
       "rate": 120.29
+    },
+    {
+      "name": "instax mini Evo 2 チェキ ブラック",
+      "jan": "4547410578904",
+      "buyback": 33000,
+      "category": "その他",
+      "retail": 0,
+      "rate": 0
     },
     {
       "name": "instax SQUARE 2 チェキ ミスティホワイト",
@@ -318,14 +326,6 @@
     {
       "name": "instax mini 12 クレイホワイト",
       "jan": "4547410489149",
-      "buyback": 11200,
-      "category": "その他",
-      "retail": 16800,
-      "rate": 66.67
-    },
-    {
-      "name": "instax mini 12 パステルブルー",
-      "jan": "4547410489118",
       "buyback": 11200,
       "category": "その他",
       "retail": 16800,
