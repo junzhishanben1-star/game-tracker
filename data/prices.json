@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-28T03:07:32.079686",
+  "updated": "2026-11-28T15:09:30.171311",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 54400,
+      "buyback": 54200,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 108.84
+      "rate": 108.44
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -86,7 +86,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576275383",
-      "buyback": 123500,
+      "buyback": 123800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -94,7 +94,7 @@
     {
       "name": "Xbox series x",
       "jan": "4549576161617",
-      "buyback": 123500,
+      "buyback": 123800,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -102,7 +102,7 @@
     {
       "name": "Steam Controller",
       "jan": "0814585022803",
-      "buyback": 21500,
+      "buyback": 22100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -286,10 +286,10 @@
     {
       "name": "FUJIFILM チェキ用フィルム 10枚入 INSTAX MINI JP 1",
       "jan": "4547410377224",
-      "buyback": 1230,
+      "buyback": 1220,
       "category": "その他",
       "retail": 1100,
-      "rate": 111.82
+      "rate": 110.91
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
