@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-27T18:43:26.866372",
+  "updated": "2026-11-28T03:07:32.079686",
   "source": "mobile-ichiban.com",
   "count": 46,
   "products": [
     {
       "name": "Nintendo Switch 2 国内版",
       "jan": "4902370553024",
-      "buyback": 54300,
+      "buyback": 54400,
       "category": "Switch 2",
       "retail": 49980,
-      "rate": 108.64
+      "rate": 108.84
     },
     {
       "name": "Nintendo Switch 2 Proコントローラー",
@@ -38,7 +38,7 @@
     {
       "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
       "jan": "4902370552195",
-      "buyback": 10600,
+      "buyback": 10700,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -46,7 +46,7 @@
     {
       "name": "Nintendo Switch Lite グレー",
       "jan": "4902370542929",
-      "buyback": 28100,
+      "buyback": 28300,
       "category": "Switch",
       "retail": 0,
       "rate": 0
@@ -54,7 +54,7 @@
     {
       "name": "PS5 ワイヤレスコントローラー “グランド・セフト・オートVI” ブラック リミテッドエディション CFI-ZCT2JZH",
       "jan": "4948872417525",
-      "buyback": 14600,
+      "buyback": 14800,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -70,7 +70,7 @@
     {
       "name": "PlayStation 5 Pro CFI-7100B01 2TB 2025版",
       "jan": "4948872417075",
-      "buyback": 227700,
+      "buyback": 228700,
       "category": "PS5",
       "retail": 0,
       "rate": 0
@@ -118,7 +118,7 @@
     {
       "name": "ディスプレイスタンド付き",
       "jan": "4902370554564",
-      "buyback": 13000,
+      "buyback": 13100,
       "category": "その他",
       "retail": 0,
       "rate": 0
@@ -294,10 +294,10 @@
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 20枚 WW2",
       "jan": "4547410370003",
-      "buyback": 2430,
+      "buyback": 2410,
       "category": "その他",
       "retail": 2100,
-      "rate": 115.71
+      "rate": 114.76
     },
     {
       "name": "FUJIFILM チェキスクエア用 フィルム 10枚 WW1",
